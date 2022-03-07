@@ -1,0 +1,73 @@
+required:
+  - Email
+  - Mobile
+  - PayeeFirstName
+  - PayeeLastName
+  - NameonCard
+  - PayAmount
+  - CardNumber
+  - Expireyear
+  - ExpireMonth
+  - Address
+  - ZipCode
+  - PayerReferenceID
+type: object
+properties:
+  PayerReferenceID:
+    type: string
+    description: This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
+    maxLength: 150
+    minLength: 1
+  Email:
+    type: string
+    description: This is the email ID of the Payee.
+    pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
+    maxLength: 100
+  Mobile:
+    type: string
+    description: This is the mobile number of the Payee.
+    maxLength: 10
+  PayeeFirstName:
+    type: string
+    description: This is the first name of the Payee.
+    maxLength: 100
+  PayeeLastName:
+    type: string
+    description: This is the last name of the Payee.
+    maxLength: 100
+  NameonCard:
+    type: string
+    description: This is the name of the Payee on the card.
+    maxLength: 80
+  PayAmount:
+    type: string
+    description: This is the amount to be paid to the Payee.
+  CardNumber:
+    type: string
+    description: This is the unique 16-digit number on the card.
+    maxLength: 16
+    minLength: 1
+    pattern: ^(0|[1-9][0-9]*)$
+  Expireyear:
+    type: integer
+    description: This is the year of expiry mentioned on the card.
+    maxLength: 4
+    minLength: 4
+    pattern: ^(0|[1-9][0-9]*)$
+  ExpireMonth:
+    type: string
+    description: This is the month of expiry mentioned on the card.
+    maxLength: 2
+    minLength: 2
+    pattern: ^(0|[1-9][0-9]*)$
+  Address:
+    type: string
+    description: It is the address associated with the debit card account.
+    maxLength: 50
+    minLength: 1
+  ZipCode:
+    type: integer
+    description: This is the zip code of the address associated with the debit card account.
+    pattern: ^(0|[1-9][0-9]*)$
+    maxLength: 9
+    minLength: 5

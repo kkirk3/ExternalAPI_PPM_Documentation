@@ -1,0 +1,7 @@
+type: object
+properties:
+  error_code:
+    type: integer
+    format: int32
+  error_code_desc:
+    type: string

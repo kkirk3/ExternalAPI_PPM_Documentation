@@ -1,0 +1,54 @@
+required:
+  - PayorReferenceId
+  - PayeeFirstName
+  - PayeeLastName
+  - Mobile
+  - Email
+  - NameonCard
+  - PayAmount
+  - Address
+  - ZipCode
+type: object
+properties:
+  PayorReferencedId:
+    type: string
+    description: Payor ReferencedId
+    maxLength: 150
+    minLength: 1   
+  PayeeFirstName:
+    type: string
+    description: Payee First Name
+    maxLength: 100
+  PayeeLastName:
+    type: string
+    description: Payee Last Name
+    maxLength: 100
+  Mobile:
+    type: string
+    description: Mobile
+    maxLength: 10
+  Email:
+    type: string
+    description: Email
+    pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
+    maxLength: 100    
+  NameonCard:
+    type: string
+    description: NameonCard
+    maxLength: 80
+  PayAmount:
+    type: string
+    description: Pay Amount
+  Address:
+      type: string
+      description: Address
+      maxLength: 50
+      minLength: 1
+  ZipCode:
+      type: integer
+      description: ZipCode
+      pattern: ^(0|[1-9][0-9]*)$
+      maxLength: 9
+      minLength: 5  
+  
+  

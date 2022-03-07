@@ -1,0 +1,130 @@
+required:
+  - TaxID
+  - PayeeName
+  - AddressLine1
+  - City
+  - State
+  - ZIP
+  - POBOXZIP
+  - ECHOProviderID
+  - CheckNumber
+  - CheckAmount
+  - CheckDate
+  - RoutingNumber
+  - BankAcountNumber
+  - ReturnName
+  - ReturnAddressLine1
+  - EPPID
+  - ClaimNumber
+  - GroupNumber
+  - CertificateNumber
+  - Ppayornumber
+type: object
+properties:
+  TaxID:
+    type: integer
+    description: Tax ID
+    pattern: ^(0|[1-9][0-9]*)$
+    maxLength: 9
+  PayeeName:
+    type: string
+    description: Payee Name
+    maxLength: 50
+    minLength: 1
+  AddressLine1:
+    type: string
+    description: AddressLine1
+    maxLength: 50
+    minLength: 1
+  AddressLine2:
+    type: string
+    description: AddressLine2
+    maxLength: 50
+    minLength: 1
+  City:
+    type: string
+    description: City
+    maxLength: 50
+    minLength: 1
+  State:
+    type: string
+    description: State
+    minLength: 2
+  ZIP:
+    type: integer
+    description: ZIP
+    maxLength: 50
+    pattern: ^(0|[1-9][0-9]*)$
+  POBOXZIP:
+    type: string
+    description: POBOXZIP
+    maxLength: 50
+    minLength: 1
+  ECHOProviderID:
+    type: string
+    description: ECHO Provider ID
+    maxLength: 50
+    minLength: 1
+  CheckNumber:
+    type: string
+    description: Check Number
+    maxLength: 50
+    minLength: 1
+  CheckAmount:
+    type: string
+    description: Check Amount
+  CheckDate:
+    type: string
+    description: Check Date
+    pattern: ^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$
+  RoutingNumber:
+    type: integer
+    description: Routing Number
+    maxLength: 50
+    minLength: 1
+    pattern: ^(0|[1-9][0-9]*)$
+  BankAcountNumber:
+    type: string
+    description: Bank Acount Number
+    maxLength: 50
+    minLength: 1
+    pattern: ^(0|[1-9][0-9]*)$
+  ReturnName:
+    type: string
+    description: Return Name
+    maxLength: 50
+    minLength: 1
+  ReturnAddressLine1:
+    type: string
+    description: Return AddressLine1
+    maxLength: 50
+    minLength: 1
+  ReturnAddressLine2:
+    type: string
+    description: Return AddressLine2
+    maxLength: 50
+  EPPID:
+    type: string
+    description: EPPID
+    maxLength: 50
+    minLength: 1
+  ClaimNumber:
+    type: string
+    description: Claim Number
+    maxLength: 50
+    minLength: 1
+  GroupNumber:
+    type: string
+    description: Group Number
+    maxLength: 50
+    minLength: 1
+  CertificateNumber:
+    type: string
+    description: Certificate Number
+    maxLength: 50
+    minLength: 1
+  Ppayornumber:
+    type: string
+    description: Ppayornumber
+    maxLength: 50
+    minLength: 1

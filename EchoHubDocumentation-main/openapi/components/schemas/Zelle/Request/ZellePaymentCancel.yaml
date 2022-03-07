@@ -1,0 +1,16 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+  RequestValueType:
+    type: string
+    description: 
+      This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
+       
+    maxLength: 150
+    minLength: 1
+  RequestValue:
+    type: string
+    description: This is the request value.
+    maxLength: 100

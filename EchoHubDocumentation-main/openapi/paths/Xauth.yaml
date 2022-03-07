@@ -1,0 +1,7 @@
+
+  - x-Authorization: []
+# securitySchemes:
+#         x-Authorization:
+#           scheme: x-Authorization
+#           type: http
+#           description: The Authorization Token.  

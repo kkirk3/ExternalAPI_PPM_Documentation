@@ -1,0 +1,221 @@
+type: object
+properties:
+  This is the Response for response code 001: 
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit status Successful
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3000:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3000
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in submitted status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Pending status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3002:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3002
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Reject status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3003:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3003
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Cancelled status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3004:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3004
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Returned status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3005:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3005
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Pickup Ready status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3006:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3006
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment is in Returned status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3007:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3007
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment Unknown
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3020:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3020
+          PaymentResponseCodeDesc:
+            type: string
+            description: Invalid Card number. Please try another card or select a different payment type
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3021:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3021
+          PaymentResponseCodeDesc:
+            type: string
+            description: This card does not support Direct To debit payments. Please try another card or select a different payment type
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransLog for Payment response code 3022:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 3022
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit card is expired. Please try another card or select a different payment type
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Payment could not be processed, Please contact customer care
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment response code 900:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Payment Response for Payment response code 900
+          PaymentResponseCodeDesc:
+            type: string
+            description: Direct To Debit Payment Successful
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number 

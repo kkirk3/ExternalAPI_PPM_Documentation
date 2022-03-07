@@ -1,0 +1,27 @@
+post:
+  tags:
+    - eCheck
+  summary: MPX eCheck Payment Payee Contact Requests
+  operationId: MPXECheckPayeeContact
+  description: | 
+    This endpoint allows the API user to create a Provider Payee Record in the
+    Medical Payment Exchange (MPX) platform.  
+    The Provider is identified with a Tax ID and a Payee Contact Key along with
+    the other details like name and address.
+  requestBody:
+    description: |
+      This endpoint is used to create the Provider Payee Contact Key. 
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Echecks/Request/MPXECheckPayeeContact.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: integer
+            format: int32
+    

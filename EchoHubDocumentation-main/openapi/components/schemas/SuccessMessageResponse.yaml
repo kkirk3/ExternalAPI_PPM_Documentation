@@ -1,0 +1,7 @@
+type: object
+properties:
+  response_code:
+    type: integer
+    format: int32
+  message:
+    type: string

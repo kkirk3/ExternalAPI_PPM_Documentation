@@ -1,0 +1,28 @@
+required:
+  - RequestValueType
+  - RequestValue
+  - Action
+  - RequestedBy
+  - OptoutReason
+type: object
+properties:
+  RequestValueType:
+    type: string
+    description: >-
+      Request ValueType can be of
+      DraftNumber,CardNumberToken,PayerCheckClaimNumber,ClaimNumber,PayHubPaymentID
+  RequestValue:
+    type: string
+    description: Request Value
+    minLength: 2
+  Action:
+    type: string
+    description: Action field can be of Block,BlockAndResissue,BlockAndOptout
+  RequestedBy:
+    type: string
+    description: Requested By
+    minLength: 2
+  OptoutReason:
+    type: string
+    description: OptoutReason
+    minLength: 2

@@ -1,0 +1,14 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ResponseCode:
+        type: string
+        description: Response for response code 001
+      ResponseCodeDesc:
+        type: string
+        description: Card has no real time transactions
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number

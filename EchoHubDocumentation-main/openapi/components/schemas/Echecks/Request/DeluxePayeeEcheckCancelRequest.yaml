@@ -1,0 +1,14 @@
+required:
+  - TransactionId
+  - CheckingAccountId
+type: object
+properties:
+  TransactionId:
+    type: integer
+    description: The Transaction ID gets the details of the current transaction.
+  CheckingAccountId:
+    type: integer
+    description: >-
+      This is a unique ID used to link the bank account and routing number for
+      settling the payments to the Provider.
+    pattern: ^(0|[1-9][0-9]*)$

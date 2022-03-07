@@ -1,0 +1,108 @@
+openapi: 3.1.0
+info:
+  title: ECHOHUB API
+  description: >-
+    API Endpoints for the ECHOHUB Project.
+
+
+    # Authentication
+
+    Authentication is a process by which a system verifies the identity of a
+    user accessing this API.       
+
+
+    <!-- ReDoc-Inject: <security-definitions> -->
+  version: v1
+  termsOfService: https://example.com
+  contact:
+    name: ECHO Health Inc.
+    url: https://echohealthinc.com
+    email: Echo_Hub@echohealthinc.com
+externalDocs:
+  description: |
+    description external docs text
+  url: 'https://example.server.io'
+servers:
+  - url: /v1
+security:
+  - x-ApiKey: []
+    x-ClientKey: []
+paths:
+  /api/eCheck/v1/MPXECheckPayeeContact:
+    $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
+  /api/DirectPay/Deluxe/v1/DeluxeEcheck:
+    $ref: paths/Echecks/api@DirectPay@Deluxe@v1@DeluxeEcheck.yaml
+  # /api/DirectPay/Deluxe/v1/DeluxeEcheckCancel:
+  #   $ref: paths/api@DirectPay@Deluxe@v1@DeluxeEcheckCancel.yaml
+  # /api/MedPay/V1/UpdateBlockedVCard:
+  #   $ref: paths/api@MedPay@V1@UpdateBlockedVCard.yaml  
+  /api/VCP/V1/CardActivity:
+    $ref: paths/VCP/api@VCP@V1@CardActivity.yaml
+  /api/VCP/V1/CardCancel:
+    $ref: paths/VCP/api@VCP@V1@CardCancel.yaml
+  /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
+    $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
+  /api/DirectPay/DirectToDebit/v1/DirectToDebitCancel:
+    $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitCancel.yaml
+  /api/DirectPay/DirectToDebit/v1/DirectToDebitStatus:
+    $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitStatus.yaml
+  /api/DirectPay/Venmo/v1/VenmoPayment:
+    $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoPayment.yaml
+  /api/DirectPay/Venmo/v1/VenmoCancel:
+    $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoCancel.yaml
+  /api/DirectPay/Venmo/v1/VenmoStatus:
+    $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoStatus.yaml
+  /api/DirectPay/Zelle/v1/ZellePayment:
+    $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
+  /api/DirectPay/Zelle/v1/ZelleCancel:
+    $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
+  /api/DirectPay/Zelle/v1/ZelleStatus:
+    $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
+components:
+  securitySchemes:
+    x-ApiKey:
+      type: apiKey
+      name: x-ApiKey
+      description: The API key.
+      in: header
+    x-ClientKey:
+      type: apiKey
+      description: The client key.
+      name: x-ClientKey
+      in: header
+    x-Authorization:
+      scheme: x-Authorization
+      type: http
+      description: The Authorization Token.  
+tags:
+  - name: eCheck
+    description: >
+      An eCheck, or electronic check, is a digital version of a paper check that
+      is used to make a payment online.    
+
+      With an eCheck, money is electronically withdrawn from the Payer’s
+      checking account.  
+
+      Money is transferred over the ACH (Automated Clearing House) network and
+      deposited into the Payee’s checking account.
+
+  - name: Direct To Debit
+    description: |
+      Direct To Debit is the simplest and most convenient way to make payments. It is a type of pre-authorized payment which allows a bank to pay certain amount directly to the provider with a debit card. With Direct To Debit payments, the money is directly transferred to the card holder.  
+      Direct To Debit has three endpoints:
+       * Direct To Debit payment create
+       * Direct To Debit payment status
+       * Direct To Debit payment cancel
+
+  - name: Virtual Card Program (VCP)
+    description: 
+      Virtual cards are one way that Echo facilitates payments from the Payer to the Provider. The Payer or Provider may have questions on whether a card has been used, what the card balance is, and if the card is active. For these types of inquiries, there is an API endpoint for card status and transactions. 
+
+      There are several situations where a Provider or Payer may want to cancel (Block) the card. The Payer may want to issue another form of payment directly to the Provider through their own process. The Provider may prefer a check or another form of payment (BlockandReissue), or the Provider may want to cancel their current card and opt out of all future cards (BlockandOptOut). These types of card-blocking scenarios can be done through the following API endpoints -- Block, BlockandReissue, and BlockandOptOut.
+
+      virtual card program has two end points
+        * Virtual Card  Activity 
+        * Virtual Card  Cancel
+   
+
+
