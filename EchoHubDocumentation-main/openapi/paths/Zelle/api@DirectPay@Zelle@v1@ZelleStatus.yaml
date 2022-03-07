@@ -1,0 +1,39 @@
+post:
+  tags:
+    - Zelle
+  summary: Zelle Payment Status
+  description: | 
+   This endpoint allows the API user to know the status of the Direct To Debit Payment.  
+   The status of the Direct To Debit payment can be: 
+   * Submitted
+   * Success
+   * Pending
+   * Rejected
+   * Returned
+   * Cancelled
+   * Pickup Ready
+
+ 
+  
+     Once the user is authenticated, this endpoint generates an authorization
+     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: ZelleStatus
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to know the status of the Direct To Debit Payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Zelle/Request/ZellePaymentStatus.yaml
+          security:
+            -  x-Authorization: []
+                
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Zelle/Response/ZellePaymentStatusResponse.yaml

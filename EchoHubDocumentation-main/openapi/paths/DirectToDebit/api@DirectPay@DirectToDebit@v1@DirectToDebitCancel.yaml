@@ -1,0 +1,26 @@
+post:
+  tags:
+    - Direct To Debit
+  summary: Direct To Debit Payment Cancel
+  description: | 
+   This endpoint allows the API User to cancel a Direct To Debit Payment. It requires the unique Payer Reference ID. 
+   
+   Once the user is authenticated, this endpoint generates an authorization
+     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: DirectToDebitCancel
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to cancel a Direct To Debit Payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/DirectToDebit/Request/DirectToDebitPaymentCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/DirectToDebit/Response/DirectToDebitPaymentResponseCancel.yaml

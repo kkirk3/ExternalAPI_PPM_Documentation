@@ -1,0 +1,28 @@
+post:
+  tags:
+    - Zelle
+  summary: Zelle Payment Create
+  description: | 
+   This endpoint allows the API user to create a Payment to the Payee.  
+   The Payer is identified with the unique Payer reference ID. This is the Payer’s unique reference ID for them to access the status or cancellation of the Payment. 
+   This is unique to all payments submitted by a payer.
+
+   Once the user is authenticated, this endpoint generates an authorization
+     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: ZellePaymentCreate
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to create a Payment to the Payee.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Zelle/Request/ZellePaymentCreate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Zelle/Response/ZellePaymentResponse.yaml

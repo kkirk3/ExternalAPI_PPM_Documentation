@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Venmo
+  summary: Venmo Payment Cancel
+  description: Once the user is authenticated, this endpoint generates an authorization
+   token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: VenmoCancel
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: Optional description in *Markdown*
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Venmo/Request/VenmoPaymentCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Venmo/Response/VenmoPaymentResponseCancel.yaml

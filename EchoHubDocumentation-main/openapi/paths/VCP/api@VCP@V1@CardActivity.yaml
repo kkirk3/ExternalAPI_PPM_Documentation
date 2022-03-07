@@ -1,0 +1,55 @@
+post:
+  tags:
+    - Virtual Card Program (VCP)
+  summary: Virtual Card – Activity
+  operationId: VCPRealTimerequest
+  description: Once the user is authenticated, this endpoint generates an authorization
+     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This API makes sure the card is active, before cancelling or closing the
+     card. It also helps to check the card balance by showing the transactions.             
+     This endpoint validates two functionalities The status of the card and the
+      transactions of the card.
+  
+     This endpoint is used to activate the VCP card
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/VCP/Request/VCPCardActivityrequest.yaml
+          $comment: test comments of tets eic 
+  responses:
+    
+    '200':
+      description:  Success 
+      content:
+        application/json:             
+          schema:                     
+            $ref: ../../components/schemas/VCP/Response/VCPCardActivityResponse.yaml
+            $comment: Test Comment test sfvsvsvssvs
+          examples: 
+                           
+            mapName:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "4000"
+              #description: TransLog for Payment response code 4000
+              value:
+                PaymentResponseCode: Response for Payment response code 4000
+                PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
+                Transactions: object
+            mapName1:
+              summary: "4001"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4001
+                PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
+                Transactions: object
+            mapName2:
+              summary: "4002"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4002
+                PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
+                Transactions: object

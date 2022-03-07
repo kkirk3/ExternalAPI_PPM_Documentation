@@ -1,0 +1,23 @@
+post:
+  tags:
+    - Venmo
+  summary: Venmo Payment Create
+  description: Once the user is authenticated, this endpoint generates an authorization
+   token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: VenmoPayment
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: Optional description in *Markdown*
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Venmo/Request/VenmoPaymentCreate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Venmo/Response/VenmoPaymentResponse.yaml

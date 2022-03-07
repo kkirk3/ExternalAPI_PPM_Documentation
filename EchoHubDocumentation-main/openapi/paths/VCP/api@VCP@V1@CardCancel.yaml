@@ -1,0 +1,38 @@
+
+post:
+  tags:
+    - Virtual Card Program (VCP)
+  summary: VCP Card Cancel request
+  description: Once the user is authenticated, this endpoint generates an authorization
+     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  operationId: VCPCancel
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: Optional description in *Markdown*
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/VCP/Request/VCPCardCancelRequest.yaml
+          security:
+             x-Authorization: []              
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/VCP/Response/VCPCardCancelResponse.yaml
+            $comment: Test Comment
+            examples:
+              mapName:
+                summary: "4000"
+                description: TransLog for Payment response code 4000
+                value:
+                  PaymentResponseCode: Response for Payment response code 4000
+                  PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
+                  Transactions: object
+              mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+                value:
+                  stringProperty: checkmark
