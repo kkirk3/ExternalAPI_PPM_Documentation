@@ -62,6 +62,61 @@ properties:
           IsBlocked:
             type: boolean
             description: true or false
+            TransLog for Payment response code 4003:
+              type: object
+              properties:
+                PaymentResponseCode:
+                  type: string
+                  description: Response for Payment response code 4003
+                PaymentResponseCodeDesc:
+                  type: string
+                  description: Reissue failed, this card has already been settled/reissued
+                Transactions:
+                  type: object
+      TransLog for Payment response code 4004:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4004
+          PaymentResponseCodeDesc:
+            type: string
+            description: Reissue failed, this card has not been blocked
+          Transactions:
+            type: object
+      TransLog for Payment response code 4005:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4005
+          PaymentResponseCodeDesc:
+            type: string
+            description: The provided requestvalue is invalid
+          Transactions:
+            type: object
+      TransLog for Payment response code 4006:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4006
+          PaymentResponseCodeDesc:
+            type: string
+            description: requested action is not authorised for this payer
+          Transactions:
+            type: object                                                                                                                                                                          
+      TransLog for Payment response code 4007:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4002
+          PaymentResponseCodeDesc:
+            type: string
+            description: No records found, please contact VCP
+          Transactions:
+            type: object      
   This is the Response for response code 900:
     type: object
     properties:

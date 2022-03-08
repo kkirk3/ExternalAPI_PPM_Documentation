@@ -20,7 +20,7 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment Successful
+            description: Payment Created Successfully With Deluxe
           TransactionId:
             type: string
             description: Transaction Number

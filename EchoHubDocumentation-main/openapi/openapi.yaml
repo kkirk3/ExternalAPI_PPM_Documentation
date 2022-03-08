@@ -28,7 +28,7 @@ security:
   - x-ApiKey: []
     x-ClientKey: []
 paths:
-  /api/eCheck/v1/MPXECheckPayeeContact:
+  /api/eCheck/v1/MPXECheckPayeeContact: 
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
   /api/DirectPay/Deluxe/v1/DeluxeEcheck:
     $ref: paths/Echecks/api@DirectPay@Deluxe@v1@DeluxeEcheck.yaml
