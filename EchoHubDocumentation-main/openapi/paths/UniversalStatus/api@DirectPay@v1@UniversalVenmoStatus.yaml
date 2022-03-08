@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Status
+  summary: Universal Payment Status - Venmo
+  operationId: UniversalPaymentVenmoStatus
+  description: Universal Payment Status Venmo
+  requestBody:
+    description: This endpoint is used for Venmo Status
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalVenmoStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalVenmoResponseStatus.yaml

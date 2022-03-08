@@ -1,0 +1,30 @@
+required:
+  - RequestValueType
+  - RequestValue
+  - ForceFlag
+  - TransactionID
+  - CheckingAccountID
+  - LibraryMethod
+type: object
+properties:
+  RequestValueType:
+    type: string
+    description: >-
+      Value for this field should be one of the following items : 
+      PayorReferenceID or EchoHubTranscationID
+  RequestValue:
+    type: string
+    description: Request Value
+    minLength: 2
+  ForceFlag:
+    type: boolean
+    description: Force Flag
+  TransactionId:
+    type: integer
+    description: Transaction Id
+  CheckingAccountId:
+    type: integer
+    description: CheckingAccount Id
+  LibraryMethod:
+    type: string
+    description: Library Method should be 'DeluxeCancel'

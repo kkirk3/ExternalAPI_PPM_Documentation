@@ -1,0 +1,32 @@
+required:
+  - RequestValueType
+  - RequestValue
+  - RequestedBy
+  - Action
+  - OptoutReason
+  - LibraryMethod
+type: object
+properties:
+  RequestValueType:
+    type: string
+    description: >-
+      Value for this field should be one of the following items : 
+      DraftNumber or CardNumberToken or PayeeCheckClaimNumber or ClaimNumber or PayHubPaymentId
+  RequestValue:
+    type: string
+    description: Request Value
+    minLength: 2
+  RequestedBy:
+    type: boolean
+    description: Requested By
+  Action:
+    type: integer
+    description: >-
+      Value for this field should be one of the following items : 
+      Block or BlockAndReissue or BlockAndOptOut or Reissue
+  OptoutReason:
+    type: integer
+    description: Optout Reason
+  LibraryMethod:
+    type: string
+    description: Library Method should be 'VCPCancel'

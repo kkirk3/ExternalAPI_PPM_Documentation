@@ -58,6 +58,26 @@ paths:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
+  /api/DirectPay/v1/PaymentCancel [For Deluxe]:
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalDeluxeCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For Direct To Debit] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalDirectToDebitCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For Venmo] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVenmoCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For Zelle] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalZelleCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For VCP] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVCPCancel.yaml
+  /api/DirectPay/v1/PaymentStatus [For Direct To Debit] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalDirectToDebitStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For Venmo] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVenmoStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For Zelle] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalZelleStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For VCP] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
+  /api/DirectPay/v1/PaymentVoid:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
 components:
   securitySchemes:
     x-ApiKey:

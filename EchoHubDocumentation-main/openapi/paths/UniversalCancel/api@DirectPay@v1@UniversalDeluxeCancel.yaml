@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - Deluxe
+  operationId: UniversalPaymentDeluxeCancel
+  description: Universal Payment Cancel Deluxe
+  requestBody:
+    description: This endpoint is used to cancel the eCheck
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalDeluxeCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalDeluxeResponseCancel.yaml

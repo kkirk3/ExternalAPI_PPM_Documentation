@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Status
+  summary: Universal Payment Status - Direct To Debit
+  operationId: UniversalPaymentD2DStatus
+  description: Universal Payment Status Direct To Debit
+  requestBody:
+    description: This endpoint is used for Direct To Debit Status
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalDirectToDebitStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalDirectToDebitResponseStatus.yaml

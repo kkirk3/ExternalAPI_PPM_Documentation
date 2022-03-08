@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - VCP
+  operationId: UniversalPaymentVCPCancel
+  description: Universal Payment Cancel VCP
+  requestBody:
+    description: This endpoint is used to cancel the VCP
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalCancel\Request\UniversalVCPCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalCancel\Response\UniversalVCPResponseCancel.yaml

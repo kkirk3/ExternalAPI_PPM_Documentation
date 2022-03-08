@@ -1,0 +1,41 @@
+post:
+  tags:
+    - Universal Payment Void
+  summary: Universal Payment Void - Deluxe
+  operationId: UniversalPaymentDeluxeVoid
+  description: Universal Payment Void Deluxe
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to Void the eCheck
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalVoid/Request/UniversalDeluxeVoid.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalVoid/Response/UniversalDeluxeResponseVoid.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Deluxe Void Payment Successful
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : Deluxe Void Payment Failed
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId

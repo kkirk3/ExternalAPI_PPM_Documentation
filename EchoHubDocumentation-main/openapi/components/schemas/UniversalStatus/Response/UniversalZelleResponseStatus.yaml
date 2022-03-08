@@ -1,0 +1,56 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ResponseCode:
+        type: integer
+        description: Response Code 001
+      ResponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: integer
+        description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment Instruction has been authorized and will be routed for processing
+          TransactionId:
+            type: integer
+            description: TransactionId
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionID
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ResponseCode:
+        type: integer
+        description: Response Code 900
+      ResponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: integer
+        description: Transaction Number
+      TransError for Payment response code 900:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 900
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment Status Failed"
+          TransactionId:
+            type: integer
+            description: TransactionId
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId            

@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Status
+  summary: Universal Payment Status - Zelle
+  operationId: UniversalPaymentZelleStatus
+  description: Universal Payment Status Zelle
+  requestBody:
+    description: This endpoint is used for Zelle Status
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalZelleStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalZelleResponseStatus.yaml

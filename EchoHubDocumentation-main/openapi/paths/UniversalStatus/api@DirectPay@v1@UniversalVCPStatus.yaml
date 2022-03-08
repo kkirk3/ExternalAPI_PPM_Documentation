@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Status
+  summary: Universal Payment Status - VCP
+  operationId: UniversalPaymentVCPStatus
+  description: Universal Payment Status VCP
+  requestBody:
+    description: This endpoint is used for VCP Status
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalVCPStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalVCPResponseStatus.yaml

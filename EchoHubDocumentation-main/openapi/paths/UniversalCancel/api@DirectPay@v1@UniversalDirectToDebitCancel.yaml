@@ -1,0 +1,20 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - Direct To Debit
+  operationId: UniversalPaymentD2DCancel
+  description: Universal Payment Cancel Direct To Debit
+  requestBody:
+    description: This endpoint is used to cancel the Direct To Debit
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\UniversalCancel\Request\UniversalDirectToDebitCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\UniversalCancel\Response\UniversalDirectToDebitResponseCancel.yaml
