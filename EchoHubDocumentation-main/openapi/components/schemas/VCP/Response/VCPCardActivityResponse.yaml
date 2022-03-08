@@ -3,12 +3,297 @@ properties:
   This is the Response for response code 001:
     type: object
     properties:
-      ResponseCode:
+      ReponseCode:
         type: string
-        description: Response for response code 001
-      ResponseCodeDesc:
+        description: Response Code 001
+      ReponseCodeDesc:
         type: string
-        description: Card has no real time transactions
+        description: Card Block was Successful
       ResponseTransactionID:
         type: string
         description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 001
+          Transactions:
+            type: object
+            properties:
+              TransactionStatus:
+                type: string
+                description: >-
+                  This is the Transaction Status like Approved, Declined
+                  etc.
+              TransactionDate:
+                type: string
+                description: This is the Date when the transaction was performed
+              TransactionTime:
+                type: string
+                description: This is the Time when the transaction was performed     
+              PostedDate:
+                type: string
+                description: >-
+                  This is the Date when the transaction was posted. When
+                  the transaction was authorized but not posted, this
+                  value would be empty
+              PostedTime:
+                type: string
+                description: >-
+                  This is the Time when the transaction was posted. When
+                  the transaction was authorized but not posted, this
+                  value would be empty
+              DeclineCode:
+                          type: string
+                          description: >-
+                            When a transaction is declined, we see the Decline Code,
+                            that describes the reason for decline
+              DeclineMessage:
+                          type: string
+                          description: >-
+                            When a transaction is declined, we would get the Decline
+                            message that describes the reason for decline
+              CorrectiveAction:
+                          type: string
+                          description: >-
+                            This is the Corrective Action to be taken when a
+                            transaction is declined
+              PromptedId:
+                          type: string
+                          description: This is the ID that was prompted during the transaction
+              MccGroup:
+                          type: string
+                          description: >-
+                            This is the Merchant Category Code (MCC) Group where the
+                            transaction was performed
+              MccNumber:
+                          type: string
+                          description: >-
+                            This is the Merchant Category Code (MCC) Number where
+                            the transaction was performed
+              MccDescription:
+                          type: string
+                          description: >-
+                            This is the Merchant Category Code (MCC) description
+                            where the transaction was performed
+              MerchantName:
+                          type: string
+                          description: >-
+                            This is the Merchant Name where the transaction was
+                            performed
+              MerchantAddress:
+                          type: string
+                          description: >-
+                            This is the Merchant address where the transaction was
+                            performed
+              MerchantCity:
+                          type: string
+                          description: >-
+                            This is the Merchant city where the transaction was
+                            performed
+              MerchantState:
+                          type: string
+                          description: >-
+                            This is the Merchant state where the transaction was
+                            performed
+              MerchantZip:
+                          type: string
+                          description: >-
+                            This is the Merchant zip where the transaction was
+                            performed
+              AcceptLocation:
+                          type: string
+                          description: This is the Location where the transaction was accepted
+              PreAuthAmount:
+                          type: string
+                          description: This is the Pre-Authorized Amount
+              PostedAmount:
+                          type: string
+                          description: >-
+                            This is the Posted Amount, and this field would be empty
+                            when the transaction is not posted yet
+              ApprovalCode:
+                          type: string
+                          description: This is the Transaction Approval code
+              ReversalFlag:
+                          type: string
+                          description: >-
+                           This can be Y or N, which denotes whether a transaction
+                           is reversed or not
+                           Records_Id:
+                            type: string
+                            description: This is the Unique Record ID from the card vendor
+              ResponseCodeDescription:
+                          type: string
+                          description: >-
+                            This is the Transaction Response Code returned by the
+                            card vendor
+              IdMatchNumber:
+                          type: string
+                          description: This is the Card Vendor Match Number                                                                                   
+      TransLog for Payment response code 4000:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4000
+          PaymentResponseCodeDesc:
+            type: string
+            description: This card is Expired, Payment cannot be blocked/voided
+          Transactions:
+            type: object               
+      TransLog for Payment response code 4001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4001
+          PaymentResponseCodeDesc:
+            type: string
+            description: >-
+              The Provider has already cancelled the card, Payment cannot be blocked/voided
+          Transactions:
+            type: object 
+      TransLog for Payment response code 4002:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4002
+          PaymentResponseCodeDesc:
+            type: string
+            description: Provider has used the card, Payment cannot be blocked/voided
+          Transactions:
+            type: object
+      TransLog for Payment response code 4003:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4003
+          PaymentResponseCodeDesc:
+            type: string
+            description: Reissue failed, this card has already been settled/reissued
+          Transactions:
+            type: object
+      TransLog for Payment response code 4004:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4004
+          PaymentResponseCodeDesc:
+            type: string
+            description: Reissue failed, this card has not been blocked
+          Transactions:
+            type: object
+      TransLog for Payment response code 4005:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4005
+          PaymentResponseCodeDesc:
+            type: string
+            description: The provided requestvalue is invalid
+          Transactions:
+            type: object
+      TransLog for Payment response code 4006:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4006
+          PaymentResponseCodeDesc:
+            type: string
+            description: requested action is not authorised for this payer
+          Transactions:
+            type: object                                                                                                                                                                          
+      TransLog for Payment response code 4007:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 4002
+          PaymentResponseCodeDesc:
+            type: string
+            description: No records found, please contact VCP
+          Transactions:
+            type: object                                                                                                                                                                                
+  This is the Response for response code 900:
+   type: object
+   properties:
+    ReponseCode:
+      type: string
+      description: Response Code 900
+    ReponseCodeDesc:
+      type: string
+      description: Payment could not be processed, please contact customer care  
+    ResponseTransactionID:
+      type: string
+      description: Transaction Number
+    TransError for Error Code 1025:
+      type: object
+      properties:
+        ErrorCode:
+          type: string
+          description: ErrorCode 1025
+        ErrorDesc:
+          type: string
+          description: >-
+            Invalid Request Value Type. Request Value Type should be one
+            of the following types "DraftNumber", "CardNumberToken",
+            "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"          
+    TransError for Error Code 1026:
+      type: object
+      properties:
+        ErrorCode:
+          type: string
+          description: ErrorCode 1026
+        ErrorDesc:
+          type: string
+          description: >-
+            Invalid Action. Action must be one of the following
+            "Status", "Transaction"
+        TransError for Error Code 1027:
+          type: object
+          properties:
+            ErrorCode:
+              type: string
+              description: ErrorCode 1027
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Request Value
+        TransError for Payment response code 900:
+          type: object
+          properties:
+            PaymentResponseCode:
+              type: string
+              description: Response for Payment response code 900
+            PaymentResponseCodeDesc:
+              type: string
+              description: VCP Card Status call failed
+            Transactions:
+              type: object
+  This is the Response for response code 907:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 907
+      ReponseCodeDesc:
+        type: string
+        description: System Error
+      TransError:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: '907'
+          ErrorCodeDesc:
+            type: string
+            description: System Error
+          CreationDate:
+            type: string
+            description: Current Date & Time                          
