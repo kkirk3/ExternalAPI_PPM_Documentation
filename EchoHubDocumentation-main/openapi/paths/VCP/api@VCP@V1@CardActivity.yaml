@@ -27,8 +27,7 @@ post:
       content:
         application/json:             
           schema:                     
-            $ref: ../../components/schemas/VCP/Response/VCPCardActivityResponse.yaml
-            $comment: Test Comment test sfvsvsvssvs
+            $ref: ../../components/schemas/VCP/Response/VCPCardActivityResponse.yaml          
           examples: 
             mapName:   
               description: Please scroll the above dropdown list for more response codes          
@@ -81,7 +80,7 @@ post:
                 ResponseCodeDescription: This is the Transaction Response Code returned by the
                                         card vendor
                 IdMatchNumber: This is the Card Vendor Match Number
-            mapName3:   
+            mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "4000"
               #description: TransLog for Payment response code 4000
@@ -89,17 +88,86 @@ post:
                 PaymentResponseCode: Response for Payment response code 4000
                 PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
                 Transactions: object
-            mapName1:
+            mapName2:
               summary: "4001"
               description: Please scroll the above dropdown list for more response codes          
               value:
                 PaymentResponseCode: Response for Payment response code 4001
                 PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
                 Transactions: object
-            mapName2:
+            mapName3:
               summary: "4002"
               description: Please scroll the above dropdown list for more response codes          
               value:
                 PaymentResponseCode: Response for Payment response code 4002
                 PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
                 Transactions: object
+            mapName4:
+              summary: "4003"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4003
+                PaymentResponseCodeDesc: Reissue failed, this card has already been settled/reissued
+                Transactions: object
+            mapName5:
+              summary: "4004"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4004
+                PaymentResponseCodeDesc: Reissue failed, this card has not been blocked
+                Transactions: object
+            mapName6:
+              summary: "4005"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4005
+                PaymentResponseCodeDesc: The provided requestvalue is invalid
+                Transactions: object
+            mapName7:
+              summary: "4006"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4006
+                PaymentResponseCodeDesc: The provided requestvalue is invalid
+                Transactions: object
+            mapName8:
+              summary: "4007"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: Response for Payment response code 4006
+                PaymentResponseCodeDesc: requested action is not authorised for this payer
+                Transactions: object
+            mapName9:
+              summary: "1025"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                ErrorCode: ErrorCode 1025
+                ErrorDesc: Invalid Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"                              
+            mapName10:
+              summary: "1026"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                ErrorCode: ErrorCode 1026
+                ErrorDesc: Invalid Action. Action must be one of the following "Status", "Transaction"
+            mapName11:
+              summary: "1027"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                ErrorCode: ErrorCode 1027
+                ErrorDesc: Invalid or Missing Request Value    
+            mapName12:
+              summary: "900"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                PaymentResponseCode: ErrorCode 900
+                PaymentResponseCodeDesc: Invalid or Missing Request Value 
+                Transactions: object
+            mapName13:
+              summary: "907"
+              description: Please scroll the above dropdown list for more response codes          
+              value:
+                ErrorCode: ErrorCode 907
+                ErrorCodeDesc: Invalid or Missing Request Value 
+                CreationDate: Current Date & Time
+
+       
