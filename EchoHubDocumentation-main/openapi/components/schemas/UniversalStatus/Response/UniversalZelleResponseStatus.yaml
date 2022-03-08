@@ -47,7 +47,7 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Status Failed"
+            description: Zelle Payment Status Failed
           TransactionId:
             type: integer
             description: TransactionId

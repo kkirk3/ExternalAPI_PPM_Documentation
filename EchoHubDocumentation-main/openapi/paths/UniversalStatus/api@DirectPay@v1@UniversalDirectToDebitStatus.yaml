@@ -4,6 +4,8 @@ post:
   summary: Universal Payment Status - Direct To Debit
   operationId: UniversalPaymentD2DStatus
   description: Universal Payment Status Direct To Debit
+  security:
+    - x-Authorization: []
   requestBody:
     description: This endpoint is used for Direct To Debit Status
     required: true
@@ -18,3 +20,22 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/UniversalStatus/Response/UniversalDirectToDebitResponseStatus.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Direct to Debit Payment is in Paid Status
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : Direct to Debit Status Failed
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId

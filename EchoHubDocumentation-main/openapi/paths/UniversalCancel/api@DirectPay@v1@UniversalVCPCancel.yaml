@@ -4,6 +4,8 @@ post:
   summary: Universal Payment Cancel - VCP
   operationId: UniversalPaymentVCPCancel
   description: Universal Payment Cancel VCP
+  security:
+    - x-Authorization: []
   requestBody:
     description: This endpoint is used to cancel the VCP
     required: true
@@ -18,3 +20,20 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/UniversalCancel/Response/UniversalVCPResponseCancel.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Card Block was Successful
+                  IsBlocked : IsBlocked
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : VCP Block Card failed
+                  IsBlocked : IsBlocked
