@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: ECHOHUB API A
+  title: ECHOHUB API
   description: >-
     API Endpoints for the ECHOHUB Project.
 
