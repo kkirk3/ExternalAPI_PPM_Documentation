@@ -1,0 +1,41 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - Zelle
+  operationId: UniversalPaymentZelleCancel
+  description: Universal Payment Cancel Zelle
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to cancel the Zelle
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalZelleCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalZelleResponseCancel.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Zelle Cancel Payment Successful
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : Zelle Payment Cancel Failed
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId

@@ -1,0 +1,39 @@
+post:
+  tags:
+    - Universal Payment Status
+  summary: Universal Payment Status - VCP
+  operationId: UniversalPaymentVCPStatus
+  description: Universal Payment Status VCP
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used for VCP Status
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalVCPStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalVCPResponseStatus.yaml
+          examples:  
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              #description: TransLog for Payment Response Code 001
+              value:
+                PaymentResponseCode : Response for Payment Response Code 001
+                PaymentResponseCodeDesc : VCP Status Payment Successful
+                TransactionId : TransactionId
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              #description: TransError for Payment Response Code 900
+              value:
+                PaymentResponseCode : Response for Payment Response Code 900
+                PaymentResponseCodeDesc : VCP Card Status call failed
+                TransactionId : TransactionId

@@ -1,0 +1,41 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - Direct To Debit
+  operationId: UniversalPaymentD2DCancel
+  description: Universal Payment Cancel Direct To Debit
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to cancel the Direct To Debit
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalDirectToDebitCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalDirectToDebitResponseCancel.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Direct to Debit Cancel Payment Successful
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : Direct to Debit Cancel Payment Failed
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId

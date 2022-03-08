@@ -1,0 +1,41 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - Deluxe
+  operationId: UniversalPaymentDeluxeCancel
+  description: Universal Payment Cancel Deluxe
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to cancel the eCheck
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalDeluxeCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalDeluxeResponseCancel.yaml
+          examples:  
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              #description: TransLog for Payment Response Code 001
+              value:
+                PaymentResponseCode : Response for Payment Response Code 001
+                PaymentResponseCodeDesc : Deluxe Cancel Payment Successful
+                TransactionId : TransactionId
+                PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              #description: TransError for Payment Response Code 900
+              value:
+                PaymentResponseCode : Response for Payment Response Code 900
+                PaymentResponseCodeDesc : Deluxe Cancel Payment Failed
+                TransactionId : TransactionId
+                PayhubTransactionId : PayhubTransactionId
