@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalCancel\Request\UniversalDirectToDebitCancel.yaml
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalDirectToDebitCancel.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalCancel\Response\UniversalDirectToDebitResponseCancel.yaml
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalDirectToDebitResponseCancel.yaml

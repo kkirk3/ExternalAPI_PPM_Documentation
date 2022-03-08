@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalVenmoStatus.yaml
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalVenmoStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalVenmoResponseStatus.yaml
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalVenmoResponseStatus.yaml

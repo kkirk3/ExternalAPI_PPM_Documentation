@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalVCPStatus.yaml
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalVCPStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalVCPResponseStatus.yaml
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalVCPResponseStatus.yaml

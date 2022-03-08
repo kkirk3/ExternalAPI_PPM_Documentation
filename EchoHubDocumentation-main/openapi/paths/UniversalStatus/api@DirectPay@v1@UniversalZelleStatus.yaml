@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalZelleStatus.yaml
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalZelleStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalZelleResponseStatus.yaml
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalZelleResponseStatus.yaml

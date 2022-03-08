@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalStatus\Request\UniversalDirectToDebitStatus.yaml
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalDirectToDebitStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalStatus\Response\UniversalDirectToDebitResponseStatus.yaml
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalDirectToDebitResponseStatus.yaml

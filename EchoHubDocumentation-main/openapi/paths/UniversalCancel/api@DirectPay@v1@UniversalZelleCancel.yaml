@@ -10,11 +10,11 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\UniversalCancel\Request\UniversalZelleCancel.yaml
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalZelleCancel.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\UniversalCancel\Response\UniversalZelleResponseCancel.yaml
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalZelleResponseCancel.yaml
