@@ -215,10 +215,10 @@ properties:
         properties:
           PaymentResponseCode:
             type: string
-            description: Response for Payment response code 4002
+            description: Response for Payment response code 4007
           PaymentResponseCodeDesc:
             type: string
-            description: No records found, please contact VCP
+            description: No records found, Please contact VCP
           Transactions:
             type: object                                                                                                                                                                                
   This is the Response for response code 900:
