@@ -44,7 +44,7 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: Response for Payment response code 001
+            description: Response for Payment response code 900
           ErrorDesc:
             type: string
             description: Duplicate Payor Reference ID
