@@ -44,7 +44,35 @@ properties:
         properties:
           ErrorCode:
             type: string
+            description: Response for Payment response code 900
+          ErrorDesc:
+            type: string
+            description: Direct To Debit Payment Failed
+      TransError for Payment response code 1020:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response for Payment response code 1020
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Expire Year
+      TransError for Payment response code 901:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response for Payment response code 901
+          ErrorDesc:
+            type: string
+            description: JSON Validation Failed with Exception              
+      TransError for Payment response code 5001:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
             description: Response for Payment response code 001
           ErrorDesc:
             type: string
             description: Duplicate Payor Reference ID
+                     

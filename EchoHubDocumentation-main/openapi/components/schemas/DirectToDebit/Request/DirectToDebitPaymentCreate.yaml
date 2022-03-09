@@ -6,14 +6,14 @@ required:
   - NameonCard
   - PayAmount
   - CardNumber
-  - Expireyear
+  - Expiryyear
   - ExpireMonth
   - Address
   - ZipCode
-  - PayerReferenceID
+  - PayorReferenceID
 type: object
 properties:
-  PayerReferenceID:
+  PayorReferenceID:
     type: string
     description: This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
     maxLength: 150
@@ -48,7 +48,7 @@ properties:
     maxLength: 16
     minLength: 1
     pattern: ^(0|[1-9][0-9]*)$
-  Expireyear:
+  Expiryyear:
     type: integer
     description: This is the year of expiry mentioned on the card.
     maxLength: 4
