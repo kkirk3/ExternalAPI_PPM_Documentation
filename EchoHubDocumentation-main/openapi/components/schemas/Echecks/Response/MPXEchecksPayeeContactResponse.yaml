@@ -1,0 +1,83 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction      
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          CardBlockCode:
+            type: string
+            description: Response for Payment response code 001
+          Type:
+            type: string
+            description: Payment Created Successfully With Deluxe
+          NumberOfAuth:
+            type: string
+            description: Number Of Auth
+          NumberOfTxns:
+            type: string
+            description: Number Of transactions
+          ResultCode:
+            type: string
+            description: Result Code
+          ResultMessage:
+            type: string
+            description: Result Message
+          DeluxeResponseCode:
+            type: string
+            description: Deluxe Response Code
+          DeluxeMessage:
+            type: string
+            description: Deluxe Message
+          IsDuplicate:
+            type: string
+            description: Yes/NO         
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Payment could not be processed, Please contact customer care
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment response code 900:
+          type: object
+          properties:
+            CardBlockCode:
+              type: string
+              description: Response for Payment response code 001
+            Type:
+              type: string
+              description: Payment Created Successfully With Deluxe
+            NumberOfAuth:
+              type: string
+              description: Number Of Auth
+            NumberOfTxns:
+              type: string
+              description: Number Of transactions
+            ResultCode:
+              type: string
+              description: Result Code
+            ResultMessage:
+              type: string
+              description: Result Message
+            DeluxeResponseCode:
+              type: string
+              description: Deluxe Response Code
+            DeluxeMessage:
+              type: string
+              description: Deluxe Message
+            IsDuplicate:
+              type: string
+              description: Yes/NO         

@@ -24,12 +24,30 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/Zelle/Response/ZellePaymentResponseCancel.yaml
-          examples:
-            mapName:
-              summary: My first example
-              description: My first example's description.
-              value:
-                stringProperty: tada
-            mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
-              value:
-                stringProperty: checkmark
+            examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  ReponseCode: Response Code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  Translog for payment response Code 001:
+                    PaymentResponseCode : Response for Payment Response Code 001
+                    PaymentResponseCodeDesc : Zelle Cancel Payment Successful
+                    TransactionId : Transaction Number
+                    PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  Translog for payment response Code 900:
+                    PaymentResponseCode : Response for Payment Response Code 900
+                    PaymentResponseCodeDesc : Zelle Payment Cancel Failed
+                    TransactionId : Transaction Number
+                    PayhubTransactionId : PayhubTransactionId

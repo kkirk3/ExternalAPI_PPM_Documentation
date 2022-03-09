@@ -12,7 +12,7 @@ type: object
 properties:
   PayorReferencedId:
     type: string
-    description: Payor ReferencedId
+    description: This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
     maxLength: 150
     minLength: 1   
   PayeeFirstName:
@@ -46,7 +46,7 @@ properties:
       minLength: 1
   ZipCode:
       type: integer
-      description: ZipCode
+      description: This is the zip code of the address associated with the checking account.
       pattern: ^(0|[1-9][0-9]*)$
       maxLength: 9
       minLength: 5  
