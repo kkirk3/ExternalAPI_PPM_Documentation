@@ -26,6 +26,7 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/DirectToDebit/Response/DirectToDebitPaymentResponse.yaml
+          x-examples:
           examples:
             mapName:   
               description: Please scroll the above dropdown list for more response codes          
@@ -49,3 +50,24 @@ post:
                 TransError for payment response Code 900:  
                     PaymentResponseCode: Response for Payment response code 900
                     PaymentResponseCodeDesc: Duplicate Payor Reference ID
+          # # x-examples:
+          # x-examples1:
+            mapName12:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1020"
+              value:
+                ReponseCode: Response for Payment response code 1020
+                ReponseCodeDesc: Successful Transaction                
+                TransError for payment response Code 1020:  
+                    ErrorCode: 1020
+                    ErrorDescription: Invalid or Missing Expire Year                    
+            mapName13:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Payment could not be processed, Please contact customer care
+                ResponseTransactionID: Transaction Number
+                TransError for payment response Code 900:  
+                    PaymentResponseCode: Response for Payment response code 900
+                    PaymentResponseCodeDesc: Duplicate Payor Reference ID          

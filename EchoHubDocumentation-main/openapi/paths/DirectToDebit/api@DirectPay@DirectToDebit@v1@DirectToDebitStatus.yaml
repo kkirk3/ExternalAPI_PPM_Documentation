@@ -40,7 +40,7 @@ post:
                 ReponseCode: Response for Payment response code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog for payment response Code 001:  
+                TransLog for payment response Code 001:  
                     PaymentResponseCode: Response for Payment response code 001
                     PaymentResponseCodeDesc: Direct To Debit Payment Successful
                     TransactionId: Transaction Number
@@ -52,8 +52,8 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                TransError for payment response Code 3000:  
-                    PaymentResponseCode: Response for Payment response code 001
+                TransLog for payment response Code 3000:  
+                    PaymentResponseCode: Response for Payment response code 3000
                     PaymentResponseCodeDesc: Direct To Debit Payment is in submitted status
                     TransactionId: Transaction Number
                 EchoHubTransactionId: EchoHub Transaction Number    
@@ -64,8 +64,8 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                TransError for payment response Code 3000:  
-                    PaymentResponseCode: Response for Payment response code 001
+                TransLog for payment response Code 3001:  
+                    PaymentResponseCode: Response for Payment response code 3001
                     PaymentResponseCodeDesc: Direct To Debit Payment is in Pending status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number        
@@ -76,8 +76,8 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                TransError for payment response Code 3002:  
-                    PaymentResponseCode: Response for Payment response code 001
+                TransLog for payment response Code 3002:  
+                    PaymentResponseCode: Response for Payment response code 3002
                     PaymentResponseCodeDesc: Direct To Debit Payment is in Reject status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number            
@@ -88,8 +88,8 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3003:  
-                      PaymentResponseCode: Response for Payment response code 001
+                  TransLog for payment response Code 3003:  
+                      PaymentResponseCode: Response for Payment response code 3003
                       PaymentResponseCodeDesc: Direct To Debit Payment is in Cancelled status
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number                
@@ -100,8 +100,8 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3004:  
-                    PaymentResponseCode: Response for Payment response code 001
+                  TransLog for payment response Code 3004:  
+                    PaymentResponseCode: Response for Payment response code 3004
                     PaymentResponseCodeDesc: Direct To Debit Payment is in Returned status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                      
@@ -112,8 +112,8 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3005:  
-                    PaymentResponseCode: Response for Payment response code 001
+                  TransLog for payment response Code 3005:  
+                    PaymentResponseCode: Response for Payment response code 3005
                     PaymentResponseCodeDesc: Direct To Debit Payment is in PickUp ready status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                            
@@ -124,8 +124,8 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3006:  
-                    PaymentResponseCode: Response for Payment response code 001
+                  TransLog for payment response Code 3006:  
+                    PaymentResponseCode: Response for Payment response code 3006
                     PaymentResponseCodeDesc: Direct To Debit Payment is in Returned status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                                    
@@ -136,8 +136,8 @@ post:
                       ReponseCode: Response Code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 3007:  
-                        PaymentResponseCode: Response for Payment response code 001
+                      TransLog for payment response Code 3007:  
+                        PaymentResponseCode: Response for Payment response code 3007
                         PaymentResponseCodeDesc: Direct To Debit Payment Unknown
                         TransactionId: Transaction Number
                         EchoHubTransactionId: EchoHub Transaction Number                                            
@@ -148,8 +148,8 @@ post:
                       ReponseCode: Response Code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 3020:  
-                        PaymentResponseCode: Response for Payment response code 001
+                      TransLog for payment response Code 3020:  
+                        PaymentResponseCode: Response for Payment response code 3020
                         PaymentResponseCodeDesc: Direct To Debit Card Invalid card number. Please try another card or select a different payment type
                         TransactionId: Transaction Number
                         EchoHubTransactionId: EchoHub Transaction Number                                                        
@@ -160,8 +160,8 @@ post:
                           ReponseCode: Response Code 001
                           ReponseCodeDesc: Successful Transaction
                           ResponseTransactionID: Transaction Number
-                          TransError for payment response Code 3021:  
-                            PaymentResponseCode: Response for Payment response code 001
+                          TransLog for payment response Code 3021:  
+                            PaymentResponseCode: Response for Payment response code 3021
                             PaymentResponseCodeDesc: Direct To Debit Card does not support direct to debit payments. Please try another card or select a different payment type
                             TransactionId: Transaction Number
                             EchoHubTransactionId: EchoHub Transaction Number                                                                    
@@ -172,8 +172,8 @@ post:
                           ReponseCode: Response Code 001
                           ReponseCodeDesc: Successful Transaction
                           ResponseTransactionID: Transaction Number
-                          TransError for payment response Code 3022:  
-                            PaymentResponseCode: Response for Payment response code 001
+                          TransLog for payment response Code 3022:  
+                            PaymentResponseCode: Response for Payment response code 3022
                             PaymentResponseCodeDesc: Direct To Debit Card is Expired. Please try another card or select a different payment type.
                             TransactionId: Transaction Number
                             EchoHubTransactionId: EchoHub Transaction Number                                                                                         

@@ -23,3 +23,28 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/Venmo/Response/VenmoPaymentResponse.yaml
+          examples:
+              mapName:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                value:
+                  ReponseCode: Response for Payment response code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  Translog for payment response Code 001:  
+                      PaymentResponseCode: Response for Payment response code 001
+                      PaymentResponseCodeDesc: Venmo  Payment cancelled Successfully
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+              mapName1:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Payment could not be cancelled, Please contact customer care
+                  ResponseTransactionID: Transaction Number
+                  TransError for payment response Code 900:  
+                      PaymentResponseCode: Response for Payment response code 900
+                      PaymentResponseCodeDesc: Duplicate Payor Reference ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number

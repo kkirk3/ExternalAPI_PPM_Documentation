@@ -44,7 +44,7 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: VCP Block Card failed
+            description: VCP Block Card Failed
           IsBlocked:
             type: boolean
             description: IsBlocked

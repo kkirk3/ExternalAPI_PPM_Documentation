@@ -62,7 +62,7 @@ properties:
           IsBlocked:
             type: boolean
             description: true or false
-            TransLog for Payment response code 4003:
+      TransLog for Payment response code 4003:
               type: object
               properties:
                 PaymentResponseCode:
