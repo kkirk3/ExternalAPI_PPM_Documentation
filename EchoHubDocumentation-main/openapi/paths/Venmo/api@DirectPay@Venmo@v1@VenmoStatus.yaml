@@ -2,14 +2,22 @@ post:
   tags:
     - Venmo
   summary: Venmo Payment Status
-  description: Once the user is authenticated, this endpoint generates an authorization
-   token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VenmoStatus
-  
-  security:
-    - x-Authorization: []
+  description: |
+   This endpoint allows the API user to know the status of the Venmo Payment.
+   The status of the Venmo payment can be:
+    *	Submitted
+    *	Success
+    *	Pending
+    *	Rejected
+    *	Returned 
+    * Refunded                                                                                                                                                                                                                                                                                                                               
+    *	Cancelled
+    *	Pickup Ready  
+      
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: Optional description in *Markdown*
+    description: This endpoint is used to know the status of the Venmo Payment.
     required: true
     content:
       application/json:

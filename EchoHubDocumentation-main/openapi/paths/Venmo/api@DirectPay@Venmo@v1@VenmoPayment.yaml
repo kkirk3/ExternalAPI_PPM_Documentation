@@ -2,13 +2,15 @@ post:
   tags:
     - Venmo
   summary: Venmo Payment Create
-  description: Once the user is authenticated, this endpoint generates an authorization
-   token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VenmoPayment
-  security:
-    - x-Authorization: []
+  description: |
+   This endpoint allows the API user to create a Venmo Payment to the Payee.  
+   The Payor is identified with the unique Payor reference ID. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
+     
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
+
   requestBody:
-    description: Optional description in *Markdown*
+    description: This endpoint is used to create a Venmo Payment to the Payee.
     required: true
     content:
       application/json:

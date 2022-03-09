@@ -116,7 +116,7 @@ tags:
        * Direct To Debit payment cancel
 
   - name: Virtual Card Program (VCP)
-    description: 
+    description: |
       Virtual cards are one way that Echo facilitates payments from the Payer to the Provider. The Payer or Provider may have questions on whether a card has been used, what the card balance is, and if the card is active. For these types of inquiries, there is an API endpoint for card status and transactions. 
 
       There are several situations where a Provider or Payer may want to cancel (Block) the card. The Payer may want to issue another form of payment directly to the Provider through their own process. The Provider may prefer a check or another form of payment (BlockandReissue), or the Provider may want to cancel their current card and opt out of all future cards (BlockandOptOut). These types of card-blocking scenarios can be done through the following API endpoints -- Block, BlockandReissue, and BlockandOptOut.
@@ -124,6 +124,15 @@ tags:
       virtual card program has two end points
         * Virtual Card  Activity 
         * Virtual Card  Cancel
+   
+  - name: Zelle
+    description: |
+     Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes. 
+     Zelle has three endpoints:
+     * Zelle payment create
+     * Zelle payment status
+     * Zelle payment cancel
+    
 
 
 

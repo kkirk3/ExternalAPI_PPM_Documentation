@@ -3,19 +3,22 @@ post:
     - Zelle
   summary: Zelle Payment Status
   description: | 
-   This endpoint allows the API user to know the status of the Direct To Debit Payment.  
-   The status of the Direct To Debit payment can be: 
-   * Submitted
-   * Success
-   * Pending
-   * Rejected
-   * Returned
-   * Cancelled
-   * Pickup Ready
-
- 
+   This endpoint allows the API user to know the status of the Zelle Payment. The status of the Zelle payment can be:
+    * Add Pending Authorization – The Payment has been submitted and is awaiting authorization from the Payor.
+    * Payment Authorized – The Payment has been authorized.
+    *	Compliance Review – The Payment is under review.
+    *	Pending Payee Acceptance – The Payment is waiting for acceptance by the Payee.
+    *	Released – The Payment is successfully routed to the Payee.
+    *	Delivered – The Payment is successfully delivered to the Payee.
+    *	Expired	– The Payment is not claimed by the Payee within the expiration period.
+    *	Failed –	The Payment process is not successful.
+    *	Cancelled – The Payment that is not yet been claimed by the Payee is cancelled by the Payor.
+    *	Deleted	 – The Payment in Add Pending Authorization status is deleted by the Payor.
+    *	Pending Payee Approval – The Payment transaction is awaiting approval from the Payee.
+    *	Payee Approval Confirmed – The Payment transaction is approved by the Payee.
+    *	Payee Approval Declined – The Payment transaction is declined by the Payee.
   
-     Once the user is authenticated, this endpoint generates an authorization
+   Once the user is authenticated, this endpoint generates an authorization
      token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: ZelleStatus
   security:
