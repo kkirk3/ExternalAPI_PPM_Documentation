@@ -93,7 +93,8 @@ components:
     x-Authorization:
       scheme: x-Authorization
       type: http
-      description: The Authorization Token.  
+      description: The Authorization Token.
+      
 tags:
   - name: eCheck
     description: >
