@@ -33,7 +33,7 @@ post:
                     PaymentResponseCode : Response for Payment Response Code 001
                     PaymentResponseCodeDesc : Deluxe Void Payment Successful
                     TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
@@ -46,4 +46,4 @@ post:
                     PaymentResponseCode : Response for Payment Response Code 900
                     PaymentResponseCodeDesc : Deluxe Void Payment Failed
                     TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                    EchoHubTransactionId : EchoHub Transaction Number

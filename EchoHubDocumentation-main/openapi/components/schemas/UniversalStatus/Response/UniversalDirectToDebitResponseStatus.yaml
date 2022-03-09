@@ -23,7 +23,7 @@ properties:
             description: Direct to Debit Payment is in Paid Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -38,7 +38,7 @@ properties:
             description: Direct To Debit Payment is in Submitted Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -53,7 +53,7 @@ properties:
             description: Direct To Debit Payment is in Pending Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -68,7 +68,7 @@ properties:
             description: Direct To Debit Payment is in Reject Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -83,7 +83,7 @@ properties:
             description: Direct To Debit Payment is in Cancelled Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -98,7 +98,7 @@ properties:
             description: Direct To Debit Payment is in Returned Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -113,7 +113,7 @@ properties:
             description: Direct To Debit Payment is in Pickup Ready Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -128,7 +128,7 @@ properties:
             description: Direct To Debit Payment is in Refunded Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -143,7 +143,7 @@ properties:
             description: Direct To Debit Payment Unknown
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -158,7 +158,7 @@ properties:
             description: Direct to Debit Card Invalid card number.Please try another card or select a different payment type.
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -173,7 +173,7 @@ properties:
             description: Diect to Debit Card does not support direct to debit payments.Please try another card or select a different payment type.
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
@@ -188,7 +188,7 @@ properties:
             description: Direct to Debit Card is expired.Please try another card or select a different payment type.
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number                     
