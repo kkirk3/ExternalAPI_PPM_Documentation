@@ -23,7 +23,7 @@ properties:
             description: Zelle Cancel Payment Successful
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
             description: PayhubTransactionId
@@ -50,7 +50,7 @@ properties:
             description: Zelle Payment Cancel Failed
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
             description: PayhubTransactionId            

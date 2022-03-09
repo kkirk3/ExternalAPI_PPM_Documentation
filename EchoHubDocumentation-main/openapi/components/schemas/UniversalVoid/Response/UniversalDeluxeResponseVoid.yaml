@@ -23,10 +23,10 @@ properties:
             description: Deluxe Void Payment Successful
           TransactionId:
             type: integer
-            description: TransactionId
-          PayhubTransactionId:
+            description: Transaction Number
+          EchoHubTransactionId:
             type: integer
-            description: PayhubTransactionId
+            description: EchoHub Transaction Number
   This is the Response for response code 900:
     type: object
     properties:
@@ -50,7 +50,7 @@ properties:
             description: Deluxe Void Payment Failed
           TransactionId:
             type: integer
-            description: TransactionId
-          PayhubTransactionId:
+            description: Transaction Number
+          EchoHubTransactionId:
             type: integer
-            description: PayhubTransactionId         
+            description: EchoHub Transaction Number         
