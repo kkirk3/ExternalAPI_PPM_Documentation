@@ -3,7 +3,7 @@ post:
     - Zelle
   summary: Zelle Payment Cancel
   description: | 
-   This endpoint allows the API User to cancel a Direct To Debit Payment. It requires the unique Payer Reference ID. 
+   This endpoint allows the API User to cancel a Zelle Payment. It requires the unique Payor Reference ID. 
    
    Once the user is authenticated, this endpoint generates an authorization
      token by using the API key and Client key. This authorization token is valid for 30 minutes.
@@ -11,7 +11,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel a Direct To Debit Payment.
+    description: This endpoint is used to cancel a Zelle Payment.
     required: true
     content:
       application/json:

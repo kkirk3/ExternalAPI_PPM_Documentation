@@ -2,53 +2,43 @@ required:
   - PayorReferenceId
   - PayeeFirstName
   - PayeeLastName
-  - Mobile
-  - Email
-  - NameonCard
-  - PayAmount
-  - Address
-  - ZipCode
+  - PayeeMobilePhoneNumber
+  - Payeeemailaddress
+  - PaymentAmount
+  - Addenda 
+  - SenderName 
 type: object
 properties:
   PayorReferencedId:
     type: string
-    description: Payor ReferencedId
+    description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
     maxLength: 150
-    minLength: 1   
+    minLength: 1
   PayeeFirstName:
-    type: string
-    description: Payee First Name
-    maxLength: 100
-  PayeeLastName:
-    type: string
-    description: Payee Last Name
-    maxLength: 100
-  Mobile:
-    type: string
-    description: Mobile
-    maxLength: 10
-  Email:
-    type: string
-    description: Email
-    pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
-    maxLength: 100    
-  NameonCard:
-    type: string
-    description: NameonCard
-    maxLength: 80
-  PayAmount:
-    type: string
-    description: Pay Amount
-  Address:
       type: string
-      description: Address
-      maxLength: 50
-      minLength: 1
-  ZipCode:
-      type: integer
-      description: ZipCode
-      pattern: ^(0|[1-9][0-9]*)$
-      maxLength: 9
-      minLength: 5  
-  
-  
+      description: This is the first name of the Payee.
+      maxLength: 100
+  PayeeLastName:
+      type: string
+      description: This is the last name of the Payee.
+      maxLength: 100
+  PayeeMobilePhoneNumber:
+      type: string
+      description: This is the mobile number of the Payee.
+      maxLength: 10
+  Payeeemailaddress:
+      type: string
+      description: This is the email ID of the Payee.
+      pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
+      maxLength: 100
+  PaymentAmount:
+      type: string
+      description: This is the amount to be paid to the Payee.
+  Addenda:
+       type: string
+       description: This is a note sent to the Payee regarding the Payment.
+       maxLength: 150
+  SenderName: 
+        type: string
+        description: This is the name of the Payor.
+        maxLength: 100

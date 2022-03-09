@@ -2,13 +2,13 @@ post:
   tags:
     - Venmo
   summary: Venmo Payment Cancel
-  description: Once the user is authenticated, this endpoint generates an authorization
-   token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VenmoCancel
-  security:
-    - x-Authorization: []
+  description: |
+   This endpoint allows the API User to cancel a Venmo Payment. It requires the unique Payor Reference ID.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: Optional description in *Markdown*
+    description: This endpoint is used to cancel a Venmo Payment.
     required: true
     content:
       application/json:
