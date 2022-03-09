@@ -11,11 +11,16 @@ type: object
 properties:
   PayorReferencedId:
     type: string
+<<<<<<< HEAD
     description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
+=======
+    description: This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
+>>>>>>> 765f45094094147d3e411756d86494cb40edf8ed
     maxLength: 150
     minLength: 1
   PayeeFirstName:
       type: string
+<<<<<<< HEAD
       description: This is the first name of the Payee.
       maxLength: 100
   PayeeLastName:
@@ -42,3 +47,16 @@ properties:
         type: string
         description: This is the name of the Payor.
         maxLength: 100
+=======
+      description: Address
+      maxLength: 50
+      minLength: 1
+  ZipCode:
+      type: integer
+      description: This is the zip code of the address associated with the checking account.
+      pattern: ^(0|[1-9][0-9]*)$
+      maxLength: 9
+      minLength: 5  
+  
+  
+>>>>>>> 765f45094094147d3e411756d86494cb40edf8ed

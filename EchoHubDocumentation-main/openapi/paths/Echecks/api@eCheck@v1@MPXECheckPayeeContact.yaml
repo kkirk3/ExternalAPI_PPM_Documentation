@@ -22,6 +22,36 @@ post:
       content:
         application/json:
           schema:
-            type: integer
-            format: int32
-    
+            $ref: ../../components/schemas/Echecks/Response/MPXEchecksPayeeContactResponse.yaml
+          examples: 
+              mapName:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                value:
+                  ReponseCode: Response for Payment response code 001
+                  ReponseCodeDesc: Successful Transaction                  
+                  TransLog for payment response Code 001:
+                    CardBlockCode: CardBlockCode
+                    NumberOfAuth: NumberOfAuth
+                    NumberOfTxns: NumberOfTxns
+                    ResultCode: ResultCode
+                    ResultMessage: ResultMessage
+                    DeluxeResponseCode: DeluxeResponseCode
+                    DeluxeMessage: DeluxeMessage
+                    IsDuplicate: IsDuplicate
+              mapName1:   
+                    description: Please scroll the above dropdown list for more response codes          
+                    summary: "900"
+                    value:
+                      ReponseCode: Response for Payment response code 900
+                      ReponseCodeDesc: Transaction Failure
+                      TransError for payment response Code 900:
+                        CardBlockCode: CardBlockCode
+                        NumberOfAuth: NumberOfAuth
+                        NumberOfTxns: NumberOfTxns
+                        ResultCode: ResultCode
+                        ResultMessage: ResultMessage
+                        DeluxeResponseCode: DeluxeResponseCode
+                        DeluxeMessage: DeluxeMessage
+                        IsDuplicate: IsDuplicate      
+                    

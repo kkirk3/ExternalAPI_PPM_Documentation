@@ -20,7 +20,7 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment Successful
+            description: Zelle Payment Successful
           TransactionId:
             type: string
             description: Transaction Number
