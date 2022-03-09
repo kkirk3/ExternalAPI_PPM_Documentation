@@ -23,7 +23,7 @@ properties:
             description: Venmo Payment is in Paid Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
             description: PayhubTransactionId
@@ -38,7 +38,7 @@ properties:
             description: Venmo Payment is in Submitted Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
             description: PayhubTransactionId
@@ -53,10 +53,100 @@ properties:
             description: Venmo Payment is in Pending Status
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
-            description: PayhubTransactionId            
+            description: PayhubTransactionId 
+      TransLog for Payment response code 3010:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3010
+          PaymentResponseCodeDesc:
+            type: string
+            description: Venmo Payment is in Reject Status
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId
+      TransLog for Payment response code 3011:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3011
+          PaymentResponseCodeDesc:
+            type: string
+            description: Venmo Payment is in Cancelled Status
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId
+      TransLog for Payment response code 3012:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3012
+          PaymentResponseCodeDesc:
+            type: string
+            description: Venmo Payment is in Returned Status
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId 
+      TransLog for Payment response code 3013:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3013
+          PaymentResponseCodeDesc:
+            type: string
+            description: Venmo Payment is in Pickup Ready Status
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId
+      TransLog for Payment response code 3014:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3014
+          PaymentResponseCodeDesc:
+            type: string
+            description: Venmo Payment is in Refunded Status
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId
+      TransLog for Payment response code 3015:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 3015
+          PaymentResponseCodeDesc:
+            type: string
+            description:  Venmo Payment Unknown
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          PayhubTransactionId:
+            type: integer
+            description: PayhubTransactionId              
   This is the Response for response code 900:
     type: object
     properties:
@@ -80,7 +170,7 @@ properties:
             description: Venmo Status Failed
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
           PayhubTransactionId:
             type: integer
             description: PayhubTransactionId             

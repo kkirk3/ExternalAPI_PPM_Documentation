@@ -26,151 +26,220 @@ post:
               summary: "001"
               #description: TransLog for Payment Response Code 001
               value:
-                PaymentResponseCode : Response for Payment Response Code 001
-                PaymentResponseCodeDesc : Zelle Payment Instruction has been authorized and will be routed for processing
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
-            mapName_900:   
-              description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
-              #description: TransError for Payment Response Code 900
-              value:
-                PaymentResponseCode : Response for Payment Response Code 900
-                PaymentResponseCodeDesc : Zelle Payment Status Failed
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 001:
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Zelle Payment Instruction has been authorized and will be routed for processing
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+                  
             mapName_9000:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9000"
               #description: TransLog for Payment Response Code 9000
               value:
-                PaymentResponseCode : Response for Payment Response Code 9000
-                PaymentResponseCodeDesc : Zelle Payment cannot be cancelled when the status is Released
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                 
+                ReponseCode: Response Code 9000
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9000:
+                  PaymentResponseCode : Response for Payment Response Code 9000
+                  PaymentResponseCodeDesc : Zelle Payment cannot be cancelled when the status is Released
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId                 
             mapName_9001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9001"
               #description: TransLog for Payment Response Code 9001
               value:
-                PaymentResponseCode : Response for Payment Response Code 9001
-                PaymentResponseCodeDesc : Zelle Payment Unknown
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId    
+                ReponseCode: Response Code 9001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9001:
+                  PaymentResponseCode : Response for Payment Response Code 9001
+                  PaymentResponseCodeDesc : Zelle Payment Unknown
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId    
             mapName_9002:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9002"
               #description: TransLog for Payment Response Code 9002
               value:
-                PaymentResponseCode : Response for Payment Response Code 9002
-                PaymentResponseCodeDesc : Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                 
+                ReponseCode: Response Code 9002
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9002:
+                  PaymentResponseCode : Response for Payment Response Code 9002
+                  PaymentResponseCodeDesc : Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId                 
             mapName_9003:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9003"
               #description: TransLog for Payment Response Code 9003
               value:
-                PaymentResponseCode : Response for Payment Response Code 9003
-                PaymentResponseCodeDesc : Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9003
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9003:
+                  PaymentResponseCode : Response for Payment Response Code 9003
+                  PaymentResponseCodeDesc : Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9004:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9004"
               #description: TransLog for Payment Response Code 9004
               value:
-                PaymentResponseCode : Response for Payment Response Code 9004
-                PaymentResponseCodeDesc : Zelle Payment Instruction that is under review
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                 
+                ReponseCode: Response Code 9004
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9004:
+                  PaymentResponseCode : Response for Payment Response Code 9004
+                  PaymentResponseCodeDesc : Zelle Payment Instruction that is under review
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId                 
             mapName_9005:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9005"
               #description: TransLog for Payment Response Code 9005
               value:
-                PaymentResponseCode : Response for Payment Response Code 9005
-                PaymentResponseCodeDesc : Zelle Payment Instruction is waiting for acceptance by the payee
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9005
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9005:
+                  PaymentResponseCode : Response for Payment Response Code 9005
+                  PaymentResponseCodeDesc : Zelle Payment Instruction is waiting for acceptance by the payee
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9006:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9006"
               #description: TransError for Payment Response Code 9006
               value:
-                PaymentResponseCode : Response for Payment Response Code 9006
-                PaymentResponseCodeDesc : Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9006
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9006:
+                  PaymentResponseCode : Response for Payment Response Code 9006
+                  PaymentResponseCodeDesc : Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9007:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9007"
               #description: TransLog for Payment Response Code 9007
               value:
-                PaymentResponseCode : Response for Payment Response Code 9007
-                PaymentResponseCodeDesc : Zelle Payment instruction was successfully routed to the payee
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                 
+                ReponseCode: Response Code 9007
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9007:
+                  PaymentResponseCode : Response for Payment Response Code 9007
+                  PaymentResponseCodeDesc : Zelle Payment instruction was successfully routed to the payee
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId                 
             mapName_9008:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9008"
               #description: TransLog for Payment Response Code 9008
               value:
-                PaymentResponseCode : Response for Payment Response Code 9008
-                PaymentResponseCodeDesc : Zelle Payment instruction was successfully delivered to the payee
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId   
+                ReponseCode: Response Code 9008
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9008:
+                  PaymentResponseCode : Response for Payment Response Code 9008
+                  PaymentResponseCodeDesc : Zelle Payment instruction was successfully delivered to the payee
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId   
             mapName_9009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9009"
               #description: TransError for Payment Response Code 9009
               value:
-                PaymentResponseCode : Response for Payment Response Code 9009
-                PaymentResponseCodeDesc : Zelle Payment instruction was not claimed by the payee within the expiration period
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9009
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9009:
+                  PaymentResponseCode : Response for Payment Response Code 9009
+                  PaymentResponseCodeDesc : Zelle Payment instruction was not claimed by the payee within the expiration period
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9010:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9010"
               #description: TransLog for Payment Response Code 9010
               value:
-                PaymentResponseCode : Response for Payment Response Code 9010
-                PaymentResponseCodeDesc : Zelle payment instruction that was processed unsuccessfully via the selected payment method
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                 
+                ReponseCode: Response Code 9010
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9010:
+                  PaymentResponseCode : Response for Payment Response Code 9010
+                  PaymentResponseCodeDesc : Zelle payment instruction that was processed unsuccessfully via the selected payment method
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId                 
             mapName_9011:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9011"
               #description: TransLog for Payment Response Code 9011
               value:
-                PaymentResponseCode : Response for Payment Response Code 9011
-                PaymentResponseCodeDesc : Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9011
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9011:
+                  PaymentResponseCode : Response for Payment Response Code 9011
+                  PaymentResponseCodeDesc : Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9012:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9012"
               #description: TransLog for Payment Response Code 9012
               value:
-                PaymentResponseCode : Response for Payment Response Code 9012
-                PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9012
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9012:
+                  PaymentResponseCode : Response for Payment Response Code 9012
+                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9013:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9013"
               #description: TransLog for Payment Response Code 9013
               value:
-                PaymentResponseCode : Response for Payment Response Code 9013
-                PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId
+                ReponseCode: Response Code 9013
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9013:
+                  PaymentResponseCode : Response for Payment Response Code 9013
+                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
             mapName_9014:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9014"
               #description: TransLog for Payment Response Code 9014
               value:
-                PaymentResponseCode : Response for Payment Response Code 9014
-                PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
-                TransactionId : TransactionId
-                PayhubTransactionId : PayhubTransactionId                                                                                        
+                ReponseCode: Response Code 9014
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog for payment response Code 9014:
+                  PaymentResponseCode : Response for Payment Response Code 9014
+                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  TransactionId : TransactionId
+                  PayhubTransactionId : PayhubTransactionId
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  Translog for payment response Code 900:
+                    PaymentResponseCode : Response for Payment Response Code 900
+                    PaymentResponseCodeDesc : Zelle Payment Status Failed
+                    TransactionId : TransactionId
+                    PayhubTransactionId : PayhubTransactionId                                                                                          

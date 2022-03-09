@@ -23,7 +23,7 @@ properties:
             description: VCP Status Payment Successful
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
   This is the Response for response code 900:
     type: object
     properties:
@@ -47,5 +47,5 @@ properties:
             description: VCP Card Status call failed
           TransactionId:
             type: integer
-            description: TransactionId
+            description: Transaction Number
              
