@@ -24,9 +24,9 @@ properties:
           TransactionId:
             type: integer
             description: Transaction Number
-          PayhubTransactionId:
+          ECHOHubTransactionId:
             type: integer
-            description: PayhubTransactionId
+            description: ECHOHub Transaction Number 
   This is the Response for response code 900:
     type: object
     properties:
@@ -51,6 +51,6 @@ properties:
           TransactionId:
             type: integer
             description: Transaction Number
-          PayhubTransactionId:
+          ECHOHubTransactionId:
             type: integer
-            description: PayhubTransactionId              
+            description: ECHOHub Transaction Number              
