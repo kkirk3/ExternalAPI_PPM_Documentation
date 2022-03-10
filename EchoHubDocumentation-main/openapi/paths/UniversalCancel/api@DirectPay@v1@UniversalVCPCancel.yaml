@@ -29,7 +29,7 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransLog:
+                  Translog :
                     PaymentResponseCode : Response for Payment Response Code 001
                     PaymentResponseCodeDesc : Card Block was Successful
                     IsBlocked : IsBlocked
@@ -41,7 +41,7 @@ post:
                   ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
-                  TransLog:
+                  Translog :
                     PaymentResponseCode : Response for Payment Response Code 900
                     PaymentResponseCodeDesc : VCP Block Card Failed
                     IsBlocked : IsBlocked

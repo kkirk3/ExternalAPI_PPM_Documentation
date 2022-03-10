@@ -29,11 +29,11 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransLog:
+                  Translog :
                     PaymentResponseCode : Response for Payment Response Code 001
                     PaymentResponseCodeDesc : Venmo Cancel Payment Successful
                     TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
@@ -42,8 +42,8 @@ post:
                   ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
-                  TransLog:
+                  Translog :
                     PaymentResponseCode : Response for Payment Response Code 900
                     PaymentResponseCodeDesc : Venmo Cancel Payment Failed
                     TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                    EchoHubTransactionId : EchoHub Transaction Number
