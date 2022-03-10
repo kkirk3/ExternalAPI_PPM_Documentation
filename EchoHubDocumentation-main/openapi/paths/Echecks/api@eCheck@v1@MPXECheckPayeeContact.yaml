@@ -30,7 +30,7 @@ post:
                 value:
                   ReponseCode: Response for Payment response code 001
                   ReponseCodeDesc: Successful Transaction                  
-                  TransLog for payment response Code 001:
+                  TransLog:
                     CardBlockCode: CardBlockCode
                     NumberOfAuth: NumberOfAuth
                     NumberOfTxns: NumberOfTxns
@@ -45,7 +45,7 @@ post:
                     value:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Transaction Failure
-                      TransError for payment response Code 900:
+                      TransError:
                         CardBlockCode: CardBlockCode
                         NumberOfAuth: NumberOfAuth
                         NumberOfTxns: NumberOfTxns
