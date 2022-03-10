@@ -279,12 +279,12 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-  This is the Response For JSON Validation Failed code 900:
+  This is the Response for response code 901:
     type: object
     properties:
       ResponseCode:
         type: integer
-        description: Response Code 900
+        description: Response Code 901
       ResponseCodeDesc:
         type: string
         description: Transaction Failed
