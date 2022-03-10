@@ -251,12 +251,12 @@ post:
                   ReponseCode: Response Code 901
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
-                  TransError_1033 :
+                  TransError 1033 :
                     ErrorCode : "1033"
                     ErrorDesc : Invalid or Missing Library Method
-                  TransError_1031 :
+                  TransError 1031 :
                     ErrorCode : "1031"
                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
-                  TransError_1027 :
+                  TransError 1027 :
                     ErrorCode : "1027"
                     ErrorDesc : Invalid or Missing Request Value
