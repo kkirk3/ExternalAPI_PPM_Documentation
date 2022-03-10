@@ -29,7 +29,7 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 001:
                   PaymentResponseCode : Response for Payment Response Code 001
                   PaymentResponseCodeDesc : Zelle Payment Instruction has been authorized and will be routed for processing
                   TransactionId : Transaction Number
@@ -43,7 +43,7 @@ post:
                 ReponseCode: Response Code 9000
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9000:
                   PaymentResponseCode : Response for Payment Response Code 9000
                   PaymentResponseCodeDesc : Zelle Payment cannot be cancelled when the status is Released
                   TransactionId : Transaction Number
@@ -56,7 +56,7 @@ post:
                 ReponseCode: Response Code 9001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9001:
                   PaymentResponseCode : Response for Payment Response Code 9001
                   PaymentResponseCodeDesc : Zelle Payment Unknown
                   TransactionId : Transaction Number
@@ -69,7 +69,7 @@ post:
                 ReponseCode: Response Code 9002
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9002:
                   PaymentResponseCode : Response for Payment Response Code 9002
                   PaymentResponseCodeDesc : Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
                   TransactionId : Transaction Number
@@ -82,7 +82,7 @@ post:
                 ReponseCode: Response Code 9003
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9003:
                   PaymentResponseCode : Response for Payment Response Code 9003
                   PaymentResponseCodeDesc : Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
                   TransactionId : Transaction Number
@@ -95,7 +95,7 @@ post:
                 ReponseCode: Response Code 9004
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9004:
                   PaymentResponseCode : Response for Payment Response Code 9004
                   PaymentResponseCodeDesc : Zelle Payment Instruction that is under review
                   TransactionId : Transaction Number
@@ -108,7 +108,7 @@ post:
                 ReponseCode: Response Code 9005
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9005:
                   PaymentResponseCode : Response for Payment Response Code 9005
                   PaymentResponseCodeDesc : Zelle Payment Instruction is waiting for acceptance by the payee
                   TransactionId : Transaction Number
@@ -121,7 +121,7 @@ post:
                 ReponseCode: Response Code 9006
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9006:
                   PaymentResponseCode : Response for Payment Response Code 9006
                   PaymentResponseCodeDesc : Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
                   TransactionId : Transaction Number
@@ -134,7 +134,7 @@ post:
                 ReponseCode: Response Code 9007
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9007:
                   PaymentResponseCode : Response for Payment Response Code 9007
                   PaymentResponseCodeDesc : Zelle Payment instruction was successfully routed to the payee
                   TransactionId : Transaction Number
@@ -147,7 +147,7 @@ post:
                 ReponseCode: Response Code 9008
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9008:
                   PaymentResponseCode : Response for Payment Response Code 9008
                   PaymentResponseCodeDesc : Zelle Payment instruction was successfully delivered to the payee
                   TransactionId : Transaction Number
@@ -160,7 +160,7 @@ post:
                 ReponseCode: Response Code 9009
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9009:
                   PaymentResponseCode : Response for Payment Response Code 9009
                   PaymentResponseCodeDesc : Zelle Payment instruction was not claimed by the payee within the expiration period
                   TransactionId : Transaction Number
@@ -173,7 +173,7 @@ post:
                 ReponseCode: Response Code 9010
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9010:
                   PaymentResponseCode : Response for Payment Response Code 9010
                   PaymentResponseCodeDesc : Zelle payment instruction that was processed unsuccessfully via the selected payment method
                   TransactionId : Transaction Number
@@ -186,7 +186,7 @@ post:
                 ReponseCode: Response Code 9011
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9011:
                   PaymentResponseCode : Response for Payment Response Code 9011
                   PaymentResponseCodeDesc : Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
                   TransactionId : Transaction Number
@@ -199,7 +199,7 @@ post:
                 ReponseCode: Response Code 9012
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9012:
                   PaymentResponseCode : Response for Payment Response Code 9012
                   PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
                   TransactionId : Transaction Number
@@ -212,7 +212,7 @@ post:
                 ReponseCode: Response Code 9013
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9013:
                   PaymentResponseCode : Response for Payment Response Code 9013
                   PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
                   TransactionId : Transaction Number
@@ -225,7 +225,7 @@ post:
                 ReponseCode: Response Code 9014
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 9014:
                   PaymentResponseCode : Response for Payment Response Code 9014
                   PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
                   TransactionId : Transaction Number

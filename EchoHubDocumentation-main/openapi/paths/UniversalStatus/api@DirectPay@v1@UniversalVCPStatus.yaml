@@ -29,7 +29,7 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
+                Translog for payment response Code 001:
                   PaymentResponseCode : Response for Payment Response Code 001
                   PaymentResponseCodeDesc : VCP Status Payment Successful
                   TransactionId : Transaction Number
