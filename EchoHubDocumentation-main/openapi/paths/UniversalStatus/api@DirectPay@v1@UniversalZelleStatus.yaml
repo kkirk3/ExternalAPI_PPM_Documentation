@@ -248,7 +248,7 @@ post:
               summary: "1033"
               #description: TransError for JSON Validation Failed Code 1033
               value:
-                  ReponseCode: Response Code 1033
+                  ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
@@ -259,7 +259,7 @@ post:
               summary: "1031"
               #description: TransError for JSON Validation Failed Code 1031
               value:
-                  ReponseCode: Response Code 1031
+                  ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
@@ -270,7 +270,7 @@ post:
               summary: "1027"
               #description: TransError for JSON Validation Failed Code 1027
               value:
-                  ReponseCode: Response Code 1027
+                  ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
