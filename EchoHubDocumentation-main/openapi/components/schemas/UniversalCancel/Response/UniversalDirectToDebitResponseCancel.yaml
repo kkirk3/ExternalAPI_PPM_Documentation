@@ -1,6 +1,6 @@
 type: object
 properties:
-  This is the Response for response code 001:
+  This is the Response for Response Code 001:
     type: object
     properties:
       ResponseCode:
@@ -12,7 +12,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransLog for Payment response code 001:
+      TransLog for Payment Response Code 001:
         type: object
         properties:
           PaymentResponseCode:
@@ -27,7 +27,7 @@ properties:
           ECHOHubTransactionId:
             type: integer
             description: ECHOHub Transaction Number 
-  This is the Response for response code 900:
+  This is the Response for Response Code 900:
     type: object
     properties:
       ResponseCode:
@@ -39,7 +39,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransError for Payment response code 900:
+      TransError for Payment Response Code 900:
         type: object
         properties:
           PaymentResponseCode:
