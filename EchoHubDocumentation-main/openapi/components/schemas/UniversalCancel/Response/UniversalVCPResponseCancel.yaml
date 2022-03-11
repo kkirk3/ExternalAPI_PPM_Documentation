@@ -48,3 +48,48 @@ properties:
           IsBlocked:
             type: boolean
             description: IsBlocked
+      TransError JSON Validation Failed Code 1033:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1033"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Library Method
+      TransError JSON Validation Failed Code 1025:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1025"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"
+      TransError JSON Validation Failed Code 1027:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1027"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value
+      TransError JSON Validation Failed Code 1029:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1029"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Action. Action must be one of the following "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"
+      TransError JSON Validation Failed Code 1028:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1028"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing RequestBy             

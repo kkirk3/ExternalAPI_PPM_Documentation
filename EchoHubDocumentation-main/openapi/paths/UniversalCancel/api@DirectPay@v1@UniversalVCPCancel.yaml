@@ -22,26 +22,81 @@ post:
             $ref: ../../components/schemas/UniversalCancel/Response/UniversalVCPResponseCancel.yaml
           examples:  
             mapName_001:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "001"
-                #description: TransLog for Payment Response Code 001
-                value:
-                  ReponseCode: Response Code 001
-                  ReponseCodeDesc: Successful Transaction
-                  ResponseTransactionID: Transaction Number
-                  Translog :
-                    PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : Card Block was Successful
-                    IsBlocked : IsBlocked
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              #description: TransLog for Payment Response Code 001
+              value:
+                ReponseCode: Response Code 001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                Translog :
+                  PaymentResponseCode : Response for Payment Response Code 001
+                  PaymentResponseCodeDesc : Card Block was Successful
+                  IsBlocked : IsBlocked
             mapName_900:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "900"
-                #description: TransError for Payment Response Code 900
-                value:
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              #description: TransError for Payment Response Code 900
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  PaymentResponseCode : Response for Payment Response Code 900
+                  PaymentResponseCodeDesc : VCP Block Card Failed
+                  IsBlocked : IsBlocked
+            mapName_1033:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1033"
+              #description: TransError for JSON Validation Failed Code 1033
+              value:
                   ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : VCP Block Card Failed
-                    IsBlocked : IsBlocked
+                    ErrorCode : "1033"
+                    ErrorDesc : Invalid or Missing Library Method
+            mapName_1025:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1025"
+              #description: TransError for JSON Validation Failed Code 1025
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1025"
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"        
+            mapName_1027:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1027"
+              #description: TransError for JSON Validation Failed Code 1027
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1027"
+                    ErrorDesc : Invalid or Missing Request Value
+            mapName_1029:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1029"
+              #description: TransError for JSON Validation Failed Code 1029
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1029"
+                    ErrorDesc : Invalid or Missing Action. Action must be one of the following "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"        
+            mapName_1028:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1028"
+              #description: TransError for JSON Validation Failed Code 1028
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1028"
+                    ErrorDesc : Invalid or Missing RequestBy               
