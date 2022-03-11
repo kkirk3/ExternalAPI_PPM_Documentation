@@ -3,8 +3,11 @@ post:
     - Virtual Card Program (VCP)
   summary: Virtual Card – Activity
   operationId: VCPRealTimerequest
-  description: Once the user is authenticated, this endpoint generates an authorization
-     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  description:  This API makes sure the card is active, before cancelling or closing the card. It also helps to check the card balance by showing the transactions.
+                This endpoint validates two functionalities – The status of the card and the transactions of the card.
+               
+                Once the user is authenticated, this endpoint generates an authorization
+                token by using the API key and Client key. This authorization token is valid for 30 minutes.
   security:
     - x-Authorization: []
   requestBody:
