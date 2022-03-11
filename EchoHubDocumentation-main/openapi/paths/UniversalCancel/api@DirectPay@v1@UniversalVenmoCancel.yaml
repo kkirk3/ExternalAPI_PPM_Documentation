@@ -42,7 +42,7 @@ post:
                   ReponseCode: Response Code 900
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
-                  Translog :
+                  TransError :
                     PaymentResponseCode : Response for Payment Response Code 900
                     PaymentResponseCodeDesc : Venmo Cancel Payment Failed
                     TransactionId : Transaction Number

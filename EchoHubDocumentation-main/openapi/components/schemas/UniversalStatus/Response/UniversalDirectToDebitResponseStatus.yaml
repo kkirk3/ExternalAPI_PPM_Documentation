@@ -1,6 +1,6 @@
 type: object
 properties:
-  This is the Response for response code 001:
+  This is the Response for Response Code 001:
     type: object
     properties:
       ResponseCode:
@@ -12,7 +12,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransLog for Payment response code 001:
+      TransLog for Payment Response Code 001:
         type: object
         properties:
           PaymentResponseCode:
@@ -27,7 +27,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3000:
+      TransLog for Payment Response Code 3000:
         type: object
         properties:
           PaymentResponseCode:
@@ -42,7 +42,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3001:
+      TransLog for Payment Response Code 3001:
         type: object
         properties:
           PaymentResponseCode:
@@ -57,7 +57,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3002:
+      TransLog for Payment Response Code 3002:
         type: object
         properties:
           PaymentResponseCode:
@@ -72,7 +72,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3003:
+      TransLog for Payment Response Code 3003:
         type: object
         properties:
           PaymentResponseCode:
@@ -87,7 +87,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3004:
+      TransLog for Payment Response Code 3004:
         type: object
         properties:
           PaymentResponseCode:
@@ -102,7 +102,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3005:
+      TransLog for Payment Response Code 3005:
         type: object
         properties:
           PaymentResponseCode:
@@ -117,7 +117,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3006:
+      TransLog for Payment Response Code 3006:
         type: object
         properties:
           PaymentResponseCode:
@@ -132,7 +132,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3007:
+      TransLog for Payment Response Code 3007:
         type: object
         properties:
           PaymentResponseCode:
@@ -147,7 +147,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3020:
+      TransLog for Payment Response Code 3020:
         type: object
         properties:
           PaymentResponseCode:
@@ -162,7 +162,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3021:
+      TransLog for Payment Response Code 3021:
         type: object
         properties:
           PaymentResponseCode:
@@ -177,7 +177,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3022:
+      TransLog for Payment Response Code 3022:
         type: object
         properties:
           PaymentResponseCode:
@@ -192,7 +192,7 @@ properties:
           EchoHubTransactionId:
             type: integer
             description: EchoHub Transaction Number                     
-  This is the Response for response code 900:
+  This is the Response for Response Code 900:
     type: object
     properties:
       ResponseCode:
@@ -204,7 +204,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransError for Payment response code 900:
+      TransError for Payment Response Code 900:
         type: object
         properties:
           PaymentResponseCode:
