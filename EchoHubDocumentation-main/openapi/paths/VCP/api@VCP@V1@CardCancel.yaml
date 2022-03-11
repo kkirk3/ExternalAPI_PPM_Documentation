@@ -3,8 +3,23 @@ post:
   tags:
     - Virtual Card Program (VCP)
   summary: VCP Card Cancel request
-  description: Once the user is authenticated, this endpoint generates an authorization
-     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  description: 
+            TThis endpoint allows the API User to cancel a Virtual Card.
+
+
+            The following cancel actions can be performed
+    
+            * Block – Card will be blocked.        
+    
+            * Block and Reissue – The card will be blocked, and then a new card will
+            be reissued.       
+    
+            * Block and Optout – Card will be blocked and opted out.       
+    
+            * Reissue - Provides status of payment before reissue.
+          
+          Once the user is authenticated, this endpoint generates an authorization
+          token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VCPCancel
   security:
     - x-Authorization: []

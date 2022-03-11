@@ -31,14 +31,16 @@ post:
                   ReponseCode: Response for Payment response code 001
                   ReponseCodeDesc: Successful Transaction                  
                   TransLog:
-                    CardBlockCode: CardBlockCode
-                    NumberOfAuth: NumberOfAuth
-                    NumberOfTxns: NumberOfTxns
-                    ResultCode: ResultCode
-                    ResultMessage: ResultMessage
-                    DeluxeResponseCode: DeluxeResponseCode
-                    DeluxeMessage: DeluxeMessage
-                    IsDuplicate: IsDuplicate
+                        CardBlockCode: CardBlockCode
+                        NumberOfAuth: NumberOfAuth
+                        NumberOfTxns: NumberOfTxns
+
+                  ResultCode:
+                        ResultMessage: ResultMessage
+                        DeluxeResponseCode: DeluxeResponseCode
+                        ResultCode:      
+                        DeluxeMessage: DeluxeMessage
+                        IsDuplicate: IsDuplicate
               mapName1:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "900"
