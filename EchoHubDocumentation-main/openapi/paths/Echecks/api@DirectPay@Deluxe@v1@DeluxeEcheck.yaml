@@ -14,7 +14,7 @@ post:
 
     * A unique Transaction ID is returned from the Deluxe payment platform.
   requestBody:
-    description: |
+    description:  |
       This endpoint is used to create a Deluxe eCheck payment.
     required: true
     content:

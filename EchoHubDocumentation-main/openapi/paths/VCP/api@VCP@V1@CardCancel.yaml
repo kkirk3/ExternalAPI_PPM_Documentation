@@ -4,7 +4,7 @@ post:
     - Virtual Card Program (VCP)
   summary: VCP Card Cancel request
   description: 
-            TThis endpoint allows the API User to cancel a Virtual Card.
+            This endpoint allows the API User to cancel a Virtual Card.
 
 
             The following cancel actions can be performed
