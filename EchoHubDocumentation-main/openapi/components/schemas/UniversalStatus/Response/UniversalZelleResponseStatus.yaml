@@ -299,7 +299,7 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
-            
+
       TransError JSON Validation Failed Code 1027:
         type: object
         properties:
@@ -309,4 +309,4 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Request Value
-            
+               

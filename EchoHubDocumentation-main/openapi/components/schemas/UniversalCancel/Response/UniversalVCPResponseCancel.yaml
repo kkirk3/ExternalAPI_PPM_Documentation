@@ -24,6 +24,89 @@ properties:
           IsBlocked:
             type: boolean
             description: IsBlocked
+      TransLog for Payment Response Code 4000:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4000
+          PaymentResponseCodeDesc:
+            type: string
+            description: This card is Expired, Payment cannot be blocked/voided
+          IsBlocked:
+            type: boolean
+            description: true or false
+      TransLog for Payment Response Code 4001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4001
+          PaymentResponseCodeDesc:
+            type: string
+            description: >-
+              The Provider has already cancelled the card, Payment cannot be
+              blocked/voided
+          IsBlocked:
+            type: boolean
+            description: true or false
+      TransLog for Payment Response Code 4002:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4002
+          PaymentResponseCodeDesc:
+            type: string
+            description: Provider has used the card, Payment cannot be blocked/voided
+          IsBlocked:
+            type: boolean
+            description: true or false
+      TransLog for Payment Response Code 4003:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4003
+          PaymentResponseCodeDesc:
+            type: string
+            description: Reissue failed, this card has already been settled/reissued
+      TransLog for Payment Response Code 4004:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4004
+          PaymentResponseCodeDesc:
+            type: string
+            description: Reissue failed, this card has not been blocked
+      TransLog for Payment Response Code 4005:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4005
+          PaymentResponseCodeDesc:
+            type: string
+            description: The provided requestvalue is invalid
+      TransLog for Payment Response Code 4006:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4006
+          PaymentResponseCodeDesc:
+            type: string
+            description: requested action is not authorised for this payer
+      TransLog for Payment Response Code 4007:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 4002
+          PaymentResponseCodeDesc:
+            type: string
+            description: No records found, please contact VCP
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -48,3 +131,48 @@ properties:
           IsBlocked:
             type: boolean
             description: IsBlocked
+      TransError JSON Validation Failed Code 1033:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1033"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Library Method
+      TransError JSON Validation Failed Code 1025:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1025"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"
+      TransError JSON Validation Failed Code 1027:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1027"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value
+      TransError JSON Validation Failed Code 1029:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1029"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Action. Action must be one of the following "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"
+      TransError JSON Validation Failed Code 1028:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1028"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing RequestBy             
