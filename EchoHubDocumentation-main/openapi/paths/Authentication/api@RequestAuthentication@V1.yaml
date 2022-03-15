@@ -29,12 +29,11 @@ post:
               value:
                 ReponseCode: Response for Payment response code 001
                 ReponseCodeDesc: Successful Transaction
-                ResponseTransactionID: Transaction Number
+                
                 TransLog:  
-                    PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Payment Created Successfully With Deluxe
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                AuthToken: Authorization token
+
+
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "901"

@@ -15,7 +15,7 @@ properties:
         properties:
           AuthToken:
             type: string
-            description: Authorozation token           
+            description: Authorization token           
   This is the Response for Response Code 901:
     type: object
     properties:
