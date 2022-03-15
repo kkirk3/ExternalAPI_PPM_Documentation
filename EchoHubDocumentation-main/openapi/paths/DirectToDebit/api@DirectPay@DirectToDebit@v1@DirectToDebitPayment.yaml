@@ -65,11 +65,11 @@ post:
                     ErrorDescription: Invalid or Missing Expire Year                    
             mapName13:   
               description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
+              summary: "5001"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Payment could not be processed, Please contact customer care
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 900
+                    PaymentResponseCode: Response for Payment response code 5001
                     PaymentResponseCodeDesc: Duplicate Payor Reference ID          
