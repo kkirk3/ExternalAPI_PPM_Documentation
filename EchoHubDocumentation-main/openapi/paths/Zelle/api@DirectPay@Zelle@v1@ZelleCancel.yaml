@@ -24,7 +24,7 @@ post:
         application/json:
           schema:
             $ref: ../../components/schemas/Zelle/Response/ZellePaymentResponseCancel.yaml
-            examples:  
+          examples:  
             mapName_001:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "001"
