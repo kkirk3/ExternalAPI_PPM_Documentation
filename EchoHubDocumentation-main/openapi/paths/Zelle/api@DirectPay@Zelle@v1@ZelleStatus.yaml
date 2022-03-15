@@ -24,7 +24,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to know the status of the Direct To Debit Payment.
+    description: This endpoint is used to know the status of the Zelle Payment.
     required: true
     content:
       application/json:

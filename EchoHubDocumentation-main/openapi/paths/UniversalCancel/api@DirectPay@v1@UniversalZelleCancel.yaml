@@ -7,7 +7,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel the Zelle
+    description: This endpoint is used to cancel the Zelle Payment.
     required: true
     content:
       application/json:

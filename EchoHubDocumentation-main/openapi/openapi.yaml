@@ -130,15 +130,23 @@ tags:
         * Virtual Card  Activity 
         * Virtual Card  Cancel
    
+  - name: Venmo
+    description: |
+      Venmo is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a Venmo account can transfer funds to the Payee bank account without needing cash or checks.  
+      Venmo account can be linked to credit card, debit card, or checking accounts. Venmo is more like a digital wallet where funds are held as a Venmo balance in the checking account. 
+      Venmo has three endpoints:
+      •	Venmo payment create
+      •	Venmo payment status
+      •	Venmo payment cancel
+    
+        
   - name: Zelle
     description: |
-     Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes. 
-     Zelle has three endpoints:
-     * Zelle payment create
-     * Zelle payment status
-     * Zelle payment cancel
-
-  
+        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes. 
+        Zelle has three endpoints:
+        * Zelle payment create
+        * Zelle payment status
+        * Zelle payment cancel
     
 
 
