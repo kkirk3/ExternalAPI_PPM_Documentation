@@ -42,13 +42,19 @@ properties:
       TransError for Payment response code 900:
         type: object
         properties:
-          ErrorCode:
+          PaymentResponseCode:
             type: string
             description: Response for Payment response code 900
-          ErrorDesc:
+          PaymentResponseCodeDesc:
             type: string
             description: Direct To Debit Payment Failed
-      TransError for Payment response code 1020:
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransError for JSON Validation Failed Code 1020:
         type: object
         properties:
           ErrorCode:
@@ -57,7 +63,7 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Expire Year
-      TransError for Payment response code 901:
+      TransError for JSON Validation Failed Code 901:
         type: object
         properties:
           ErrorCode:
