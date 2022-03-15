@@ -35,7 +35,7 @@ post:
                 ReponseCode: Response for Payment response code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog for payment response Code 001:  
+                TransLog:  
                     PaymentResponseCode: Response for Payment response code 001
                     PaymentResponseCodeDesc: Direct To Debit Payment Successful
                     TransactionId: Transaction Number
@@ -45,11 +45,13 @@ post:
               summary: "900"
               value:
                 ReponseCode: Response Code 900
-                ReponseCodeDesc: Payment could not be processed, Please contact customer care
+                ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
-                TransError for payment response Code 900:  
+                TransError:  
                     PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: Duplicate Payor Reference ID
+                    PaymentResponseCodeDesc: Direct To Debit Payment Failed
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
           # # x-examples:
           # x-examples1:
             mapName12:   
@@ -58,16 +60,16 @@ post:
               value:
                 ReponseCode: Response for Payment response code 1020
                 ReponseCodeDesc: Successful Transaction                
-                TransError for payment response Code 1020:  
+                TransError:  
                     ErrorCode: 1020
                     ErrorDescription: Invalid or Missing Expire Year                    
             mapName13:   
               description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
+              summary: "5001"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Payment could not be processed, Please contact customer care
                 ResponseTransactionID: Transaction Number
-                TransError for payment response Code 900:  
-                    PaymentResponseCode: Response for Payment response code 900
+                TransError:  
+                    PaymentResponseCode: Response for Payment response code 5001
                     PaymentResponseCodeDesc: Duplicate Payor Reference ID          

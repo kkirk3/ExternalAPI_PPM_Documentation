@@ -38,7 +38,7 @@ post:
                   ReponseCode: Response for Payment response code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  Translog for payment response Code 001:  
+                  TransLog:  
                       PaymentResponseCode: Response for Payment response code 001
                       PaymentResponseCodeDesc: Direct To Debit Payment Successful
                       TransactionId: Transaction Number
@@ -50,7 +50,7 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3008:  
+                  TransError:  
                       PaymentResponseCode: Response for Payment response code 3008
                       PaymentResponseCodeDesc: Venmo Payment is in submitted status
                       TransactionId: Transaction Number
@@ -62,7 +62,7 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3009:  
+                  TransError:  
                       PaymentResponseCode: Response for Payment response code 3009
                       PaymentResponseCodeDesc: Venmo Payment is in Pending status
                       TransactionId: Transaction Number
@@ -74,7 +74,7 @@ post:
                   ReponseCode: Response Code 001
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 3010:  
+                  TransError:  
                       PaymentResponseCode: Response for Payment response code 3010
                       PaymentResponseCodeDesc: Venmo Payment is in Reject status
                       TransactionId: Transaction Number
@@ -86,7 +86,7 @@ post:
                     ReponseCode: Response Code 001
                     ReponseCodeDesc: Successful Transaction
                     ResponseTransactionID: Transaction Number
-                    TransError for payment response Code 3011:  
+                    TransError:  
                         PaymentResponseCode: Response for Payment response code 3011
                         PaymentResponseCodeDesc: Venmo Payment is in Cancelled status
                         TransactionId: Transaction Number
@@ -98,7 +98,7 @@ post:
                     ReponseCode: Response Code 001
                     ReponseCodeDesc: Successful Transaction
                     ResponseTransactionID: Transaction Number
-                    TransError for payment response Code 3012:  
+                    TransError:  
                       PaymentResponseCode: Response for Payment response code 3012
                       PaymentResponseCodeDesc: Venmo Payment is in Returned status
                       TransactionId: Transaction Number
@@ -110,7 +110,7 @@ post:
                     ReponseCode: Response Code 001
                     ReponseCodeDesc: Successful Transaction
                     ResponseTransactionID: Transaction Number
-                    TransError for payment response Code 3013:  
+                    TransError:  
                       PaymentResponseCode: Response for Payment response code 3013
                       PaymentResponseCodeDesc: Venmo Payment is in PickUp ready status
                       TransactionId: Transaction Number
@@ -122,7 +122,7 @@ post:
                     ReponseCode: Response Code 001
                     ReponseCodeDesc: Successful Transaction
                     ResponseTransactionID: Transaction Number
-                    TransError for payment response Code 3014:  
+                    TransError:  
                       PaymentResponseCode: Response for Payment response code 3014
                       PaymentResponseCodeDesc: Venmo Payment is in Refunded status
                       TransactionId: Transaction Number
@@ -134,7 +134,7 @@ post:
                         ReponseCode: Response Code 001
                         ReponseCodeDesc: Successful Transaction
                         ResponseTransactionID: Transaction Number
-                        TransError for payment response Code 3015:  
+                        TransError:  
                           PaymentResponseCode: Response for Payment response code 3015
                           PaymentResponseCodeDesc: Venmo Payment Unknown
                           TransactionId: Transaction Number
@@ -146,8 +146,30 @@ post:
                   ReponseCode: Response Code 900
                   ReponseCodeDesc: Payment could not be processed, Please contact customer care
                   ResponseTransactionID: Transaction Number
-                  TransError for payment response Code 900:  
+                  TransError:  
                       PaymentResponseCode: Response for Payment response code 900
                       PaymentResponseCodeDesc: Duplicate Payor Reference ID
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number                                            
+              mapName_1031:   
+                  description: Please scroll the above dropdown list for more response codes          
+                  summary: "1031"
+                  #description: TransError for JSON Validation Failed Code 1031
+                  value:
+                      ReponseCode: Response Code 900
+                      ReponseCodeDesc: Transaction Failed
+                      ResponseTransactionID: Transaction Number
+                      TransError :
+                        ErrorCode : "1031"
+                        ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+              mapName_1027:   
+                  description: Please scroll the above dropdown list for more response codes          
+                  summary: "1027"
+                  #description: TransError for JSON Validation Failed Code 1027
+                  value:
+                      ReponseCode: Response Code 900
+                      ReponseCodeDesc: Transaction Failed
+                      ResponseTransactionID: Transaction Number
+                      TransError :
+                        ErrorCode : "1027"
+                        ErrorDesc : Invalid or Missing Request Value               

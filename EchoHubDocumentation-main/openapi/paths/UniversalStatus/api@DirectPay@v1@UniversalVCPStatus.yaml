@@ -41,7 +41,51 @@ post:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
-                Translog :
+                TransError :
                   PaymentResponseCode : Response for Payment Response Code 900
                   PaymentResponseCodeDesc : VCP Card Status call failed
                   TransactionId : Transaction Number
+            mapName_1033:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1033"
+              #description: TransError for JSON Validation Failed Code 1033
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1033"
+                    ErrorDesc : Invalid or Missing Library Method
+            mapName_1025:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1025"
+              #description: TransError for JSON Validation Failed Code 1025
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1025"
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"  
+            mapName_1027:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1027"
+              #description: TransError for JSON Validation Failed Code 1027
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1027"
+                    ErrorDesc : Invalid or Missing Request Value
+            mapName_1026:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1026"
+              #description: TransError for JSON Validation Failed Code 1026
+              value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : "1026"
+                    ErrorDesc : Invalid or Missing Action. Action must be one of the following "Status", "Transaction"

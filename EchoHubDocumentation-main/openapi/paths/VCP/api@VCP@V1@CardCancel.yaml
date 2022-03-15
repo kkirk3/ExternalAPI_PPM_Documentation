@@ -3,8 +3,23 @@ post:
   tags:
     - Virtual Card Program (VCP)
   summary: VCP Card Cancel request
-  description: Once the user is authenticated, this endpoint generates an authorization
-     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+  description: 
+            This endpoint allows the API User to cancel a Virtual Card.
+
+
+            The following cancel actions can be performed
+    
+            * Block – Card will be blocked.        
+    
+            * Block and Reissue – The card will be blocked, and then a new card will
+            be reissued.       
+    
+            * Block and Optout – Card will be blocked and opted out.       
+    
+            * Reissue - Provides status of payment before reissue.
+          
+          Once the user is authenticated, this endpoint generates an authorization
+          token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VCPCancel
   security:
     - x-Authorization: []
@@ -35,7 +50,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 001:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4000
                           PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
                           Transactions: object 
@@ -90,7 +105,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4000:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4000
                           PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
                           Transactions: object
@@ -101,7 +116,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4001:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4001
                           PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
                           Transactions: object
@@ -112,7 +127,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4002:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4002
                           PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
                           Transactions: object
@@ -123,7 +138,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4003:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4003
                           PaymentResponseCodeDesc: Reissue failed, this card has already been settled/reissued
                           Transactions: object
@@ -134,7 +149,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4004:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4004
                           PaymentResponseCodeDesc: Reissue failed, this card has not been blocked
                           Transactions: object
@@ -145,7 +160,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4005:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4005
                           PaymentResponseCodeDesc: The provided requestvalue is invalid
                           Transactions: object
@@ -156,7 +171,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4006:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4006
                           PaymentResponseCodeDesc: The provided requestvalue is invalid
                           Transactions: object
@@ -167,7 +182,7 @@ post:
                       ReponseCode: Response for Payment response code 001
                       ReponseCodeDesc: Successful Transaction
                       ResponseTransactionID: Transaction Number
-                      TransLog for payment response Code 4007:
+                      TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
                           PaymentResponseCodeDesc: requested action is not authorised for this payer
                           Transactions: object
@@ -178,7 +193,7 @@ post:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Payment could not be processed, please contact customer care
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 1025:
+                      TransError:
                           ErrorCode: ErrorCode 1025
                           ErrorDesc: Invalid Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"                              
                   mapName10:
@@ -188,7 +203,7 @@ post:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Payment could not be processed, please contact customer care
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 1027:
+                      TransError:
                           ErrorCode: ErrorCode 1027
                           ErrorDesc: Invalid or Missing Request Value
                   mapName11:
@@ -198,7 +213,7 @@ post:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Payment could not be processed, please contact customer care
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 1028:
+                      TransError:
                           ErrorCode: ErrorCode 1028
                           ErrorDesc: Invalid or Missing RequestBy
                   mapName15:
@@ -208,7 +223,7 @@ post:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Payment could not be processed, please contact customer care
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 1029:
+                      TransError:
                           ErrorCode: ErrorCode 1029
                           ErrorDesc:  Invalid Action. Action must be one of the following "Block",
                                        "BlockAndReissue", "BlockAndOptOut", "Reissue"
@@ -219,7 +234,7 @@ post:
                       ReponseCode: Response for Payment response code 900
                       ReponseCodeDesc: Payment could not be processed, please contact customer care
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 900:
+                      TransError:
                           PaymentResponseCode: ErrorCode 900
                           PaymentResponseCodeDesc: Invalid or Missing Request Value 
                           Transactions: object
@@ -230,7 +245,7 @@ post:
                       ReponseCode: Response for Payment response code 907
                       ReponseCodeDesc: System Error
                       ResponseTransactionID: Transaction Number
-                      TransError for payment response Code 907:
+                      TransError:
                       ErrorCode: ErrorCode 907
                       ErrorCodeDesc: System Error 
                       CreationDate: Current Date & Time

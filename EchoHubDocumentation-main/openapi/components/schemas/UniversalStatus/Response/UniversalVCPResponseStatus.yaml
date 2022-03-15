@@ -1,6 +1,6 @@
 type: object
 properties:
-  This is the Response for response code 001:
+  This is the Response for Response Code 001:
     type: object
     properties:
       ResponseCode:
@@ -12,7 +12,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransLog for Payment response code 001:
+      TransLog for Payment Response Code 001:
         type: object
         properties:
           PaymentResponseCode:
@@ -24,7 +24,7 @@ properties:
           TransactionId:
             type: integer
             description: Transaction Number
-  This is the Response for response code 900:
+  This is the Response for Response Code 900:
     type: object
     properties:
       ResponseCode:
@@ -36,7 +36,7 @@ properties:
       ResponseTransactionID:
         type: integer
         description: Transaction Number
-      TransError for Payment response code 900:
+      TransError for Payment Response Code 900:
         type: object
         properties:
           PaymentResponseCode:
@@ -48,4 +48,40 @@ properties:
           TransactionId:
             type: integer
             description: Transaction Number
+      TransError JSON Validation Failed Code 1033:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1033"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Library Method
+      TransError JSON Validation Failed Code 1025:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1025"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"
+      TransError JSON Validation Failed Code 1027:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1027"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value
+      TransError JSON Validation Failed Code 1026:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1026"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Action. Action must be one of the following "Status", "Transaction"          
              

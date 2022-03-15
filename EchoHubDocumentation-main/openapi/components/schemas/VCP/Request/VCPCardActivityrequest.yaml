@@ -16,5 +16,11 @@ properties:
   Action:
     type: string
     description: Action field can be of Status, Transaction
+    
+                 * When the Action is passed as Status, it provides the status of the
+                 card that can be active, swiped, or already cancelled.
+
+                 * When the Action is passed as Transaction, it shows all the
+                 transactions on the card along with the status of the card.
   
          
