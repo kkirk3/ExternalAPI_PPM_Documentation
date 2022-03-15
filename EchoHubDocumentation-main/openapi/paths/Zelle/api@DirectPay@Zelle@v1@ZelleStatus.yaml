@@ -263,3 +263,25 @@ post:
                     PaymentResponseCodeDesc : Zelle Payment Status Failed
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number          
+            mapName_1031:   
+                    description: Please scroll the above dropdown list for more response codes          
+                    summary: "1031"
+                    #description: TransError for JSON Validation Failed Code 1031
+                    value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError :
+                          ErrorCode : "1031"
+                          ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+            mapName_1027:   
+                      description: Please scroll the above dropdown list for more response codes          
+                      summary: "1027"
+                      #description: TransError for JSON Validation Failed Code 1027
+                      value:
+                          ReponseCode: Response Code 900
+                          ReponseCodeDesc: Transaction Failed
+                          ResponseTransactionID: Transaction Number
+                          TransError :
+                            ErrorCode : "1027"
+                            ErrorDesc : Invalid or Missing Request Value                       
