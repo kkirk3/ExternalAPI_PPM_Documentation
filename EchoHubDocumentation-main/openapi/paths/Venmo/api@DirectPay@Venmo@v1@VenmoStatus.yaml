@@ -3,6 +3,8 @@ post:
     - Venmo
   summary: Venmo Payment Status
   operationId: VenmoStatus
+  security:
+    - x-Authorization: []
   description: |
    This endpoint allows the API user to know the status of the Venmo Payment.
    The status of the Venmo payment can be:
