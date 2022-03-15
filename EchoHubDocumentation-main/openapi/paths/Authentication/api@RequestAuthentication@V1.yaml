@@ -28,10 +28,9 @@ post:
               summary: "001"
               value:
                 ReponseCode: Response for Payment response code 001
-                ReponseCodeDesc: Successful Transaction
-                
+                ReponseCodeDesc: Successful Transaction                
                 TransLog:  
-                AuthToken: Authorization token
+                   AuthToken: Authorization token
 
 
             mapName1:   
