@@ -46,13 +46,37 @@ post:
               summary: "900"
               value:
                 ReponseCode: Response Code 900
-                ReponseCodeDesc: Payment could not be processed, Please contact customer care
+                ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment response code 900
                     PaymentResponseCodeDesc: Duplicate Payor Reference ID
-
-
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
+            mapName2:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "5001"
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError:  
+                      PaymentResponseCode: Response for Payment response code 5001
+                      PaymentResponseCodeDesc: Check number has already been taken
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number        
+            mapName3:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "172"
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Global System Error                 
+                  TransError:  
+                      ErrorCode: Response for Payment response code 172
+                      ErrorCodeDesc: Invalid or Missing Payor
+                      creationdate: Date Time of the response
+                      
+      
 
 
 

@@ -42,9 +42,43 @@ properties:
       TransError for Payment response code 900:
         type: object
         properties:
-          ErrorCode:
+          PaymentResponseCode:
             type: string
             description: Response for Payment response code 900
-          ErrorDesc:
+          PaymentResponseCodeDesc:
             type: string
             description: Duplicate Payor Reference ID
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransError for Payment response code 5001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 5001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Check number has already been taken
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransError for Payment response code 172:
+            type: object
+            properties:
+              ErrorCode:
+                type: string
+                description: Response for Payment response code 172
+              ErrorCodeDesc:
+                type: string
+                description: Invalid or Missing Payor
+              creationdate:
+                type: string
+                description: Date Time of the response
+              

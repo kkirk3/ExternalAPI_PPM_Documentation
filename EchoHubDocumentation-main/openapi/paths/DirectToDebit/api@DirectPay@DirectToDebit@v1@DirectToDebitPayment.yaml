@@ -45,11 +45,13 @@ post:
               summary: "900"
               value:
                 ReponseCode: Response Code 900
-                ReponseCodeDesc: Payment could not be processed, Please contact customer care
+                ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: Duplicate Payor Reference ID
+                    PaymentResponseCodeDesc: Direct To Debit Payment Failed
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
           # # x-examples:
           # x-examples1:
             mapName12:   

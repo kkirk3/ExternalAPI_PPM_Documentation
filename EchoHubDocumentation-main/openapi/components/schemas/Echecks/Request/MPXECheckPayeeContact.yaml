@@ -2,6 +2,7 @@ required:
   - TaxId
   - CheckNumber
   - RequestType
+  - IsVcpReissue
 type: object
 properties:
   TaxId:
@@ -35,3 +36,7 @@ properties:
       * O - Zero-Dollar payment
 
       * D - Deluxe Token request
+  IsVcpReissue: 
+    type: string
+    description: > 
+             IsVcpReissue can be True or False

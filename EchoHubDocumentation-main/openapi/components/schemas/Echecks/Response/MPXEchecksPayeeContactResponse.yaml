@@ -59,7 +59,7 @@ properties:
               description: Response for Payment response code 001
             Type:
               type: string
-              description: Payment Created Successfully With Deluxe
+              description: Payment Type
             NumberOfAuth:
               type: string
               description: Number Of Auth
@@ -80,4 +80,43 @@ properties:
               description: Deluxe Message
             IsDuplicate:
               type: string
-              description: Yes/NO         
+              description: Yes/No 
+      TransError JSON Validation Failed Code 909:
+                type: object
+                properties:
+                  ErrorCode:
+                    type: integer
+                    description: "909"
+                  ErrorDesc:
+                    type: string
+                    description: Invalid or Missing Library Method
+                  creationdate:
+                    type: string 
+                    description: Date Time of the Response
+      TransError JSON Validation Failed Code 150:
+                type: object
+                properties:
+                  ErrorCode:
+                    type: integer
+                    description: "150"
+                  ErrorDesc:
+                    type: string
+                    description: Invalid or Missing Tax ID
+      TransError JSON Validation Failed Code 159:
+                type: object
+                properties:
+                  ErrorCode:
+                    type: integer
+                    description: "159"
+                  ErrorDesc:
+                    type: string
+                    description: Invalid or Missing Check Number			
+      TransError JSON Validation Failed Code 1008:
+                type: object
+                properties:
+                  ErrorCode:
+                    type: integer
+                    description: "1008"
+                  ErrorDesc:
+                    type: string
+                    description: Invalid or Missing Check Number                     
