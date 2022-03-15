@@ -1,6 +1,6 @@
 post:
   tags:
-    - Authentication 
+    - Authorization  
   summary: Get Authorization token
   operationId: GetAuthToken
   description: >

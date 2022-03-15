@@ -98,7 +98,7 @@ components:
       description: The Authorization Token.
       
 tags:
-  - name: Authentication
+  - name: Authorization 
     description: |
       This End point Helps to generate the Authentication token for Accessing the End points   
   - name: eCheck
