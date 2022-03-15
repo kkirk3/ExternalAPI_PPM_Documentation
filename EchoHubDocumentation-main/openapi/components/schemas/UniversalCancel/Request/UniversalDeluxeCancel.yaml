@@ -10,21 +10,21 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      Value for this field should be one of the following items : 
-      PayorReferenceID or EchoHubTranscationID
+      The request value type for this field can be either PayorReferenceId or ECHOHubTransactionId.
   RequestValue:
     type: string
-    description: Request Value
+    description: This is the value for PayorReferenceId or ECHOHubTransactionId.
     minLength: 2
   ForceFlag:
     type: boolean
-    description: Force Flag
+    description: |
+     This value applies to Deluxe eCheck payments. A value of ‘False’ will not allow the payment to be cancelled if the payee has already retrieved/printed the check.  A value of ‘True’ allows the payment to be cancelled if the payee has already retrieved/printed the check.  ‘True’ should only be used if the payer or issuer is able to verify that a check has not cleared with the issuing bank.   
   TransactionId:
     type: integer
-    description: Transaction Id
+    description: The Transaction ID gets the details of the current transaction.
   CheckingAccountId:
     type: integer
-    description: CheckingAccount Id
+    description: This is a unique ID used to link the bank account and routing number for settling the payments to the Provider
   LibraryMethod:
     type: string
-    description: Library Method should be 'DeluxeCancel'
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method in this case should be 'DeluxeCancel'.

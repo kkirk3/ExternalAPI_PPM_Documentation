@@ -6,11 +6,12 @@ properties:
   RequestValueType:
     type: string
     description: 
-      This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
+      The request value type for this field can be either PayorReferenceId or ECHOHubTransactionId.
        
     maxLength: 150
     minLength: 1
   RequestValue:
     type: string
-    description: This is the request value.
+    description: 
+      This is the value for PayorReferenceId or ECHOHubTransactionId.
     maxLength: 100
