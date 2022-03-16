@@ -1,0 +1,56 @@
+post:
+  tags:
+    - Authorization  
+  summary: Get Authorization token
+  operationId: GetAuthToken
+  description: >
+      Once the user is authenticated, this endpoint generates an authorization
+      token by using the API key and Client key. This authorization token is
+      valid for 30 minutes.
+  requestBody:
+    description:  |
+      This endpoint is used to generate the Authetication Token
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Authentication/Request/AuthenticationRequest.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Authentication/Response/AuthenticationResponse.yaml
+          examples:
+            mapName:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: Response for Payment response code 001
+                ReponseCodeDesc: Successful Transaction                
+                TransLog:  
+                   AuthToken: Authorization token
+
+
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "901"
+              value:
+                ReponseCode: Response for Payment response code 901
+                ReponseCodeDesc:  Transaction  Failure
+                TransError:  
+                    ErrorCode: Response for Payment response code 901
+                    ErrorCodeDesc: Invalid Customer ID
+                    creationDate: Current Date & Time
+            mapName2:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "905"
+                value:
+                  ReponseCode: Response for Payment response code 905
+                  ReponseCodeDesc: Transaction  Failure              
+                  TransError:  
+                      ErrorCode: Response for Payment response code 905
+                      ErrorCodeDesc: Invalid Endpoint
+                      creationDate: Current Date & Time        
+                    

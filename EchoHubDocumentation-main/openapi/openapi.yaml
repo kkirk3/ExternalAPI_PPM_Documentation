@@ -26,8 +26,10 @@ servers:
   - url: /v1
 security:
   - x-ApiKey: []
-    x-ClientKey: []
+  - x-ClientKey: []
 paths:
+  /api/Authentication/v1/Authentcation:
+    $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   /api/eCheck/v1/MPXECheckPayeeContact: 
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
   /api/DirectPay/Deluxe/v1/DeluxeEcheck:
@@ -96,6 +98,9 @@ components:
       description: The Authorization Token.
       
 tags:
+  - name: Authorization 
+    description: |
+      This End point Helps to generate the Authentication token for Accessing the End points   
   - name: eCheck
     description: >
       An eCheck, or electronic check, is a digital version of a paper check that
