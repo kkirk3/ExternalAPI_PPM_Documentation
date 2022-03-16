@@ -16,14 +16,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/Zelle/Request/ZellePaymentCancel.yaml
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalZelleCancel.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Zelle/Response/ZellePaymentResponseCancel.yaml
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalZelleResponseCancel.yaml
           examples:  
             mapName_001:   
                 description: Please scroll the above dropdown list for more response codes          
