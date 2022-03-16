@@ -50,7 +50,7 @@ properties:
             description: Response for Payment Response Code 9001
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment is in Pending Status
+            description: Zelle Payment Status Unknown
           TransactionId:
             type: integer
             description: Transaction Number
@@ -65,7 +65,7 @@ properties:
             description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment is in Reject Status
+            description: Zelle Payment Instruction that had not yet been  claimed by the payee and was succesfully cancelled by the sender
           TransactionId:
             type: integer
             description: Transaction Number
@@ -80,7 +80,7 @@ properties:
             description: Response for Payment Response Code 9003
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment is in Cancelled Status
+            description: Zelle Payment instruction has been submitted and is awaiting authorization by the sender
           TransactionId:
             type: integer
             description: Transaction Number
@@ -95,7 +95,7 @@ properties:
             description: Response for Payment Response Code 9004
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment is in Returned Status
+            description: Zelle Payment Instruction that is under Review
           TransactionId:
             type: integer
             description: Transaction Number
@@ -110,7 +110,7 @@ properties:
             description: Response for Payment Response Code 9005
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment is in Pickup Ready Status
+            description: Zelle Payment Instruction is waiting for acceptance by payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -122,7 +122,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: integer
-            description: Response for Payment Response Code 9006
+            description: Zelle Notificataion has been sent to the payee to alert them to pending payment and request their payment selection
           PaymentResponseCodeDesc:
             type: string
             description: Zelle Payment unknown
