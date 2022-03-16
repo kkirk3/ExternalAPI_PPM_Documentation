@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ReponseCodeDesc:
         type: string
-        description: Succesful Transaction
+        description: sucessful Transaction
       ResponseTransactionID:
         type: string
         description: Transaction Number
@@ -20,7 +20,7 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment Succesful
+            description: Venmo Payment successful
           TransactionId:
             type: string
             description: Transaction Number

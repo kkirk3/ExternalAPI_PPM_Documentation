@@ -14,7 +14,7 @@ post:
    * Pickup Ready
   
    Once the user is authenticated, this endpoint generates an authorization
-     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+     token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   operationId: DirectToDebitStatus
   security:
     - x-Authorization: []
@@ -162,7 +162,7 @@ post:
                           ResponseTransactionID: Transaction Number
                           TransLog:  
                             PaymentResponseCode: Response for Payment response code 3021
-                            PaymentResponseCodeDesc: Direct To Debit Card does not support direct to debit payments. Please try another card or select a different payment type
+                            PaymentResponseCodeDesc: Direct To Debit Card does not support Direct To Debit payments. Please try another card or select a different payment type
                             TransactionId: Transaction Number
                             EchoHubTransactionId: EchoHub Transaction Number                                                                    
             mapName11:   
