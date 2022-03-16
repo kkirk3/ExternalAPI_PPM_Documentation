@@ -1,179 +1,301 @@
 type: object
 properties:
-  This is the Response for response code 001:
+  This is the Response for Response Code 001:
     type: object
     properties:
-      ReponseCode:
-        type: string
+      ResponseCode:
+        type: integer
         description: Response Code 001
-      ReponseCodeDesc:
+      ResponseCodeDesc:
         type: string
-        description: Succesful Transaction
+        description: Transaction Failed
       ResponseTransactionID:
-        type: string
+        type: integer
         description: Transaction Number
-      TransLog for Payment response code 001:
+      TransLog for Payment Response Code 001:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Response for Payment response code 001
+            type: integer
+            description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment Succesful
+            description: Zelle Payment Instruction has been authorized and will be routed for processing
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3008:
+      TransLog for Payment Response Code 9000:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3008
+            type: integer
+            description: Response for Payment Response Code 9000
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Submitted Status
+            description: Zelle Payment cannot be cancelled when the status is Released
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3009:
+      TransLog for Payment Response Code 9001:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3009
+            type: integer
+            description: Response for Payment Response Code 9001
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Pending Status
+            description: Zelle Payment Unknown
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3010:
+      TransLog for Payment Response Code 9002:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3010
+            type: integer
+            description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Reject Status
+            description: Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3011:
+      TransLog for Payment Response Code 9003:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3011
+            type: integer
+            description: Response for Payment Response Code 9003
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Cancelled Status
+            description: Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3012:
+      TransLog for Payment Response Code 9004:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3012
+            type: integer
+            description: Response for Payment Response Code 9004
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Returned Status
+            description: Zelle Payment Instruction that is under review
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3013:
+      TransLog for Payment Response Code 9005:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Payment Response for Payment response code 3013
+            type: integer
+            description: Response for Payment Response Code 9005
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment is in Pickup Ready Status
+            description: Zelle Payment Instruction is waiting for acceptance by the payee
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-      TransLog for Payment response code 3015:
+      TransLog for Payment Response Code 9006:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Response for Payment response code 3015
+            type: integer
+            description: Response for Payment Response Code 9006
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment unknown
+            description: Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
-  This is the Response for response code 900:
+      TransLog for Payment Response Code 9007:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9007
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment instruction was successfully routed to the payee
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9008:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9008
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment instruction was successfully delivered to the payee
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9009:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9009
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment instruction was not claimed by the payee within the expiration period
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9010:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9010
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle payment instruction that was processed unsuccessfully via the selected payment method
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9011:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9011
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9012:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9012
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9013:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9013
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number
+      TransLog for Payment Response Code 9014:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 9014
+          PaymentResponseCodeDesc:
+            type: string
+            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+          TransactionId:
+            type: integer
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: integer
+            description: EchoHub Transaction Number                         
+  This is the Response for Response Code 900:
     type: object
     properties:
-      ReponseCode:
-        type: string
+      ResponseCode:
+        type: integer
         description: Response Code 900
-      ReponseCodeDesc:
+      ResponseCodeDesc:
         type: string
-        description: Payment could not be processed, Please contact customer care
+        description: Transaction Failed
       ResponseTransactionID:
-        type: string
+        type: integer
         description: Transaction Number
-      TransError for Payment response code 900:
+      TransError for Payment Response Code 900:
         type: object
         properties:
           PaymentResponseCode:
-            type: string
-            description: Response for Payment response code 001
+            type: integer
+            description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment Succesful
+            description: Zelle Payment Status Failed
           TransactionId:
-            type: string
+            type: integer
             description: Transaction Number
           EchoHubTransactionId:
-            type: string
+            type: integer
             description: EchoHub Transaction Number
       TransError JSON Validation Failed Code 1031:
-              type: object
-              properties:
-                ErrorCode:
-                  type: integer
-                  description: "1031"
-                ErrorDesc:
-                  type: string
-                  description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"   
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1031"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
+
       TransError JSON Validation Failed Code 1027:
-              type: object
-              properties:
-                ErrorCode:
-                  type: integer
-                  description: "1027"
-                ErrorDesc:
-                  type: string
-                  description: Invalid or Missing Request Value                   
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1027"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value
+               
