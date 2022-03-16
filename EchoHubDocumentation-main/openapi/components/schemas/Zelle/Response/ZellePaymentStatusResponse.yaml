@@ -65,7 +65,7 @@ properties:
             description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction that has not yet been claimed by the payee was successfully cancelled by the Payor
+            description: Zelle Payment instruction that has not yet been claimed by the payee is successfully cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -110,7 +110,7 @@ properties:
             description: Response for Payment Response Code 9005
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction is waiting for acceptance by payee
+            description: Zelle Payment instruction is waiting for acceptance by the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -140,7 +140,7 @@ properties:
             description: Response for Payment Response Code 9007
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction was successfully routed to the Payee
+            description: Zelle Payment instruction is successfully routed to the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -155,7 +155,7 @@ properties:
             description: Response for Payment Response Code 9008
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction was successfully delivered to the Payee
+            description: Zelle Payment instruction is successfully delivered to the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -170,7 +170,7 @@ properties:
             description: Response for Payment Response Code 9009
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction is not claimed by the payee within the expiration period
+            description: Zelle Payment is not claimed by the payee within the expiration period and is cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -185,7 +185,7 @@ properties:
             description: Response for Payment Response Code 9010
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment process is not successful
+            description: Zelle Payment process is not successful and failed
           TransactionId:
             type: integer
             description: Transaction Number
