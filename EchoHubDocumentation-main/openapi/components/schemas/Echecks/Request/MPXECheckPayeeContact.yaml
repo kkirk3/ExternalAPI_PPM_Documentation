@@ -16,7 +16,7 @@ properties:
   CheckNumber:
     type: string
     description: >-
-      This is a Unique 9-digit number on the eCheck to get the payment details
+      This is a Unique 9-digit number on the eCheck. The check number helps to get the payment details
       like check amount, check date, and Provider Payee name.
     pattern: ^(0|[1-9][0-9]*)$
     maxLength: 11
@@ -26,9 +26,9 @@ properties:
     description: >
       Request type can be one of the 5 fields - M, E, C, O, or D.
 
-      * M - Optout from Virtual Card Program.
+      * M - Opt out from Virtual Card Program.
 
-      * E - Optout from Virtual Card Program and enroll in EFT (Electronic Funds
+      * E - Opt out from Virtual Card Program and enroll in EFT (Electronic Funds
       Transfer)/ERA (Electronic Remittance Advice) program.
 
       * C - MedPay Check only
@@ -39,4 +39,4 @@ properties:
   IsVcpReissue: 
     type: string
     description: > 
-             IsVcpReissue can be True or False
+             Is VCP (Virtual Card Program) Reissue can be True or False

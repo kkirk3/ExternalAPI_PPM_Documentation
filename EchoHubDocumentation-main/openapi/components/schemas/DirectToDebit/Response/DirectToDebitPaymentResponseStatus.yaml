@@ -170,7 +170,7 @@ properties:
             description: Payment Response for Payment response code 3021
           PaymentResponseCodeDesc:
             type: string
-            description: This card does not support Direct To debit payments. Please try another card or select a different payment type
+            description: This card does not support Direct To Debit payments. Please try another card or select a different payment type
           TransactionId:
             type: string
             description: Transaction Number

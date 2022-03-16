@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ReponseCodeDesc:
         type: string
-        description: Succesful Transaction
+        description: successful Transaction
       ResponseTransactionID:
         type: string
         description: Transaction Number
@@ -20,7 +20,7 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment Succesful
+            description: Zelle Payment successful
           TransactionId:
             type: string
             description: Transaction Number
@@ -47,7 +47,7 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Venmo Payment Succesful
+            description: Zelle Payment successful
           TransactionId:
             type: string
             description: Transaction Number
@@ -62,7 +62,7 @@ properties:
                   description: "1031"
                 ErrorDesc:
                   type: string
-                  description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"   
+                  description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceId", "ECHOHubTransactionId"
       TransError JSON Validation Failed Code 1027:
               type: object
               properties:

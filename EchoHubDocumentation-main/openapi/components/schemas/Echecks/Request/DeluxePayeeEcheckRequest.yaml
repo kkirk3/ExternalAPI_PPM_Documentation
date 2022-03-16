@@ -24,7 +24,7 @@ properties:
   CheckNumber:
     type: string
     description: >-
-      This is a unique 9-digit number on the eCheck to get the payment details
+      This is a unique 9-digit number on the eCheck. The check number helps to get the payment details
       like check amount, check date, and Provider Payee name.
     pattern: ^(0|[1-9][0-9]*)$
     maxLength: 11

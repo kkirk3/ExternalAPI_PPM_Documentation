@@ -74,7 +74,7 @@ post:
                   TransError:  
                       ErrorCode: Response for Payment response code 172
                       ErrorCodeDesc: Invalid or Missing Payor
-                      creationdate: Date Time of the response
+                      creationdate: Date and Time of the response
                       
       
 

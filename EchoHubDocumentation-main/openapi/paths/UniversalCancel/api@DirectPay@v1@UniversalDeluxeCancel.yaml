@@ -3,7 +3,7 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - Deluxe
   operationId: UniversalPaymentDeluxeCancel
-  description: This endpoint allows the API user to cancel a Deluxe or MPX (Medical Payment Exchange) issued eCheck payment through the Library methos. The Deluxe Transaction ID is required to identify the payment to be cancelled.
+  description: This endpoint allows the API user to cancel a Deluxe or MPX (Medical Payment Exchange) issued eCheck payment through the Library method. The Deluxe Transaction ID is required to identify the payment to be cancelled.
   security:
     - x-Authorization: []
   requestBody:

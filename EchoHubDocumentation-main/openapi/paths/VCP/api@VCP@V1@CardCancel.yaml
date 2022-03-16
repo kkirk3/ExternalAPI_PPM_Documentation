@@ -42,7 +42,7 @@ post:
               application/json:             
                 schema:                     
                   $ref: ../../components/schemas/VCP/Response/VCPCardCancelResponse.yaml
-                  $comment: Test Comment test sfvsvsvssvs
+                  $comment: Test Comment
                 examples: 
                   mapName:   
                     description: Please scroll the above dropdown list for more response codes          

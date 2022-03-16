@@ -15,7 +15,7 @@ type: object
 properties:
   PayorReferenceID:
     type: string
-    description: This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID.
+    description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
     maxLength: 150
     minLength: 1
   Email:
@@ -62,7 +62,7 @@ properties:
     pattern: ^(0|[1-9][0-9]*)$
   Address:
     type: string
-    description: It is the address associated with the debit card account.
+    description: This is the address associated with the debit card account.
     maxLength: 50
     minLength: 1
   ZipCode:

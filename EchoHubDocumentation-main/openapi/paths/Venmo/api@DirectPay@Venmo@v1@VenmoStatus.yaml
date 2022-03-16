@@ -17,7 +17,7 @@ post:
     *	Cancelled
     *	Pickup Ready  
       
-   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
     description: This endpoint is used to know the status of the Venmo Payment.
     required: true

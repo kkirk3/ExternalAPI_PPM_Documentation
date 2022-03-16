@@ -19,7 +19,7 @@ post:
     *	Payee Approval Declined – The Payment transaction is declined by the Payee.
   
    Once the user is authenticated, this endpoint generates an authorization
-     token by using the API key and Client key. This authorization token is valid for 30 minutes.
+     token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   operationId: ZelleStatus
   security:
     - x-Authorization: []
@@ -273,7 +273,7 @@ post:
                         ResponseTransactionID: Transaction Number
                         TransError :
                           ErrorCode : "1031"
-                          ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+                          ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceId", "ECHOHubTransactionId"        
             mapName_1027:   
                       description: Please scroll the above dropdown list for more response codes          
                       summary: "1027"

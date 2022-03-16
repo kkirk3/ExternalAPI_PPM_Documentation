@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ResponseCodeDesc:
         type: string
-        description: Transaction Failed
+        description: successful Transaction
       ResponseTransactionID:
         type: integer
         description: Transaction Number
@@ -20,7 +20,7 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction has been authorized and will be routed for processing
+            description: Zelle Payment successful
           TransactionId:
             type: integer
             description: Transaction Number
@@ -35,7 +35,7 @@ properties:
             description: Response for Payment Response Code 9000
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment cannot be cancelled when the status is Released
+            description: Zelle Payment is in Submitted Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -50,7 +50,7 @@ properties:
             description: Response for Payment Response Code 9001
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Unknown
+            description: Zelle Payment is in Pending Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -65,7 +65,7 @@ properties:
             description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
+            description: Zelle Payment is in Reject Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -80,7 +80,7 @@ properties:
             description: Response for Payment Response Code 9003
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
+            description: Zelle Payment is in Cancelled Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -95,7 +95,7 @@ properties:
             description: Response for Payment Response Code 9004
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction that is under review
+            description: Zelle Payment is in Returned Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -110,7 +110,7 @@ properties:
             description: Response for Payment Response Code 9005
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction is waiting for acceptance by the payee
+            description: Zelle Payment is in Pickup Ready Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -125,7 +125,7 @@ properties:
             description: Response for Payment Response Code 9006
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
+            description: Zelle Payment unknown
           TransactionId:
             type: integer
             description: Transaction Number
@@ -272,7 +272,7 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Status Failed
+            description: Zelle Payment successful
           TransactionId:
             type: integer
             description: Transaction Number
