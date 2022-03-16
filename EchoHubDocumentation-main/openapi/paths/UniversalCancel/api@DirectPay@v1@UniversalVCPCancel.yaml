@@ -3,7 +3,7 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - VCP
   operationId: UniversalPaymentVCPCancel
-  description: Universal Payment Cancel VCP
+  description: This endpoint allows the API user to cancel a VCP payment through the Library method.
   security:
     - x-Authorization: []
   requestBody:

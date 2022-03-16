@@ -3,7 +3,7 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - Venmo
   operationId: UniversalPaymentVenmoCancel
-  description: Universal Payment Cancel Venmo
+  description: This endpoint allows the API user to cancel a Venmo payment through the Library method. It requires the unique Payor Reference ID.
   security:
     - x-Authorization: []
   requestBody:
