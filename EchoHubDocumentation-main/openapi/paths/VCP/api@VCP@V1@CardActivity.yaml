@@ -11,12 +11,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This API makes sure the card is active, before cancelling or closing the
-     card. It also helps to check the card balance by showing the transactions.             
-     This endpoint validates two functionalities The status of the card and the
-      transactions of the card.
-  
-     This endpoint is used to activate the VCP card
+    description: This endpoint is used to activate the VCP card
     required: true
     content:
       application/json:

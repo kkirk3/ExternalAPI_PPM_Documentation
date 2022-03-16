@@ -3,7 +3,7 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - Direct To Debit
   operationId: UniversalPaymentD2DCancel
-  description: Universal Payment Cancel Direct To Debit
+  description: This endpoint allows the API user to cancel a Direct to Debit payment through the Library method. It requires the unique Payer Reference ID.
   security:
     - x-Authorization: []
   requestBody:

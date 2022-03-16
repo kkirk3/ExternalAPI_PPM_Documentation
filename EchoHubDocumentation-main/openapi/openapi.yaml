@@ -143,6 +143,9 @@ tags:
         * Zelle payment status
         * Zelle payment cancel
     
+  - name: Universal Payment Cancel
+    description: | 
+        The Universal Payment Cancel endpoint allows the API user to access and cancel a payment that may be Direct to Debit, Venmo, Zelle, or a Virtual Card based on the library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.     
 
 
 

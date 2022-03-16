@@ -14,4 +14,4 @@ properties:
     minLength: 2
   LibraryMethod:
     type: string
-    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method in this case should be 'VenmoCancel'
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method in this caseshould be 'VenmoCancel'

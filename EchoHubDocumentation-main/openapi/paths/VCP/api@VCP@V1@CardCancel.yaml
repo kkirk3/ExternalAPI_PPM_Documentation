@@ -18,7 +18,8 @@ post:
     
             * Reissue - Provides status of payment before reissue.
           
-          Once the user is authenticated, this endpoint generates an authorization
+          
+            Once the user is authenticated, this endpoint generates an authorization
           token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VCPCancel
   security:
