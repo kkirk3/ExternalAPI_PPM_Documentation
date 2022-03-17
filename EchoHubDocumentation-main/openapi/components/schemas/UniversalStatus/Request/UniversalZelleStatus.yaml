@@ -7,12 +7,11 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      Value for this field should be one of the following items : 
-      PayorReferenceID or EchoHubTranscationID
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
   RequestValue:
     type: string
-    description: Request Value
+    description: This is the value of PayorReferenceID or ECHOHubTransactionID.
     minLength: 2
   LibraryMethod:
     type: string
-    description: Library Method should be 'ZelleStatus'
+    description: This is the payment modality that the API user is trying to access to know the status from the library of payment modalities. Library Method in this case should be 'ZelleStatus'.

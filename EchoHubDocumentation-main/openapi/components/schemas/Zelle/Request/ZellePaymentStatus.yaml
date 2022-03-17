@@ -6,11 +6,11 @@ properties:
   RequestValueType:
     type: string
     description: 
-      The request value type for this field can be either PayorReferenceId or ECHOHubTransactionId.
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
        
     maxLength: 150
     minLength: 1
   RequestValue:
     type: string
-    description: This is the value of PayorReferenceId or ECHOHubTransactionId.
+    description: This is the value of PayorReferenceID or ECHOHubTransactionID.
     maxLength: 100

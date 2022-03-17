@@ -3,11 +3,11 @@ post:
     - Universal Payment Void
   summary: Universal Payment Void - Deluxe
   operationId: UniversalPaymentDeluxeVoid
-  description: Universal Payment Void Deluxe
+  description: This endpoint allows the API user to void a Deluxe eCheck payment through the Library method. The Deluxe Transaction ID is required to identify the payment to be voided.
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to Void the eCheck
+    description: This endpoint is used to void a Deluxe eCheck Payment.
     required: true
     content:
       application/json:

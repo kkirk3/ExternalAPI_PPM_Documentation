@@ -154,4 +154,6 @@ tags:
     description: | 
         The Universal Payment Status endpoint allows the API user to access and get the status of a payment that may be Direct to Debit, Venmo, Zelle, or a Virtual Card based on the library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
 
-        
+  - name: Universal Payment Status
+    description: |      
+        The Universal Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
