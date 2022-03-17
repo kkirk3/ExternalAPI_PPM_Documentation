@@ -56,7 +56,7 @@ paths:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoStatus.yaml
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
-  /api/DirectPay/Zelle/v1/ZelleCancel:
+  /api/DirectPay/v1/PaymentCancel:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
@@ -83,7 +83,7 @@ paths:
 components:
   securitySchemes:
     x-ApiKey:
-      type: apiKey
+      type: apiKey 
       name: x-ApiKey
       description: The API key.
       in: header
@@ -96,6 +96,11 @@ components:
       scheme: x-Authorization
       type: http
       description: The Authorization Token.
+    x-Headers:
+      scheme: x-Authorization
+      type: http
+      description: The Authorization Token.  
+
       
 tags:
   - name: Authorization 
