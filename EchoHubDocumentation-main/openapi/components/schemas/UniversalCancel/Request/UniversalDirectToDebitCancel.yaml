@@ -7,7 +7,7 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
   RequestValue:
     type: string
     description: This is the value of PayorReferenceID or ECHOHubTransactionID.
