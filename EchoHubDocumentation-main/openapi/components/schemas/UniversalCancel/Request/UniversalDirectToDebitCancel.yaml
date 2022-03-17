@@ -10,7 +10,7 @@ properties:
       This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID
   RequestValue:
     type: string
-    description: This is the value for PayorReferenceId or ECHOHubTransactionId.
+    description: This is the value of PayorReferenceId or ECHOHubTransactionId.
     minLength: 2
   LibraryMethod:
     type: string

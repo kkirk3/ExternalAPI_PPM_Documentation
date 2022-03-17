@@ -10,5 +10,5 @@ properties:
     minLength: 1
   RequestValue:
     type: string
-    description: This is the value for PayorReferenceId or ECHOHubTransactionId.
+    description: This is the value of PayorReferenceId or ECHOHubTransactionId.
     maxLength: 100

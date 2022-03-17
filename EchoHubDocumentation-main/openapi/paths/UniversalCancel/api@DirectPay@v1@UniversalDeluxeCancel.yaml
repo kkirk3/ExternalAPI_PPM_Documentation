@@ -7,7 +7,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel the Deluxe eCheck.
+    description: This endpoint is used to cancel a Deluxe eCheck.
     required: true
     content:
       application/json:

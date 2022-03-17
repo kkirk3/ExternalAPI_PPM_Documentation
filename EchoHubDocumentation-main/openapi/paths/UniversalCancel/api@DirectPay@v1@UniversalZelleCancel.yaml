@@ -3,11 +3,11 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - Zelle
   operationId: UniversalPaymentZelleCancel
-  description: Universal Payment Cancel Zelle
+  description: This endpoint allows the API user to cancel a Zelle payment through the Library method. It requires the unique Payor Reference ID.
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel the Zelle Payment.
+    description: This endpoint is used to cancel a Zelle Payment.
     required: true
     content:
       application/json:

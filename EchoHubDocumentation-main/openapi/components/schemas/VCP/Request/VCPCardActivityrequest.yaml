@@ -7,11 +7,10 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      Request ValueType can be of
-      DraftNumber,CardNumberToken,PayerCheckClaimNumber,ClaimNumber,PayHubPaymentID
+      Request Value Type can be DraftNumber, CardNumberToken, PayerCheckClaimNumber, ClaimNumber, PayHubPaymentID
   RequestValue:
     type: string
-    description: Request Value
+    description: This is the Request Value
     minLength: 2
   Action:
     type: string

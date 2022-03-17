@@ -196,7 +196,7 @@ properties:
             description: Response for Payment response code 4005
           PaymentResponseCodeDesc:
             type: string
-            description: The provided requestvalue is invalid
+            description: The provided request value is invalid
           Transactions:
             type: object
       TransLog for Payment response code 4006:
@@ -207,7 +207,7 @@ properties:
             description: Response for Payment response code 4006
           PaymentResponseCodeDesc:
             type: string
-            description: requested action is not authorised for this payer
+            description: Requested action is not authorized for this payor
           Transactions:
             type: object                                                                                                                                                                          
       TransLog for Payment response code 4007:

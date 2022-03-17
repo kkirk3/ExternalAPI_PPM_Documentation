@@ -38,7 +38,7 @@ properties:
             description: Deluxe Message
           IsDuplicate:
             type: string
-            description: Yes/NO         
+            description: Yes/No         
   This is the Response for response code 900:
     type: object
     properties:

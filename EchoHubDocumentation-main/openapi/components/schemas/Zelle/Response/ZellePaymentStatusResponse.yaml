@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ResponseCodeDesc:
         type: string
-        description: successful Transaction
+        description: Successful Transaction
       ResponseTransactionID:
         type: integer
         description: Transaction Number
@@ -65,7 +65,7 @@ properties:
             description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction that had not yet been  claimed by the payee and was succesfully cancelled by the sender
+            description: Zelle Payment instruction that has not yet been claimed by the payee is successfully cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -80,7 +80,7 @@ properties:
             description: Response for Payment Response Code 9003
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction has been submitted and is awaiting authorization by the sender
+            description: Zelle Payment instruction has been submitted and is awaiting authorization by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -95,7 +95,7 @@ properties:
             description: Response for Payment Response Code 9004
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction that is under Review
+            description: Zelle Payment instruction is under Review
           TransactionId:
             type: integer
             description: Transaction Number
@@ -110,7 +110,7 @@ properties:
             description: Response for Payment Response Code 9005
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction is waiting for acceptance by payee
+            description: Zelle Payment instruction is waiting for acceptance by the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -122,7 +122,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: integer
-            description: Zelle Notificataion has been sent to the payee to alert them to pending payment and request their payment selection
+            description: Zelle Payment notification has been sent to the payee to alert them regarding the payment
           PaymentResponseCodeDesc:
             type: string
             description: Zelle Payment unknown
@@ -140,7 +140,7 @@ properties:
             description: Response for Payment Response Code 9007
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction was successfully routed to the payee
+            description: Zelle Payment instruction is successfully routed to the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -155,7 +155,7 @@ properties:
             description: Response for Payment Response Code 9008
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction was successfully delivered to the payee
+            description: Zelle Payment instruction is successfully delivered to the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -170,7 +170,7 @@ properties:
             description: Response for Payment Response Code 9009
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment instruction was not claimed by the payee within the expiration period
+            description: Zelle Payment is not claimed by the payee within the expiration period and is cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -185,7 +185,7 @@ properties:
             description: Response for Payment Response Code 9010
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle payment instruction that was processed unsuccessfully via the selected payment method
+            description: Zelle Payment process is not successful and failed
           TransactionId:
             type: integer
             description: Transaction Number
@@ -200,7 +200,7 @@ properties:
             description: Response for Payment Response Code 9011
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
+            description: The Zelle Payment in Add Pending Authorization status is deleted by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
@@ -215,7 +215,7 @@ properties:
             description: Response for Payment Response Code 9012
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+            description: The Payment transaction is awaiting approval from the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -230,7 +230,7 @@ properties:
             description: Response for Payment Response Code 9013
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+            description:  The Payment transaction is approved by the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -245,7 +245,7 @@ properties:
             description: Response for Payment Response Code 9014
           PaymentResponseCodeDesc:
             type: string
-            description: Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+            description: The Payment transaction is declined by the Payee
           TransactionId:
             type: integer
             description: Transaction Number
@@ -287,7 +287,7 @@ properties:
             description: "1031"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
+            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceId", "ECHOHubTransactionId"
 
       TransError JSON Validation Failed Code 1027:
         type: object

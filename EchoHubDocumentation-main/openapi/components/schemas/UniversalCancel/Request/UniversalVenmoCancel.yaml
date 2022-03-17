@@ -10,7 +10,7 @@ properties:
       The request value type for this field can be either PayorReferenceId or ECHOHubTransactionId.
   RequestValue:
     type: string
-    description: This is the value for PayorReferenceId or ECHOHubTransactionId.
+    description: This is the value of PayorReferenceId or ECHOHubTransactionId.
     minLength: 2
   LibraryMethod:
     type: string

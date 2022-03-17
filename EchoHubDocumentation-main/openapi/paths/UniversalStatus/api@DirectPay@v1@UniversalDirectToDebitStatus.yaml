@@ -3,11 +3,21 @@ post:
     - Universal Payment Status
   summary: Universal Payment Status - Direct To Debit
   operationId: UniversalPaymentD2DStatus
-  description: Universal Payment Status Direct To Debit
+  description: |
+    This endpoint allows the API user to know the status of a Direct To Debit Payment through the Library method.  
+    The status of the Direct To Debit payment can be:  
+      * Submitted
+      * Success
+      * Pending
+      * Rejected
+      * Returned
+      * Cancelled
+      * Pickup Ready
+
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used for Direct To Debit Status
+    description: This endpoint is used to know the status of a Direct To Debit Payment.
     required: true
     content:
       application/json:

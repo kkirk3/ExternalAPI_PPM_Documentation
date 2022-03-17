@@ -3,11 +3,21 @@ post:
     - Universal Payment Status
   summary: Universal Payment Status - Venmo
   operationId: UniversalPaymentVenmoStatus
-  description: Universal Payment Status Venmo
+  description: | 
+    This endpoint allows the API user to know the status of a Venmo Payment through the Library method.  
+    The status of the Venmo payment can be:  
+      * Submitted
+      * Success
+      * Pending
+      * Rejected
+      * Returned
+      * Refunded
+      * Cancelled
+      * Pickup Ready
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used for Venmo Status
+    description: This endpoint is used to know the status of a Venmo Payment.
     required: true
     content:
       application/json:
