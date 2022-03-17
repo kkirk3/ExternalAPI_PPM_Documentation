@@ -83,7 +83,7 @@ paths:
 components:
   securitySchemes:
     x-ApiKey:
-      type: apiKey
+      type: apiKey 
       name: x-ApiKey
       description: The API key.
       in: header
