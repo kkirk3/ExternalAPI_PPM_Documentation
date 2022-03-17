@@ -22,7 +22,7 @@ post:
      token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   operationId: ZelleStatus
   security:
-    - x-Authorization: []
+    - x-Headers: []
   requestBody:
     description: This endpoint is used to know the status of the Zelle Payment.
     required: true
@@ -31,7 +31,7 @@ post:
         schema:
           $ref: ../../components/schemas/Zelle/Request/ZellePaymentStatus.yaml
           security:
-            -  x-Authorization: []
+            -  $ref: ../../components/schemas/customHeaders.yaml
                 
   responses:
     '200':
