@@ -96,6 +96,11 @@ components:
       scheme: x-Authorization
       type: http
       description: The Authorization Token.
+    x-Headers:
+      scheme: x-Authorization
+      type: http
+      description: The Authorization Token.  
+
       
 tags:
   - name: Authorization 

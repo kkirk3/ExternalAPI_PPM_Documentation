@@ -1,0 +1,17 @@
+# security:
+#   - x-ApiKey: []
+#     x-ClientKey: []
+
+
+
+#     securitySchemes:
+#       x-ApiKey:
+#         type: apiKey
+#         name: x-ApiKey
+#         description: The API key.
+#         in: header
+#       x-ClientKey:
+#         type: apiKey
+#         description: The client key.
+#         name: x-ClientKey
+#         in: header 
