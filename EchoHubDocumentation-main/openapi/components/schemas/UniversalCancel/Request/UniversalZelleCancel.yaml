@@ -11,7 +11,7 @@ properties:
   RequestValue:
     type: string
     description: 
-      This is the value for PayorReferenceId or ECHOHubTransactionId.
+      This is the value of PayorReferenceId or ECHOHubTransactionId.
     minLength: 2
   LibraryMethod:
     type: string

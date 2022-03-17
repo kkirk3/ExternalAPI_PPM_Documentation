@@ -3,11 +3,15 @@ post:
     - Universal Payment Status
   summary: Universal Payment Status - VCP
   operationId: UniversalPaymentVCPStatus
-  description: Universal Payment Status VCP
+  description: |
+    This endpoint allows the API user to know the status of a Virtual Card Payment through the Library method. The status of the Virtual card payment can be:
+    * Active
+    * Swiped
+    * Already cancelled.
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used for VCP Status
+    description: This endpoint is used to know the Status of a virtual Card Payment.
     required: true
     content:
       application/json:

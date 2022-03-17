@@ -7,7 +7,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel the Direct To Debit
+    description: This endpoint is used to cancel a Direct To Debit Payment.
     required: true
     content:
       application/json:

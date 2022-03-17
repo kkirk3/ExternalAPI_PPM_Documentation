@@ -7,7 +7,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel the Venmo
+    description: This endpoint is used to cancel a Venmo Payment.
     required: true
     content:
       application/json:
