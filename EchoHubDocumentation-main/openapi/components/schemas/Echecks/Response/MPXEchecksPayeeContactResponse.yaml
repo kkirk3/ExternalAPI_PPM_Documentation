@@ -92,7 +92,7 @@ properties:
                     description: Invalid or Missing Library Method
                   creationdate:
                     type: string 
-                    description: Date Time of the Response
+                    description: Date and Time of the Response
       TransError for JSON Validation Failed Code 150:
                 type: object
                 properties:

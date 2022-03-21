@@ -207,7 +207,7 @@ properties:
             description: Response for Payment response code 4006
           PaymentResponseCodeDesc:
             type: string
-            description: Requested action is not authorized for this payor
+            description: Requested action is not authorized for this Payor
           Transactions:
             type: object                                                                                                                                                                          
       TransLog for Payment response code 4007:

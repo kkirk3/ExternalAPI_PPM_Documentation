@@ -92,7 +92,7 @@ properties:
             description: Response for Payment response code 4005
           PaymentResponseCodeDesc:
             type: string
-            description: The provided requestvalue is invalid
+            description: The provided request value is invalid
           Transactions:
             type: object
       TransLog for Payment response code 4006:
@@ -103,7 +103,7 @@ properties:
             description: Response for Payment response code 4006
           PaymentResponseCodeDesc:
             type: string
-            description: requested action is not authorised for this payer
+            description: Requested action is not authorized for this Payor
           Transactions:
             type: object                                                                                                                                                                          
       TransLog for Payment response code 4007:
@@ -158,7 +158,7 @@ properties:
             description: ErrorCode 1028
           ErrorCodeDesc:
             type: string
-            description: Invalid or Missing RequestBy
+            description: Invalid or Missing Request By
       TransError For Error Code 1029:
         type: object
         properties:

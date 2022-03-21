@@ -80,5 +80,5 @@ properties:
                 description: Invalid or Missing Payor
               creationdate:
                 type: string
-                description: Date Time of the response
+                description: Date and Time of the response
               

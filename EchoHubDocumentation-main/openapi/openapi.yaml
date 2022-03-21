@@ -145,7 +145,7 @@ tags:
         
   - name: Zelle
     description: |
-        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes. 
+        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
         Zelle has three endpoints:
         * Zelle payment create
         * Zelle payment status

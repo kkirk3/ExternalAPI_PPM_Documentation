@@ -62,7 +62,7 @@ properties:
             description: Response for Payment response code 1020
           ErrorDesc:
             type: string
-            description: Invalid or Missing Expire Year
+            description: Invalid or Missing Expiry Year
       TransError for JSON Validation Failed Code 901:
         type: object
         properties:
