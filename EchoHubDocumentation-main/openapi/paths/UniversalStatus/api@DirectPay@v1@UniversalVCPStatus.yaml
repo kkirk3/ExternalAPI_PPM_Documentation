@@ -7,7 +7,7 @@ post:
     This endpoint allows the API user to know the status of a Virtual Card Payment through the Library method. The status of the Virtual card payment can be:
     * Active
     * Swiped
-    * Already cancelled.
+    * Already cancelled
   security:
     - x-Authorization: []
   requestBody:
@@ -70,7 +70,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1025"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"  
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"  
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -92,4 +92,4 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1026"
-                    ErrorDesc : Invalid or Missing Action. Action must be one of the following "Status", "Transaction"
+                    ErrorDesc : Invalid or Missing Action. Action must be either "Status" or "Transaction"
