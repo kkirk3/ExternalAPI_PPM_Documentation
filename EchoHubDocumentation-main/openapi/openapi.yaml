@@ -105,7 +105,7 @@ components:
 tags:
   - name: Authorization 
     description: |
-      This End point Helps to generate the Authentication token for Accessing the End points   
+      This endpoint helps to generate the Authorization Token for accessing the endpoints.   
   - name: eCheck
     description: >
       An eCheck, or electronic check, is a digital version of a paper check that

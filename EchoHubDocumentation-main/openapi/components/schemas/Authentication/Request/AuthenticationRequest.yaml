@@ -6,7 +6,7 @@ properties:
   x-ApiKey:
     type: string
     description: 
-      this is the Api Key
+      This is the Api Key
        
     maxLength: 150
     minLength: 1
