@@ -28,7 +28,7 @@ security:
   - x-ApiKey: []
   - x-ClientKey: []
 paths:
-  /api/Authentication/v1/Authentcation:
+  /api/Authentication/v1/Authentication:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   /api/eCheck/v1/MPXECheckPayeeContact: 
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
@@ -85,21 +85,21 @@ components:
     x-ApiKey:
       type: apiKey 
       name: x-ApiKey
-      description: The API key.
+      description: The API key
       in: header
     x-ClientKey:
       type: apiKey
-      description: The client key.
+      description: The client key
       name: x-ClientKey
       in: header
     x-Authorization:
       scheme: x-Authorization
       type: http
-      description: The Authorization Token.
+      description: The Authorization Token
     x-Headers:
       scheme: x-Authorization
       type: http
-      description: The Authorization Token.  
+      description: The Authorization Token 
 
       
 tags:

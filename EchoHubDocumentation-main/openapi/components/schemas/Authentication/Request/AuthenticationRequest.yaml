@@ -12,5 +12,5 @@ properties:
     minLength: 1
   x-ClientKey:
     type: string
-    description: This is the Client Key .
+    description: This is the Client Key
     maxLength: 100
