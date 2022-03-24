@@ -90,7 +90,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1031"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
