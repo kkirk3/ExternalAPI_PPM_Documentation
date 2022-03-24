@@ -89,7 +89,7 @@ components:
       in: header
     x-ClientKey:
       type: apiKey
-      description: The client key
+      description: The Client key
       name: x-ClientKey
       in: header
     x-Authorization:
