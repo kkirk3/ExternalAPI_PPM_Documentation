@@ -31,7 +31,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   Translog :
                     PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Successful
+                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Successful
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
@@ -44,7 +44,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Failed
+                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Failed
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_1033:   

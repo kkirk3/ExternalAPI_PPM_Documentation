@@ -41,7 +41,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                   PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : Direct to Debit Payment is in Paid Status
+                  PaymentResponseCodeDesc : Direct To Debit Payment is in Paid Status
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number 
             mapName_3000:   
@@ -171,7 +171,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                   PaymentResponseCode : Response for Payment Response Code 3021
-                  PaymentResponseCodeDesc : Diect to Debit Card does not support Direct To Debit payments. Please try another card or select a different payment type.
+                  PaymentResponseCodeDesc : Direct To Debit Card does not support Direct To Debit payments. Please try another card or select a different payment type.
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_3022:   
@@ -184,7 +184,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                   PaymentResponseCode : Response for Payment Response Code 3022
-                  PaymentResponseCodeDesc : Direct to Debit Card is expired. Please try another card or select a different payment type.
+                  PaymentResponseCodeDesc : Direct To Debit Card is expired. Please try another card or select a different payment type.
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
@@ -197,7 +197,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   PaymentResponseCode : Response for Payment Response Code 900
-                  PaymentResponseCodeDesc : Direct to Debit Status Failed
+                  PaymentResponseCodeDesc : Direct To Debit Status Failed
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number 
             mapName_1033:   

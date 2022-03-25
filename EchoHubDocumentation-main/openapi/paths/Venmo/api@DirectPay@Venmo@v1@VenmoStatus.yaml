@@ -42,7 +42,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                       PaymentResponseCode: Response for Payment response code 001
-                      PaymentResponseCodeDesc: Direct To Debit Payment Successful
+                      PaymentResponseCodeDesc: Venmo Payment Successful
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number                            
               mapName1:   
@@ -54,7 +54,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError:  
                       PaymentResponseCode: Response for Payment response code 3008
-                      PaymentResponseCodeDesc: Venmo Payment is in submitted status
+                      PaymentResponseCodeDesc: Venmo Payment is in Submitted status
                       TransactionId: Transaction Number
                   EchoHubTransactionId: EchoHub Transaction Number    
               mapName2:   

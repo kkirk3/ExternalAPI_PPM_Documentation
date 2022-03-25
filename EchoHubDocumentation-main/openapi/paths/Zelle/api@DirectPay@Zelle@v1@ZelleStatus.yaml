@@ -51,7 +51,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog for payment response Code 001:
                   PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : Zelle Payment Instruction has been authorized and will be routed for processing
+                  PaymentResponseCodeDesc : Zelle Payment instruction has been authorized and will be routed for processing
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
                   
@@ -91,7 +91,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog for payment response Code 9002:
                   PaymentResponseCode : Response for Payment Response Code 9002
-                  PaymentResponseCodeDesc : Zelle Payment Instruction that had not yet been claimed by the payee and was successfully cancelled by the sender
+                  PaymentResponseCodeDesc : The Zelle Payment that is not yet been claimed by the Payee is cancelled by the Payor
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9003:   
@@ -104,7 +104,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9003
-                  PaymentResponseCodeDesc : Zelle Payment Instruction has been submitted and is awaiting authorization by the sender
+                  PaymentResponseCodeDesc : Zelle Payment instruction has been submitted and is awaiting authorization by the sender
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9004:   
@@ -117,7 +117,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9004
-                  PaymentResponseCodeDesc : Zelle Payment Instruction that is under review
+                  PaymentResponseCodeDesc : Zelle Payment instruction is under review
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9005:   
@@ -130,7 +130,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9005
-                  PaymentResponseCodeDesc : Zelle Payment Instruction is waiting for acceptance by the payee
+                  PaymentResponseCodeDesc : Zelle Payment instruction is waiting for acceptance by the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9006:   
@@ -143,7 +143,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9006
-                  PaymentResponseCodeDesc : Zelle notification has been sent to the payee to alert them to the pending payment and request their payment selection
+                  PaymentResponseCodeDesc : Zelle notification has been sent to the Payee to alert them to the pending payment
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9007:   
@@ -156,7 +156,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9007
-                  PaymentResponseCodeDesc : Zelle Payment instruction was successfully routed to the payee
+                  PaymentResponseCodeDesc : Zelle Payment instruction is successfully routed to the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9008:   
@@ -169,7 +169,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9008
-                  PaymentResponseCodeDesc : Zelle Payment instruction was successfully delivered to the payee
+                  PaymentResponseCodeDesc : Zelle Payment instruction is successfully delivered to the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number   
             mapName_9009:   
@@ -182,7 +182,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9009
-                  PaymentResponseCodeDesc : Zelle Payment instruction was not claimed by the payee within the expiration period
+                  PaymentResponseCodeDesc : Zelle Payment instruction is not claimed by the Payee within the expiration period
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9010:   
@@ -195,7 +195,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9010
-                  PaymentResponseCodeDesc : Zelle payment instruction that was processed unsuccessfully via the selected payment method
+                  PaymentResponseCodeDesc : The Zelle Payment process is not successful
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9011:   
@@ -208,7 +208,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9011
-                  PaymentResponseCodeDesc : Zelle Payment in Add Pending Authorization status which was successfully deleted by the sender
+                  PaymentResponseCodeDesc : Zelle Payment in Add Pending Authorization status is successfully deleted by the Payor
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9012:   
@@ -221,7 +221,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9012
-                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  PaymentResponseCodeDesc : The Zelle Payment transaction is awaiting approval from the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9013:   
@@ -234,7 +234,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9013
-                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  PaymentResponseCodeDesc : The Zelle Payment transaction is approved by the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9014:   
@@ -247,7 +247,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                   PaymentResponseCode : Response for Payment Response Code 9014
-                  PaymentResponseCodeDesc : Zelle Payment Instruction is routed to an individual who has been designated by the sender as an approver for the transaction
+                  PaymentResponseCodeDesc :  The Zelle Payment transaction is declined by the Payee
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
