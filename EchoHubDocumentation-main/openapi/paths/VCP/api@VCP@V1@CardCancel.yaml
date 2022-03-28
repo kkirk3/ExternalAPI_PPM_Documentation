@@ -193,7 +193,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1025
@@ -203,7 +203,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1027
@@ -213,7 +213,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1028
@@ -234,7 +234,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be Cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           PaymentResponseCode: ErrorCode 900
