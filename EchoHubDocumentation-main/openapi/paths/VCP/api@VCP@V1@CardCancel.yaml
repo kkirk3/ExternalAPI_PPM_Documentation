@@ -175,7 +175,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4006
-                          PaymentResponseCodeDesc: The provided request value is invalid
+                          PaymentResponseCodeDesc: Requested action is not authorized for this Payor
                           Transactions: object
                   mapName8:
                     summary: "4007"
