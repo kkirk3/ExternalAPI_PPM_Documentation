@@ -186,7 +186,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
-                          PaymentResponseCodeDesc: Requested action is not authorized for this Payer
+                          PaymentResponseCodeDesc: No records found, Please contact VCP
                           Transactions: object
                   mapName9:
                     summary: "1025"
