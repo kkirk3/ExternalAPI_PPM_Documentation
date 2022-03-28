@@ -2,7 +2,7 @@
 post:
   tags:
     - Virtual Card Program (VCP)
-  summary: Virtual Card - Cancel
+  summary: Virtual Card – Cancel
   description: |
             This endpoint allows the API User to cancel a Virtual Card.
 
@@ -186,7 +186,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
-                          PaymentResponseCodeDesc: Requested action is not authorized for this Payor
+                          PaymentResponseCodeDesc: Requested action is not authorized for this Payer
                           Transactions: object
                   mapName9:
                     summary: "1025"
