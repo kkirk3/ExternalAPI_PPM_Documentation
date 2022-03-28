@@ -238,7 +238,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransError:
                           PaymentResponseCode: ErrorCode 900
-                          PaymentResponseCodeDesc: Invalid or Missing Request Value 
+                          PaymentResponseCodeDesc: VCP Block Card Failed
                           Transactions: object
                   mapName13:
                     summary: "907"
