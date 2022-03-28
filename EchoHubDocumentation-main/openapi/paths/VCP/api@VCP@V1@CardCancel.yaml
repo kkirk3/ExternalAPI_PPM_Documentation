@@ -175,7 +175,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4006
-                          PaymentResponseCodeDesc: The provided requestvalue is invalid
+                          PaymentResponseCodeDesc: Requested action is not authorised for this payer
                           Transactions: object
                   mapName8:
                     summary: "4007"
@@ -186,7 +186,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
-                          PaymentResponseCodeDesc: requested action is not authorised for this payer
+                          PaymentResponseCodeDesc: No records found, Please contact VCP
                           Transactions: object
                   mapName9:
                     summary: "1025"

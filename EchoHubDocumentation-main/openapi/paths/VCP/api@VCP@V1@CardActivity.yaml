@@ -159,7 +159,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog: 
                     PaymentResponseCode: Response for Payment response code 4006
-                    PaymentResponseCodeDesc: requested action is not authorised for this payer
+                    PaymentResponseCodeDesc: Requested action is not authorised for this payer
                     Transactions: object
             mapName8:
               summary: "4007"
