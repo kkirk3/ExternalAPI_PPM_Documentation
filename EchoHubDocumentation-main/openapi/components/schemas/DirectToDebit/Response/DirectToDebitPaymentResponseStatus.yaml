@@ -35,7 +35,7 @@ properties:
             description: Payment Response for Payment response code 3000
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in submitted status
+            description: Direct To Debit Payment is in Submitted status
           TransactionId:
             type: string
             description: Transaction Number
@@ -155,7 +155,7 @@ properties:
             description: Payment Response for Payment response code 3020
           PaymentResponseCodeDesc:
             type: string
-            description: Invalid Card number. Please try another card or select a different payment type
+            description: Invalid Card Number. Please try another card or select a different payment type
           TransactionId:
             type: string
             description: Transaction Number

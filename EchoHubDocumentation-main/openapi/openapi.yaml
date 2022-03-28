@@ -28,7 +28,7 @@ security:
   - x-ApiKey: []
   - x-ClientKey: []
 paths:
-  /api/Authentication/v1/Authentcation:
+  /api/Authentication/v1/Authentication:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   /api/eCheck/v1/MPXECheckPayeeContact: 
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
@@ -85,29 +85,27 @@ components:
     x-ApiKey:
       type: apiKey 
       name: x-ApiKey
-      description: The API key.
+      description: The API key
       in: header
     x-ClientKey:
       type: apiKey
-      description: The client key.
+      description: The Client key
       name: x-ClientKey
       in: header
     x-Authorization:
       scheme: x-Authorization
       type: http
-      description: The Authorization Token.
+      description: The Authorization Token
     x-Headers:
       scheme: x-Authorization
       type: http
-      description: The Authorization Token.
-    
-        
+      description: The Authorization Token 
 
       
 tags:
   - name: Authorization 
     description: |
-      This End point Helps to generate the Authentication token for Accessing the End points   
+      This endpoint helps to generate the Authorization Token for accessing the endpoints.   
   - name: eCheck
     description: >
       An eCheck, or electronic check, is a digital version of a paper check that
@@ -147,7 +145,7 @@ tags:
         
   - name: Zelle
     description: |
-        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes. 
+        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
         Zelle has three endpoints:
         * Zelle payment create
         * Zelle payment status
@@ -161,4 +159,6 @@ tags:
     description: | 
         The Universal Payment Status endpoint allows the API user to access and get the status of a payment that may be Direct to Debit, Venmo, Zelle, or a Virtual Card based on the library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
 
-        
+  - name: Universal Payment Void
+    description: |      
+        The Universal Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.

@@ -3,7 +3,7 @@ post:
     - Direct To Debit
   summary: Direct To Debit Payment Cancel
   description: | 
-   This endpoint allows the API User to cancel a Direct To Debit Payment. It requires the unique Payer Reference ID. 
+   This endpoint allows the API User to cancel a Direct To Debit Payment. It requires the unique Payor Reference ID. 
    
    Once the user is authenticated, this endpoint generates an authorization
      token by using the API key and the Client key. This authorization token is valid for 30 minutes.
@@ -48,7 +48,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Failed
+                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Failed
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number            
             mapName_1031:   
@@ -61,7 +61,7 @@ post:
                     ResponseTransactionID: Transaction Number
                     TransError :
                       ErrorCode : "1031"
-                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceId", "ECHOHubTransactionId".        
+                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be either "PayorReferenceID" or "ECHOHubTransactionID".        
             mapName_1027:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1027"

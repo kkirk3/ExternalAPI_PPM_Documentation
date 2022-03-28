@@ -139,7 +139,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                     PaymentResponseCode: Response for Payment response code 4005
-                    PaymentResponseCodeDesc: The provided requestvalue is invalid
+                    PaymentResponseCodeDesc: The provided request value is invalid
             mapName_4006:
               summary: "4006"
               description: Please scroll the above dropdown list for more response codes          
@@ -149,7 +149,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                     PaymentResponseCode: Response for Payment response code 4006
-                    PaymentResponseCodeDesc: Requested action is not authorised for this payer
+                    PaymentResponseCodeDesc: The provided request value is invalid
             mapName_4007:
               summary: "4007"
               description: Please scroll the above dropdown list for more response codes          
@@ -159,7 +159,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:
                     PaymentResponseCode: Response for Payment response code 4007
-                    PaymentResponseCodeDesc: No records found, Please contact VCP
+                    PaymentResponseCodeDesc: Requested action is not authorized for this Payor
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -193,7 +193,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1025"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"        
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"        
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -215,7 +215,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1029"
-                    ErrorDesc : Invalid or Missing Action. Action must be one of the following "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"        
+                    ErrorDesc : Invalid or Missing Action. Action must be one of the following - "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"        
             mapName_1028:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1028"
@@ -226,4 +226,4 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     ErrorCode : "1028"
-                    ErrorDesc : Invalid or Missing RequestBy               
+                    ErrorDesc : Invalid or Missing Request By               

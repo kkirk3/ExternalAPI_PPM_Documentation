@@ -122,7 +122,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: integer
-            description: Zelle Payment notification has been sent to the payee to alert them regarding the payment
+            description: Response for Payment Response Code 9006
           PaymentResponseCodeDesc:
             type: string
             description: Zelle Payment unknown
@@ -287,7 +287,7 @@ properties:
             description: "1031"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceId", "ECHOHubTransactionId"
+            description: Invalid or Missing Request Value Type. Request Value Type should be either "PayorReferenceID" or "ECHOHubTransactionID"
 
       TransError JSON Validation Failed Code 1027:
         type: object

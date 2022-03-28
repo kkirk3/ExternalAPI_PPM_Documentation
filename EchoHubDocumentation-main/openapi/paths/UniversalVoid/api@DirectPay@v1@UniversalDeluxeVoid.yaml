@@ -3,11 +3,11 @@ post:
     - Universal Payment Void
   summary: Universal Payment Void - Deluxe
   operationId: UniversalPaymentDeluxeVoid
-  description: Universal Payment Void Deluxe
+  description: This endpoint allows the API user to void a Deluxe eCheck payment through the Library method. The Deluxe Transaction ID is required to identify the payment to be voided.
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to Void the eCheck
+    description: This endpoint is used to void a Deluxe eCheck Payment.
     required: true
     content:
       application/json:
@@ -90,7 +90,7 @@ post:
                     ResponseTransactionID: Transaction Number
                     TransError :
                       ErrorCode : "1031"
-                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1027"

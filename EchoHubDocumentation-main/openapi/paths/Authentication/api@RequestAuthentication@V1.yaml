@@ -1,15 +1,15 @@
 get:
   tags:
     - Authorization  
-  summary: Get Authorization token
+  summary: Get Authorization Token
   operationId: GetAuthToken
   description: >
       Once the user is authenticated, this endpoint generates an authorization
-      token by using the API key and Client key. This authorization token is
+      token by using the API key and the Client key. This authorization token is
       valid for 30 minutes.
   requestBody:
     description:  |
-      This endpoint is used to generate the Authetication Token
+      This endpoint is used to generate the Authorization Token.
     required: true
     content:
       application/json:

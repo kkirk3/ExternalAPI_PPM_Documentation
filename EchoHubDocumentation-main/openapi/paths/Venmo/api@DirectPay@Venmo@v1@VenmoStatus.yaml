@@ -42,7 +42,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                       PaymentResponseCode: Response for Payment response code 001
-                      PaymentResponseCodeDesc: Direct To Debit Payment Successful
+                      PaymentResponseCodeDesc: Venmo Payment Successful
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number                            
               mapName1:   
@@ -54,7 +54,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError:  
                       PaymentResponseCode: Response for Payment response code 3008
-                      PaymentResponseCodeDesc: Venmo Payment is in submitted status
+                      PaymentResponseCodeDesc: Venmo Payment is in Submitted status
                       TransactionId: Transaction Number
                   EchoHubTransactionId: EchoHub Transaction Number    
               mapName2:   
@@ -163,7 +163,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransError :
                         ErrorCode : "1031"
-                        ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+                        ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
               mapName_1027:   
                   description: Please scroll the above dropdown list for more response codes          
                   summary: "1027"

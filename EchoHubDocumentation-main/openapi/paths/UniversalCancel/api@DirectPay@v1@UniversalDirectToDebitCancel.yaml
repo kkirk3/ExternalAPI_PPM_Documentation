@@ -3,7 +3,7 @@ post:
     - Universal Payment Cancel
   summary: Universal Payment Cancel - Direct To Debit
   operationId: UniversalPaymentD2DCancel
-  description: This endpoint allows the API user to cancel a Direct to Debit payment through the Library method. It requires the unique Payer Reference ID.
+  description: This endpoint allows the API user to cancel a Direct to Debit payment through the Library method. It requires the unique Payor Reference ID.
   security:
     - x-Authorization: []
   requestBody:
@@ -31,7 +31,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   Translog :
                     PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Successful
+                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Successful
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
@@ -44,7 +44,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Failed
+                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Failed
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_1033:   
@@ -68,7 +68,7 @@ post:
                     ResponseTransactionID: Transaction Number
                     TransError :
                       ErrorCode : "1031"
-                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"        
+                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1027"

@@ -7,11 +7,11 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      This is the Payer Reference ID. The Payer transaction is identified with their Payer Reference ID
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
   RequestValue:
     type: string
-    description: This is the value of PayorReferenceId or ECHOHubTransactionId.
+    description: This is the value of PayorReferenceID or ECHOHubTransactionID.
     minLength: 2
   LibraryMethod:
     type: string
-    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method in this case should be 'DirectToDebitCancel'.
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'DirectToDebitCancel'.

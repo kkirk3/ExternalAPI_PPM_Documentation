@@ -6,11 +6,11 @@ properties:
   x-ApiKey:
     type: string
     description: 
-      this is the Api Key
+      This is the Api Key
        
     maxLength: 150
     minLength: 1
   x-ClientKey:
     type: string
-    description: This is the Client Key .
+    description: This is the Client Key
     maxLength: 100

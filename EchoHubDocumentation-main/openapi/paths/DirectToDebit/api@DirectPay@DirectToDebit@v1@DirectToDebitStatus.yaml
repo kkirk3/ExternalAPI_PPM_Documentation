@@ -54,7 +54,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 3000
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in submitted status
+                    PaymentResponseCodeDesc: Direct To Debit Payment is in Submitted status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number    
             mapName2:   

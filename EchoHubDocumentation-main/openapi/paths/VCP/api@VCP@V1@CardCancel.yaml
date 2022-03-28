@@ -2,26 +2,26 @@
 post:
   tags:
     - Virtual Card Program (VCP)
-  summary: VCP Card Cancel request
-  description: 
+  summary: Virtual Card - Cancel
+  description: |
             This endpoint allows the API User to cancel a Virtual Card.
 
 
-            The following cancel actions can be performed
+            The following cancel actions can be performed:
     
             * Block – Card will be blocked.        
     
             * Block and Reissue – The card will be blocked, and then a new card will
             be reissued.       
     
-            * Block and Optout – Card will be blocked and opted out.       
+            * Block and Opt out – Card will be blocked and opted out.       
     
-            * Reissue - Provides status of payment before reissue.
+            * Reissue – Provides status of payment before reissue.
           
 
             
-          Once the user is authenticated, this endpoint generates an authorization
-          token by using the API key and Client key. This authorization token is valid for 30 minutes.
+            Once the user is authenticated, this endpoint generates an authorization
+            token by using the API key and Client key. This authorization token is valid for 30 minutes.
   operationId: VCPCancel
   security:
     - x-Authorization: []
@@ -164,7 +164,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4005
-                          PaymentResponseCodeDesc: The provided requestvalue is invalid
+                          PaymentResponseCodeDesc: The provided request value is invalid
                           Transactions: object
                   mapName7:
                     summary: "4006"
@@ -175,7 +175,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4006
-                          PaymentResponseCodeDesc: Requested action is not authorised for this payer
+                          PaymentResponseCodeDesc: The provided request value is invalid
                           Transactions: object
                   mapName8:
                     summary: "4007"
@@ -186,7 +186,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
-                          PaymentResponseCodeDesc: No records found, Please contact VCP
+                          PaymentResponseCodeDesc: Requested action is not authorized for this Payor
                           Transactions: object
                   mapName9:
                     summary: "1025"

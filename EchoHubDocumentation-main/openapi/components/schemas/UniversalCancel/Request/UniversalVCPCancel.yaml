@@ -10,10 +10,10 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      Request ValueType can be of DraftNumber,CardNumberToken,PayerCheckClaimNumber,ClaimNumber,PayHubPaymentID
+      Request ValueType can be DraftNumber, CardNumberToken, PayerCheckClaimNumber, ClaimNumber, PayHubPaymentID.
   RequestValue:
     type: string
-    description: Thi is the Request Value
+    description: This is the Request Value.
     minLength: 2
   RequestedBy:
     type: boolean
@@ -21,14 +21,18 @@ properties:
   Action:
     type: integer
     description: >-
-      Action field can be of Block, BlockAndResissue, BlockAndOptout, and Reissue
-      * When Action is passed as "Block" – Card is cancelled and the payment is marked as void. The Payer must handle the payment.
-      * When Action is passed as "BlockAndReIssue" – Card is cancelled and ECHO would reissue the payment in the next available payment method.
-      * When Action is passed as "BlockAndOptOut" – Card is cancelled and the Provider is opted out of the "Virtual Card Program" from the Payer that is associated with the payment. The Payer must handle the payment.
-      * When Action is passed as "ReIssue" - It allows to update the status of a Payment that is voided earlier to reissue from ECHO.
+      Action field can be of Block, BlockAndResissue, BlockAndOptout, and Reissue  
+
+      * When Action is passed as "Block" – Card is cancelled and the payment is marked as void. The Payor must handle the payment.  
+      
+      * When Action is passed as "BlockAndReIssue" – Card is cancelled and ECHO would reissue the payment in the next available payment method.  
+      
+      * When Action is passed as "BlockAndOptOut" – Card is cancelled and the Provider is opted out of the "Virtual Card Program" from the Payor that is associated with the payment. The Payor must handle the payment.  
+      
+      * When Action is passed as "ReIssue" - It allows to update the status of a Payment that is voided earlier to reissue from ECHO.  
   OptoutReason:
     type: integer
-    description: This is an optional String value, which recommends the consumer to pass the reason as to why the Provider would like to opt out of Virtual Card Program when the action is BlockAndOptOut.
+    description: This is an optional String value, which recommends the consumer to pass the reason as to why the Provider would like to opt out of the Virtual Card Program when the action is BlockAndOptOut.
   LibraryMethod:
     type: string
-    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method in this case should be 'VCPCancel'.
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'VCPCancel'.

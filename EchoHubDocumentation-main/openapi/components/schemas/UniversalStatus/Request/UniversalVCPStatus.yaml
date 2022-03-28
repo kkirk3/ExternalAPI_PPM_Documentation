@@ -8,7 +8,7 @@ properties:
   RequestValueType:
     type: string
     description: >-
-      Request Value Type can be DraftNumber, CardNumberToken, PayorCheckClaimNumber, ClaimNumber, PayHubPaymentID
+      Request Value Type can be DraftNumber, CardNumberToken, PayerCheckClaimNumber, ClaimNumber, PayHubPaymentID
   RequestValue:
     type: string
     description: This is the Request Value.
@@ -19,4 +19,4 @@ properties:
       The Value for the Action field should be Status.
   LibraryMethod:
     type: string
-    description: This is the payment modality that the API user is trying to access to know the status from the library of payment modalities. Library Method in this case should be 'VCPStatus'.
+    description: This is the payment modality that the API user is trying to access to know the status from the library of payment modalities. Library Method, in this case, should be 'VCPStatus'.

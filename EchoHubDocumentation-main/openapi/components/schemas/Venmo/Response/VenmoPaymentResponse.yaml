@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ReponseCodeDesc:
         type: string
-        description: sucessful Transaction
+        description: Successful Transaction
       ResponseTransactionID:
         type: string
         description: Transaction Number
@@ -47,4 +47,4 @@ properties:
             description: Response for Payment response code 001
           ErrorDesc:
             type: string
-            description: Duplicate PayorReferencedId
+            description: Duplicate Payor Reference ID

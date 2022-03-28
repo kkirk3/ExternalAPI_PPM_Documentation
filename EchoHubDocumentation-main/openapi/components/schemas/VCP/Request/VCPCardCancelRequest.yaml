@@ -40,7 +40,7 @@ properties:
 
         payment.            
 
-        * When Action is passed as "ReIssue" - It allows to update the
+        * When Action is passed as "ReIssue" – It allows to update the
         status
 
         of a Payment that is voided earlier to reissue from ECHO.
