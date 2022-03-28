@@ -115,7 +115,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog: 
                     PaymentResponseCode: Response for Payment response code 4002
-                    PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
+                    PaymentResponseCodeDesc: Provider has used the card, Payment cannot be blocked/voided
                     Transactions: object
             mapName4:
               summary: "4003"

@@ -131,7 +131,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4002
-                          PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
+                          PaymentResponseCodeDesc: Provider has used the card, Payment cannot be blocked/voided
                           Transactions: object
                   mapName4:
                     summary: "4003"
@@ -186,14 +186,14 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:
                           PaymentResponseCode: Response for Payment response code 4007
-                          PaymentResponseCodeDesc: Requested action is not authorized for this Payer
+                          PaymentResponseCodeDesc: No records found, Please contact VCP
                           Transactions: object
                   mapName9:
                     summary: "1025"
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1025
@@ -203,7 +203,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1027
@@ -213,7 +213,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1028
@@ -223,7 +223,7 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1029
@@ -234,11 +234,11 @@ post:
                     description: Please scroll the above dropdown list for more response codes          
                     value:
                       ReponseCode: Response for Payment response code 900
-                      ReponseCodeDesc: Payment could not be processed, please contact customer care
+                      ReponseCodeDesc: Payment could not be Cancelled, please contact customer care
                       ResponseTransactionID: Transaction Number
                       TransError:
                           PaymentResponseCode: ErrorCode 900
-                          PaymentResponseCodeDesc: Invalid or Missing Request Value 
+                          PaymentResponseCodeDesc: VCP Block Card Failed
                           Transactions: object
                   mapName13:
                     summary: "907"
