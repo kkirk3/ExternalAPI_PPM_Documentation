@@ -1,10 +1,10 @@
 post:
   tags:
-    - Direct To Debit
-  summary: Direct To Debit Payment Status
+    - Direct to Debit
+  summary: Direct to Debit Payment Status
   description: | 
-   This endpoint allows the API user to know the status of the Direct To Debit Payment.  
-   The status of the Direct To Debit payment can be: 
+   This endpoint allows the API user to know the status of the Direct to Debit Payment.  
+   The status of the Direct to Debit payment can be: 
    * Submitted
    * Success
    * Pending
@@ -19,7 +19,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to know the status of the Direct To Debit Payment.
+    description: This endpoint is used to know the status of the Direct to Debit Payment.
     required: true
     content:
       application/json:
@@ -42,7 +42,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Direct To Debit Payment Successful
+                    PaymentResponseCodeDesc: Direct to Debit Payment Successful
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                            
             mapName1:   
@@ -54,7 +54,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 3000
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in Submitted status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in Submitted status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number    
             mapName2:   
@@ -66,7 +66,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 3001
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in Pending status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in Pending status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number        
             mapName3:   
@@ -78,7 +78,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 3002
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in Reject status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in Reject status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number            
             mapName4:   
@@ -90,7 +90,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                       PaymentResponseCode: Response for Payment response code 3003
-                      PaymentResponseCodeDesc: Direct To Debit Payment is in Cancelled status
+                      PaymentResponseCodeDesc: Direct to Debit Payment is in Cancelled status
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number                
             mapName5:   
@@ -102,7 +102,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                     PaymentResponseCode: Response for Payment response code 3004
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in Returned status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in Returned status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                      
             mapName6:   
@@ -114,7 +114,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                     PaymentResponseCode: Response for Payment response code 3005
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in PickUp ready status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in PickUp ready status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                            
             mapName7:   
@@ -126,7 +126,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                     PaymentResponseCode: Response for Payment response code 3006
-                    PaymentResponseCodeDesc: Direct To Debit Payment is in Returned status
+                    PaymentResponseCodeDesc: Direct to Debit Payment is in Returned status
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number                                    
             mapName8:   
@@ -138,7 +138,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:  
                         PaymentResponseCode: Response for Payment response code 3007
-                        PaymentResponseCodeDesc: Direct To Debit Payment Unknown
+                        PaymentResponseCodeDesc: Direct to Debit Payment Unknown
                         TransactionId: Transaction Number
                         EchoHubTransactionId: EchoHub Transaction Number                                            
             mapName9:   
@@ -150,7 +150,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransLog:  
                         PaymentResponseCode: Response for Payment response code 3020
-                        PaymentResponseCodeDesc: Direct To Debit Card Invalid card number. Please try another card or select a different payment type
+                        PaymentResponseCodeDesc: Direct to Debit Card Invalid card number. Please try another card or select a different payment type
                         TransactionId: Transaction Number
                         EchoHubTransactionId: EchoHub Transaction Number                                                        
             mapName10:   
@@ -162,7 +162,7 @@ post:
                           ResponseTransactionID: Transaction Number
                           TransLog:  
                             PaymentResponseCode: Response for Payment response code 3021
-                            PaymentResponseCodeDesc: Direct To Debit Card does not support Direct To Debit payments. Please try another card or select a different payment type
+                            PaymentResponseCodeDesc: Direct to Debit Card does not support Direct to Debit payments. Please try another card or select a different payment type
                             TransactionId: Transaction Number
                             EchoHubTransactionId: EchoHub Transaction Number                                                                    
             mapName11:   
@@ -174,7 +174,7 @@ post:
                           ResponseTransactionID: Transaction Number
                           TransLog:  
                             PaymentResponseCode: Response for Payment response code 3022
-                            PaymentResponseCodeDesc: Direct To Debit Card is Expired. Please try another card or select a different payment type.
+                            PaymentResponseCodeDesc: Direct to Debit Card is Expired. Please try another card or select a different payment type.
                             TransactionId: Transaction Number
                             EchoHubTransactionId: EchoHub Transaction Number                                                                                         
             mapName12:   

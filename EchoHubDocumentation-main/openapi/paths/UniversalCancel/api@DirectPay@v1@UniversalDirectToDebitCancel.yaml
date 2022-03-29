@@ -1,13 +1,13 @@
 post:
   tags:
     - Universal Payment Cancel
-  summary: Universal Payment Cancel - Direct To Debit
+  summary: Universal Payment Cancel - Direct to Debit
   operationId: UniversalPaymentD2DCancel
   description: This endpoint allows the API user to cancel a Direct to Debit payment through the Library method. It requires the unique Payor Reference ID.
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to cancel a Direct To Debit Payment.
+    description: This endpoint is used to cancel a Direct to Debit Payment.
     required: true
     content:
       application/json:
@@ -31,7 +31,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   Translog :
                     PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Successful
+                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Successful
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
@@ -44,7 +44,7 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransError :
                     PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : Direct To Debit Cancel Payment Failed
+                    PaymentResponseCodeDesc : Direct to Debit Cancel Payment Failed
                     TransactionId : Transaction Number
                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_1033:   

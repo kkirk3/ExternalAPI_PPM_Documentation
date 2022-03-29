@@ -1,7 +1,7 @@
 post:
   tags:
-    - Direct To Debit
-  summary: Direct To Debit Payment Create
+    - Direct to Debit
+  summary: Direct to Debit Payment Create
   description: | 
    This endpoint allows the API user to create a Payment to the Payee.  
    The Payor is identified with the unique Payor reference ID. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. 
@@ -13,7 +13,7 @@ post:
   security:
     - x-Authorization: []
   requestBody:
-    description: This endpoint is used to create a Direct To Debit Payment to the Payee.
+    description: This endpoint is used to create a Direct to Debit Payment to the Payee.
     required: true
     content:
       application/json:
@@ -37,7 +37,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Direct To Debit Payment Successful
+                    PaymentResponseCodeDesc: Direct to Debit Payment Successful
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   
@@ -49,7 +49,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: Direct To Debit Payment Failed
+                    PaymentResponseCodeDesc: Direct to Debit Payment Failed
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
           # # x-examples:
