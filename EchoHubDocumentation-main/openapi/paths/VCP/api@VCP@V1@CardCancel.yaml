@@ -217,7 +217,7 @@ post:
                       ResponseTransactionID: Transaction Number
                       TransError:
                           ErrorCode: ErrorCode 1028
-                          ErrorDesc: Invalid or Missing RequestBy
+                          ErrorDesc: Invalid or Missing Request By
                   mapName15:
                     summary: "1029"
                     description: Please scroll the above dropdown list for more response codes          

@@ -117,13 +117,13 @@ tags:
       checking account. Money is transferred over the ACH (Automated Clearing House) network and
       deposited into the Payee’s checking account.
 
-  - name: Direct To Debit
+  - name: Direct to Debit
     description: |
-      Direct To Debit is the simplest and most convenient way to make payments. It is a type of pre-authorized payment that allows a bank to pay a certain amount directly to the provider with a debit card. With Direct To Debit payments, the money is directly transferred to the cardholder.  
-      Direct To Debit has three endpoints:  
-       * Direct To Debit payment create  
-       * Direct To Debit payment status   
-       * Direct To Debit payment cancel
+      Direct to Debit is the simplest and most convenient way to make payments. It is a type of pre-authorized payment that allows a bank to pay a certain amount directly to the provider with a debit card. With Direct to Debit payments, the money is directly transferred to the cardholder.  
+      Direct to Debit has three endpoints:  
+       * Direct to Debit payment create  
+       * Direct to Debit payment status   
+       * Direct to Debit payment cancel
 
   - name: Virtual Card Program (VCP)
     description: |

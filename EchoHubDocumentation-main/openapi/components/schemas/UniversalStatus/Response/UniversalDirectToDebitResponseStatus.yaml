@@ -20,7 +20,7 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Paid Status
+            description: Direct to Debit Payment is in Paid Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -35,7 +35,7 @@ properties:
             description: Response for Payment Response Code 3000
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Submitted Status
+            description: Direct to Debit Payment is in Submitted Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -50,7 +50,7 @@ properties:
             description: Response for Payment Response Code 3001
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Pending Status
+            description: Direct to Debit Payment is in Pending Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -65,7 +65,7 @@ properties:
             description: Response for Payment Response Code 3002
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Reject Status
+            description: Direct to Debit Payment is in Reject Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -80,7 +80,7 @@ properties:
             description: Response for Payment Response Code 3003
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Cancelled Status
+            description: Direct to Debit Payment is in Cancelled Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -95,7 +95,7 @@ properties:
             description: Response for Payment Response Code 3004
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Returned Status
+            description: Direct to Debit Payment is in Returned Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -110,7 +110,7 @@ properties:
             description: Response for Payment Response Code 3005
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Pickup Ready Status
+            description: Direct to Debit Payment is in Pickup Ready Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -125,7 +125,7 @@ properties:
             description: Response for Payment Response Code 3006
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment is in Refunded Status
+            description: Direct to Debit Payment is in Refunded Status
           TransactionId:
             type: integer
             description: Transaction Number
@@ -140,7 +140,7 @@ properties:
             description: Response for Payment Response Code 3007
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Payment Unknown
+            description: Direct to Debit Payment Unknown
           TransactionId:
             type: integer
             description: Transaction Number
@@ -155,7 +155,7 @@ properties:
             description: Response for Payment Response Code 3020
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Card Invalid card number.Please try another card or select a different payment type.
+            description: Direct to Debit Card Invalid card number.Please try another card or select a different payment type.
           TransactionId:
             type: integer
             description: Transaction Number
@@ -170,7 +170,7 @@ properties:
             description: Response for Payment Response Code 3021
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Card does not support Direct To Debit payments.Please try another card or select a different payment type.
+            description: Direct to Debit Card does not support Direct to Debit payments.Please try another card or select a different payment type.
           TransactionId:
             type: integer
             description: Transaction Number
@@ -185,7 +185,7 @@ properties:
             description: Response for Payment Response Code 3022
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Card is expired. Please try another card or select a different payment type.
+            description: Direct to Debit Card is expired. Please try another card or select a different payment type.
           TransactionId:
             type: integer
             description: Transaction Number
@@ -212,7 +212,7 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: Direct To Debit Status Failed
+            description: Direct to Debit Status Failed
           TransactionId:
             type: integer
             description: Transaction Number
