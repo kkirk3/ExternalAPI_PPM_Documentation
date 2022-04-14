@@ -80,6 +80,8 @@ paths:
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
+  /api/WebHook/v1/WebHookStatus:
+    $ref: paths/WebHook/api@v1@WebHookStatusUpdate.yaml
 components:
   securitySchemes:
     x-ApiKey:
