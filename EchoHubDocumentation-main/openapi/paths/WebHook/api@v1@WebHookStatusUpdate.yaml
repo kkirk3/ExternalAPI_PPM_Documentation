@@ -1,18 +1,29 @@
 post:
   tags:
     - WebHook
-  summary: WebHookStatusUpdate
+  summary: WebHookStatusUpdate - Internal
   operationId: WebHookStatus
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the API user to create a Status of the Payments.  
-   The Payor is identified with the unique Payor reference ID. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
-     
+   This endpoint helps find all the non-cleared and non-canceled payments in each payment modality (Direct to Debit, Zelle, and Venmo) and checks their current status. An active batch is triggered once a day and verifies for payments older than 24 hours. This requires the third-party reference ID which identifies the Payor transaction to get the status. Based on the current status and Reference ID, we call the third-party webhook status update endpoint.
+   The current status can be:
+   * Cancelled
+   * Returned
+   * Refunded
+   * Rejected
+   * Expired
+   * Failed
+   * Deleted
+   * Payee Approval Declined
+   * Success
+   * Delivered
+   * Payee Approval Confirmed
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
 
   requestBody:
-    description: This endpoint is used to create a Venmo Payment to the Payee.
+    description: This endpoint helps check the current status of a payment.
     required: true
     content:
       application/json:

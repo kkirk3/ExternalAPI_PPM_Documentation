@@ -5,10 +5,10 @@ type: object
 properties:
   ReferenceId:
     type: string
-    description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
+    description: This is the third-party reference ID. This reference ID is used to fetch the transaction status of the payment from the third-party system into the ECHO Hub application.
     maxLength: 150
     minLength: 1
   Status:
     type: string
-    description: This is the email ID of the Payee.    
+    description: This is the current status received based on the reference ID and the payment modality.   
     maxLength: 100  
