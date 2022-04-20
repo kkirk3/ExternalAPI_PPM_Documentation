@@ -1,8 +1,8 @@
 post:
   tags:
-    - WebHook
-  summary: WebHookStatusUpdate - Internal
-  operationId: WebHookStatus
+    - Webhook
+  summary: Internal Webhook Status Update
+  operationId: InternalWebhookStatusUpdate
   security:
     - x-Authorization: []
   description: |
@@ -28,14 +28,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/WebHook/Request/WebHookStatusUpdate.yaml
+          $ref: ../../components/schemas/WebHook/Request/InternalWebHookStatusUpdate.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/WebHook/Response/WebHookStatusResponse.yaml
+            $ref: ../../components/schemas/WebHook/Response/InternalWebHookStatusResponse.yaml
           examples:
             mapName:   
               description: Please scroll the above dropdown list for more response codes          
@@ -46,7 +46,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                     PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Webhook Status Update Success
+                    PaymentResponseCodeDesc: Internal Webhook Status Success
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   
@@ -54,10 +54,10 @@ post:
               summary: "900"
               value:
                 ReponseCode: Response Code 900
-                ReponseCodeDesc: Payment Status Unknown, Please contact customer care
+                ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: WebHook Status Update Failed
+                    PaymentResponseCodeDesc: Internal Webhook Status Failed
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
