@@ -1,0 +1,49 @@
+post:
+  tags:
+    - Webhook
+  summary: Webhook Status Update
+  operationId: WebhookStatusUpdate
+  security:
+    - x-Authorization: []
+  description: |
+   
+
+  requestBody:
+    description: Webhook
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/WebHook/Request/WebHookStatusUpdate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/WebHook/Response/WebHookStatusResponse.yaml
+          examples:
+            mapName:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: Response Code 001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:  
+                    PaymentResponseCode: Response for Payment Response Code 001
+                    PaymentResponseCodeDesc: Webhook Status Update Success
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    PaymentResponseCode: Response for Payment Response Code 900
+                    PaymentResponseCodeDesc: Webhook Status Update Failed
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number

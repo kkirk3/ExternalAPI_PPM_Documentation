@@ -1,0 +1,31 @@
+required:
+  - PayorId
+  - PayeeId
+  - ReferenceId
+  - Amount
+  - Status
+type: object
+properties:
+  PayorId:
+    type: string
+    description: PayorId
+    maxLength: 1
+    minLength: 1
+  PayeeId:
+    type: string
+    description: PayeeId
+    maxLength: 1
+    minLength: 1
+  ReferenceId:
+    type: string
+    description: This is the third-party reference ID. This reference ID is used to fetch the transaction status of the payment from the third-party system into the ECHO Hub application.
+    maxLength: 150
+    minLength: 1
+  Amount:
+    type: integer
+    description: Amount
+    maxLength: 100 
+  Status:
+    type: string
+    description: This is the current status received based on the reference ID and the payment modality.   
+    maxLength: 100  

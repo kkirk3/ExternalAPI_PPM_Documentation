@@ -79,9 +79,11 @@ paths:
   /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
   /api/DirectPay/v1/PaymentVoid:
-    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
-  /api/WebHook/v1/InternalStatusUpdate:
-    $ref: paths/WebHook/api@v1@InternalStatusUpdate.yaml
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  /api/WebHook/v1/WebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@WebhookStatusUpdate.yaml     
+  /api/WebHook/v1/InternalWebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
 components:
   securitySchemes:
     x-ApiKey:
