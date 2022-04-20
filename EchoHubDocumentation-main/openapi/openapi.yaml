@@ -164,7 +164,7 @@ tags:
     description: |      
         The Universal Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
 
-  - name: Webhook
+  - name: WebHook
     description: |
          Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
          
