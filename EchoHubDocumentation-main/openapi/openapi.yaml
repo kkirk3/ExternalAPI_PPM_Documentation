@@ -76,7 +76,7 @@ paths:
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVenmoStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For Zelle] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalZelleStatus.yaml
-  /api/DirectPay/v1/PaymentStatus [For VCP_1] :
+  /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
