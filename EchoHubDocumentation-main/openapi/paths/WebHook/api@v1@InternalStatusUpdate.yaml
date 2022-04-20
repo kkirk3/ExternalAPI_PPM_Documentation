@@ -41,11 +41,11 @@ post:
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
-                ReponseCode: Response for Payment response code 001
+                ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment response code 001
+                    PaymentResponseCode: Response for Payment Response Code 001
                     PaymentResponseCodeDesc: Internal Webhook Status Success
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
@@ -57,7 +57,7 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 900
+                    PaymentResponseCode: Response for Payment Response Code 900
                     PaymentResponseCodeDesc: Internal Webhook Status Failed
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
