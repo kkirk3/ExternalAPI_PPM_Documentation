@@ -81,7 +81,7 @@ paths:
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
   /api/WebHook/v1/WebhookStatusUpdate:
-    $ref: paths/WebHook/api@v1@WebhookStatusUpdate.yaml     
+    $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
   /api/WebHook/v1/InternalWebhookStatusUpdate:
     $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
 components:
@@ -171,3 +171,4 @@ tags:
          Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
          
          Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
+         <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
