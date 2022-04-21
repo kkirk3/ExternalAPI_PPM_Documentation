@@ -8,7 +8,7 @@ post:
   description: |
    This endpoint sends real-time status updates of payments from the active batch that is triggered to the ECHO Hub application. Once the status of the payment is determined, the ECHO Hub application responds by updating the status received by the third-party webhook status endpoint. This response is then passed to the system of record in the ECHO Hub application to update their information to cancel the payment or mark the payment as cleared. 
 
-   <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/Status.jpg?raw=true" alt="Webhook status"/>
+   <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/Status.JPG?raw=true" alt="Webhook status"/>
 
   requestBody:
     description: This endpoint is used to update the payment status in the ECHO Hub application and then pass the information to the system of record to update their payment as cleared or cancel.
