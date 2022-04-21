@@ -9,12 +9,12 @@ properties:
   PayorId:
     type: string
     description: This is the unique identifier for the Payor from the third-party vendor. The Payor is identified with the Payor ID which is unique to a Payor. 
-    maxLength: 1
+    maxLength: 150
     minLength: 1
   PayeeId:
     type: string
     description: This is the unique identifier for the Payee. The Payee is identified with the Payee ID.
-    maxLength: 1
+    maxLength: 150
     minLength: 1
   ReferenceId:
     type: string
