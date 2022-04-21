@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ReponseCodeDesc:
         type: string
-        description: successful Transaction
+        description: Successful Transaction
       ResponseTransactionID:
         type: string
         description: Transaction Number

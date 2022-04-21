@@ -171,4 +171,5 @@ tags:
          Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
          
          Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
+         
          <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>

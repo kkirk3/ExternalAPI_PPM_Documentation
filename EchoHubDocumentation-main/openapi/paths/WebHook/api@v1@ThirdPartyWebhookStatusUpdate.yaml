@@ -10,6 +10,8 @@ post:
 
    <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/Status.JPG?raw=true" alt="Webhook status"/>
 
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
+
   requestBody:
     description: This endpoint is used to update the payment status in the ECHO Hub application and then pass the information to the system of record to update their payment as cleared or cancel.
     required: true
