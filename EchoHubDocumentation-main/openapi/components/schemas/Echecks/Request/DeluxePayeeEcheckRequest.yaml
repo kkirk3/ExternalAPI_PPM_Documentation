@@ -14,7 +14,7 @@ type: object
 properties:
   CheckAmount:
     type: number
-    description: The amount to be paid by the Provider Payee.
+    description: The amount to be paid to the Provider Payee.
     format: decimal
   PayeeName:
     type: string

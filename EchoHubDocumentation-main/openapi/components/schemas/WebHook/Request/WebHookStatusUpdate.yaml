@@ -13,7 +13,7 @@ properties:
     minLength: 1
   PayeeId:
     type: string
-    description: PayeeId
+    description: This is the unique identifier for the Payee. The Payee is identified with the Payee ID.
     maxLength: 1
     minLength: 1
   ReferenceId:
@@ -23,7 +23,7 @@ properties:
     minLength: 1
   Amount:
     type: integer
-    description: Amount
+    description: This is the amount to be paid to the Payee.
     maxLength: 100 
   Status:
     type: string
