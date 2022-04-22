@@ -94,6 +94,8 @@ paths:
     $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
   /api/WebHook/v1/InternalWebhookStatusUpdate:
     $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
+  /api/Messaging/v1/SendEmail:
+    $ref: paths/Messaging/api@v1@SendEmail.yaml
 components:
   securitySchemes:
     x-ApiKey:
