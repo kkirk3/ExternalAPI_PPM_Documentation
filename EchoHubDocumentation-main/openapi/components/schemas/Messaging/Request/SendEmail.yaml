@@ -10,63 +10,62 @@ type: object
 properties:
   SenderEmail:
     type: object
-    description: This is the Sender Email
+    description: These are the details of the sender email.  
     properties:
       Email:
         type: string
         description: >-
-          This is the Email
-          etc.
+          This is the email address from which the email is sent.
       Name:
         type: string
-        description: This is the Name
+        description: This is the name of the sender.	
   EmailTo:
     type: object
-    description: This is the List of Emails
+    description: These are the details of the recipient email. 
     properties:
       Email:
         type: string
         description: >-
-          This is the Email
+          This is the email address of the recipient who receives the email.
           etc.
       Name:
         type: string
-        description: This is the Name
+        description: This is the name of the recipient.
   Subject:
     type: string
-    description: This is the remote RBA of the Payee.
+    description: This is the email subject line.
     maxLength: 1000
   Body:
     type: string
-    description: This is the remote account of the Payee.
+    description: This is the email body that contains the message content or the actual text of the 
+     email.
+    
     maxLength: 8000
   CCEmail:
     type: object
-    description: This is the Email To
+    description: These are the details of the Cc email. 
     properties:
       Email:
         type: string
         description: >-
-          This is the Email
-          etc.
+          This is the email address given in the Cc field to send a carbon copy of the email to other people.
       Name:
         type: string
-        description: This is the Name
+        description: This is the name of the recipient of Cc email.
   BCCEmail:
     type: object
-    description: This is the Email To
+    description: These are the details of the Bcc email.
     properties:
       Email:
         type: string
         description: >-
-          This is the Email
-          etc.
+          This is the email address given in the Bcc field to send a blind carbon copy of the email to other people.
       Name:
         type: string
-        description: This is the Name
+        description: This is the name of the recipient of Cc email.
   Attachments:
     type: object
-    description: This is the Email To
+    description: This is an additional file sent with an email message. 
     properties:
       AttachmentByteArray:
         type: string
@@ -84,13 +83,18 @@ properties:
         description: This is the Name
   Categories:
     type: string
-    description: This is the effective date of the Payee must be format of yyyy-mm-dd.
+    description: |
+      This refers to the application from which the email is sent, which can be:
+      *	ELB
+      *	EOP
+      *	EPP
+      *	ECHO Hub      
     maxLength: 251
   IsHTMLBody:
     type: boolean
-    description: This is the administrator of the Payee.
+    description: This field is used to specify if the email consists of HTML formatted text. This field can be either ‘True’ or 'False’.
   SendBy:
     type: string
-    description: This is the administrator of the Payee.
+    description: This is the protocol through which the email is sent that can be SMTP or SendGrid.
     maxLength: 50
   
