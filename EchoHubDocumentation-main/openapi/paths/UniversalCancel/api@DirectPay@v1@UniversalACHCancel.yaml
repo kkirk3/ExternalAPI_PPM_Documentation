@@ -1,0 +1,82 @@
+post:
+  tags:
+    - Universal Payment Cancel
+  summary: Universal Payment Cancel - ACH
+  operationId: UniversalPaymentACHCancel
+  description: This endpoint allows the API user to cancel a ACH payment through the Library method. It requires the unique Payor Reference ID.
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to cancel a ACH Payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalACHCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalACHResponseCancel.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  ReponseCode: Response Code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  Translog :
+                    PaymentResponseCode : Response for Payment Response Code 001
+                    PaymentResponseCodeDesc : ACH Cancel Payment Successful
+                    TransactionId : Transaction Number
+                    EchoHubTransactionId : EchoHub Transaction Number
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    PaymentResponseCode : Response for Payment Response Code 900
+                    PaymentResponseCodeDesc : ACH Payment Cancel Failed
+                    TransactionId : Transaction Number
+                    EchoHubTransactionId : EchoHub Transaction Number
+            mapName_1033:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1033"
+                #description: TransError for JSON Validation Failed Code 1033
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                      ErrorCode : "1033"
+                      ErrorDesc : Invalid or Missing Library Method
+            mapName_1031:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1031"
+                #description: TransError for JSON Validation Failed Code 1031
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                      ErrorCode : "1031"
+                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+            mapName_1027:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1027"
+                #description: TransError for JSON Validation Failed Code 1027
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                      ErrorCode : "1027"
+                      ErrorDesc : Invalid or Missing Request Value        

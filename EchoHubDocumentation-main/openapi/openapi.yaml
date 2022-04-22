@@ -54,12 +54,20 @@ paths:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoCancel.yaml
   /api/DirectPay/Venmo/v1/VenmoStatus:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoStatus.yaml
+  /api/DirectPay/ACH/v1/ACHPayment:
+    $ref: paths/ACH/api@DirectPay@ACH@v1@ACHPayment.yaml
+  /api/DirectPay/ACH/v1/ACHCancel:
+    $ref: paths/ACH/api@DirectPay@ACH@v1@ACHCancel.yaml
+  /api/DirectPay/ACH/v1/ACHStatus:
+    $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
   /api/DirectPay/v1/PaymentCancel:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
+  /api/DirectPay/v1/PaymentCancel [For ACH] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalACHCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For Deluxe]:
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalDeluxeCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For Direct To Debit] :
@@ -70,6 +78,8 @@ paths:
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalZelleCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For VCP] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVCPCancel.yaml
+  /api/DirectPay/v1/PaymentStatus [For ACH] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalACHStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For Direct To Debit] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalDirectToDebitStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For Venmo] :
@@ -82,6 +92,8 @@ paths:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
   /api/WebHook/v1/WebHookStatus:
     $ref: paths/WebHook/api@v1@WebHookStatusUpdate.yaml
+  /api/Messaging/v1/SendEmail:
+    $ref: paths/Messaging/api@v1@SendEmail.yaml
 components:
   securitySchemes:
     x-ApiKey:
@@ -144,7 +156,15 @@ tags:
       •	Venmo payment status  
       •	Venmo payment cancel  
     
-        
+  - name: ACH
+    description: |
+      ACH is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a ACH account can transfer funds to the Payee bank account without needing cash or checks.  
+      ACH accounts can be linked to credit cards, debit cards, or checking accounts. ACH is more like a digital wallet where funds are held as a ACH balance in the checking account.  
+      ACH has three endpoints:  
+      •	ACH payment create  
+      •	ACH payment status  
+      •	ACH payment cancel  
+
   - name: Zelle
     description: |
         Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  

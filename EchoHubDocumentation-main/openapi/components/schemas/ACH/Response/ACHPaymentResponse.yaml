@@ -1,0 +1,114 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: ACH Payment successful
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Payment could not be processed, Please contact customer care
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment response code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response for Payment response code 001
+          ErrorDesc:
+            type: string
+            description: Duplicate Payor Reference ID
+      TransError JSON Validation Failed Code 1010:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1010"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing PayorReferenceId
+      TransError JSON Validation Failed Code 1043:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1043"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Amount    
+      TransError JSON Validation Failed Code 1058:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1058"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Remote ABA
+      TransError JSON Validation Failed Code 1057:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1057"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Remote Account
+      TransError JSON Validation Failed Code 198:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "198"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Account Type
+      TransError JSON Validation Failed Code 1056:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1056"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Effective Date
+      TransError JSON Validation Failed Code 1055:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1055"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Administrator
+      

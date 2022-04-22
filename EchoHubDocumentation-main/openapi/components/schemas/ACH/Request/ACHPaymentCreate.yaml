@@ -1,0 +1,38 @@
+required:
+  - PayorReferenceId
+  - Amount
+  - RemoteABA
+  - RemoteAccount
+  - AccountType
+  - EffectiveDate
+  
+type: object
+properties:
+  PayorReferencedId:
+    type: string
+    description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
+    maxLength: 150
+    minLength: 1
+  Amount:
+    type: number
+    description: This is the amount to be paid to the Payee.
+  RemoteABA:
+    type: string
+    description: This is the remote RBA of the Payee.
+    maxLength: 9
+  RemoteAccount:
+    type: integer
+    description: This is the remote account of the Payee.
+    maxLength: 50
+  AccountType:
+    type: string
+    description: This is the account type either C or S of the Payee.
+    maxLength: 1
+  EffectiveDate:
+    type: string
+    description: This is the effective date of the Payee must be format of yyyy-mm-dd.
+  Administrator:
+    type: string
+    description: This is the administrator of the Payee.
+    maxLength: 5
+  

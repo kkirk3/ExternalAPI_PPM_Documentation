@@ -1,0 +1,96 @@
+required:
+  - SenderEmail
+  - EmailTo
+  - Subject
+  - Body
+  - IsHTMLBody
+  - SendBy
+  
+type: object
+properties:
+  SenderEmail:
+    type: object
+    description: This is the Sender Email
+    properties:
+      Email:
+        type: string
+        description: >-
+          This is the Email
+          etc.
+      Name:
+        type: string
+        description: This is the Name
+  EmailTo:
+    type: object
+    description: This is the List of Emails
+    properties:
+      Email:
+        type: string
+        description: >-
+          This is the Email
+          etc.
+      Name:
+        type: string
+        description: This is the Name
+  Subject:
+    type: string
+    description: This is the remote RBA of the Payee.
+    maxLength: 1000
+  Body:
+    type: string
+    description: This is the remote account of the Payee.
+    maxLength: 8000
+  CCEmail:
+    type: object
+    description: This is the Email To
+    properties:
+      Email:
+        type: string
+        description: >-
+          This is the Email
+          etc.
+      Name:
+        type: string
+        description: This is the Name
+  BCCEmail:
+    type: object
+    description: This is the Email To
+    properties:
+      Email:
+        type: string
+        description: >-
+          This is the Email
+          etc.
+      Name:
+        type: string
+        description: This is the Name
+  Attachments:
+    type: object
+    description: This is the Email To
+    properties:
+      AttachmentByteArray:
+        type: string
+        description: >-
+          This is the Email
+          etc.
+      AttachmentFileName:
+        type: string
+        description: This is the Name
+      Disposition:
+        type: string
+        description: This is the Name
+      Content_Id:
+        type: string
+        description: This is the Name
+  Categories:
+    type: string
+    description: This is the effective date of the Payee must be format of yyyy-mm-dd.
+    maxLength: 251
+  IsHTMLBody:
+    type: boolean
+    description: This is the administrator of the Payee.
+  SendBy:
+    type: string
+    description: This is the administrator of the Payee.
+    maxLength: 50
+  

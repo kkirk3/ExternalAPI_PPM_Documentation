@@ -1,0 +1,80 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          EmailResponseCode:
+            type: string
+            description: Response for Payment response code 001
+          EmailResponseCodeDesc:
+            type: string
+            description: Email Sent Successfully via SendGrid
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: WebHook Status Update Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment response code 900:
+        type: object
+        properties:
+          EmailResponseCode:
+            type: string
+            description: Response for Payment response code 001
+          EmailResponseCodeDesc:
+            type: string
+            description: Email Sent Failed
+      TransError JSON Validation Failed Code 1045:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1045"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Sender Email
+      TransError JSON Validation Failed Code 1046:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1046"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Email To
+      TransError JSON Validation Failed Code 1047:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1047"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Subject
+      TransError JSON Validation Failed Code 1048:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1048"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Body
