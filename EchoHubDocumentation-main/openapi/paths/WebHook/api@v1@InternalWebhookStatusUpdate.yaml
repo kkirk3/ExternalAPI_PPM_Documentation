@@ -1,0 +1,63 @@
+post:
+  tags:
+    - Webhook
+  summary: Internal Webhook Status Update
+  operationId: InternalWebhookStatusUpdate
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint helps find all the non-cleared and non-cancelled payments in each payment modality (Direct to Debit, Zelle, and Venmo) and checks their current status. An active batch is triggered once a day and verifies for payments older than 24 hours. This requires the third-party reference ID which identifies the Payor transaction to get the status. Based on the current status and Reference ID, we call the third-party webhook status update endpoint.
+   The current status can be:
+   * Cancelled
+   * Returned
+   * Refunded
+   * Rejected
+   * Expired
+   * Failed
+   * Deleted
+   * Payee Approval Declined
+   * Success
+   * Delivered
+   * Payee Approval Confirmed
+  
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
+
+  requestBody:
+    description: This endpoint helps check the current status of a payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/WebHook/Request/InternalWebHookStatusUpdate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/WebHook/Response/InternalWebHookStatusResponse.yaml
+          examples:
+            mapName:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: Response Code 001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:  
+                    PaymentResponseCode: Response for Payment Response Code 001
+                    PaymentResponseCodeDesc: Internal Webhook Status Success
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    PaymentResponseCode: Response for Payment Response Code 900
+                    PaymentResponseCodeDesc: Internal Webhook Status Failed
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number

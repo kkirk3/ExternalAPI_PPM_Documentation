@@ -89,11 +89,11 @@ paths:
   /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
   /api/DirectPay/v1/PaymentVoid:
-    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml   
-  /api/WebHook/v1/WebHookStatus:
-    $ref: paths/WebHook/api@v1@WebHookStatusUpdate.yaml
-  /api/Messaging/v1/SendEmail:
-    $ref: paths/Messaging/api@v1@SendEmail.yaml
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  /api/WebHook/v1/WebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
+  /api/WebHook/v1/InternalWebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
 components:
   securitySchemes:
     x-ApiKey:
@@ -155,16 +155,7 @@ tags:
       •	Venmo payment create  
       •	Venmo payment status  
       •	Venmo payment cancel  
-    
-  - name: ACH
-    description: |
-      ACH is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a ACH account can transfer funds to the Payee bank account without needing cash or checks.  
-      ACH accounts can be linked to credit cards, debit cards, or checking accounts. ACH is more like a digital wallet where funds are held as a ACH balance in the checking account.  
-      ACH has three endpoints:  
-      •	ACH payment create  
-      •	ACH payment status  
-      •	ACH payment cancel  
-
+        
   - name: Zelle
     description: |
         Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
@@ -184,3 +175,11 @@ tags:
   - name: Universal Payment Void
     description: |      
         The Universal Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
+
+  - name: Webhook
+    description: |
+         Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
+         
+         Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
+         
+         <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
