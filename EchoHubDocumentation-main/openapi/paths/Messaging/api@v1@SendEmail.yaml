@@ -17,7 +17,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\..\components\schemas\Messaging\Request\SendEmail.yaml
+          $ref: ../../components/schemas/Messaging/Request/SendEmail.yaml
   responses:
     '200':
       description: Success
