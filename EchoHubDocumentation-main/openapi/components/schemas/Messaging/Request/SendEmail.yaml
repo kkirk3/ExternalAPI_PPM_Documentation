@@ -70,17 +70,16 @@ properties:
       AttachmentByteArray:
         type: string
         description: >-
-          This is the Email
-          etc.
+          This is to convert the attachment file content into a byte array format.
       AttachmentFileName:
         type: string
-        description: This is the Name
+        description: This is the name of the attachment.
       Disposition:
         type: string
-        description: This is the Name
+        description: This field is passed as either “attachment” or “inline”. Inline helps to send the image in the body of the email and this works for SendGrid while SMTP sends the image as an attachment only.
       Content_Id:
         type: string
-        description: This is the Name
+        description: This is the name given to the image when the parameter disposition is passed as “inline”.
   Categories:
     type: string
     description: |
