@@ -1,8 +1,8 @@
 post:
   tags:
-    - Universal Payment Status
-  summary: Universal Payment Status - VCP
-  operationId: UniversalPaymentVCPStatus
+    - Payment Status
+  summary: Payment Status - VCP
+  operationId: PaymentVCPStatus
   description: |
     This endpoint allows the API user to know the status of a Virtual Card Payment through the Library method. The status of the Virtual card payment can be:
     * Active
