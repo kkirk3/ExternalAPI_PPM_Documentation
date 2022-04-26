@@ -1,8 +1,8 @@
 post:
   tags:
-    - Universal Payment Status
-  summary: Universal Payment Status - Zelle
-  operationId: UniversalPaymentZelleStatus
+    - Payment Status
+  summary: Payment Status - Zelle
+  operationId: PaymentZelleStatus
   description: |
    This endpoint allows the API user to know the status of a Zelle Payment through the Library method.  
    The status of the Zelle payment can be:  

@@ -1,8 +1,8 @@
 post:
   tags:
-    - Universal Payment Status
-  summary: Universal Payment Status - Direct to Debit
-  operationId: UniversalPaymentD2DStatus
+    - Payment Status
+  summary: Payment Status - Direct to Debit
+  operationId: PaymentD2DStatus
   description: |
     This endpoint allows the API user to know the status of a Direct to Debit Payment through the Library method.  
     The status of the Direct to Debit payment can be:  

@@ -1,8 +1,8 @@
 post:
   tags:
-    - Universal Payment Status
-  summary: Universal Payment Status - ACH
-  operationId: UniversalPaymentACHStatus
+    - Payment Status
+  summary: Payment Status - ACH
+  operationId: PaymentACHStatus
   description: |
    This endpoint allows the API user to know the status of a ACH Payment through the Library method.  
    The status of the ACH payment can be:  
