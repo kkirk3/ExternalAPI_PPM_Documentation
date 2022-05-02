@@ -1,0 +1,48 @@
+post:
+  tags:
+    - Echeck Pdf Download
+  summary: eCheckPDFB2B
+  operationId: eCheckPDFB2B
+  security:
+    - x-Authorization: []
+  description: |
+     The echeck PDF Descriptions...
+  requestBody:
+    description: This endpoint is used to Download PDF
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/Messaging/Request/SendEmail.yaml   
+          responses:
+            '200':
+              description: Success
+              content:
+                application/json:
+                  schema:
+                    $ref: ../../components/schemas/Messaging/Response/SendEmail.yaml
+                  examples:
+                    mapName:   
+                      description: Please scroll the above dropdown list for more response codes          
+                      summary: "001"
+                      value:
+                        ReponseCode: Response for Payment response code 001
+                        ReponseCodeDesc: Successful Transaction
+                        ResponseTransactionID: Transaction Number
+                        TransLog:  
+                            PaymentResponseCode: Response for Payment response code 001
+                            PaymentResponseCodeDesc: Webhook Status Update Success
+                            TransactionId: Transaction Number
+                            EchoHubTransactionId: EchoHub Transaction Number
+                    mapName1:   
+                      description: Please scroll the above dropdown list for more response codes          
+                      summary: "900"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Payment Status Unknown, Please contact customer care
+                        ResponseTransactionID: Transaction Number
+                        TransError:  
+                            PaymentResponseCode: Response for Payment response code 900
+                            PaymentResponseCodeDesc: WebHook Status Update Failed
+                            TransactionId: Transaction Number
+                            EchoHubTransactionId: EchoHub Transaction Number        

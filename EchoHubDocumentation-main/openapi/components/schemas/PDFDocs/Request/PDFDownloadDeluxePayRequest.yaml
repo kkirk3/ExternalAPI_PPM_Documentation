@@ -1,0 +1,14 @@
+required:   
+  - Checking Account ID  
+  - Transaction ID   
+type: object 
+properties:  
+  Checking Account ID :
+    type: string
+    description: 
+      This is the value of PayorReferenceID or ECHOHubTransactionID.
+    minLength: 2
+  Transaction ID :
+    type: string
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'EcheckPDFDownload'.
+  

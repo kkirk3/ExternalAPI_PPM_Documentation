@@ -1,0 +1,15 @@
+required:  
+  - Checking Account ID  
+  - Transaction ID   
+type: object 
+properties:
+  Checking Account ID :
+    type: string
+    description: >-
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
+  Transaction ID :
+    type: string
+    description: 
+      This is the value of PayorReferenceID or ECHOHubTransactionID.
+    minLength: 2
+  
