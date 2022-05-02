@@ -1,6 +1,6 @@
 post:
   tags:
-    - Echeck Pdf Download
+    - eCheck PDF Download
   summary: eCheck PDF SelectPay
   operationId: eCheckPDFSelectPay
   description: This endpoint allows the API user to retrieve an eCheck PDF file from SelectPay portal. Once the data is validated in the ECHO Hub system, the request is redirected to the Deluxe library to retrieve an eCheck PDF file from Deluxe. Once the file is retrieved, a success message is returned to SelectPay, and then the consumer Payee along with the eCheck PDF file in the response. In the case where the API call fails by Deluxe, an error response is returned.
