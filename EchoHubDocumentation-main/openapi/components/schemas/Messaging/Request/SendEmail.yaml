@@ -70,17 +70,21 @@ properties:
       AttachmentByteArray:
         type: string
         description: >-
-          This is the Email
-          etc.
+          This is to convert the attachment file content into a byte array format.
       AttachmentFileName:
         type: string
-        description: This is the Name
+        description: This is the name of the attachment.
       Disposition:
         type: string
-        description: This is the Name
+        description: This field can be either “Attachment” or “Inline” for an image to be sent in the email.  
+
+          * When the Disposition is passed as Attachment, the image is sent as an attachment.  
+           
+          * When the Disposition is passed as Inline, the image is sent in the body of the email.
+        
       Content_Id:
         type: string
-        description: This is the Name
+        description: This is the name given to the image when the parameter disposition is passed as “inline”.
   Categories:
     type: string
     description: |
