@@ -20,13 +20,13 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment successful
+            description: ACH Payment Successful
           TransactionId:
             type: integer
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9000:
         type: object
         properties:
@@ -41,7 +41,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9001:
         type: object
         properties:
@@ -56,7 +56,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9002:
         type: object
         properties:
@@ -65,13 +65,13 @@ properties:
             description: Response for Payment Response Code 9002
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment instruction that has not yet been claimed by the payee is successfully cancelled by the Payor
+            description: ACH Payment instruction that has not yet been claimed by the Payee is successfully cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9003:
         type: object
         properties:
@@ -95,13 +95,13 @@ properties:
             description: Response for Payment Response Code 9004
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment instruction is under Review
+            description: ACH Payment instruction is under review
           TransactionId:
             type: integer
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9005:
         type: object
         properties:
@@ -116,7 +116,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9006:
         type: object
         properties:
@@ -125,13 +125,13 @@ properties:
             description: Response for Payment Response Code 9006
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment unknown
+            description: ACH Payment Unknown
           TransactionId:
             type: integer
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9007:
         type: object
         properties:
@@ -146,7 +146,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9008:
         type: object
         properties:
@@ -161,7 +161,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9009:
         type: object
         properties:
@@ -170,13 +170,13 @@ properties:
             description: Response for Payment Response Code 9009
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment is not claimed by the payee within the expiration period and is cancelled by the Payor
+            description: ACH Payment is not claimed by the Payee within the expiration period and is cancelled by the Payor
           TransactionId:
             type: integer
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9010:
         type: object
         properties:
@@ -191,7 +191,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9011:
         type: object
         properties:
@@ -206,7 +206,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9012:
         type: object
         properties:
@@ -221,7 +221,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9013:
         type: object
         properties:
@@ -236,7 +236,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransLog for Payment Response Code 9014:
         type: object
         properties:
@@ -251,7 +251,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number                         
+            description: ECHO Hub Transaction Number                         
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -278,7 +278,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: integer
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransError JSON Validation Failed Code 1031:
         type: object
         properties:

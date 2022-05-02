@@ -8,7 +8,7 @@ properties:
         description: Response Code 001
       ReponseCodeDesc:
         type: string
-        description: successful Transaction
+        description: Successful Transaction
       ResponseTransactionID:
         type: string
         description: Transaction Number
@@ -20,13 +20,13 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment successful
+            description: ACH Payment Successful
           TransactionId:
             type: string
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
   This is the Response for response code 900:
     type: object
     properties:
@@ -47,13 +47,13 @@ properties:
             description: Response for Payment response code 001
           PaymentResponseCodeDesc:
             type: string
-            description: ACH Payment successful
+            description: ACH Payment Successful
           TransactionId:
             type: string
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransError JSON Validation Failed Code 1031:
               type: object
               properties:

@@ -26,7 +26,7 @@ properties:
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
   This is the Response for response code 900:
     type: object
     properties:
@@ -56,7 +56,7 @@ properties:
             description: "1010"
           ErrorDesc:
             type: string
-            description: Invalid or Missing PayorReferenceId
+            description: Invalid or Missing Payor Reference ID
       TransError JSON Validation Failed Code 1043:
         type: object
         properties:

@@ -6,9 +6,10 @@ properties:
   Checking Account ID :
     type: string
     description: 
-      This is the value of PayorReferenceID or ECHOHubTransactionID.
+      This is a unique ID used to link the bank account and routing number for settling the payments to the Provider Payee.
     minLength: 2
   Transaction ID :
     type: string
-    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'EcheckPDFDownload'.
+    description: 
+      This is the Transaction ID that helps get the details of the current transaction.
   

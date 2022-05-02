@@ -54,7 +54,7 @@ properties:
       ErrorDesc:
         type: string
         description: Invalid Token
-      creationdate:
+      creation date:
         type: string
         description: Current Date Time 
       
