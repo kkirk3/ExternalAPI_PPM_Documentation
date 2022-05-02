@@ -1,0 +1,60 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ResponseCode:
+        type: integer
+        description: Response Code 001
+      ResponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: integer
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: integer
+            description: Response for Payment Response Code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Deluxe ECheckPDF Successful          
+          PDFFile:
+            type: string
+            description: PDF File in Base 64 Format
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ResponseCode:
+        type: integer
+        description: Response Code 900
+      ResponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: integer
+        description: Transaction Number
+      TransError for Payment Response Code 1004:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: Response for Error  Code 1004
+          ErrorCodeDesc:
+            type: string
+            description: Invalid or Missing Checking Account ID          
+  This is the Response for Response Code 903:
+    type: object
+    properties:
+      ErrorCode:
+        type: integer
+        description: Response for Error  Code 903
+      ErrorDesc:
+        type: string
+        description: Invalid Token
+      creationdate:
+        type: string
+        description: Current Date Time 
+      

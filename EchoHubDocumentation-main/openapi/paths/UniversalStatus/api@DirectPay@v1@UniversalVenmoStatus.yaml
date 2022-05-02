@@ -1,8 +1,8 @@
 post:
   tags:
-    - Universal Payment Status
-  summary: Universal Payment Status - Venmo
-  operationId: UniversalPaymentVenmoStatus
+    - Payment Status
+  summary: Payment Status - Venmo
+  operationId: PaymentVenmoStatus
   description: | 
     This endpoint allows the API user to know the status of a Venmo Payment through the Library method.  
     The status of the Venmo payment can be:  

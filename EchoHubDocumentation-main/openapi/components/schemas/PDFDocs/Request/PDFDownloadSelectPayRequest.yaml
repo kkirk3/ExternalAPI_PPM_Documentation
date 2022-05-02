@@ -1,0 +1,26 @@
+required:
+  - APIFormIdentifierID 
+  - ApplicationId 
+  - Zip
+  - DraftNumber  
+  - GuestUserToken 
+type: object 
+properties:
+  APIFormIdentifierID:
+    type: string
+    description: >-
+      The request value type for this field can be either PayorReferenceID or ECHOHubTransactionID.
+  ApplicationId:
+    type: string
+    description: 
+      This is the value of PayorReferenceID or ECHOHubTransactionID.
+  ZIP:
+        type: string
+        description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'EcheckPDFDownload'.          
+  DraftNumber:
+    type: string
+    description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'EcheckPDFDownload'.
+  GuestUserToken:
+      type: string
+      description: This is the payment modality that the API user is trying to cancel from the library of payment modalities. Library Method, in this case, should be 'EcheckPDFDownload'.  
+  

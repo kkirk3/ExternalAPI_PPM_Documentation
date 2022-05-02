@@ -1,0 +1,57 @@
+post:
+  tags:
+    - Echeck Pdf Download
+  summary: eCheckPDFDeluxe
+  operationId: eCheckPDFDeluxe
+  description: This endpoint allows the API user to cancel a ACH payment through the Library method. It requires the unique Payor Reference ID.
+  security:
+    - x-Authorization: []
+  requestBody:
+    description: This endpoint is used to Download PDF
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/PDFDocs/Request/PDFDownloadDeluxePayRequest.yaml   
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/PDFDocs/Response/PDFDownloadDeluxeResponse.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  ReponseCode: Response Code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  Translog :
+                    PaymentResponseCode: Payment Response Code for 001
+                    PaymentresponseCodeDesc: Deluxe EcheckPDF Succesful
+                    ECHOHubTransactonId: EchoHub Transaction Number
+                    PDFFile : PDF File in Base 64 string Format                    
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"                
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                    ErrorCode : Response for Error Code 1004
+                    ErrorCodeDesc : Invalid or Missing Checking Account ID                    
+            mapName_903:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "903"                
+                value:
+                    ReponseCode: Response Code 903
+                    ReponseCodeDesc: Invalid Token
+                    
+                    TransError :
+                      ErrorCode : Response for Error Code 903
+                      ErrorDesc : Invalid Token
+                      CreationDate: Current DateTime              
