@@ -33,19 +33,15 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Webhook Status Update Success
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    EmailResponseCode: Response for Payment response code 001
+                    EmailResponseCodeDesc: Successful Transaction
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
               value:
                 ReponseCode: Response Code 900
-                ReponseCodeDesc: Payment Status Unknown, Please contact customer care
+                ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: WebHook Status Update Failed
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    ErrorCode: Response for Error response code 900
+                    ErrorDesc: Invalid or Missing SendBy
