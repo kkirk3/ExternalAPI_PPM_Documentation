@@ -56,5 +56,5 @@ properties:
         description: Invalid Token
       creation date:
         type: string
-        description: Current Date Time 
+        description: Current Date, Time 
       

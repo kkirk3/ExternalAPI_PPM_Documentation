@@ -192,8 +192,11 @@ tags:
          Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
          
          <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
-  - name:  eCheck PDF Download
+  - name:  eCheck PDF
     description: | 
      This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.
 
-     
+  - name:  ACH
+    description:
+     An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
+     The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.

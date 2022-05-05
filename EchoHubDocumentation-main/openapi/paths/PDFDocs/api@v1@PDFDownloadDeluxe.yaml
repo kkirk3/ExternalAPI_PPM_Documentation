@@ -1,6 +1,6 @@
 post:
   tags:
-    - eCheck PDF Download
+    - eCheck PDF
   summary: eCheck PDF Deluxe
   operationId: eCheckPDFDeluxe
   description: This endpoint allows the API user to retrieve the eCheck PDF file from Deluxe. Each request requires a Checking account ID and the Transaction ID to make a call to the Deluxe API to create a Payee contact and retrieve the eCheck PDF file. Once the file is retrieved, a success message is returned to the requested payment system and the eCheck PDF file is shared in the response. In the case where the API call fails by Deluxe, an error response is returned.

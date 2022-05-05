@@ -18,21 +18,23 @@ properties:
     description: This is the amount to be paid to the Payee.
   RemoteABA:
     type: string
-    description: This is the remote RBA of the Payee.
+    description: This is the Payee’s ABA (American Bankers' Association) number. It is a 9-digit unique routing number assigned to every bank to identify the bank account.
     maxLength: 9
   RemoteAccount:
     type: integer
-    description: This is the remote account of the Payee.
+    description: This is the account number of the Payee.
     maxLength: 50
   AccountType:
     type: string
-    description: This is the account type either C or S of the Payee.
+    description: This is the account type of the Payee which can be either C or S. 
+     *	C - Checking Account
+     * S - Savings Account
     maxLength: 1
   EffectiveDate:
     type: string
-    description: This is the effective date of the Payee must be format of yyyy-mm-dd.
+    description: This is the date scheduled for the amount to be deposited in the Payee’s bank account.
   Administrator:
     type: string
-    description: This is the administrator of the Payee.
+    description: This is the identifier of the health plan administrator or other Payor entity for which the payment is being issued to a Payee.
     maxLength: 5
   

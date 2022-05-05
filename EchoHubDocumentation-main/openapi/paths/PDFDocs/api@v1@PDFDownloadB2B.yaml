@@ -1,6 +1,6 @@
 post:
   tags:
-    - eCheck PDF Download
+    - eCheck PDF
   summary: eCheck PDF B2B
   operationId: eCheckPDFB2B
   security:
