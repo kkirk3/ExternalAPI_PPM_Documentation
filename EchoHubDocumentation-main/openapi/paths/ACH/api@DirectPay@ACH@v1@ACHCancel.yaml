@@ -6,7 +6,7 @@ post:
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the API User to cancel an ACH Payment. It requires the unique Payor Reference ID.
+   This endpoint allows the API user to cancel an ACH Payment. It requires the unique Payor Reference ID.
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:

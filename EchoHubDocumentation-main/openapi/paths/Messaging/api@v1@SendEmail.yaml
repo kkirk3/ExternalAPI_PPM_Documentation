@@ -1,7 +1,7 @@
 post:
   tags:
     - Send email
-  summary: SendEmail
+  summary: Send email
   operationId: SendEmail
   security:
     - x-Authorization: []
