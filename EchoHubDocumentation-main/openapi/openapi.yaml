@@ -45,7 +45,7 @@ paths:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitCancel.yaml
   /api/DirectPay/DirectToDebit/v1/DirectToDebitStatus:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitStatus.yaml 
-  #eCheck   
+  #eCheck
   /api/eCheck/v1/MPXECheckPayeeContact: 
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
   /api/DirectPay/Deluxe/v1/DeluxeEcheck:
@@ -104,6 +104,9 @@ paths:
     $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
   /api/WebHook/v1/InternalWebhookStatusUpdate:
     $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
+  #WebPay
+  /api/DirectPay/v1/WebPay:
+    $ref: paths/WebPay/api@v1@WebPayCreateProcess.yaml 
  #Zelle
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
@@ -135,15 +138,16 @@ components:
       
 
 tags:
+  #Authorization
   - name: Authorization 
     description: |
       This endpoint helps to generate the Authorization Token for accessing the endpoints. 
-  
+  #ACH
   - name:  ACH
     description: |
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
-   
+  #DirectToDebit 
   - name: Direct to Debit
     description: |
       Direct to Debit is the simplest and most convenient way to make payments. It is a type of pre-authorized payment that allows a bank to pay a certain amount directly to the provider with a debit card. With Direct to Debit payments, the money is directly transferred to the cardholder.  
@@ -151,7 +155,7 @@ tags:
       * Direct to Debit payment create  
       * Direct to Debit payment status   
       * Direct to Debit payment cancel     
-
+  #eCheck
   - name: eCheck
     description: >
       An eCheck, or electronic check, is a digital version of a paper check that
@@ -160,27 +164,27 @@ tags:
       With an eCheck, money is electronically withdrawn from the Payor’s
       checking account. Money is transferred over the ACH (Automated Clearing House) network and
       deposited into the Payee’s checking account.
-
+  #eCheckPDF
   - name:  eCheck PDF
     description: | 
        This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.    
- 
+  #Universal Payment Cancel
   - name: Payment Cancel
     description: | 
            The  Payment Cancel endpoint allows the API user to access and cancel a payment that may be Direct to Debit, Venmo, Zelle, or a Virtual Card based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.     
-   
+  #Universal Payment Status
   - name:  Payment Status
     description: | 
            The  Payment Status endpoint allows the API user to access and get the status of a payment that may be Direct to Debit, Venmo, Zelle, or a Virtual Card based on the library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
-   
+  #Universal Payment Void
   - name:  Payment Void
     description: |      
            The  Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
-
+  #Send Email
   - name : Send Email
     description:  |
             This endpoint is used to send emails from ECHO Hub application through SendGrid or SMTP.
-
+  #Venmo
   - name: Venmo
     description: |
       Venmo is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a Venmo account can transfer funds to the Payee bank account without needing cash or checks.  
@@ -189,7 +193,7 @@ tags:
       •	Venmo payment create  
       •	Venmo payment status  
       •	Venmo payment cancel
-
+  #VCP
   - name: Virtual Card Program (VCP)
     description: |
       Virtual cards are one way that Echo facilitates payments from the Payor to the Provider. The Payor or Provider may have questions on whether a card has been used, what the card balance is, and if the card is active. For these types of inquiries, there is an API endpoint for card status and transactions. 
@@ -199,7 +203,7 @@ tags:
       virtual card program has two end points:
         * Virtual Card  Activity 
         * Virtual Card  Cancel
-           
+  #WebHook         
   - name: Webhook
     description: |
          Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
@@ -207,7 +211,11 @@ tags:
          Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
          
          <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
-
+  #WebPay
+  - name: WebPay
+    description: WebPay
+    
+  #Zelle
   - name: Zelle
     description: |
           Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  

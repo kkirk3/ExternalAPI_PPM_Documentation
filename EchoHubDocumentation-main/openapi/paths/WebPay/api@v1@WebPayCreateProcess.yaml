@@ -1,0 +1,48 @@
+post:
+  tags:
+    - WebPay
+  summary: WebPay - Create Process
+  operationId: WebPayCreateProcess
+  security:
+    - x-Authorization: []
+  description: WebPay
+  
+  requestBody:
+    description: WebPay
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/WebPay/Request/WebPayCreateProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/WebPay/Response/WebPayCreateProcessResponse.yaml
+          examples:
+            mapName:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: Response Code 001
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:  
+                    PaymentResponseCode: Response for Payment Response Code 001
+                    PaymentResponseCodeDesc: WebPay Success
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    PaymentResponseCode: Response for Payment Response Code 900
+                    PaymentResponseCodeDesc: No Access to EchoVault
+                    TransactionId: Transaction Number
+                    EchoHubTransactionId: EchoHub Transaction Number

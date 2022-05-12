@@ -1,0 +1,35 @@
+required:
+  - APIFormIdentifierID 
+  - RequestValueType
+  - RequestValue
+  - ProcessType
+  - PaymentType
+
+type: object
+properties:
+  APIFormIdentifierID:
+    type: string
+    description: APIFormIdentifierID
+    maxLength: 150
+    minLength: 1
+  RequestValueType:
+    type: string
+    description: RequestValueType
+    maxLength: 100
+    minLength: 1
+  RequestValue:
+    type: string
+    description: RequestValue
+    maxLength: 100
+    minLength: 1 
+  ProcessType:
+    type: string
+    description: ProcessType
+    maxLength: 100
+    minLength: 1 
+  PaymentType:
+    type: string
+    description: PaymentType
+    maxLength: 100
+    minLength: 1 
+      

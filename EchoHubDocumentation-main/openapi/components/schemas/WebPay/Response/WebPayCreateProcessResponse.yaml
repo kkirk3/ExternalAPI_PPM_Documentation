@@ -1,0 +1,101 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: WebPay Success
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 900
+          PaymentResponseCodeDesc:
+            type: string
+            description: No Access to EchoVault
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransError JSON Validation Failed Code 1009:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1009"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Payor API Form Identifier
+      TransError JSON Validation Failed Code 1031:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1031"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types \"PAYORREFERENCEID\", \"ECHOHUBTRANSACTIONID\"
+      TransError JSON Validation Failed Code 1027:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1027"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Request Value
+      TransError JSON Validation Failed Code 1060:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1060"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Process Type
+      TransError JSON Validation Failed Code 1065:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1065"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payment Type                 
