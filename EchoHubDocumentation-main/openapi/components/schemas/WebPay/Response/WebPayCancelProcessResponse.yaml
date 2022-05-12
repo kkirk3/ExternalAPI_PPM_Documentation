@@ -20,7 +20,7 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: WebPay Success
+            description: Transaction Successful
           TransactionId:
             type: string
             description: Transaction Number
