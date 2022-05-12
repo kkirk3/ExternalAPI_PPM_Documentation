@@ -1,9 +1,8 @@
 required:
   - APIFormIdentifierID 
-  - RequestValueType
-  - RequestValue
+  - PayorSessionID
+  - EchoVaultToken
   - ProcessType
-  - PaymentType
 
 type: object
 properties:
@@ -14,12 +13,12 @@ properties:
     minLength: 1
   RequestValueType:
     type: string
-    description: RequestValueType
+    description: PayorSessionID
     maxLength: 100
     minLength: 1
   RequestValue:
     type: string
-    description: RequestValue
+    description: EchoVaultToken
     maxLength: 100
     minLength: 1 
   ProcessType:
@@ -27,9 +26,3 @@ properties:
     description: ProcessType
     maxLength: 100
     minLength: 1 
-  PaymentType:
-    type: string
-    description: PaymentType
-    maxLength: 100
-    minLength: 1 
-      
