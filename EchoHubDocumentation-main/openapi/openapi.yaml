@@ -100,7 +100,7 @@ paths:
     $ref: paths/PDFDocs/api@v1@PDFDownloadSelectPay.yaml
   /api/PDFDocs/v1/PDFDownload[For Deluxe]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
-  /api/PDFDocs/v1/PDFDownload[For B2B1]:
+  /api/PDFDocs/v1/PDFDownload[For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
 
 components:
