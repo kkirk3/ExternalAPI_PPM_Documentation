@@ -185,7 +185,7 @@ tags:
   #Send Email
   - name : Send Email
     description: |
-            This endpoint is used to send emails from ECHO Hub application through SendGrid or SMTP.
+            Email is a standard electronic communication format which is rapid and easy, and it helps maintain a written record of communications. An email API allows applications to access functions offered by the email service provider’s platform for sending emails. The send email endpoint is used to send emails from ECHO Hub application through SendGrid or SMTP.
   #Venmo
   - name: Venmo
     description: |
