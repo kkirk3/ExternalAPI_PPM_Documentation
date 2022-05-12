@@ -86,7 +86,7 @@ paths:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
   #Send Email
   /api/Messaging/v1/SendEmail:
-    $ref: paths/Messaging/api@v1@SendEmail.yaml
+    $ref: paths/SendEmail/api@v1@SendEmail.yaml
   #Venmo
   /api/DirectPay/Venmo/v1/VenmoPayment:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoPayment.yaml
@@ -159,7 +159,7 @@ tags:
       * Direct to Debit payment cancel     
   #eCheck
   - name: eCheck
-    description: >
+    description: |
       An eCheck, or electronic check, is a digital version of a paper check that
       is used to make a payment online.    
 
@@ -184,7 +184,7 @@ tags:
            The  Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
   #Send Email
   - name : Send Email
-    description:  |
+    description: |
             This endpoint is used to send emails from ECHO Hub application through SendGrid or SMTP.
   #Venmo
   - name: Venmo

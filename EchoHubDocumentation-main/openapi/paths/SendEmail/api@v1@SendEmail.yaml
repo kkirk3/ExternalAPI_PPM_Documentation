@@ -16,14 +16,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/Messaging/Request/SendEmail.yaml
+          $ref: ../../components/schemas/SendEmail/Request/SendEmail.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/Messaging/Response/SendEmail.yaml
+            $ref: ../../components/schemas/SendEmail/Response/SendEmail.yaml
           examples:
             mapName:   
               description: Please scroll the above dropdown list for more response codes          

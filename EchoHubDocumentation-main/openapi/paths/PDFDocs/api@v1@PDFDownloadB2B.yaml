@@ -13,14 +13,14 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/Messaging/Request/SendEmail.yaml   
+          $ref: ../../components/schemas/PDFDocs/Request/PDFDownloadB2BRequest.yaml   
           responses:
             '200':
               description: Success
               content:
                 application/json:
                   schema:
-                    $ref: ../../components/schemas/Messaging/Response/SendEmail.yaml
+                    $ref: ../../components/schemas/PDFDocs/Request/PDFDownloadB2BResponse.yaml
                   examples:
                     mapName:   
                       description: Please scroll the above dropdown list for more response codes          
