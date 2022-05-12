@@ -99,19 +99,18 @@ paths:
     $ref: paths/VCP/api@VCP@V1@CardActivity.yaml
   /api/VCP/V1/CardCancel:
     $ref: paths/VCP/api@VCP@V1@CardCancel.yaml
-  #Zelle
+  #WebHook
+  /api/WebHook/v1/WebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
+  /api/WebHook/v1/InternalWebhookStatusUpdate:
+    $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
+ #Zelle
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
   /api/DirectPay/v1/PaymentCancel:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
-  #WebHook
-  /api/WebHook/v1/WebhookStatusUpdate:
-    $ref: paths/WebHook/api@v1@ThirdPartyWebhookStatusUpdate.yaml     
-  /api/WebHook/v1/InternalWebhookStatusUpdate:
-    $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
-
     
 components:
   securitySchemes:
@@ -200,15 +199,7 @@ tags:
       virtual card program has two end points:
         * Virtual Card  Activity 
         * Virtual Card  Cancel
-       
-  - name: Zelle
-    description: |
-        Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
-        Zelle has three endpoints:
-        * Zelle payment create
-        * Zelle payment status
-        * Zelle payment cancel
-    
+           
   - name: Webhook
     description: |
          Webhook provides a solution for enabling real-time notifications and data updates. Webhooks are one way for a web application to send automated messages or information to another application in real-time when a specific event occurs.  
@@ -216,3 +207,11 @@ tags:
          Webhooks are simple and efficient where information is obtained immediately when available. The intent of using a webhook here is to get the status update of payments. The ECHO Hub application gets the required data without having to send repeated requests to third-party vendors. Unlike APIs, an active batch is triggered at specific intervals to fetch information about the payment status through the different payment modalities such as Direct to Debit, Zelle, and Venmo.
          
          <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
+
+  - name: Zelle
+    description: |
+          Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
+          Zelle has three endpoints:
+          * Zelle payment create
+          * Zelle payment status
+          * Zelle payment cancel
