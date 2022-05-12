@@ -178,6 +178,9 @@ tags:
     description: |      
            The  Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
 
+  - name : Send Email
+    description:  Send Email
+
   - name: Virtual Card Program (VCP)
     description: |
       Virtual cards are one way that Echo facilitates payments from the Payor to the Provider. The Payor or Provider may have questions on whether a card has been used, what the card balance is, and if the card is active. For these types of inquiries, there is an API endpoint for card status and transactions. 
