@@ -22,7 +22,7 @@ post:
           schema:
             $ref: ../../components/schemas/WebPay/Response/WebPayCreateProcessResponse.yaml
           examples:
-            mapName:   
+            mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
@@ -34,7 +34,7 @@ post:
                     PaymentResponseCodeDesc: WebPay Success
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
-            mapName1:   
+            mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
               value:
@@ -46,3 +46,58 @@ post:
                     PaymentResponseCodeDesc: No Access to EchoVault
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
+            mapName_1009:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1009"
+              #description: TransError for JSON Validation Failed Code 1009
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1009"
+                  ErrorDesc : Invalid or Missing Payor API Form Identifier
+            mapName_1031:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1031"
+              #description: TransError for JSON Validation Failed Code 1031
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1031"
+                  ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types \"PAYORREFERENCEID\", \"ECHOHUBTRANSACTIONID\"
+            mapName_1027:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1027"
+              #description: TransError for JSON Validation Failed Code 1027
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1027"
+                  ErrorDesc : Invalid or Missing Request Value
+            mapName_1060:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1060"
+              #description: TransError for JSON Validation Failed Code 1060
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1060"
+                  ErrorDesc : Invalid or Missing Process Type
+            mapName_1065:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1065"
+              #description: TransError for JSON Validation Failed Code 1065
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1065"
+                  ErrorDesc : Invalid or Missing Payment Type         
