@@ -11,12 +11,12 @@ properties:
     description: APIFormIdentifierID
     maxLength: 100
     minLength: 1
-  RequestValueType:
+  PayorSessionID:
     type: string
     description: PayorSessionID
     maxLength: 100
     minLength: 1
-  RequestValue:
+  EchoVaultToken:
     type: string
     description: EchoVaultToken
     maxLength: 100
