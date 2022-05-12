@@ -51,11 +51,11 @@ paths:
   /api/DirectPay/Deluxe/v1/DeluxeEcheck:
     $ref: paths/Echecks/api@DirectPay@Deluxe@v1@DeluxeEcheck.yaml
   #eCheckPDF 
-  /api/PDFDocs/v1/PDFDownload[For SelectPay]:
+  /api/PDFDocs/v1/PDFDownload [For SelectPay]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadSelectPay.yaml
-  /api/PDFDocs/v1/PDFDownload[For Deluxe]:
+  /api/PDFDocs/v1/PDFDownload [For Deluxe]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
-  /api/PDFDocs/v1/PDFDownload[For B2B]:
+  /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
   #Universal Payment Cancel
   /api/DirectPay/v1/PaymentCancel [For ACH] :
