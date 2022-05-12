@@ -87,11 +87,6 @@ paths:
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/Messaging/api@v1@SendEmail.yaml
-  #VCP    
-  /api/VCP/V1/CardActivity:
-    $ref: paths/VCP/api@VCP@V1@CardActivity.yaml
-  /api/VCP/V1/CardCancel:
-    $ref: paths/VCP/api@VCP@V1@CardCancel.yaml
   #Venmo
   /api/DirectPay/Venmo/v1/VenmoPayment:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoPayment.yaml
@@ -99,6 +94,11 @@ paths:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoCancel.yaml
   /api/DirectPay/Venmo/v1/VenmoStatus:
     $ref: paths/Venmo/api@DirectPay@Venmo@v1@VenmoStatus.yaml
+  #VCP    
+  /api/VCP/V1/CardActivity:
+    $ref: paths/VCP/api@VCP@V1@CardActivity.yaml
+  /api/VCP/V1/CardCancel:
+    $ref: paths/VCP/api@VCP@V1@CardCancel.yaml
   #Zelle
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
@@ -179,7 +179,17 @@ tags:
            The  Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
 
   - name : Send Email
-    description:  Send Email
+    description:  |
+            This endpoint is used to send emails from ECHO Hub application through SendGrid or SMTP.
+
+  - name: Venmo
+    description: |
+      Venmo is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a Venmo account can transfer funds to the Payee bank account without needing cash or checks.  
+      Venmo accounts can be linked to credit cards, debit cards, or checking accounts. Venmo is more like a digital wallet where funds are held as a Venmo balance in the checking account.  
+      Venmo has three endpoints:  
+      •	Venmo payment create  
+      •	Venmo payment status  
+      •	Venmo payment cancel
 
   - name: Virtual Card Program (VCP)
     description: |
@@ -190,16 +200,7 @@ tags:
       virtual card program has two end points:
         * Virtual Card  Activity 
         * Virtual Card  Cancel
-   
-  - name: Venmo
-    description: |
-      Venmo is a payment app available on iPhones and Android phones that allows for the quick and easy exchange of money. A user with a Venmo account can transfer funds to the Payee bank account without needing cash or checks.  
-      Venmo accounts can be linked to credit cards, debit cards, or checking accounts. Venmo is more like a digital wallet where funds are held as a Venmo balance in the checking account.  
-      Venmo has three endpoints:  
-      •	Venmo payment create  
-      •	Venmo payment status  
-      •	Venmo payment cancel  
-        
+       
   - name: Zelle
     description: |
         Zelle helps transfer funds between bank accounts instantly through the Zelle app with just an email address or mobile number. The amount is directly deposited into the Payee’s bank account. Money sent with Zelle is typically available to a Zelle enrolled Payee within minutes.  
