@@ -98,4 +98,4 @@ properties:
             description: "1044"
           ErrorDesc:
             type: string
-            description:  Invalid or Missing Amount              
+            description:  Invalid or Missing Status              

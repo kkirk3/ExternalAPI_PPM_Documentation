@@ -116,4 +116,4 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1044"
-                  ErrorDesc : Invalid or Missing Amount            
+                  ErrorDesc : Invalid or Missing Status            
