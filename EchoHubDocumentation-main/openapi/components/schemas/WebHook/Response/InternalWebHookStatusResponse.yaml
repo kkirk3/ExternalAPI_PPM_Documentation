@@ -54,3 +54,33 @@ properties:
           EchoHubTransactionId:
             type: string
             description: EchoHub Transaction Number
+      TransError for Payment Response Code 1042:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 1042
+          PaymentResponseCodeDesc:
+            type: string
+            description: Invalid or Missing ReferenceId
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number
+      TransError for Payment Response Code 1044:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment Response Code 1044
+          PaymentResponseCodeDesc:
+            type: string
+            description: Invalid or Missing Status
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: EchoHub Transaction Number            

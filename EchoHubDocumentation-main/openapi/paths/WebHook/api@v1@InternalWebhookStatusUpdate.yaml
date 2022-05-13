@@ -49,7 +49,7 @@ post:
                     PaymentResponseCodeDesc: Internal Webhook Status Success
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
-            mapName1:   
+            mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
               value:
@@ -61,3 +61,25 @@ post:
                     PaymentResponseCodeDesc: Internal Webhook Status Failed
                     TransactionId: Transaction Number
                     EchoHubTransactionId: EchoHub Transaction Number
+            mapName_1042:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1042"
+              #description: TransError for JSON Validation Failed Code 1040
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1042"
+                  ErrorDesc : Invalid or Missing ReferenceId
+            mapName_1044:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1044"
+              #description: TransError for JSON Validation Failed Code 1040
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                  ErrorCode : "1044"
+                  ErrorDesc : Invalid or Missing Status            

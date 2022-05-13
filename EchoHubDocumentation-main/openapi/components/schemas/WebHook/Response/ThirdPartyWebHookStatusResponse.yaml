@@ -54,3 +54,48 @@ properties:
           EchoHubTransactionId:
             type: string
             description: EchoHub Transaction Number
+      TransError JSON Validation Failed Code 1040:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1040"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing PayorId
+      TransError JSON Validation Failed Code 1041:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1041"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing PayeeId
+      TransError JSON Validation Failed Code 1042:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1042"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing ReferenceId
+      TransError JSON Validation Failed Code 1043:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1043"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing Amount
+      TransError JSON Validation Failed Code 1044:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1044"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing Amount              

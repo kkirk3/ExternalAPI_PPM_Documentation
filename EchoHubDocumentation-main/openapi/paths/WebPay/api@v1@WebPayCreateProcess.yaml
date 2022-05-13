@@ -30,10 +30,11 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment Response Code 001
-                    PaymentResponseCodeDesc: WebPay Success
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    GrossAmount: GrossAmount
+                    FeeAmount: FeeAmount
+                    PayAmount: PayAmount
+                    PayorSessionID: PayorSessionID
+                    URL: URL
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
