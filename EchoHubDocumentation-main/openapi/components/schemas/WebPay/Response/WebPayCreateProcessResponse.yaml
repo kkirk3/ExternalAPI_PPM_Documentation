@@ -27,9 +27,6 @@ properties:
           PayorSessionID:
             type: string
             description: PayorSessionID
-          SessionToken:
-            type: string
-            description: SessionToken  
           URL:
             type: string
             description: URL

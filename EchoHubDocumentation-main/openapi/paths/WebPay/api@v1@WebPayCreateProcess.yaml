@@ -34,7 +34,6 @@ post:
                     FeeAmount: FeeAmount
                     PayAmount: PayAmount
                     PayorSessionID: PayorSessionID
-                    SessionToken: SessionToken
                     URL: URL
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
