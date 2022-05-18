@@ -34,6 +34,7 @@ post:
                     FeeAmount: FeeAmount
                     PayAmount: PayAmount
                     PayorSessionID: PayorSessionID
+                    SessionToken: SessionToken
                     URL: URL
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -101,4 +102,4 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1065"
-                  ErrorDesc : Invalid or Missing Payment Type         
+                  ErrorDesc : Invalid or Missing Payment Type

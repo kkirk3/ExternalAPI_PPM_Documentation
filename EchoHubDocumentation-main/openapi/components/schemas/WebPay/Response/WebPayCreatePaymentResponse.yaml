@@ -15,24 +15,21 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          GrossAmount:
+          PaymentResponseCode:
             type: string
-            description: GrossAmount
-          FeeAmount:
+            description: Response for Payment Response Code 001
+          PaymentResponseCodeDesc:
             type: string
-            description: FeeAmount
-          PayAmount:
+            description: Create Payment Request Sucess
+          EchoPayeeID:
+            type: string  
+            description: EchoPayeeID
+          TransactionId:
             type: string
-            description: PayAmount
-          PayorSessionID:
+            description: Transaction Number
+          EchoHubTransactionId:
             type: string
-            description: PayorSessionID
-          SessionToken:
-            type: string
-            description: SessionToken  
-          URL:
-            type: string
-            description: URL
+            description: EchoHub Transaction Number
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -104,4 +101,13 @@ properties:
             description: "1065"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Payment Type                 
+            description: Invalid or Missing Payment Type
+      TransError JSON Validation Failed Code 1067:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1067"
+          ErrorDesc:
+            type: string
+            description:  Invalid or Missing Echo Vault Token                    
