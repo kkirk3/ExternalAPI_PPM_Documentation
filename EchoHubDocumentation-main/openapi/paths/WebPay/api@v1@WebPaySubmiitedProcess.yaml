@@ -31,7 +31,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                   PaymentResponseCode: Response for Payment Response Code 001
-                  PaymentResponseCodeDesc: Create Payment Request Sucess
+                  PaymentResponseCodeDesc: Create ECHOPayeeID Sucess
                   TransactionId: Transaction Number
                   EchoPayeeID: EchoPayeeID
                   EchoHubTransactionId: EchoHub Transaction Number

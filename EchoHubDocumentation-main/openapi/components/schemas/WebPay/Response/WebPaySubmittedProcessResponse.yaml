@@ -20,7 +20,7 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Create Payment Request Sucess
+            description: Create ECHOPayeeID Sucess
           EchoPayeeID:
             type: string  
             description: EchoPayeeID
