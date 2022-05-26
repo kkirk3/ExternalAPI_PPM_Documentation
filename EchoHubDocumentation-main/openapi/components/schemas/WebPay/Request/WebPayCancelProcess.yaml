@@ -1,7 +1,7 @@
 required:
   - APIFormIdentifierID 
   - PayorSessionID
-  - EchoVaultToken
+  - VaultToken
   - ProcessType
 
 type: object
@@ -16,9 +16,9 @@ properties:
     description: PayorSessionID
     maxLength: 100
     minLength: 1
-  EchoVaultToken:
+  VaultToken:
     type: string
-    description: EchoVaultToken
+    description: VaultToken
     maxLength: 100
     minLength: 1 
   ProcessType:
