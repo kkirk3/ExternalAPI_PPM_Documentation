@@ -7,21 +7,21 @@ properties:
   lbxDirectoryId: 
     type: string
     description: 
-      The request value type for this field is LockBox Directory ID.   
+      This is a unique identifier for a payee and the associated P.O box.
     maxLength: 50
     minLength: 1
 
   payeeId: 
     type: string
     description: 
-      This request value type is for Payee ID.
+      This is the unique identifier for the Payee. The Payee is identified with the Payee ID. 
     maxLength: 50
     minLength: 1
   
   payeeName: 
     type: string
     description: 
-      The request value type for Payee Name
+      This is the name of the payee.
     maxLength: 50
     minLength: 1
             

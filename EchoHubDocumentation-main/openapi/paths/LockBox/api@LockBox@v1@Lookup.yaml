@@ -5,10 +5,10 @@ post:
   operationId: LookUpMatchProcess
   security:
     - x-Authorization: []
-  description: Lookup
+  description: This endpoint allows the user to look for matches on lockboxes in the lockbox directory. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for performing the lookup.
   
   requestBody:
-    description: Lookup
+    description: This endpoint is used to look for matches on lockboxes in the lockbox directory.
     required: true
     content:
       application/json:

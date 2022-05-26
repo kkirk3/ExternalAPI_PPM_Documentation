@@ -57,6 +57,25 @@ paths:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
   /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
+  
+  #LockBox
+  /api/LockBox/v1/LockBox:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
+  /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
+  /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+  /api/LockBox/v1/Payee:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
+  /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
+  /api/LockBox/v1/Payee/'lbxDirectoryId' [DELETE]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
+  /api/LockBox/v1/Lookup:
+    $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
+  /api/LockBox/v1/Lookup/'BatchTransactionId':  
+    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
+  
   #Universal Payment Cancel
   /api/DirectPay/v1/PaymentCancel [For ACH] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalACHCancel.yaml
@@ -120,23 +139,6 @@ paths:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
-  #LockBox
-  /api/LockBox/v1/LockBox:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
-  /api/LockBox/v1/Payee:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
-  /api/LockBox/v1/Lookup:
-    $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
-  /api/LockBox/v1/Lookup/'BatchTransactionId':  
-    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
       
     
 components:
@@ -192,6 +194,22 @@ tags:
   - name:  eCheck PDF
     description: | 
        This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.    
+
+  #LockBox
+  - name: LockBox
+    description: |
+     Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
+
+     On the other hand, lockbox express provides a more efficient system to receive and deposit check payments. The checks and any other payment documents are sent electronically and when received are scanned in a single process reducing the manual effort required to handle the documents several times. 
+    
+     Clients can use the Lockbox APIs to build the directory of eligible P.O. Boxes (lockboxes) and then to submit payment information to determine which payments can be sent electronically to an eligible lockbox.  
+    
+     Lockbox payment has three APIs:  
+     * Lockbox  
+     * Lockbox Payee  
+     * Lockbox Lookup
+    
+
   #Universal Payment Cancel
   - name: Payment Cancel
     description: | 
