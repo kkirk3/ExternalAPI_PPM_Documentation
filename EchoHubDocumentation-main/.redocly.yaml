@@ -21,8 +21,8 @@ referenceDocs:
       - lang: "C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript".
       - lang: "GO"
     apis:
-      internal@latest:
-        root: ./openapi.yaml
+      internal@latest: 
+        root: ./openapi.yaml #Dont Show End point
       external@latest:
         root: ./openapi.yaml
         lint:
