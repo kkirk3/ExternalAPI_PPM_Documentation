@@ -196,7 +196,7 @@ tags:
        This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.    
 
   #Lockbox
-  - name: Lockbox
+  - name: LockBox
     description: |
      Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
 
