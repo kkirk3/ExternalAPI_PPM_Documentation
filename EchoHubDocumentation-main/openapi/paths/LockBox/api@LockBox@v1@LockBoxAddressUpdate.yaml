@@ -1,0 +1,49 @@
+put:
+  tags:
+    - LockBox
+  summary: LockBox - Update 
+  operationId: LockBoxUpdateProcess
+  security:
+    - x-Authorization: []
+  description: LockBox
+  
+  requestBody:
+    description: LockBox Body
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ..\..\components\schemas\LockBox\Request\LockBoxUpdateProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\LockBox\Response\LockBoxUpdateProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  LockBoxResponseCode: "001"
+                  LockBoxResponseCodeDesc: LockBox Update Success
+                  lbxDirectoryId: LockBox Directory Id
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description  
+                    lbxDirectoryId: LockBox Directory Id
+                    

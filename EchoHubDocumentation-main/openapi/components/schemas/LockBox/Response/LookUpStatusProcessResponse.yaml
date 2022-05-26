@@ -1,0 +1,44 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          BatchTransactionId:
+            type: string
+            description: BatchTransactionId
+          BatchCount:
+            type: string
+            description: BatchCount
+          BatchFailedCount:
+            type: string
+            description: Transaction Number
+          BatchTransactions:
+            type: array
+            items:
+              type: object
+              properties:
+          
+                lbxDirectoryId: 
+                  type: string
+                  description: 
+                    The request value type for this field is LockBox Directory ID.   
+                  maxLength: 50
+                  minLength: 1
+                  
+                paymentTransactionId: 
+                  type: string
+                  description: 
+                    The request value type for this field is Payment Transaction ID.     
+                 

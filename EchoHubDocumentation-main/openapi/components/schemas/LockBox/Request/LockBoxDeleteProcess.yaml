@@ -1,0 +1,18 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+
+  LockBox: 
+    type: array
+    items:
+      type: object
+      properties:
+  
+        lbxDirectoryId: 
+          type: string
+          description: 
+            The request value type for this field is LockBox Directory ID.   
+          maxLength: 50
+          minLength: 1

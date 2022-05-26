@@ -1,0 +1,52 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          LockBoxResponseCode:
+            type: string
+            description: LockBox response code number
+          LockBoxResponseCodeDesc:
+            type: string
+            description: Payee Queue Success
+          lbxDirectorId:
+            type: string
+            description: LockBox Directory Id
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  Error code number
+          ErrorDesc:
+           type: string
+           description: Error description
+          lbxDirectoryId:
+            type: string
+            description: LockBox Directory Id              
+          

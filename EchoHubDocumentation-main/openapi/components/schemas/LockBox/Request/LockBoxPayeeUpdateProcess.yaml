@@ -1,0 +1,27 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+
+  lbxDirectoryId: 
+    type: string
+    description: 
+      The request value type for this field is LockBox Directory ID.   
+    maxLength: 50
+    minLength: 1
+
+  payeeId: 
+    type: string
+    description: 
+      This request value type is for Payee ID.
+    maxLength: 50
+    minLength: 1
+  
+  payeeName: 
+    type: string
+    description: 
+      The request value type for Payee Name
+    maxLength: 50
+    minLength: 1
+      

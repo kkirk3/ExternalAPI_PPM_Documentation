@@ -1,0 +1,32 @@
+get:
+  tags:
+    - LockBox
+  summary: Lookup - Status
+  operationId: LookUpStatusProcess
+  security:
+    - x-Authorization: []
+  description: LookUp
+  
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ..\..\components\schemas\LockBox\Response\LookUpStatusProcessResponse.yaml
+          examples:
+            mapName_001:   
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  BatchTransactionId: Transaction Id
+                  BatchCount: Batch Count
+                  BatchFailedCount: Batch failed count
+                  BatchTransactions:
+                    lbxDirectoryId: LockBox Directory ID
+                    PaymentTransactionId: Payment Transaction ID  
+
+           

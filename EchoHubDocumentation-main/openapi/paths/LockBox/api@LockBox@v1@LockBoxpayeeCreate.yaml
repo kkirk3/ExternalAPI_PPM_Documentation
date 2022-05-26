@@ -1,0 +1,49 @@
+post:
+  tags:
+    - LockBox
+  summary: Payee - Create 
+  operationId: LockBoxPayeeCreateProcess
+  security:
+    - x-Authorization: []
+  description: Payee
+  
+  requestBody:
+    description: Payee Body
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/LockBox/Request/LockBoxPayeeCreateProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/LockBox/Response/LockBoxPayeeCreateProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  LockBoxResponseCode: "001"
+                  LockBoxResponseCodeDesc: Payee Create Success
+                  BatchTransactionId: Transaction Number
+                  lbxDirectoryId: LockBox Directory Id
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description 
+                    lbxDirectoryId: LockBox Directory Id       

@@ -1,0 +1,67 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+
+  “Lookup”: 
+    type: array
+    items:
+      type: object
+      properties:
+  
+        paymentTransactionId: 
+          type: string
+          description: 
+            The request value type for this field is LockBox Directory ID.   
+          maxLength: 50
+          minLength: 1
+
+        payeeName: 
+          type: string
+          description: 
+            This request value type is for POBox ID.
+          maxLength: 50
+          minLength: 1
+        
+        poBox: 
+          type: string
+          description: 
+            The request value type for Mail Stop number.
+          maxLength: 50
+          minLength: 1
+            
+        addressLine1: 
+          type: string
+          description: Address Line 1 will be provided here.   
+          maxLength: 50
+          minLength: 1
+            
+        addressLine2: 
+          type: string
+          description: 
+            Address Line 2 will be provided here.
+          maxLength: 50
+          minLength: 1   
+
+        city: 
+          type: string
+          description: 
+            This request value type is for City name.  
+          maxLength: 50
+          minLength: 1  
+            
+        state: 
+          type: string
+          description: 
+            This request value type is for State name.      
+          maxLength: 50
+          minLength: 1      
+            
+        zip: 
+          type: string
+          description: 
+            This request value type is for zipcode.     
+          maxLength: 50
+          minLength: 1 
+   

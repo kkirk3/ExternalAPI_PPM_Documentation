@@ -116,6 +116,24 @@ paths:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
+  #LockBox
+  /api/LockBox/v1/LockBox:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
+  /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
+  /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+  /api/LockBox/v1/Payee:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
+  /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
+  /api/LockBox/v1/Payee/'lbxDirectoryId' [DELETE]:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
+  /api/LockBox/v1/Lookup:
+    $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
+  /api/LockBox/v1/Lookup/'BatchTransactionId':  
+    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
+      
     
 components:
   securitySchemes:
