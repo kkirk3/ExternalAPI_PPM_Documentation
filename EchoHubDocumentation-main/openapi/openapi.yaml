@@ -105,10 +105,14 @@ paths:
   /api/WebHook/v1/InternalWebhookStatusUpdate:
     $ref: paths/WebHook/api@v1@InternalWebhookStatusUpdate.yaml
   #WebPay
-  /api/DirectPay/v1/WebPay [Create]:
+  /api/DirectPay/v1/WebPay [Create Process]:
     $ref: paths/WebPay/api@v1@WebPayCreateProcess.yaml
-  /api/DirectPay/v1/WebPay [Cancel]:
-    $ref: paths/WebPay/api@v1@WebPayCancelProcess.yaml   
+  /api/DirectPay/v1/WebPay [Cancel Process]:
+    $ref: paths/WebPay/api@v1@WebPayCancelProcess.yaml
+  /api/DirectPay/v1/WebPay [Create Payment]:
+    $ref: paths/WebPay/api@v1@WebPayCreatePayment.yaml  
+  /api/DirectPay/v1/WebPay [Submiited Process]:
+    $ref: paths/WebPay/api@v1@WebPaySubmiitedProcess.yaml     
  #Zelle
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml

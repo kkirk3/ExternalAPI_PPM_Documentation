@@ -1,0 +1,35 @@
+required:
+  - APIFormIdentifierID 
+  - ProcessType
+  - PaymentType
+  - PayorSessionID
+  - EchoVaultToken
+
+type: object
+properties:
+  APIFormIdentifierID:
+    type: string
+    description: APIFormIdentifierID
+    maxLength: 100
+    minLength: 1
+  ProcessType:
+    type: string
+    description: ProcessType
+    maxLength: 100
+    minLength: 1 
+  PaymentType:
+    type: string
+    description: PaymentType
+    maxLength: 100
+    minLength: 1
+  PayorSessionID:
+    type: string
+    description: PayorSessionID
+    maxLength: 100
+    minLength: 1
+  EchoVaultToken:
+    type: string
+    description: EchoVaultToken
+    maxLength: 100
+    minLength: 1   
+      
