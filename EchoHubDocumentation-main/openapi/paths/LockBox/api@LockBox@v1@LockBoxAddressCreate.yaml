@@ -1,7 +1,9 @@
 post:
   tags:
     - LockBox
+     
   summary: LockBox - Create 
+  x-internal: true
   operationId: LockBoxCreateProcess
   security:
     - x-Authorization: []

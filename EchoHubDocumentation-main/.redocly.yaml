@@ -20,5 +20,13 @@ referenceDocs:
       - lang: "JavaScript"
       - lang: "C#" # Can be one of the following supported languages: "curl", "Node.js", "JavaScript".
       - lang: "GO"
+    apis:
+      internal@latest:
+        root: ./openapi.yaml
+      external@latest:
+        root: ./openapi.yaml
+        lint:
+          decorators:
+            remove-x-internal: on      
       
       

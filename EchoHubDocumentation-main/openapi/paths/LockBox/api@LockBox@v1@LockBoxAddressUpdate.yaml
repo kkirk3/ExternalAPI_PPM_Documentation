@@ -2,6 +2,7 @@ put:
   tags:
     - LockBox
   summary: LockBox - Update 
+  x-internal: true
   operationId: LockBoxUpdateProcess
   security:
     - x-Authorization: []
