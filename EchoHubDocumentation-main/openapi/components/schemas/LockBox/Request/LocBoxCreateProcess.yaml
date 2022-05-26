@@ -70,10 +70,13 @@ properties:
       
   agreement: 
     type: string
-    description: This field identifies the type of matching to the lockbox payee names and the values can be ‘all’, ‘var’, or ‘exact’.
-      * All - accept any payee name
-      * Exact - must match exactly on payee name
-      * Var - allow matching on variations of a payee name
+    description: This field identifies the type of matching to the lockbox payee names and the values can be ‘all’, ‘var’, or ‘exact’.  
+
+     * All - accept any payee name    
+     
+     * Exact - must match exactly on payee name     
+     
+     * Var - allow matching on variations of a payee name
 
     maxLength: 50
     minLength: 1 
@@ -82,8 +85,10 @@ properties:
   status: 
     type: string
     description: 
-      This field can be either Active or Inactive.
-      * Active - available for payment delivery.
+      This field can be either Active or Inactive.     
+      
+      * Active - available for payment delivery.  
+     
       * Inactive - pending availability for payment delivery
     maxLength: 50
     minLength: 1 
