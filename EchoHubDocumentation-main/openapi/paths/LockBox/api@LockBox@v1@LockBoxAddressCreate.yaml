@@ -14,14 +14,14 @@ post:
       application/json:
         schema: 
           type: array
-          $ref: ..\..\components\schemas\LockBox\Request\LocBoxCreateProcess.yaml
+          $ref: ../../components/schemas/LockBox/Request/LocBoxCreateProcess.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\LockBox\Response\LocBoxCreateProcessResponse.yaml
+            $ref: ../../components/schemas/LockBox/Response/LocBoxCreateProcessResponse.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          

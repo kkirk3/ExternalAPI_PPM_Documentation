@@ -13,7 +13,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\LockBox\Response\LookUpStatusProcessResponse.yaml
+            $ref: ../../components/schemas/LockBox/Response/LookUpStatusProcessResponse.yaml
           examples:
             mapName_001:   
               summary: "001"

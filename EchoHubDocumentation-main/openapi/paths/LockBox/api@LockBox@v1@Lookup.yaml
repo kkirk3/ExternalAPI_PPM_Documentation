@@ -14,14 +14,14 @@ post:
       application/json:
         schema: 
           type: array
-          $ref: ..\..\components\schemas\LockBox\Request\LookUpMatchProcess.yaml
+          $ref: ../../components/schemas/LockBox/Request/LookUpMatchProcess.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ..\..\components\schemas\LockBox\Response\LookUpMatchProcessResponse.yaml
+            $ref: ../../components/schemas/LockBox/Response/LookUpMatchProcessResponse.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
