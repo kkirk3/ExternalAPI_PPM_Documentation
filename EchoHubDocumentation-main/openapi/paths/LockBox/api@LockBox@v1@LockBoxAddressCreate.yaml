@@ -1,8 +1,8 @@
 post:
   tags:
-    - LockBox
+    - Lockbox Payment
      
-  summary: LockBox - Create 
+  summary: Lockbox - Create 
   x-internal: true
   operationId: LockBoxCreateProcess
   security:

@@ -87,7 +87,7 @@ properties:
     description: 
       This field can be either Active or Inactive.     
       
-      * Active - available for payment delivery.  
+      * Active - available for payment delivery  
      
       * Inactive - pending availability for payment delivery
     maxLength: 50

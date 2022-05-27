@@ -1,6 +1,6 @@
 get:
   tags:
-    - LockBox
+    - Lockbox Payment
   summary: Lookup - Status
   operationId: LookUpStatusProcess
   security:

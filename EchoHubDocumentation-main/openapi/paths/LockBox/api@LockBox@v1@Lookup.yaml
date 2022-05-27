@@ -1,6 +1,6 @@
 post:
   tags:
-    - LockBox
+    - Lockbox Payment
   summary: Lookup 
   operationId: LookUpMatchProcess
   security:

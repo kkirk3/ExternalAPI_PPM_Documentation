@@ -1,6 +1,6 @@
 delete:
   tags:
-    - LockBox
+    - Lockbox Payment
   summary: Payee - Delete
   operationId: LockBoxPayeeDeleteProcess
   security:

@@ -1,6 +1,6 @@
 post:
   tags:
-    - LockBox
+    - Lockbox Payment
   summary: Payee - Create 
   operationId: LockBoxPayeeCreateProcess
   security:

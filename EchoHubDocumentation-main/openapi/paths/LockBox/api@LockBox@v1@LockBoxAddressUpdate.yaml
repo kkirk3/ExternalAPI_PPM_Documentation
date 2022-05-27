@@ -1,7 +1,7 @@
 put:
   tags:
-    - LockBox
-  summary: LockBox - Update 
+    - Lockbox Payment
+  summary: Lockbox - Update 
   x-internal: true
   operationId: LockBoxUpdateProcess
   security:

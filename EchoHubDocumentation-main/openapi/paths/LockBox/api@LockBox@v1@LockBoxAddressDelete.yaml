@@ -1,7 +1,7 @@
 delete:
   tags:
-    - LockBox
-  summary: LockBox - Delete 
+    - Lockbox Payment
+  summary: Lockbox - Delete 
   operationId: LockBoxDeleteProcess
   security:
     - x-Authorization: []

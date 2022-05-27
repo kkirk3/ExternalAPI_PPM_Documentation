@@ -1,6 +1,6 @@
 put:
   tags:
-    - LockBox
+    - Lockbox Payment
   summary: Payee - Update
   operationId: LockBoxPayeeUpdateProcess
   security:

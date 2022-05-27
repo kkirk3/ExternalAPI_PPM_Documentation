@@ -58,8 +58,8 @@ paths:
   /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
   
-  #LockBox
-  /api/LockBox/v1/LockBox:
+  #Lockbox Payment
+  /api/Lockbox/v1/Lockbox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
@@ -195,8 +195,8 @@ tags:
     description: | 
        This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.    
 
-  #LockBox
-  - name: LockBox
+  #Lockbox
+  - name: Lockbox Payment
     description: |
      Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
 
@@ -204,11 +204,24 @@ tags:
     
      Clients can use the Lockbox APIs to build the directory of eligible P.O. Boxes (lockboxes) and then to submit payment information to determine which payments can be sent electronically to an eligible lockbox.  
     
-     Lockbox payment has three APIs:  
-     * Lockbox  
-     * Lockbox Payee  
-     * Lockbox Lookup
-    
+     Lockbox payment has three APIs - Lockbox, Lockbox Payee and Lockbox Lookup  
+     
+     (1) Lockbox  
+     The Lockbox API is used to maintain a list of a client’s eligible lockboxes for delivering electronic payments to the payees. This helps a client send the payment addresses to ECHO Hub for processing the payments. 
+     
+     The lockbox API allows ‘Post’, ‘Put’, and ‘Delete’ operations which correspond to add, update, and delete lockbox addresses respectively.  
+
+
+     (2) Lockbox Payee  
+     Lockbox payee API is used to maintain a list of payees associated with each of the lockboxes. This helps a client deliver electronic payments to the payees using the lockbox express process by sending the payment addresses to ECHO Hub for processing payments.  
+     
+     The lockbox payee API allows ‘Post’, ‘Put’, and ‘Delete’ operations for a given lockbox payee which correspond to add, update, and delete payee names respectively.  
+
+     (3) Lockbox Lookup  
+     This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
+     
+     Lockbox lookup allows ‘Post’ and ‘Get’ operations. The post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
+   
 
   #Universal Payment Cancel
   - name: Payment Cancel
