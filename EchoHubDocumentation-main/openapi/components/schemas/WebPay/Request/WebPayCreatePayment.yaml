@@ -4,7 +4,7 @@ required:
   - RequestValue
   - ProcessType
   - PaymentType
-  - EchoVaultToken
+  - VaultToken
 
 type: object
 properties:
@@ -33,9 +33,9 @@ properties:
     description: PaymentType
     maxLength: 100
     minLength: 1 
-  EchoVaultToken:
+  VaultToken:
     type: string
-    description: EchoVaultToken
+    description: VaultToken
     maxLength: 100
     minLength: 1 
             
