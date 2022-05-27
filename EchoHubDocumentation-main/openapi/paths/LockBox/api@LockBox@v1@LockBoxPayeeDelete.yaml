@@ -1,6 +1,6 @@
 delete:
   tags:
-    - Lockbox Payment
+    - Lockbox
   summary: Payee - Delete
   operationId: LockBoxPayeeDeleteProcess
   security:
@@ -9,7 +9,9 @@ delete:
    This endpoint allows the user to delete a payee name from a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for deleting a payee name from the lockbox. Once the payee’s name is deleted, the ECHO Hub system will send a success message.  
 
    This endpoint uses ‘lbxDirectoryId’ as the input parameter.  
-   lbxDirectoryId – This is a unique identifier for a payee and the associated P.O box.
+   lbxDirectoryId – This is a unique identifier for a payee and the associated P.O box.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   
   responses:
     '200':

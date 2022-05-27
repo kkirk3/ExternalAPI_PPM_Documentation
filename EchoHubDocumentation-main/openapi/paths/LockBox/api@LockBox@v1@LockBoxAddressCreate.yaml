@@ -1,6 +1,6 @@
 post:
   tags:
-    - Lockbox Payment
+    - Lockbox 
      
   summary: Lockbox - Create 
   x-internal: true
@@ -8,8 +8,9 @@ post:
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a lockbox to the directory of lockboxes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for adding a lockbox. Once the lockbox is added, the ECHO Hub system will send a success message.
-  
+   This endpoint allows the user to add a lockbox to the directory of lockboxes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for adding a lockbox. Once the lockbox is added, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
     description: This endpoint is used to add a lockbox to the directory of lockboxes.
     required: true

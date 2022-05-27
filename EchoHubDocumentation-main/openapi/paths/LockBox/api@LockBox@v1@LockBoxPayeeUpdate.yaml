@@ -1,11 +1,13 @@
 put:
   tags:
-    - Lockbox Payment
+    - Lockbox
   summary: Payee - Update
   operationId: LockBoxPayeeUpdateProcess
   security:
     - x-Authorization: []
-  description: This endpoint allows the user to update a payee name in a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a payee name in a lockbox. Once a payee’s name is updated, the ECHO Hub system will send a success message.
+  description: This endpoint allows the user to update a payee name in a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a payee name in a lockbox. Once a payee’s name is updated, the ECHO Hub system will send a success message.  
+  
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   
   requestBody:
     description: This endpoint is used to update a payee name in a given lockbox.

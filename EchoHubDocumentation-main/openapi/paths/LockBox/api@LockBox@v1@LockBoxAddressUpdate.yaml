@@ -1,13 +1,15 @@
 put:
   tags:
-    - Lockbox Payment
+    - Lockbox
   summary: Lockbox - Update 
   x-internal: true
   operationId: LockBoxUpdateProcess
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to update a lockbox in the directory of addresses. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a lockbox. Once the lockbox is updated, the ECHO Hub system will send a success message.
+   This endpoint allows the user to update a lockbox in the directory of addresses. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a lockbox. Once the lockbox is updated, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   
   requestBody:
     description: This endpoint allows is used to update a lockbox in the directory of addresses.

@@ -17,13 +17,13 @@ properties:
         properties:
           LockBoxResponseCode:
             type: string
-            description: LockBox response code number
+            description: Lockbox response code number
           LockBoxResponseCodeDesc:
             type: string
-            description: LockBox Create Success
+            description: Lockbox Create Success
           lbxDirectoryId:
             type: string
-            description: LockBox Directory Id
+            description: Lockbox Directory Id
             
   This is the Response for Response Code 900:
     type: object
