@@ -6,7 +6,11 @@ get:
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to know the status of lockbox batch transactions. The data is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for getting the status of lockbox batch transactions. The ECHO Hub system returns the status response of each batch transaction. Deluxe will consume this API to get the status of batches of lockbox addresses.
+   This endpoint allows the user to know the status of lockbox batch transactions. The data is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for getting the status of lockbox batch transactions. The ECHO Hub system returns the status response of each batch transaction. Deluxe will consume this API to get the status of batches of lockbox addresses.  
+
+   This endpoint uses 'BatchTransactionId' as the input parameter.  
+   BatchTransactionId – This is a unique identifier that allows the user to view the transaction details of batch records.
+
   
   responses:
     '200':
