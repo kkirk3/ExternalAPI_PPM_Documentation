@@ -17,10 +17,10 @@ properties:
         properties:
           LockBoxResponseCode:
             type: string
-            description: LockBox response code number
+            description: Lockbox response code number
           LockBoxResponseCodeDesc:
             type: string
-            description: LockBox Queue Success
+            description: Lockbox Queue Success
           BatchTransactionId:
             type: string
             description: Transaction Number

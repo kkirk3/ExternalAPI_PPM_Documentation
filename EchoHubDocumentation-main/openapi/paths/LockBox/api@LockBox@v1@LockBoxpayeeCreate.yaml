@@ -36,7 +36,7 @@ post:
                   LockBoxResponseCode: "001"
                   LockBoxResponseCodeDesc: Payee Create Success
                   BatchTransactionId: Transaction Number
-                  lbxDirectoryId: LockBox Directory Id
+                  lbxDirectoryId: Lockbox Directory ID
 
                     
             mapName_900:   
@@ -49,4 +49,4 @@ post:
                 TransError:  
                     ErrorCode: Error code number
                     ErrorDesc: Error description 
-                    lbxDirectoryId: LockBox Directory Id       
+                    lbxDirectoryId: Lockbox Directory ID      

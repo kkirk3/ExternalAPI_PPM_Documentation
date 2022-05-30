@@ -31,7 +31,7 @@ delete:
                 TransLog:                  
                   LockBoxResponseCode: "001"
                   LockBoxResponseCodeDesc: Payee Delete Success
-                  lbxDirectoryId: LockBox Directory Id
+                  lbxDirectoryId: Lockbox Directory ID
 
                     
             mapName_900:   
@@ -44,5 +44,5 @@ delete:
                 TransError:  
                     ErrorCode: Error code number
                     ErrorDesc: Error description
-                    lbxDirectoryId: LockBox Directory Id
+                    lbxDirectoryId: Lockbox Directory ID
                         

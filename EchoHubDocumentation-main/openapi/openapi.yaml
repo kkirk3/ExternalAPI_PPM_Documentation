@@ -220,7 +220,7 @@ tags:
      (3) Lockbox Lookup  
      This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
      
-     Lockbox lookup allows ‘Post’ and ‘Get’ operations. The post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
+     Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
    
 
   #Universal Payment Cancel
