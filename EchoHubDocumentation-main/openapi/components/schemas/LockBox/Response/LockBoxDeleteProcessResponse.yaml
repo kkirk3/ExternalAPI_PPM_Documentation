@@ -48,5 +48,5 @@ properties:
            description: Error description
           lbxDirectoryId:
            type: string
-           description: LockBox Directory ID
+           description: Lockbox Directory ID
            
