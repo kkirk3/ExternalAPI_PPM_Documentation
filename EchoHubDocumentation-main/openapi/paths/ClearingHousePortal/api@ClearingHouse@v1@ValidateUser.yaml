@@ -1,0 +1,49 @@
+post:
+  tags:
+    - ClearingHousePortal 
+     
+  summary: Clearing House Portal - Validate User 
+  x-internal: true
+  operationId: CHPValidateProcess
+  security:
+    - x-Authorization: []
+  description: |
+  requestBody:
+    description: This endpoint is used to validate a user on Clearing House Portal.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPValidateProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPValidateProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: User Validated.
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description
+                    

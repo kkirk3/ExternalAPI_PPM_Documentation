@@ -1,0 +1,49 @@
+post:
+  tags:
+    - ClearingHousePortal 
+     
+  summary: Clearing House Portal - Validate Email 
+  x-internal: true
+  operationId: CHPValidateEmailProcess
+  security:
+    - x-Authorization: []
+  description: |
+  requestBody:
+    description: This endpoint is used to validate an email Id on Clearing House Portal.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPValidateEmailProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPValidateEmailProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: Email Validated.
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description
+                    

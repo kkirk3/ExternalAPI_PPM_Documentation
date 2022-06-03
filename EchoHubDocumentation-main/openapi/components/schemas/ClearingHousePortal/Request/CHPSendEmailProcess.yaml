@@ -1,0 +1,28 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  "API FormIdentifier Id"
+    maxLength: 50
+    minLength: 1
+
+  UserName: 
+    type: string
+    description: "User Name"
+    maxLength: 100
+    minLength: 1
+  
+  Email: 
+    type: string
+    description: "Email Id"
+    maxLength: 250
+    minLength: 1
+    
+  OTPExpiration: 
+    type: number
+    description: "Value should be in between 1-30"
+  

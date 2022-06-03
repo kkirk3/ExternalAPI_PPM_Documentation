@@ -38,6 +38,19 @@ paths:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHCancel.yaml
   /api/DirectPay/ACH/v1/ACHStatus:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
+
+  #Clearing House Potal 
+  /api/ClearingHouse/v1/Portal [Register User]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterUser.yaml
+  /api/ClearingHouse/v1/Portal [Validate User]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ValidateUser.yaml
+  /api/ClearingHouse/v1/Portal [Get Clearing House By Domain]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetCHByDomain.yaml
+  /api/ClearingHouse/v1/Portal [Send an email]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@SendEmail.yaml
+  /api/ClearingHouse/v1/Portal [Validate an email]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ValidateEmail.yaml
+    
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml

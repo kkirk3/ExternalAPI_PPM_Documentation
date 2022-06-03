@@ -1,0 +1,61 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  "API FormIdentifier Id"
+    maxLength: 50
+    minLength: 1
+
+  UserName: 
+    type: string
+    description: "User Name"
+    maxLength: 100
+    minLength: 1
+  
+  FirstName: 
+    type: string
+    description: "First Name"
+    maxLength: 100
+    minLength: 1
+    
+  LastName: 
+    type: string
+    description: "Last Name"
+    maxLength: 100
+    minLength: 1
+    
+  Email: 
+    type: string
+    description: "Email Id"
+    maxLength: 250
+    minLength: 1
+    
+  Phone: 
+    type: integer
+    description: "Email Id"
+    maxLength: 10
+    minLength: 10
+    
+  JobTitle: 
+    type: string
+    description: "Job Title"
+    maxLength: 100
+    minLength: 1
+
+  ClearinghouseName: 
+    type: string
+    description: "Clearing House Name"
+    maxLength: 100
+    minLength: 1
+    
+  OtherClearinghouseName: 
+    type: string
+    description: "If Clearing House Name is 'OTHER' than this field is required"
+    maxLength: 100
+    minLength: 1
+      
+  

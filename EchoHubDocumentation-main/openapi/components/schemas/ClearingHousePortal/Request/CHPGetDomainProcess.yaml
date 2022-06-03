@@ -1,0 +1,20 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  "API FormIdentifier Id"
+    maxLength: 50
+    minLength: 1
+
+  DomainName: 
+    type: string
+    description: "Domain Name"
+    maxLength: 100
+    minLength: 1
+  
+      
+  

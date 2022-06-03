@@ -1,0 +1,24 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  "API FormIdentifier Id"
+    maxLength: 50
+    minLength: 1
+
+  UserName: 
+    type: string
+    description: "Must be alphanumeric"
+    maxLength: 100
+    minLength: 4
+  
+  Password: 
+    type: string
+    description: "Password should be minimum 16 charecter & at least One Capital, One number, One Small & One Special Charecter "
+    maxLength: 50
+    minLength: 16
+    
