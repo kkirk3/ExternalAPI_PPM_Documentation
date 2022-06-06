@@ -38,8 +38,7 @@ paths:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHCancel.yaml
   /api/DirectPay/ACH/v1/ACHStatus:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
-
-  #Clearing House Potal 
+  #ClearingHousePotal 
   /api/ClearingHouse/v1/Portal [Register User]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterUser.yaml
   /api/ClearingHouse/v1/Portal [Validate User]:
@@ -50,7 +49,6 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@SendEmail.yaml
   /api/ClearingHouse/v1/Portal [Validate an email]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ValidateEmail.yaml
-    
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
@@ -70,7 +68,6 @@ paths:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
   /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
-  
   #Lockbox
   /api/LockBox/v1/LockBox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
@@ -88,7 +85,6 @@ paths:
     $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
   /api/LockBox/v1/Lookup/'BatchTransactionId':  
     $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
-  
   #Universal Payment Cancel
   /api/DirectPay/v1/PaymentCancel [For ACH] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalACHCancel.yaml
@@ -186,6 +182,9 @@ tags:
     description: |
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
+  #ClearingHousePotal
+  - name: Clearing House Portal
+    description: Clearing House Potal
   #DirectToDebit 
   - name: Direct to Debit
     description: |
