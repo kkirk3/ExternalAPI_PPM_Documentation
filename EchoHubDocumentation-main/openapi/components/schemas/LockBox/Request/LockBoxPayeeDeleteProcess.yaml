@@ -13,7 +13,7 @@ properties:
         lbxDirectoryId: 
           type: string
           description: 
-            The request value type for this field is LockBox Directory ID.   
+            The request value type for this field is Lockbox Directory ID.   
           maxLength: 50
           minLength: 1
         
