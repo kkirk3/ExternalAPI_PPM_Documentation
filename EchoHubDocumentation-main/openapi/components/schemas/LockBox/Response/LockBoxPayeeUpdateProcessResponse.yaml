@@ -15,15 +15,13 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          LockBoxResponseCode:
+          ResponseCode:
             type: string
-            description: Lockbox response code number
-          LockBoxResponseCodeDesc:
+            description: Response code number
+          ResponseCodeDesc:
             type: string
             description: Payee Update Success
-          lbxDirectoryId:
-            type: string
-            description: Lockbox Directory ID
+          
             
   This is the Response for Response Code 900:
     type: object
@@ -46,7 +44,5 @@ properties:
           ErrorDesc:
            type: string
            description: Error description
-          lbxDirectoryId:
-            type: string
-            description: Lockbox Directory ID
+          
           

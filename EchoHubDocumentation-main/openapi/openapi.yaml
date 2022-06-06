@@ -82,7 +82,7 @@ paths:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId' [DELETE]:
+  /api/LockBox/v1/Payee/'lbxDirectoryId'/'payeeId' [DELETE]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
   /api/LockBox/v1/Lookup:
     $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml

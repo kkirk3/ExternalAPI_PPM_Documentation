@@ -35,9 +35,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  LockBoxResponseCode: "001"
-                  LockBoxResponseCodeDesc: Lockbox Create Success
-                  lbxDirectoryId: Lockbox Directory ID
+                  ResponseCode: "001"
+                  ResponseCodeDesc: Lockbox Create Success
 
                     
             mapName_900:   
@@ -50,5 +49,4 @@ post:
                 TransError:  
                     ErrorCode: Error code number
                     ErrorDesc: Error description
-                    lbxDirectoryId: Lockbox Directory ID
                     

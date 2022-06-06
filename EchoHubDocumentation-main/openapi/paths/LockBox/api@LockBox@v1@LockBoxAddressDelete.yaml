@@ -30,9 +30,8 @@ delete:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  LockBoxResponseCode: "001"
-                  LockBoxResponseCodeDesc: Lockbox Delete Success
-                  lbxDirectoryId: Lockbox Directory ID
+                  ResponseCode: "001"
+                  ResponseCodeDesc: Lockbox Delete Success
 
                     
             mapName_900:   
@@ -45,5 +44,4 @@ delete:
                 TransError:  
                     ErrorCode: Error code number
                     ErrorDesc: Error description
-                    lbxDirectoryId: Lockbox Directory ID
                     
