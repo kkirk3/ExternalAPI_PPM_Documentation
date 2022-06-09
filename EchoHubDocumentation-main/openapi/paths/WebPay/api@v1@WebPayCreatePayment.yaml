@@ -5,10 +5,11 @@ post:
   operationId: WebPayCreatePayment
   security:
     - x-Authorization: []
-  description: WebPay
+  description: |
+   This endpoint allows the API user to create a certain type of payment requested by the payee from an embedded web application. The data is first validated in the ECHO Hub system and based on the vault token, ECHO Hub finds the ECHO Payee ID or creates one if the payee ID does not exist based on the applicable payment account type ID. The request is then sent to the appropriate business library by sending ECHO Payee ID and Payor reference ID, and the payment is created. Upon successful transaction, the business library provides a success message.
   
   requestBody:
-    description: WebPay
+    description: This endpoint is used to create a payment from an embedded web application.
     required: true
     content:
       application/json:
@@ -31,10 +32,10 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                   PaymentResponseCode: Response for Payment Response Code 001
-                  PaymentResponseCodeDesc: Create ECHOPayeeID Sucess
+                  PaymentResponseCodeDesc: Create ECHO Payee ID Success
                   TransactionId: Transaction Number
-                  EchoPayeeID: EchoPayeeID
-                  EchoHubTransactionId: EchoHub Transaction Number
+                  EchoPayeeID: ECHO Payee ID
+                  EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -44,9 +45,9 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: No Access to EchoVault
+                    PaymentResponseCodeDesc: No Access to ECHO Vault
                     TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_1009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1009"
@@ -68,7 +69,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1031"
-                  ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
+                  ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be either "PAYORREFERENCEID" or "ECHOHUBTRANSACTIONID"
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -112,4 +113,4 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1067"
-                  ErrorDesc : Invalid or Missing Echo Vault Token      
+                  ErrorDesc : Invalid or Missing ECHO Vault Token      

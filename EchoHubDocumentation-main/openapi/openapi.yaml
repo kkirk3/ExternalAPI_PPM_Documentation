@@ -139,8 +139,8 @@ paths:
     $ref: paths/WebPay/api@v1@WebPayCancelProcess.yaml
   /api/DirectPay/v1/WebPay [Create Payment]:
     $ref: paths/WebPay/api@v1@WebPayCreatePayment.yaml  
-  /api/DirectPay/v1/WebPay [Submiited Process]:
-    $ref: paths/WebPay/api@v1@WebPaySubmiitedProcess.yaml     
+  /api/DirectPay/v1/WebPay [Submitted Process]:
+    $ref: paths/WebPay/api@v1@WebPaySubmittedProcess.yaml     
  #Zelle
   /api/DirectPay/Zelle/v1/ZellePayment:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZellePayment.yaml
@@ -280,8 +280,19 @@ tags:
          <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/webhook_flow.jpg?raw=true" alt="Webhook flow"/>
   #WebPay
   - name: WebPay
-    description: WebPay
-
+    description: |
+     WebPay is a PCI-compliant online service that allows users to access a third-party website and set up one-time and/or recurring payments to their direct to debit card, Venmo, Zelle, or bank account. A token that has a unique ID is assigned for each WebPay session and it will have a time-out limit if there is inactivity in the browser.  
+     
+     Web payments make checkout easy for the user, by reusing stored card/account information and eliminating the need for the user to fill in checkout forms.  
+     
+     The UI is implemented by the browser, and users see a familiar and consistent checkout experience on any website that uses the standard.  
+     
+     WebPay has four endpoints:
+     * WebPay - Create process
+     * WebPay - Create Payment
+     * WebPay - Cancel Process
+     * WebPay - Submitted Process
+    
   #Zelle
   - name: Zelle
     description: |

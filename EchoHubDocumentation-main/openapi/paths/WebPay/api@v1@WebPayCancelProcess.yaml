@@ -5,10 +5,11 @@ post:
   operationId: WebPayCancelProcess
   security:
     - x-Authorization: []
-  description: WebPay
+  description: |
+   This endpoint allows the API user to cancel a payment request using an embedded web application. When payment has to be cancelled, the ECHO Hub system first receives the request to cancel a WebPay active session. Once the data is validated in the ECHO Hub system, the request is sent to the appropriate business library by sending an empty ECHO Payee ID and the payment is cancelled.
   
   requestBody:
-    description: WebPay
+    description: This endpoint is used to cancel a payment using an embedded web application.
     required: true
     content:
       application/json:
@@ -33,7 +34,7 @@ post:
                     PaymentResponseCode: Response for Payment Response Code 001
                     PaymentResponseCodeDesc: Transaction Successful
                     TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -43,9 +44,9 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: No Access to EchoVault
+                    PaymentResponseCodeDesc: No Access to ECHO Vault
                     TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                    EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_1009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1009"
@@ -67,7 +68,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1066"
-                  ErrorDesc : Invalid or Missing Payor SessionID
+                  ErrorDesc : Invalid or Missing Payor Session ID
             mapName_1067:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1067"
@@ -78,7 +79,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                   ErrorCode : "1067"
-                  ErrorDesc : Invalid or Missing Echo Vault Token
+                  ErrorDesc : Invalid or Missing ECHO Vault Token
             mapName_1060:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1060"

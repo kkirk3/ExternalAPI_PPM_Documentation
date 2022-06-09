@@ -47,13 +47,13 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: No Access to EchoVault
+            description: No Access to ECHO Vault
           TransactionId:
             type: string
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransError JSON Validation Failed Code 1009:
           type: object
           properties:
@@ -71,7 +71,7 @@ properties:
               description: "1066"
             ErrorDesc:
               type: string
-              description: Invalid or Missing Payor SessionID
+              description: Invalid or Missing Payor Session ID
       TransError JSON Validation Failed Code 1067:
         type: object
         properties:
@@ -80,7 +80,7 @@ properties:
             description: "1067"
           ErrorDesc:
             type: string
-            description:  Invalid or Missing Echo Vault Token
+            description:  Invalid or Missing ECHO Vault Token
       TransError JSON Validation Failed Code 1060:
         type: object
         properties:

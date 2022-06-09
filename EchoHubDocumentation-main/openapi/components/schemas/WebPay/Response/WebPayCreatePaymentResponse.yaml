@@ -20,16 +20,16 @@ properties:
             description: Response for Payment Response Code 001
           PaymentResponseCodeDesc:
             type: string
-            description: Create ECHOPayeeID Sucess
+            description: Create ECHO Payee ID Success
           EchoPayeeID:
             type: string  
-            description: EchoPayeeID
+            description: ECHO Payee ID
           TransactionId:
             type: string
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -50,13 +50,13 @@ properties:
             description: Response for Payment Response Code 900
           PaymentResponseCodeDesc:
             type: string
-            description: No Access to EchoVault
+            description: No Access to ECHO Vault
           TransactionId:
             type: string
             description: Transaction Number
           EchoHubTransactionId:
             type: string
-            description: EchoHub Transaction Number
+            description: ECHO Hub Transaction Number
       TransError JSON Validation Failed Code 1009:
           type: object
           properties:
@@ -74,7 +74,7 @@ properties:
               description: "1031"
             ErrorDesc:
               type: string
-              description: Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PAYORREFERENCEID", "ECHOHUBTRANSACTIONID"
+              description: Invalid or Missing Request Value Type. Request Value Type should be either "PAYORREFERENCEID" or "ECHOHUBTRANSACTIONID"
       TransError JSON Validation Failed Code 1027:
         type: object
         properties:
@@ -110,4 +110,4 @@ properties:
             description: "1067"
           ErrorDesc:
             type: string
-            description:  Invalid or Missing Echo Vault Token                    
+            description:  Invalid or Missing ECHO Vault Token                    
