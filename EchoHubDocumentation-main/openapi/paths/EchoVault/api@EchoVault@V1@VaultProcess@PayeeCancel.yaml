@@ -1,0 +1,75 @@
+post:
+  tags:
+    - EchoVault 
+     
+  summary: EchoVault - Payee Cancel
+  x-internal: true
+  operationId: EchoVaultPayeeCancel
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/EchoVault/Request/PayeeCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/PayeeCancelResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  VaultResponseCode: "001"
+                  VaultResponseCodeDesc: Vault Token Setup Canceled
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    VaultErrorCode: Error code number
+                    VaultErrorDesc: Vault Token Setup Canceled Failed
+                    
+
+            mapName_1008:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1008"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1016"
+                  ErrorDesc: Invalid or Missing Payor SessionID
+
+            mapName_1009:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1009"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1009"
+                  ErrorDesc: Invalid or Missing Pay TypeID
+                                  

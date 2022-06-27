@@ -1,0 +1,66 @@
+get:
+  tags:
+    - EchoVault 
+     
+  summary: EchoVault - Get Vault Token Details
+  x-internal: true
+  operationId: EchoVaultGetVaultTokenDetails
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/GetVaultTokenDetailsResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  VaultResponseCode: "001"
+                  VaultResponseCodeDesc: Vault Token Data Access Success
+                  PayTypeID: PayTypeID
+                  CardNumber: CardNumber
+                  ExpiryInfo: ExpiryInfo
+                  RouteNumber: RouteNumber
+                  AccountNumber: AccountNumber
+                  AccountType: AccountType
+                  MobileNumber: MobileNumber
+                  EmailAddress: EmailAddress
+                  StreetAddress: StreetAddress
+                  AddressCity: AddressCity
+                  AddressZip: AddressZip 
+                  RespondStatus: RespondStatus
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  VaultResponseCode: "900"
+                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
+                  PayTypeID: PayTypeID
+                  CardNumber: CardNumber
+                  ExpiryInfo: ExpiryInfo
+                  RouteNumber: RouteNumber
+                  AccountNumber: AccountNumber
+                  AccountType: AccountType
+                  MobileNumber: MobileNumber
+                  EmailAddress: EmailAddress
+                  StreetAddress: StreetAddress
+                  AddressCity: AddressCity
+                  AddressZip: AddressZip 
+                  RespondStatus: RespondStatus

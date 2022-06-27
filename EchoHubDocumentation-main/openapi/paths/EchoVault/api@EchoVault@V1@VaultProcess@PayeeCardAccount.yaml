@@ -1,0 +1,162 @@
+post:
+  tags:
+    - EchoVault
+
+  summary: EchoVault - Payee Card Account
+  x-internal: true
+  operationId: EchoVaultPayeeCardAccount
+  security:
+    - x-Authorization: []
+  description: |
+    This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+
+    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    required: true
+    content:
+      application/json:
+        schema:
+          type: array
+          $ref: ../../components/schemas/EchoVault/Request/PayeeCardAccount.yaml
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/PayeeCardAccountResponse.yaml
+          examples:
+            mapName_001:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:
+                  VaultResponseCode: "001"
+                  VaultResponseCodeDesc: Vault Token Setup Success
+
+            mapName_900:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  VaultResponseCode: "900"
+                  VaultResponseCodeDesc: Vault Token Setup Failed
+                  VaultToken: Vault Token
+                  PayorSessionID: Payor SessionID
+                  ProcessType: Process Type
+
+            mapName_1001:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1001"
+              #description: TransError for JSON Validation Failed Code 1001
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1001"
+                  ErrorDesc: Invalid or Missing Vault Token
+                  
+            mapName_1002:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1002"
+              #description: TransError for JSON Validation Failed Code 1002
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1002"
+                  ErrorDesc: Invalid or Missing Name on Card
+
+            mapName_1003:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1003"
+              #description: TransError for JSON Validation Failed Code 1003
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1003"
+                  ErrorDesc: Invalid or Missing Card Number
+
+            mapName_1004:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1004"
+              #description: TransError for JSON Validation Failed Code 1004
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1004"
+                  ErrorDesc: Invalid or Missing Expiry Year
+
+            mapName_1005:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1005"
+              #description: TransError for JSON Validation Failed Code 1005
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1005"
+                  ErrorDesc: Invalid or Missing Expiry Month
+
+            mapName_1006:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1006"
+              #description: TransError for JSON Validation Failed Code 1006
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1006"
+                  ErrorDesc: Invalid or Missing Street Address
+
+            mapName_1007:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1007"
+              #description: TransError for JSON Validation Failed Code 1007
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1007"
+                  ErrorDesc: Invalid or Missing Zip Code
+                                  
+            mapName_1008:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1008"
+              #description: TransError for JSON Validation Failed Code 1008
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1008"
+                  ErrorDesc: Invalid or Missing Payor SessionID
+
+            mapName_1009:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1009"
+              #description: TransError for JSON Validation Failed Code 1009
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1009"
+                  ErrorDesc: Invalid or Missing Pay TypeID
+      

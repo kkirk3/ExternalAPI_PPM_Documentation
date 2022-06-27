@@ -1,0 +1,136 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          ResponseCode:
+            type: string
+            description: Response code number
+          ResponseCodeDesc:
+            type: string
+            description: Vault Token Setup Success
+          
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          VaultResponseCode:
+            type: string
+            description:  Vault Response Code 900
+          VaultResponseCodeDesc:
+            type: string
+            description: Vault Token Setup Failed
+          VaultToken:
+            type: string
+            description: Vault Token
+          PayorSessionID:
+            type: string
+            description: Payor SessionID
+          ProcessType:
+            type: string
+            description: Process Type
+      TransError JSON Validation Failed Code 1002:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1002"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Name on Card
+      TransError JSON Validation Failed Code 1003:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1003"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Card Number
+      TransError JSON Validation Failed Code 1004:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1004"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Expiry Year
+      TransError JSON Validation Failed Code 1005:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1005"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Expiry Month
+      TransError JSON Validation Failed Code 1006:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1006"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Street Address
+      TransError JSON Validation Failed Code 1007:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1007"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Zip Code
+      TransError JSON Validation Failed Code 1001:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1001"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Vault Token
+      TransError JSON Validation Failed Code 1008:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1008"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Payor SessionID
+      TransError JSON Validation Failed Code 1009:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1009"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Pay TypeID

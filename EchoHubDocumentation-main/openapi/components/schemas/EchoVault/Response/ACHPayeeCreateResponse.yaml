@@ -1,0 +1,98 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          VaultResponseCode:
+            type: string
+            description: Response code number
+          VaultResponseCodeDesc:
+            type: string
+            description: Vault Token Setup Success
+          PayorSessionID:
+            type: string
+            description: PayorSessionID
+          ProcessType:
+            type: string
+            description: ProcessType
+          
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          VaultResponseCode:
+            type: string
+            description: Response code number
+          VaultResponseCodeDesc:
+            type: string
+            description: Vault Token Setup Failed
+          PayorSessionID:
+            type: string
+            description: PayorSessionID
+          ProcessType:
+            type: string
+            description: ProcessType
+          
+      TransError JSON Validation Failed Code 1012:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1012"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Routing Number
+
+      TransError JSON Validation Failed Code 1013:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1013"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Bank Account Number
+
+      TransError JSON Validation Failed Code 1014:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1014"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Account Type
+
+      TransError JSON Validation Failed Code 1009:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1009"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Pay TypeID

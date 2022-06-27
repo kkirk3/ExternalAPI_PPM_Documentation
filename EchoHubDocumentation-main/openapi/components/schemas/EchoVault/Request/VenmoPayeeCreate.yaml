@@ -1,0 +1,43 @@
+required:
+  - PayeeFirstName
+  - PayeeLastName
+  - Email
+  - Mobile
+  - PayTypeID
+type: object
+properties:
+
+  PayeeFirstName: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 50
+    minLength: 1
+  
+  PayeeLastName: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 50
+    minLength: 1
+  
+  EMail: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 500
+    minLength: 1
+
+  Mobile: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 10
+    minLength: 1
+  
+  PayTypeID: 
+    type: integer
+    description: 
+      This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$
+                

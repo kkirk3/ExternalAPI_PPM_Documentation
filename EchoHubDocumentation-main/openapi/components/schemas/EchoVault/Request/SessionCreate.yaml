@@ -1,0 +1,14 @@
+required:
+  - WYSIWIGURL
+  
+type: object
+properties:
+ 
+  WYSIWIGURL: 
+    type: string
+    description: 
+      This is a URL for a WYSIWIG form to be opened.   
+    maxLength: 1500
+    minLength: 1
+
+   

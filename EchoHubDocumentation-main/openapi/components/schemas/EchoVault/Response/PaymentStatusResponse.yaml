@@ -1,0 +1,90 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response code number
+          PaymentResponseCodeDesc:
+            type: string
+            description: Payment Status Successful
+          PaymentTransaction:
+            type: string
+            description: Payment Transaction Number
+          PaymentTransactionMsg:
+            type: string
+            description: Payment Transaction Message
+          
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response code number
+          PaymentResponseCodeDesc:
+            type: string
+            description: Payment Status Failed
+          PaymentTransaction:
+            type: string
+            description: Payment Transaction Number
+          PaymentTransactionMsg:
+            type: string
+            description: Payment Transaction Message
+          
+      TransError JSON Validation Failed Code 1022:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1022"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing ThirdParty TransactionID
+
+      TransError JSON Validation Failed Code 1009:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1009"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Pay TypeID
+                
+      TransError JSON Validation Failed Code 1017:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1017"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payor Reference ID
+                            
+          

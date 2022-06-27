@@ -1,0 +1,76 @@
+required:
+  - VaultToken
+  - NameonCard
+  - CardNumber
+  - ExpiryYear
+  - ExpiryMonth
+  - StreetAddress
+  - ZipCode
+  - PayorSessionID
+  - PayTypeID
+  
+type: object
+properties:
+
+  VaultToken: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 50
+    minLength: 1
+
+  NameonCard: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+  
+  CardNumber: 
+    type: string
+    description: 
+      This is the name of the payee.
+    maxLength: 50
+    minLength: 1
+
+  ExpiryYear: 
+    type: string
+    description: 
+      This is the name of the payee.
+    maxLength: 2
+    minLength: 1
+
+  ExpiryMonth: 
+      type: string
+      description: 
+        This is the name of the payee.
+      maxLength: 2
+      minLength: 1
+
+  StreetAddress: 
+      type: string
+      description: 
+        This is the name of the payee.
+      maxLength: 50
+      minLength: 1
+
+  ZipCode: 
+      type: string
+      description: 
+        This is the name of the payee.
+      maxLength: 50
+      minLength: 1
+  
+  PayorSessionID: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+    
+  PayTypeID: 
+    type: integer
+    description: 
+      This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$
+            

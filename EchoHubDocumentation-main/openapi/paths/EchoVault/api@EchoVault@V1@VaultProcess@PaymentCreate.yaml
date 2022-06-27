@@ -1,0 +1,154 @@
+post:
+  tags:
+    - EchoVault 
+     
+  summary: EchoVault - Payment Create
+  x-internal: true
+  operationId: EchoVaultPaymentCreate
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/EchoVault/Request/PaymentCreate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/PaymentCreateResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  PaymentResponseCode: "001"
+                  PaymentResponseCodeDesc: Payment Successful
+                  PaymentTransaction: Payment Transaction Number
+                  PaymentTransactionMsg: Payment Transaction Message
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  PaymentResponseCode: "900"
+                  PaymentResponseCodeDesc: Payment Failed
+                  PaymentTransaction: Payment Transaction Number
+                  PaymentTransactionMsg: Payment Transaction Message
+                    
+            mapName_1017:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1017"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1017"
+                  ErrorDesc: Invalid or Missing Payor Reference ID
+            
+            mapName_1018:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1018"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                   ErrorCode: "1018"
+                   ErrorDesc: Invalid or Missing Pay Amount
+
+            mapName_1015:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1015"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1015"
+                  ErrorDesc: Invalid or Missing Payee Firstname
+
+            mapName_1016:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1016"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1016"
+                  ErrorDesc: Invalid or Missing Payee Lastname
+
+            mapName_1001:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1001"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1001"
+                  ErrorDesc: Invalid or missing Vault Token
+
+            mapName_1019:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1019"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1019"
+                  ErrorDesc: Invalid or Missing Addenda
+
+            mapName_1020:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1020"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1020"
+                  ErrorDesc: Invalid or Missing SenderName
+
+            mapName_1021:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1021"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1021"
+                  ErrorDesc: Invalid or Missing Zelle Bank
+
+            mapName_1009:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1009"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1009"
+                  ErrorDesc: Invalid or Missing Pay TypeID

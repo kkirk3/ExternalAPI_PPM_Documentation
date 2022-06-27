@@ -1,0 +1,152 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response code number
+          PaymentResponseCodeDesc:
+            type: string
+            description: Payment Successful
+          PaymentTransaction:
+            type: string
+            description: Payment Transaction Number
+          PaymentTransactionMsg:
+            type: string
+            description: Payment Transaction Message
+          
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response code number
+          PaymentResponseCodeDesc:
+            type: string
+            description: Payment Failed
+          PaymentTransaction:
+            type: string
+            description: Payment Transaction Number
+          PaymentTransactionMsg:
+            type: string
+            description: Payment Transaction Message
+          
+      TransError JSON Validation Failed Code 1017:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1017"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payor Reference ID
+          
+      TransError JSON Validation Failed Code 1018:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1018"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Pay Amount
+
+      TransError JSON Validation Failed Code 1015:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1015"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payee Firstname
+
+      TransError JSON Validation Failed Code 1016:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1016"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Payee Lastname
+
+      TransError JSON Validation Failed Code 1001:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1001"
+          ErrorDesc:
+            type: string
+            description: Invalid or missing Vault Token
+
+      TransError JSON Validation Failed Code 1019:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1019"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Addenda
+
+      TransError JSON Validation Failed Code 1020:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1020"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing SenderName
+
+      TransError JSON Validation Failed Code 1021:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1021"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Zelle Bank
+
+      TransError JSON Validation Failed Code 1009:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1009"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Pay TypeID
+
+          
+          

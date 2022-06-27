@@ -1,0 +1,121 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          VaultResponseCode:
+            type: string
+            description: Response code 001
+          VaultResponseCodeDesc:
+            type: string
+            description: Vault Token Data Access Success
+          PayTypeID:
+            type: integer
+            description: PayTypeID
+          CardNumber:
+            type: string
+            description: CardNumber
+          ExpiryInfo:
+            type: string
+            description: ExpiryInfo
+          RouteNumber:
+            type: string
+            description: RouteNumber
+          AccountNumber:
+            type: string
+            description: AccountNumber
+          AccountType:
+            type: string
+            description: AccountType
+          MobileNumber:
+            type: string
+            description: MobileNumber
+          EmailAddress:
+            type: string
+            description: EmailAddress
+          StreetAddress:
+            type: string
+            description: StreetAddress
+          AddressCity:
+            type: string
+            description: AddressCity
+          AddressZip:
+            type: string
+            description: AddressZip
+          RespondStatus:
+            type: string
+            description: RespondStatus 
+       
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          VaultResponseCode:
+            type: string
+            description: Response code 900
+          VaultResponseCodeDesc:
+            type: string
+            description: Vault Token Data Access WYSIWIG Failed
+          PayTypeID:
+            type: integer
+            description: PayTypeID
+          CardNumber:
+            type: string
+            description: CardNumber
+          ExpiryInfo:
+            type: string
+            description: ExpiryInfo
+          RouteNumber:
+            type: string
+            description: RouteNumber
+          AccountNumber:
+            type: string
+            description: AccountNumber
+          AccountType:
+            type: string
+            description: AccountType
+          MobileNumber:
+            type: string
+            description: MobileNumber
+          EmailAddress:
+            type: string
+            description: EmailAddress
+          StreetAddress:
+            type: string
+            description: StreetAddress
+          AddressCity:
+            type: string
+            description: AddressCity
+          AddressZip:
+            type: string
+            description: AddressZip
+          RespondStatus:
+            type: string
+            description: RespondStatus 
+          
+          
+          

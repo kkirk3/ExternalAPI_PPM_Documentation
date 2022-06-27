@@ -1,0 +1,18 @@
+required:
+  - PayorSessionID
+  - PayTypeID
+type: object
+properties:
+
+  PayorSessionID: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+  
+  PayTypeID: 
+    type: integer
+    description: 
+      This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$

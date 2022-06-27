@@ -1,0 +1,27 @@
+required:
+  - ThirdPartyTransactionID
+  - PayorReferenceID
+  - PayTypeID
+type: object
+properties:
+
+  ThirdPartyTransactionID: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 100
+    minLength: 1
+
+  PayorReferenceID: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 150
+    minLength: 1
+  
+  PayTypeID: 
+    type: integer
+    description: 
+      This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$
+              
