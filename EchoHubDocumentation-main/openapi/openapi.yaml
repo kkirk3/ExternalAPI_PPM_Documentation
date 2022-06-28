@@ -162,10 +162,15 @@ components:
       description: The Client key
       name: x-ClientKey
       in: header
+    # x-Authorization:
+    #   scheme: x-Authorization
+    #   type: http
+    #   description: The Authorization Token
     x-Authorization:
-      scheme: x-Authorization
-      type: http
-      description: The Authorization Token
+      type: apiKey
+      name: x-Authorization
+      in: header         
+      description: Requests should pass an api_key header.
     x-Headers:
       scheme: x-Authorization
       type: http
