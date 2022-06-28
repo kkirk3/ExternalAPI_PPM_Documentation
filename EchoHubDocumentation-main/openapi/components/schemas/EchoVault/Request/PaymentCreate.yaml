@@ -1,0 +1,73 @@
+required:
+  - PayorReferenceID
+  - PayAmount
+  - PayeeFirstName
+  - PayeeLastName
+  - VaultToken
+  - Addenda
+  - SenderName
+  - PayTypeID
+type: object
+properties:
+
+  PayorReferenceID: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 150
+    minLength: 1
+
+  PayAmount: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    
+  PayeeFirstName: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 100
+    minLength: 1
+  
+  PayeeLastName: 
+    type: string
+    description: 
+      This is the name of the payee.
+    maxLength: 100
+    minLength: 1
+
+  VaultToken: 
+    type: string
+    description: 
+      This is the name of the payee.
+    maxLength: 50
+    minLength: 1
+
+  Addenda: 
+      type: string
+      description: 
+        This is the name of the payee.
+      maxLength: 50
+      minLength: 1
+
+  SenderName: 
+      type: string
+      description: 
+        This is the name of the payee.
+      maxLength: 50
+      minLength: 1
+
+  ZelleBank: 
+      type: string
+      description: 
+          This is the name of the payee.
+      maxLength: 50
+      minLength: 1
+    
+  PayTypeID: 
+    type: integer
+    description: 
+       This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$
+                
+            

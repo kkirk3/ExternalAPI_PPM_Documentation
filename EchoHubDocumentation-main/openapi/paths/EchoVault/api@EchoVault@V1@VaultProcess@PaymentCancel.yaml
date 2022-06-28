@@ -1,0 +1,89 @@
+post:
+  tags:
+    - EchoVault 
+     
+  summary: EchoVault - Payment Cancel
+  x-internal: true
+  operationId: EchoVaultPaymentCancel
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/EchoVault/Request/PaymentCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/PaymentCancelResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  PaymentResponseCode: "001"
+                  PaymentResponseCodeDesc: Payment Cancel Successful
+                  PaymentTransaction: Payment Transaction Number
+                  PaymentTransactionMsg: Payment Transaction Message
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  PaymentResponseCode: "900"
+                  PaymentResponseCodeDesc: Payment Cancel Failed
+                  PaymentTransaction: Payment Transaction Number
+                  PaymentTransactionMsg: Payment Transaction Message
+                    
+            mapName_1022:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1022"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1022"
+                  ErrorDesc: Invalid or Missing ThirdParty TransactionID
+                  
+            mapName_1009:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1009"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1009"
+                  ErrorDesc: Invalid or Missing Pay TypeID
+      
+            mapName_1017:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1017"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1017"
+                  ErrorDesc: Invalid or Missing Payor Reference ID
+      

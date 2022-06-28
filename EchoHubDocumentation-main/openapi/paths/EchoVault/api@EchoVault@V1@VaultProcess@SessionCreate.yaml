@@ -1,0 +1,62 @@
+post:
+  tags:
+    - EchoVault 
+     
+  summary: EchoVault - Session Create 
+  x-internal: true
+  operationId: EchoVaultSessionCreate
+  security:
+    - x-Authorization: []
+  description: |
+   Session Create Description
+  requestBody:
+    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/EchoVault/Request/SessionCreate.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/SessionCreateResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  VaultResponseCode: "001"
+                  VaultResponseCodeDesc: Vault Session Setup Success
+                  VaultSessionID: "VaultSessionID"
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  VaultResponseCode: Error code number
+                  VaultResponseCodeDesc: Error description
+                    
+            mapName_1024:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1024"
+              #description: TransError for JSON Validation Failed Code 1024
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1024"
+                  ErrorDesc: Invalid or Missing WYSIWIG URL

@@ -1,0 +1,50 @@
+required:
+  - RoutingNumber
+  - BankAccountNumber
+  - AccountType
+  - VaultToken
+  - PayorSessionID
+  - PayTypeID
+type: object
+properties:
+
+  RoutingNumber: 
+    type: string
+    description: 
+      This is a unique identifier for a payee and the associated P.O box.
+    maxLength: 50
+    minLength: 1
+
+  BankAccountNumber: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+
+  AccountType: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+
+  VaultToken: 
+    type: string
+    description: 
+      This is the name of the payee.
+    maxLength: 50
+    minLength: 1
+  
+  PayorSessionID: 
+    type: string
+    description: 
+      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+    maxLength: 50
+    minLength: 1
+
+  PayTypeID: 
+    type: integer
+    description: 
+      This is the Payee Contact Key Group ID.
+    pattern: ^(0|[1-9][0-9]*)$
