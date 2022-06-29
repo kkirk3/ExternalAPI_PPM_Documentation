@@ -1,15 +1,19 @@
 post:
   tags:
-    - Clearing House Portal 
+    - Clearinghouse Portal 
      
-  summary: Clearing House Portal - Send an Email
+  summary: Clearinghouse Portal - Send OTP via email
   x-internal: true
   operationId: CHPSendEmailProcess
   security:
     - x-Authorization: []
   description: |
+   The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to send OTP through email for TFA, adding an additional layer of security to help protect the user’s account from unauthorized access.  
+   
+   This endpoint enables authentication using an OTP sent to the registered email address. The ECHO Hub system validates the details provided and sends the request to ECHO security to send the OTP through email. If there are any errors, a response is sent back for each request.
+
   requestBody:
-    description: This endpoint is used to send an mail to the user from Clearing House Portal.
+    description: This endpoint is used to send OTP through email for TFA during the login process of clearinghouse portal users.
     required: true
     content:
       application/json:

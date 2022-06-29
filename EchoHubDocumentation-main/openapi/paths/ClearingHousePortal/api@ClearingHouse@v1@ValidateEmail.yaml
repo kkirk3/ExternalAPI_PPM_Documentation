@@ -1,15 +1,19 @@
 post:
   tags:
-    - Clearing House Portal 
+    - Clearinghouse Portal 
      
-  summary: Clearing House Portal - Validate Email 
+  summary: Clearinghouse Portal - Validate OTP sent in email
   x-internal: true
   operationId: CHPValidateEmailProcess
   security:
     - x-Authorization: []
   description: |
+   The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to validate OTP sent to the registered email address for TFA.  
+   
+   The ECHO Hub system validates the details provided and sends the request to ECHO Security for validating the OTP. If there are any errors, a response is sent back for each request. 
+
   requestBody:
-    description: This endpoint is used to validate an email Id on Clearing House Portal.
+    description: This endpoint is used to validate OTP sent to the registered email address for TFA in the login process of clearinghouse portal users.
     required: true
     content:
       application/json:

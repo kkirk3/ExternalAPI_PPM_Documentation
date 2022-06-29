@@ -218,8 +218,18 @@ tags:
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
   #ClearingHousePotal
-  - name: Clearing House Portal
-    description: Clearing House Potal
+  - name: Clearinghouse Portal
+    description: |
+     A clearinghouse functions as an intermediary for the transactions between healthcare providers and insurance payers. The clearinghouse is imperative to the processing of all medical claims and records electronically to ensure a faster turnaround on claim processing. 
+     ECHO’s clearinghouse portal is a website that allows clearinghouses to check EFT (Electronic Funds Transfer)/ERA (Electronic Remittance Advice) enrollment status for their providers. The portal also provides the bulk EFT and ERA status reports and reposts missing 835 files to the clearinghouse directory.
+     The clearinghouse portal controls clearinghouse access by managing user access and limiting users to only the data pertinent to their company. The portal also establishes the domains associated with the clearinghouse, as well as IP ranges where possible. 
+     The clearinghouse portal endpoints: 
+     * Clearinghouse portal – Register User
+     *	Clearinghouse portal – Validate User
+     *	Clearinghouse portal – Send OTP via email
+     *	Clearinghouse portal – Validate OTP sent in email
+     * Clearinghouse Portal – Get the clearinghouse name by domain
+
   #DirectToDebit 
   - name: Direct to Debit
     description: |
@@ -241,7 +251,16 @@ tags:
   - name:  eCheck PDF
     description: | 
        This endpoint allows the consumer Payee to get a PDF file of a Deluxe eCheck from the payment systems in ECHO Hub. The Payee can download the PDF file, print the eCheck and cash or deposit it just like a paper check. When the Payee logs into a payment system and makes the payment selection as eCheck, an eCheck is created and this API retrieves the PDF file. First, the data is validated in the ECHO Hub system and is then redirected to the Deluxe library in ECHO Hub. The Deluxe library will receive requests to get an eCheck PDF file from Deluxe. The PDF is retrieved, and ECHO Hub will send a success message along with the eCheck PDF file stream to the requested payment system and then the PDF file to the consumer Payee.    
+  
+  #ECHO Vault
+  - name: ECHO Vault
+    description: | 
+     ECHO Vault acts as central storage for all sensitive information that can be stored in an encrypted format and can be retrieved by decryption. The ECHO vault operates payments through a secure payment gateway and is followed by all PCI (Payment Card Industry) compliance security rules. ECHO Vault deploys an Azure cloud service for providing a highly secure repository for the most sensitive data such as bank accounts, debit cards, and other financial information.  
 
+     The main features of ECHO Vault are increased security and control over keys, passwords, and payment details. ECHO Vault prevents the disclosure of information through source code and enables to save payment data safely in a PCI-compliant environment that can be used for future payments.  
+     
+     Access to ECHO Vault requires proper authentication and authorization. If authentication is successful, the consumer is granted a session token to call the target API, which allows performing certain actions specified by the scope that was granted during authorization.
+    
   #Lockbox
   - name: Lockbox
     description: |

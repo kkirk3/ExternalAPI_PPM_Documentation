@@ -6,25 +6,25 @@ properties:
  
   APIFormIdentifierId: 
     type: string
-    description:  "API FormIdentifier Id"
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     maxLength: 50
     minLength: 1
 
   UserName: 
     type: string
-    description: "User Name"
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
     maxLength: 100
     minLength: 1
   
   Email: 
     type: string
-    description: "Email Id"
+    description: This is the email address of a clearinghouse user/admin/ECHO admin.
     maxLength: 250
     minLength: 1
     
   OTP: 
     type: number
-    description: "OTP"
+    description: This is the OTP generated automatically that authenticates a clearinghouse user/admin/ECHO admin for a login session.
     maxLength: 6
     minLength: 6
   

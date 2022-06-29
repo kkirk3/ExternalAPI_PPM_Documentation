@@ -1,15 +1,19 @@
 post:
   tags:
-    - Clearing House Portal 
+    - Clearinghouse Portal 
      
-  summary: Clearing House Portal - Get Clearing House By Domain
+  summary: Clearinghouse Portal - Get the Clearinghouse name by domain.
+  
   x-internal: true
   operationId: CHPGetDomainProcess
   security:
     - x-Authorization: []
   description: |
+   This API is used by the clearinghouse portal in the registration process of clearinghouse portal users/admins to fetch the clearinghouses list mapped to a domain name.  
+   
+   The ECHO Hub system validates the details provided and the request is sent to the clearinghouse portal to get the list of clearinghouses based on the entered domain name.
   requestBody:
-    description: This endpoint is used to get Clearing House Portal name based on entered Domain Name.
+    description: This endpoint is used in the registration process of clearinghouse portal users/admins to fetch the clearinghouses list mapped to a domain name.
     required: true
     content:
       application/json:

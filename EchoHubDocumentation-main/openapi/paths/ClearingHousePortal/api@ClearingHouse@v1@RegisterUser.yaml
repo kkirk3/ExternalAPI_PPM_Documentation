@@ -1,15 +1,19 @@
 post:
   tags:
-    - Clearing House Portal 
+    - Clearinghouse Portal 
      
-  summary: Clearing House Portal - Register User 
+  summary: Clearinghouse Portal - Register User 
   x-internal: true
   operationId: CHPRegisterProcess
   security:
     - x-Authorization: []
   description: |
+   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
+   
+   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.
+ 
   requestBody:
-    description: This endpoint is used to regisetr a user to Clearing House Portal.
+    description: This endpoint is used to register a user in the clearinghouse portal.
     required: true
     content:
       application/json:

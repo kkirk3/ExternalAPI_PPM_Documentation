@@ -6,13 +6,13 @@ properties:
  
   APIFormIdentifierId: 
     type: string
-    description:  "API FormIdentifier Id"
+    description:  This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     maxLength: 50
     minLength: 1
 
   DomainName: 
     type: string
-    description: "Domain Name"
+    description: This is the email address domain name.
     maxLength: 100
     minLength: 1
   
