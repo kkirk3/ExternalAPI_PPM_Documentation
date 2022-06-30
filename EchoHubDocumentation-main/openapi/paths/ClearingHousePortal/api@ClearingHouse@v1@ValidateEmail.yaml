@@ -10,7 +10,9 @@ post:
   description: |
    The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to validate OTP sent to the registered email address for TFA.  
    
-   The ECHO Hub system validates the details provided and sends the request to ECHO Security for validating the OTP. If there are any errors, a response is sent back for each request. 
+   The ECHO Hub system validates the details provided and sends the request to ECHO Security for validating the OTP. If there are any errors, a response is sent back for each request.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
 
   requestBody:
     description: This endpoint is used to validate OTP sent to the registered email address for TFA in the login process of clearinghouse portal users.

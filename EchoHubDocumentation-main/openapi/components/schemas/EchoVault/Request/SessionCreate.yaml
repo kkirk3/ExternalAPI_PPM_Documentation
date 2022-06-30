@@ -7,7 +7,7 @@ properties:
   WYSIWIGURL: 
     type: string
     description: 
-      This is a URL for a WYSIWIG form to be opened.   
+      This is the URL that opens up the WYSIWIG form, based on which a new vault session is created.   
     maxLength: 1500
     minLength: 1
 

@@ -23,40 +23,40 @@ properties:
             description: Vault Token Data Access Success
           PayTypeID:
             type: integer
-            description: PayTypeID
+            description: Pay Type ID
           CardNumber:
             type: string
-            description: CardNumber
+            description: Card Number
           ExpiryInfo:
             type: string
-            description: ExpiryInfo
+            description: Expiry Info
           RouteNumber:
             type: string
-            description: RouteNumber
+            description: Route Number
           AccountNumber:
             type: string
-            description: AccountNumber
+            description: Account Number
           AccountType:
             type: string
-            description: AccountType
+            description: Account Type
           MobileNumber:
             type: string
-            description: MobileNumber
+            description: Mobile Number
           EmailAddress:
             type: string
-            description: EmailAddress
+            description: Email Address
           StreetAddress:
             type: string
-            description: StreetAddress
+            description: Street Address
           AddressCity:
             type: string
-            description: AddressCity
+            description: Address City
           AddressZip:
             type: string
-            description: AddressZip
+            description: Address Zip
           RespondStatus:
             type: string
-            description: RespondStatus 
+            description: Respond Status 
        
             
   This is the Response for Response Code 900:
@@ -82,40 +82,40 @@ properties:
             description: Vault Token Data Access WYSIWIG Failed
           PayTypeID:
             type: integer
-            description: PayTypeID
+            description: Pay Type ID
           CardNumber:
             type: string
-            description: CardNumber
+            description: Card Number
           ExpiryInfo:
             type: string
-            description: ExpiryInfo
+            description: Expiry Info
           RouteNumber:
             type: string
-            description: RouteNumber
+            description: Route Number
           AccountNumber:
             type: string
-            description: AccountNumber
+            description: Account Number
           AccountType:
             type: string
-            description: AccountType
+            description: Account Type
           MobileNumber:
             type: string
-            description: MobileNumber
+            description: Mobile Number
           EmailAddress:
             type: string
-            description: EmailAddress
+            description: Email Address
           StreetAddress:
             type: string
-            description: StreetAddress
-          AddressCity:
+            description: Street Address
+          AddressCity: 
             type: string
-            description: AddressCity
+            description: Address City
           AddressZip:
             type: string
-            description: AddressZip
+            description: Address Zip
           RespondStatus:
             type: string
-            description: RespondStatus 
+            description: Respond Status 
           
           
           

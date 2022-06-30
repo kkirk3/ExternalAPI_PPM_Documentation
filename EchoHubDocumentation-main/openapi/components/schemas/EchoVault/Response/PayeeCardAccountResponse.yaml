@@ -49,7 +49,7 @@ properties:
             description: Vault Token
           PayorSessionID:
             type: string
-            description: Payor SessionID
+            description: Payor Session ID
           ProcessType:
             type: string
             description: Process Type
@@ -133,4 +133,4 @@ properties:
               description: "1009"
             ErrorDesc:
               type: string
-              description: Invalid or Missing Pay TypeID
+              description: Invalid or Missing Pay Type ID

@@ -1,15 +1,20 @@
 get:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Get Vault Token Details
+  summary: ECHO Vault - Get Vault Token Details
   x-internal: true
   operationId: EchoVaultGetVaultTokenDetails
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This endpoint enables the API user to get or view the vault token details such as the card/account information stored in the ECHO Vault.  
 
+   When the vault token is passed, it will hit the ECHO Vault library and fetch the card/account information based on the vault token. 
+
+   This endpoint uses VaultToken as the input parameter.
+   Vault Token - This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
+   
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   responses:
     '200':

@@ -10,27 +10,30 @@ properties:
   RoutingNumber: 
     type: string
     description: 
-      This is a unique identifier for a payee and the associated P.O box.
+      This is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.
     maxLength: 50
     minLength: 1
 
   BankAccountNumber: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      This is the account number of the provider payee which is the primary identifier for the bank account.
     maxLength: 50
     minLength: 1
 
   AccountType: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      This is the account type of the payee which can be either C or S. 
+     * C - Checking Account 
+     * S - Savings Account
+
     maxLength: 50
     minLength: 1
   
   PayTypeID: 
     type: integer
     description: 
-      This is the Payee Contact Key Group ID.
+      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
     pattern: ^(0|[1-9][0-9]*)$
             

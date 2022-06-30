@@ -1,18 +1,20 @@
 post:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Payment Status
+  summary: ECHO Vault - Payment Status
   x-internal: true
   operationId: EchoVaultPaymentStatus
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This endpoint is used when ECHO Hub receives a request to view the status of a payment that may be Direct to Debit, Venmo, or Zelle. The API allows the ECHO Vault to receive the payment status request from the ECHO Hub system.  
 
+   On receiving a request, the ECHO Hub system validates the data and directs it to the ECHO Vault. ECHO Vault will then call the appropriate vendor/third-party API to get the payment status based on the unique payor reference ID and returns the response.
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to view the status of a payment.
     required: true
     content:
       application/json:

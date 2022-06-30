@@ -20,7 +20,7 @@ properties:
             description: Status Response code number
           StatusResponseCodeDesc:
             type: string
-            description: Status Responce Code Description
+            description: Status Response Code Description
           
             
   This is the Response for Response Code 900:

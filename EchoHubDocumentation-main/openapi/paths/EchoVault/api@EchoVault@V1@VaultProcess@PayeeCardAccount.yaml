@@ -1,18 +1,20 @@
 post:
   tags:
-    - EchoVault
+    - ECHO Vault
 
-  summary: EchoVault - Payee Card Account
+  summary: ECHO Vault - WYSIWIG Payee Card Account
   x-internal: true
   operationId: EchoVaultPayeeCardAccount
   security:
     - x-Authorization: []
   description: |
-    This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This API enables a consumer to identify the payee account for PCI-compliant payment from an embedded web application. The payee can be identified as having an existing account token or the request can add a payee’s new account information. This API is consumed when a provider selects to be paid.  
 
-    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+   When the consumer provides the payment details in the embedded web application and clicks the submit button, the card/payment information gets captured by ECHO Vault through this endpoint. If the account/card details already exist, the details are retrieved during the next new active session.
+  
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to identify the payee account for PCI-compliant payment from an embedded web application. 
     required: true
     content:
       application/json:
@@ -49,7 +51,7 @@ post:
                   VaultResponseCode: "900"
                   VaultResponseCodeDesc: Vault Token Setup Failed
                   VaultToken: Vault Token
-                  PayorSessionID: Payor SessionID
+                  PayorSessionID: Payor Session ID
                   ProcessType: Process Type
 
             mapName_1001:
@@ -146,7 +148,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1008"
-                  ErrorDesc: Invalid or Missing Payor SessionID
+                  ErrorDesc: Invalid or Missing Payor Session ID
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -158,5 +160,5 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID
       

@@ -86,7 +86,7 @@ properties:
             description: "1015"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Payee Firstname
+            description: Invalid or Missing Payee First Name
 
       TransError JSON Validation Failed Code 1016:
         type: object
@@ -96,7 +96,7 @@ properties:
             description: "1016"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Payee Lastname
+            description: Invalid or Missing Payee Last Name
 
       TransError JSON Validation Failed Code 1001:
         type: object
@@ -126,7 +126,7 @@ properties:
             description: "1020"
           ErrorDesc:
             type: string
-            description: Invalid or Missing SenderName
+            description: Invalid or Missing Sender Name
 
       TransError JSON Validation Failed Code 1021:
         type: object
@@ -146,7 +146,7 @@ properties:
             description: "1009"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Pay TypeID
+            description: Invalid or Missing Pay Type ID
 
           
           

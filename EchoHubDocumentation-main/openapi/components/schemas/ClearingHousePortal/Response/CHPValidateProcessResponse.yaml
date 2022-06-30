@@ -20,7 +20,7 @@ properties:
             description: Transaction response code number
           TransResponseCodeDesc:
             type: string
-            description: User Validated.
+            description: User Validated
             
   This is the Response for Response Code 900:
     type: object

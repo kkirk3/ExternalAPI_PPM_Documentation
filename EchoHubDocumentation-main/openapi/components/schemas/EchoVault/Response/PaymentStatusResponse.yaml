@@ -65,7 +65,7 @@ properties:
             description: "1022"
           ErrorDesc:
             type: string
-            description: Invalid or Missing ThirdParty TransactionID
+            description: Invalid or Missing Third-Party TransactionID
 
       TransError JSON Validation Failed Code 1009:
         type: object
@@ -75,7 +75,7 @@ properties:
             description: "1009"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Pay TypeID
+            description: Invalid or Missing Pay Type ID
                 
       TransError JSON Validation Failed Code 1017:
         type: object

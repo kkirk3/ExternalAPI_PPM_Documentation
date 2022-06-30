@@ -1,18 +1,20 @@
 post:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Payment Create
+  summary: ECHO Vault - Payment Create
   x-internal: true
   operationId: EchoVaultPaymentCreate
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This endpoint is used when ECHO Hub receives a request to create a payment from any of the payment modalities that may be Direct to Debit, Venmo, or Zelle. The API allows the ECHO Vault to receive a request from ECHO Hub payment modalities to create a payment. The payor is identified with the unique payor reference ID.  
+
+   On receiving a request, the ECHO Hub system validates the data and helps get a vault token based on ECHO Payee ID. Once the vault token is obtained, the data is passed to the ECHO Vault to create a payment. Upon successful transaction, the ECHO Hub system returns a success message in response.
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to create a payment from ECHO Hub payment modalities.
     required: true
     content:
       application/json:
@@ -85,7 +87,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1015"
-                  ErrorDesc: Invalid or Missing Payee Firstname
+                  ErrorDesc: Invalid or Missing Payee First Name
 
             mapName_1016:
               description: Please scroll the above dropdown list for more response codes
@@ -96,7 +98,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payee Lastname
+                  ErrorDesc: Invalid or Missing Payee Last Name
 
             mapName_1001:
               description: Please scroll the above dropdown list for more response codes
@@ -107,7 +109,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1001"
-                  ErrorDesc: Invalid or missing Vault Token
+                  ErrorDesc: Invalid or Missing Vault Token
 
             mapName_1019:
               description: Please scroll the above dropdown list for more response codes
@@ -129,7 +131,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1020"
-                  ErrorDesc: Invalid or Missing SenderName
+                  ErrorDesc: Invalid or Missing Sender Name
 
             mapName_1021:
               description: Please scroll the above dropdown list for more response codes
@@ -151,4 +153,4 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID

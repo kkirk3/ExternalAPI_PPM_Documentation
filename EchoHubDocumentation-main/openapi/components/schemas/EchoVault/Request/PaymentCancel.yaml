@@ -8,20 +8,20 @@ properties:
   ThirdPartyTransactionID: 
     type: string
     description: 
-      This is a unique identifier for a payee and the associated P.O box.
+      This is the third-party transaction ID, that identifies the payment transaction in external systems.
     maxLength: 100
     minLength: 1
 
   PayorReferenceID: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      This is the payor reference ID. The payor transaction is identified with their payor reference ID.
     maxLength: 150
     minLength: 1
   
   PayTypeID: 
     type: integer
     description: 
-      This is the Payee Contact Key Group ID.
+      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
     pattern: ^(0|[1-9][0-9]*)$
               

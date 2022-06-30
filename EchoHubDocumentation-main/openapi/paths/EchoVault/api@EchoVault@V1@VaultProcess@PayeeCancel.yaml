@@ -1,18 +1,20 @@
 post:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Payee Cancel
+  summary: ECHO Vault - WISYWIG Payee Cancel
   x-internal: true
   operationId: EchoVaultPayeeCancel
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This endpoint allows the API user to close the embedded web application at the request of the payee. This API is consumed by the WYSIWIG. When a payee clicks the cancel button in the embedded web application, the active session token will be deactivated.  
 
+   When the cancel button is clicked, the request is sent to the ECHO Vault. The session token is deactivated, and the session will end and stop the payment request. A webhook will notify the calling application.
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to close the embedded web application.
     required: true
     content:
       application/json:
@@ -36,7 +38,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                   VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Setup Canceled
+                  VaultResponseCodeDesc: Vault Token Setup Cancelled
 
                     
             mapName_900:   
@@ -48,7 +50,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                     VaultErrorCode: Error code number
-                    VaultErrorDesc: Vault Token Setup Canceled Failed
+                    VaultErrorDesc: Vault Token Setup Cancelled Failed
                     
 
             mapName_1008:
@@ -60,7 +62,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payor SessionID
+                  ErrorDesc: Invalid or Missing Payor Session ID
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -71,5 +73,5 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID
                                   

@@ -1,16 +1,23 @@
 post:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Session Create 
+  summary: ECHO Vault - Session Create 
   x-internal: true
   operationId: EchoVaultSessionCreate
   security:
     - x-Authorization: []
   description: |
-   Session Create Description
+   This API enables the consumer who chooses to use the embedded web application to create a new session and get the vault session information.  
+
+   When the WYSIWIG URL is passed, this endpoint enables the calling application to connect to WYSIWIG to bring up the form to allow the consumer payee to create or access the PCI-compliant data.
+  
+   This endpoint uses WYSIWIG URL as the inout parameter.
+   WYSIWIG URL – This is the URL that opens up the WYSIWIG form, based on which a  new vault session is created.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint enables using an embedded web application to create a new session.
     required: true
     content:
       application/json:

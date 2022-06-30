@@ -10,7 +10,9 @@ post:
   description: |
    This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
    
-   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.
+   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
  
   requestBody:
     description: This endpoint is used to register a user in the clearinghouse portal.

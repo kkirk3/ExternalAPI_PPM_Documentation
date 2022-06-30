@@ -68,6 +68,38 @@ paths:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
   /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
+  #ECHO Vault
+  /api/EchoVault/V1/VaultProcess [For Session Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SessionCreate.yaml
+  /api/EchoVault/V1/VaultProcess [For Initialize Card Entry]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@InitializeCardEntry.yaml
+  /api/EchoVault/V1/VaultProcess [For Payee Cancel]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCancel.yaml  
+  /api/EchoVault/V1/VaultProcess [For Payee Card Account]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCardAccount.yaml  
+  /api/EchoVault/V1/VaultProcess [For Payment Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For Payment Cancel]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentCancel.yaml  
+  /api/EchoVault/V1/VaultProcess [For Payment Status]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentStatus.yaml  
+  /api/EchoVault/V1/VaultProcess [For Get Vault Token Details]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenDetails.yaml  
+  /api/EchoVault/V1/VaultProcess [For Get System Status]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetSystemStatus.yaml  
+  /api/EchoVault/V1/VaultProcess [For WYSIWIG Zelle Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGZellePayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For WYSIWIG Venmo Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGVenmoPayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For WYSIWIG ACH Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGACHPayeeCreate.yaml                
+  /api/EchoVault/V1/VaultProcess [For Zelle Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ZellePayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For Venmo Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@VenmoPayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For ACH Payee Create]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ACHPayeeCreate.yaml  
+
   #Lockbox
   /api/LockBox/v1/LockBox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
@@ -148,38 +180,7 @@ paths:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleCancel.yaml
   /api/DirectPay/Zelle/v1/ZelleStatus:
     $ref: paths/Zelle/api@DirectPay@Zelle@v1@ZelleStatus.yaml
- #EchoVault
-  /api/EchoVault/V1/VaultProcess [For Session Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SessionCreate.yaml
-  /api/EchoVault/V1/VaultProcess [For Initialize Card Entry]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@InitializeCardEntry.yaml
-  /api/EchoVault/V1/VaultProcess [For Payee Cancel]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCancel.yaml  
-  /api/EchoVault/V1/VaultProcess [For Payee Card Account]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCardAccount.yaml  
-  /api/EchoVault/V1/VaultProcess [For Payment Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For Payment Cancel]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentCancel.yaml  
-  /api/EchoVault/V1/VaultProcess [For Payment Status]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PaymentStatus.yaml  
-  /api/EchoVault/V1/VaultProcess [For Get Vault Token Details]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenDetails.yaml  
-  /api/EchoVault/V1/VaultProcess [For Get System Status]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetSystemStatus.yaml  
-  /api/EchoVault/V1/VaultProcess [For WYSIWIG Zelle Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGZellePayeeCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For WYSIWIG Venmo Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGVenmoPayeeCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For WYSIWIG ACH Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@WYSIWIGACHPayeeCreate.yaml                
-  /api/EchoVault/V1/VaultProcess [For Zelle Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ZellePayeeCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For Venmo Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@VenmoPayeeCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For ACH Payee Create]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ACHPayeeCreate.yaml  
-
+ 
 components:
   securitySchemes:
     x-ApiKey:

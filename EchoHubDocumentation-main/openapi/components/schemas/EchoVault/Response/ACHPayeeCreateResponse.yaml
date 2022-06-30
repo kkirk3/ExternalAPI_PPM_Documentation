@@ -23,10 +23,10 @@ properties:
             description: Vault Token Setup Success
           PayorSessionID:
             type: string
-            description: PayorSessionID
+            description: Payor Session ID
           ProcessType:
             type: string
-            description: ProcessType
+            description: Process Type
           
             
   This is the Response for Response Code 900:
@@ -52,10 +52,10 @@ properties:
             description: Vault Token Setup Failed
           PayorSessionID:
             type: string
-            description: PayorSessionID
+            description: Payor Session ID
           ProcessType:
             type: string
-            description: ProcessType
+            description: Process Type
           
       TransError JSON Validation Failed Code 1012:
         type: object
@@ -95,4 +95,4 @@ properties:
             description: "1009"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Pay TypeID
+            description: Invalid or Missing Pay Type ID

@@ -7,12 +7,12 @@ properties:
   PayorSessionID: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      Payor session ID is a unique number that an embedded web application server assigns for the duration of a vault session.
     maxLength: 50
     minLength: 1
   
   PayTypeID: 
     type: integer
     description: 
-      This is the Payee Contact Key Group ID.
+      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
     pattern: ^(0|[1-9][0-9]*)$

@@ -1,14 +1,19 @@
 get:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - Get System Status
+  summary: ECHO Vault - Get System Status
   x-internal: true
   operationId: EchoVaultGetSystemStatus
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
+   This API ensures that the vault process is up and running.  
+
+   The endpoint is used by consumers who intend to view the current state of the vault process. If the vault system is running properly, it will return a successful response as ‘status verified’, and in the case of any issues, the response is returned as ‘status failed’.  
+   
+   This endpoint uses VaultToken as the input parameter.
+   VaultToken – This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   responses:

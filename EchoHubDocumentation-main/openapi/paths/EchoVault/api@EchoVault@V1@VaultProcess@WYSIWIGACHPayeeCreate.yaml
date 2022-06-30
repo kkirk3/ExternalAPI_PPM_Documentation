@@ -1,18 +1,20 @@
 post:
   tags:
-    - EchoVault 
+    - ECHO Vault 
      
-  summary: EchoVault - WYSIWIG ACH Payee Create
+  summary: ECHO Vault - WYSIWIG ACH Payee Create
   x-internal: true
   operationId: EchoVaultWYSIWIGACHPayeeCreate
   security:
     - x-Authorization: []
   description: |
-   This endpoint allows the user to add a EchoVault to the directory of EchoVaultes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal EchoVault endpoint. The request is then sent to the EchoVault express library for adding a EchoVault. Once the EchoVault is added, the ECHO Hub system will send a success message.  
-
+   This endpoint allows the API user to identify a payee account for an ACH payment from an embedded web application. The payee can be identified as having an existing account token or the request can add an ACH payee’s information. This API is consumed by the Deluxe MPX portal, SelectPay application, and B2B application when a provider selects to be paid via ACH.  
+   
+   When the request is received from a web object, the session token is validated, and the vault token is determined. Once the vault token is obtained, the data is passed to the ECHO Vault ACH library to create a payee.
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to create a payee for an ACH payment from an embedded web application.
     required: true
     content:
       application/json:
@@ -106,7 +108,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1008"
-                  ErrorDesc: Invalid or Missing Payor SessionID
+                  ErrorDesc: Invalid or Missing Payor Session ID
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -117,5 +119,5 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID
           

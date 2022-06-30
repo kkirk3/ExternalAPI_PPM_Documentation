@@ -20,7 +20,7 @@ properties:
             description: Transaction response code number
           TransResponseCodeDesc:
             type: string
-            description: Clearing House Portal details retrived.
+            description: Clearinghouse Portal details retrieved
             
   This is the Response for Response Code 900:
     type: object

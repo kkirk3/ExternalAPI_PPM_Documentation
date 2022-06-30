@@ -10,7 +10,9 @@ post:
   description: |
    This API will enable the clearinghouse portal users/admins/ECHO admins to log in to the portal. When a user tries to log in to the portal, this endpoint validates the provided credentials against a list of username and password pairs.  
    
-   The data for user verification is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user credentials are validated, the ECHO Hub will send a success message.
+   The data for user verification is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user credentials are validated, the ECHO Hub will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
 
   requestBody:
     description: This endpoint is used by clearinghouse portal users to log in to the portal. 

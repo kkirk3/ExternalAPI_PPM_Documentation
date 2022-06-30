@@ -13,61 +13,61 @@ properties:
   PayorReferenceID: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      This is the payor reference ID. The payor transaction is identified with their payor reference ID.
     maxLength: 150
     minLength: 1
 
   PayAmount: 
     type: string
     description: 
-      This is a unique identifier for a payee and the associated P.O box.
+      This is the amount to be paid to the Payee.
     
   PayeeFirstName: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      This is the first name of the Payee.
     maxLength: 100
     minLength: 1
   
   PayeeLastName: 
     type: string
     description: 
-      This is the name of the payee.
+      This is the last name of the Payee.
     maxLength: 100
     minLength: 1
 
   VaultToken: 
     type: string
     description: 
-      This is the name of the payee.
+      This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
     maxLength: 50
     minLength: 1
 
   Addenda: 
       type: string
       description: 
-        This is the name of the payee.
+        This is a note sent to the Payee regarding the payment.
       maxLength: 50
       minLength: 1
 
   SenderName: 
       type: string
       description: 
-        This is the name of the payee.
+        This is the name of the payor.
       maxLength: 50
       minLength: 1
 
   ZelleBank: 
       type: string
       description: 
-          This is the name of the payee.
+        It is the ECHO bank account for funding transfer for zelle 
       maxLength: 50
       minLength: 1
     
   PayTypeID: 
     type: integer
     description: 
-       This is the Payee Contact Key Group ID.
+      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
     pattern: ^(0|[1-9][0-9]*)$
                 
             

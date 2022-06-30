@@ -20,7 +20,7 @@ properties:
             description: Response code number
           VaultResponseCodeDesc:
             type: string
-            description: Vault Token Setup Canceled
+            description: Vault Token Setup Cancelled
           
             
   This is the Response for Response Code 900:
@@ -43,7 +43,7 @@ properties:
             description:  Error code number
           VaultResponseCodeDesc:
            type: string
-           description: Vault Token Setup Canceled Failed
+           description: Vault Token Setup Cancelled Failed
           
       TransError JSON Validation Failed Code 1008:
         type: object
@@ -64,6 +64,6 @@ properties:
             description: "1009"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Pay TypeID
+            description: Invalid or Missing Pay Type ID
           
           
