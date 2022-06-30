@@ -68,7 +68,7 @@ paths:
     $ref: paths/PDFDocs/api@v1@PDFDownloadDeluxe.yaml
   /api/PDFDocs/v1/PDFDownload [For B2B]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadB2B.yaml
-  #ECHO Vault
+  #ECHOVault
   /api/EchoVault/V1/VaultProcess [For Session Create]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SessionCreate.yaml
   /api/EchoVault/V1/VaultProcess [For Initialize Card Entry]:
@@ -256,7 +256,7 @@ tags:
   #ECHO Vault
   - name: ECHO Vault
     description: | 
-     ECHO Vault acts as central storage for all sensitive information that can be stored in an encrypted format and can be retrieved by decryption. The ECHO vault operates payments through a secure payment gateway and is followed by all PCI (Payment Card Industry) compliance security rules. ECHO Vault deploys an Azure cloud service for providing a highly secure repository for the most sensitive data such as bank accounts, debit cards, and other financial information.  
+     ECHO Vault acts as central storage for all sensitive information that can be stored in an encrypted format and can be retrieved by decryption. The ECHO Vault operates payments through a secure payment gateway and is followed by all PCI (Payment Card Industry) compliance security rules. ECHO Vault deploys an Azure cloud service for providing a highly secure repository for the most sensitive data such as bank accounts, debit cards, and other financial information.  
 
      The main features of ECHO Vault are increased security and control over keys, passwords, and payment details. ECHO Vault prevents the disclosure of information through source code and enables to save payment data safely in a PCI-compliant environment that can be used for future payments.  
      
@@ -336,7 +336,7 @@ tags:
   #WebPay
   - name: WebPay
     description: |
-     WebPay is a PCI-compliant online service that allows users to access a third-party website and set up one-time and/or recurring payments to their direct to debit card, Venmo, Zelle, or bank account. A token that has a unique ID is assigned for each WebPay session and it will have a time-out limit if there is inactivity in the browser.  
+     WebPay is a PCI-compliant online service that allows users to access a third-party website and set up one-time and/or recurring payments to their Direct to Debit card, Venmo, Zelle, or bank account. A token that has a unique ID is assigned for each WebPay session and it will have a time-out limit if there is inactivity in the browser.  
      
      Web payments make checkout easy for the user, by reusing stored card/account information and eliminating the need for the user to fill in checkout forms.  
      
@@ -357,9 +357,6 @@ tags:
           * Zelle payment status
           * Zelle payment cancel
 
-  #EchoVault
-  - name: EchoVault
-    description: |
-            EchoVault Description
+
       
       

@@ -2,7 +2,7 @@ post:
   tags:
     - ECHO Vault 
      
-  summary: ECHO Vault - WISYWIG Payee Cancel
+  summary: ECHO Vault - WYSIWIG Payee Cancel
   x-internal: true
   operationId: EchoVaultPayeeCancel
   security:

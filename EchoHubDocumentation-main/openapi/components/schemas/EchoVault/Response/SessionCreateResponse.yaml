@@ -17,7 +17,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description: Vault Response code number
+            description: Vault Response Code Number
           VaultResponseCodeDesc:
             type: string
             description: Vault Response Code Description
@@ -43,10 +43,10 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           VaultResponseCodeDesc:
            type: string
-           description: Error description
+           description: Error Description
       
       TransError JSON Validation Failed Code 1024:
         type: object

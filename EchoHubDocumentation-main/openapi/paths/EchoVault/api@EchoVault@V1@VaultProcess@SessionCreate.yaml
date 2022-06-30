@@ -2,7 +2,7 @@ post:
   tags:
     - ECHO Vault 
      
-  summary: ECHO Vault - Session Create 
+  summary: ECHO Vault - WYSIWIG Session Create 
   x-internal: true
   operationId: EchoVaultSessionCreate
   security:

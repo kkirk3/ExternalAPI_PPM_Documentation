@@ -29,7 +29,7 @@ properties:
     minLength: 1 
   PaymentType:
     type: string
-    description: This is the type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
+    description: This is the type of payment used to make a transaction to the payee which can be Direct to Debit, Venmo, Zelle, ACH, etc.
     maxLength: 100
     minLength: 1 
       

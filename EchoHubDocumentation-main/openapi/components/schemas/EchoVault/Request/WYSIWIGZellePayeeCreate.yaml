@@ -38,6 +38,6 @@ properties:
   PayTypeID: 
     type: integer
     description: 
-      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be direct to debit, Venmo, Zelle, ACH, etc.
+      This is the unique ID assigned for every type of payment used to make a transaction to the payee which can be Direct to Debit, Venmo, Zelle, ACH, etc.
     pattern: ^(0|[1-9][0-9]*)$
                 
