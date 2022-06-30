@@ -8,7 +8,7 @@ post:
   security:
     - x-Authorization: []
   description: |
-   This endpoint enables the API user to directly create a payee account for zelle payment via ECHO Hub for those payees who do not have any PCI compliance information. This API is consumed by the Deluxe MPX portal, SelectPay application, and B2B application to create a payee for Zelle payment.  
+   This endpoint enables the API user to directly create a payee account for Zelle payment via ECHO Hub for those payees who do not have any PCI compliance information. This API is consumed by the Deluxe MPX portal, SelectPay application, and B2B application to create a payee for Zelle payment.  
 
    On receiving a request, the ECHO Hub system validates the data and generates the vault token. Once the vault token is obtained, the data is passed to the ECHO Vault Zelle library to create a payee. Once the payee is created, a success message is sent in response by ECHO Hub.
 

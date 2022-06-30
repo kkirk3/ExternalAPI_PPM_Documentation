@@ -20,19 +20,19 @@ properties:
   PayAmount: 
     type: string
     description: 
-      This is the amount to be paid to the Payee.
+      This is the amount to be paid to the payee.
     
   PayeeFirstName: 
     type: string
     description: 
-      This is the first name of the Payee.
+      This is the first name of the payee.
     maxLength: 100
     minLength: 1
   
   PayeeLastName: 
     type: string
     description: 
-      This is the last name of the Payee.
+      This is the last name of the payee.
     maxLength: 100
     minLength: 1
 
@@ -46,7 +46,7 @@ properties:
   Addenda: 
       type: string
       description: 
-        This is a note sent to the Payee regarding the payment.
+        This is a note sent to the payee regarding the payment.
       maxLength: 50
       minLength: 1
 

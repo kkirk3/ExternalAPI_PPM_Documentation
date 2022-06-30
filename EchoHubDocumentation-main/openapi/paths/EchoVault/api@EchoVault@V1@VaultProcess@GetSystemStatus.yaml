@@ -12,7 +12,7 @@ get:
 
    The endpoint is used by consumers who intend to view the current state of the vault process. If the vault system is running properly, it will return a successful response as ‘status verified’, and in the case of any issues, the response is returned as ‘status failed’.  
    
-   This endpoint uses VaultToken as the input parameter.
+   This endpoint uses VaultToken as the input parameter.  
    VaultToken – This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.

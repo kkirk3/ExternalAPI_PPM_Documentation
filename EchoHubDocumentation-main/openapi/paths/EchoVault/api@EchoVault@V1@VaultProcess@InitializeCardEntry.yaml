@@ -12,7 +12,7 @@ get:
 
    When the consumer opens the embedded web application, the ECHO Vault library verifies the data; and based on the vault session ID, all the card/payment information is retrieved.
   
-   This endpoint uses Vault session ID as the input parameter.
+   This endpoint uses Vault session ID as the input parameter.  
    VaultSessionID – This is the unique identifier for each vault WYSIWIG session.   
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
