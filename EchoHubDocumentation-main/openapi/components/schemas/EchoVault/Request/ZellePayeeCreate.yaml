@@ -10,14 +10,14 @@ properties:
   PayeeFirstName: 
     type: string
     description: 
-      This is the first name of the Payee.
+      This is the first name of the payee.
     maxLength: 50
     minLength: 1
   
   PayeeLastName: 
     type: string
     description: 
-      This is the last name of the Payee.
+      This is the last name of the payee.
     maxLength: 50
     minLength: 1
   

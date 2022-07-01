@@ -65,7 +65,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1022"
-                  ErrorDesc: Invalid or Missing ThirdParty TransactionID
+                  ErrorDesc: Invalid or Missing Third-Party TransactionID
                       
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -76,7 +76,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID
           
             mapName_1017:
               description: Please scroll the above dropdown list for more response codes

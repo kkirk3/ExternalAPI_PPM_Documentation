@@ -39,8 +39,8 @@ post:
                 TransLog:                  
                   VaultResponseCode: "001"
                   VaultResponseCodeDesc: Vault Token Setup Success
-                  PayorSessionID: PayorSessionID
-                  ProcessType: ProcessType
+                  PayorSessionID: Payor Session ID
+                  ProcessType: Process Type
                    
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 TransError:  
                     EVaultResponseCode: "900"
                     VaultResponseCodeDesc: Vault Token Setup Failed
-                    PayorSessionID: PayorSessionID
-                    ProcessType: ProcessType             
+                    PayorSessionID: Payor Session ID
+                    ProcessType: Process Type             
                                 
             mapName_1015:
               description: Please scroll the above dropdown list for more response codes
@@ -64,7 +64,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1015"
-                  ErrorDesc: Invalid or Missing Payee Firstname
+                  ErrorDesc: Invalid or Missing Payee First Name
                   
             mapName_1016:
               description: Please scroll the above dropdown list for more response codes
@@ -75,7 +75,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payee Lastname
+                  ErrorDesc: Invalid or Missing Payee Last Name
                   
             mapName_1010:
               description: Please scroll the above dropdown list for more response codes
@@ -108,4 +108,4 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:
                   ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay TypeID
+                  ErrorDesc: Invalid or Missing Pay Type ID

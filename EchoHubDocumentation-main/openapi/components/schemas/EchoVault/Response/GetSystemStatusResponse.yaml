@@ -17,7 +17,7 @@ properties:
         properties:
           StatusResponseCode:
             type: string
-            description: Status Response code number
+            description: Status Response Code Number
           StatusResponseCodeDesc:
             type: string
             description: Status Response Code Description
@@ -40,10 +40,10 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
           
           
           

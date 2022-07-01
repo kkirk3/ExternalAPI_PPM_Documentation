@@ -82,7 +82,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           VaultResponseCodeDesc:
            type: string
            description: Vault Token Data Access WYSIWIG Failed

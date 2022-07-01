@@ -12,7 +12,7 @@ get:
 
    When the vault token is passed, it will hit the ECHO Vault library and fetch the card/account information based on the vault token. 
 
-   This endpoint uses VaultToken as the input parameter.  
+   This endpoint uses 'VaultToken' as the input parameter.  
    Vault Token - This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
@@ -34,18 +34,18 @@ get:
                 TransLog:                  
                   VaultResponseCode: "001"
                   VaultResponseCodeDesc: Vault Token Data Access Success
-                  PayTypeID: PayTypeID
-                  CardNumber: CardNumber
-                  ExpiryInfo: ExpiryInfo
-                  RouteNumber: RouteNumber
-                  AccountNumber: AccountNumber
-                  AccountType: AccountType
-                  MobileNumber: MobileNumber
-                  EmailAddress: EmailAddress
-                  StreetAddress: StreetAddress
-                  AddressCity: AddressCity
-                  AddressZip: AddressZip 
-                  RespondStatus: RespondStatus
+                  PayTypeID: Pay Type ID
+                  CardNumber: Card Number
+                  ExpiryInfo: Expiry Info
+                  RouteNumber: Route Number
+                  AccountNumber: Account Number
+                  AccountType: Account Type
+                  MobileNumber: Mobile Number
+                  EmailAddress: Email Address
+                  StreetAddress: Street Address
+                  AddressCity: Address City
+                  AddressZip: Address Zip 
+                  RespondStatus: Respond Status
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -57,15 +57,15 @@ get:
                 TransError:  
                   VaultResponseCode: "900"
                   VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
-                  PayTypeID: PayTypeID
-                  CardNumber: CardNumber
-                  ExpiryInfo: ExpiryInfo
-                  RouteNumber: RouteNumber
-                  AccountNumber: AccountNumber
-                  AccountType: AccountType
-                  MobileNumber: MobileNumber
-                  EmailAddress: EmailAddress
-                  StreetAddress: StreetAddress
-                  AddressCity: AddressCity
-                  AddressZip: AddressZip 
-                  RespondStatus: RespondStatus
+                  PayTypeID: Pay Type ID
+                  CardNumber: Card Number
+                  ExpiryInfo: Expiry Info
+                  RouteNumber: Route Number
+                  AccountNumber: Account Number
+                  AccountType: Account Type
+                  MobileNumber: Mobile Number
+                  EmailAddress: Email Address
+                  StreetAddress: Street Address
+                  AddressCity: Address City
+                  AddressZip: Address Zip 
+                  RespondStatus: Respond Status

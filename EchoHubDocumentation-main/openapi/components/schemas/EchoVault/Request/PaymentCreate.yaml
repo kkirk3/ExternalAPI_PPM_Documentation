@@ -60,7 +60,7 @@ properties:
   ZelleBank: 
       type: string
       description: 
-        It is the ECHO bank account for funding transfer for zelle 
+        It is the ECHO bank account for funding transfer for zelle.
       maxLength: 50
       minLength: 1
     

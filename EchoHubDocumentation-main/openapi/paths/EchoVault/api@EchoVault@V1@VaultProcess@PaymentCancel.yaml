@@ -14,7 +14,7 @@ post:
   
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to add a EchoVault to the directory of EchoVaultes.
+    description: This endpoint is used to cancel a payment from any of the payment modalities.
     required: true
     content:
       application/json:

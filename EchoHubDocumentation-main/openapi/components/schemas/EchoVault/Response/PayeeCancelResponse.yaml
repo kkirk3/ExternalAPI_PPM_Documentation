@@ -17,7 +17,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           VaultResponseCodeDesc:
             type: string
             description: Vault Token Setup Cancelled
@@ -40,7 +40,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           VaultResponseCodeDesc:
            type: string
            description: Vault Token Setup Cancelled Failed
@@ -53,7 +53,7 @@ properties:
             description: "1008"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Payor SessionID
+            description: Invalid or Missing Payor Session ID
 
 
       TransError JSON Validation Failed Code 1009:

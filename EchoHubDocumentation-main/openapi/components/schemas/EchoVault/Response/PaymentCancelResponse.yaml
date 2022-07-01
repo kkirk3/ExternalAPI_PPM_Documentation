@@ -17,7 +17,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           PaymentResponseCodeDesc:
             type: string
             description: Payment Cancel Successful
@@ -46,7 +46,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           PaymentResponseCodeDesc:
             type: string
             description: Payment Cancel Failed
@@ -65,7 +65,7 @@ properties:
             description: "1022"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Third-Party TransactionID
+            description: Invalid or Missing Third-Party Transaction ID
 
       TransError JSON Validation Failed Code 1009:
         type: object

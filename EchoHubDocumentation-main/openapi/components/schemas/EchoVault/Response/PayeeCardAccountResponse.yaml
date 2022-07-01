@@ -17,7 +17,7 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           ResponseCodeDesc:
             type: string
             description: Vault Token Setup Success
@@ -124,7 +124,7 @@ properties:
               description: "1008"
             ErrorDesc:
               type: string
-              description: Invalid or Missing Payor SessionID
+              description: Invalid or Missing Payor Session ID
       TransError JSON Validation Failed Code 1009:
           type: object
           properties:

@@ -39,7 +39,7 @@ post:
                 TransLog:                  
                   VaultResponseCode: "001"
                   VaultResponseCodeDesc: Vault Session Setup Success
-                  VaultSessionID: "VaultSessionID"
+                  VaultSessionID: "Vault Session ID"
 
                     
             mapName_900:   
@@ -50,8 +50,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: Error code number
-                  VaultResponseCodeDesc: Error description
+                  VaultResponseCode: Error Code Number
+                  VaultResponseCodeDesc: Error Description
                     
             mapName_1024:
               description: Please scroll the above dropdown list for more response codes

@@ -49,8 +49,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    VaultErrorCode: Error code number
-                    VaultErrorDesc: Vault Token Setup Cancelled Failed
+                    VaultErrorCode: Error Code Number
+                    VaultErrorDesc: Vault Token Setup Cancel Failed
                     
 
             mapName_1008:

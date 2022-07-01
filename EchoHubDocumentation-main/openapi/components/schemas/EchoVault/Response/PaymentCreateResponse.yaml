@@ -17,7 +17,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           PaymentResponseCodeDesc:
             type: string
             description: Payment Successful
@@ -47,7 +47,7 @@ properties:
         properties:
           PaymentResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           PaymentResponseCodeDesc:
             type: string
             description: Payment Failed

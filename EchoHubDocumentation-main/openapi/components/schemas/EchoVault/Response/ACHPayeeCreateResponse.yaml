@@ -17,7 +17,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           VaultResponseCodeDesc:
             type: string
             description: Vault Token Setup Success
@@ -46,7 +46,7 @@ properties:
         properties:
           VaultResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           VaultResponseCodeDesc:
             type: string
             description: Vault Token Setup Failed

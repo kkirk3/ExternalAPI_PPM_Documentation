@@ -100,4 +100,4 @@ properties:
             description: "1009"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Pay TypeID
+            description: Invalid or Missing Pay Type ID
