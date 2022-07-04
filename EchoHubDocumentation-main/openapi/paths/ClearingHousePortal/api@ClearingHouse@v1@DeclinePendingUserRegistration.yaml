@@ -1,0 +1,47 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Decline Pending User Registration
+  x-internal: true
+  operationId: CHPDeclinePendingUserRegistration
+  security:
+    - x-Authorization: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: 
+          type: array
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPDeclinePendingUserRegistrationProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPDeclinePendingUserRegistrationProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: User Registration Declined.
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description
+                    
