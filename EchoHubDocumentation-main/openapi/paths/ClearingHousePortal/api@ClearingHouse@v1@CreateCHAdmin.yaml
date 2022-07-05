@@ -32,7 +32,6 @@ post:
                 TransLog:                  
                   TransResponseCode: "001"
                   TransResponseCodeDesc: Clearing House Admin Created.
-
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -44,4 +43,58 @@ post:
                 TransError:  
                     ErrorCode: Error code number
                     ErrorDesc: Error description
-                    
+      
+            mapName_1071:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1071"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1071"
+                  ErrorDesc: Invalid or Missing ClearinghouseName
+
+            mapName_174:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "174"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "174"
+                  ErrorDesc: Invalid or Missing LastName
+
+            mapName_175:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "175"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "175"
+                  ErrorDesc: Invalid or Missing FirstName
+                                  
+            mapName_176:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "176"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "176"
+                  ErrorDesc: Invalid or Missing Email Address
+                 
+            mapName_2015:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "2015"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "2015"
+                  ErrorDesc: Invalid ECHO Security Authorization Token 

@@ -43,5 +43,75 @@ properties:
           ErrorDesc:
            type: string
            description: Error description
-          
+   
+      TransError JSON Validation Failed Code 1071:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1071"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing ClearinghouseName
+    
+      TransError JSON Validation Failed Code 2015:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2015"
+          ErrorDesc:
+            type: string
+            description: Invalid ECHO Security Authorization Token         
+                
+      TransError JSON Validation Failed Code 2018:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2018"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Page Number
+    
+      TransError JSON Validation Failed Code 2019:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2019"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Page Size
+    
+      TransError JSON Validation Failed Code 2020:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2020"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Sort Order
+    
+      TransError JSON Validation Failed Code 2021:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2021"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Sort Column
+    
+      TransError JSON Validation Failed Code 2022:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2022"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Search Query
+             
           

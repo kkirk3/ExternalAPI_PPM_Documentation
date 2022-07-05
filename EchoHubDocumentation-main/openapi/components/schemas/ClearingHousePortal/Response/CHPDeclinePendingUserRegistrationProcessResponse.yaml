@@ -44,4 +44,22 @@ properties:
            type: string
            description: Error description
           
-          
+      TransError JSON Validation Failed Code 2014:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2014"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing CH User ID
+              
+      TransError JSON Validation Failed Code 2015:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2015"
+          ErrorDesc:
+            type: string
+            description: Invalid ECHO Security Authorization Token

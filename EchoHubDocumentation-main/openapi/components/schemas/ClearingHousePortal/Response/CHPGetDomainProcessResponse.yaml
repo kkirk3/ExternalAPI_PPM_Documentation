@@ -44,4 +44,12 @@ properties:
            type: string
            description: Error description
           
-          
+      TransError JSON Validation Failed Code 1073:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1073"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Domain Name          
