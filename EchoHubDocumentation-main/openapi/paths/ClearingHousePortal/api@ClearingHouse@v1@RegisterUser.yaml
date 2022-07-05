@@ -120,7 +120,7 @@ post:
                            
             mapName_1071:
               description: Please scroll the above dropdown list for more response codes
-              summary: "20107114"
+              summary: "1071"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
