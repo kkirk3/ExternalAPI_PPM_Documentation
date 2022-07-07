@@ -1,0 +1,71 @@
+get:
+  tags:
+    - ECHO Vault 
+     
+  summary: ECHO Vault - Database Logs Clean Up
+  x-internal: true
+  operationId: DatabaseLogsCleanUp
+  security:
+    - x-Authorization: []
+  description: |
+   This endpoint enables the API user to get or view the vault token details such as the card/account information stored in the ECHO Vault.  
+
+   When the vault token is passed, it will hit the ECHO Vault library and fetch the card/account information based on the vault token. 
+
+   This endpoint uses 'VaultToken' as the input parameter.  
+   Vault Token - This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/DatabaseLogsCleanUp.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  VaultResponseCode: "001"
+                  VaultResponseCodeDesc: Vault Token Data Access Success
+                  PayTypeID: Pay Type ID
+                  CardNumber: Card Number
+                  ExpiryInfo: Expiry Info
+                  RouteNumber: Route Number
+                  AccountNumber: Account Number
+                  AccountType: Account Type
+                  MobileNumber: Mobile Number
+                  EmailAddress: Email Address
+                  StreetAddress: Street Address
+                  AddressCity: Address City
+                  AddressZip: Address Zip 
+                  RespondStatus: Respond Status
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  VaultResponseCode: "900"
+                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
+                  PayTypeID: Pay Type ID
+                  CardNumber: Card Number
+                  ExpiryInfo: Expiry Info
+                  RouteNumber: Route Number
+                  AccountNumber: Account Number
+                  AccountType: Account Type
+                  MobileNumber: Mobile Number
+                  EmailAddress: Email Address
+                  StreetAddress: Street Address
+                  AddressCity: Address City
+                  AddressZip: Address Zip 
+                  RespondStatus: Respond Status

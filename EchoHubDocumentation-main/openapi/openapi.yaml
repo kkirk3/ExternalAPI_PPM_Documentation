@@ -126,6 +126,16 @@ paths:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@VenmoPayeeCreate.yaml  
   /api/EchoVault/V1/VaultProcess [For ACH Payee Create]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ACHPayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For Database Logs Clean Up]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@DatabaseLogsCleanUp.yaml  
+  /api/EchoVault/V1/VaultProcess [For Process System Data]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ProcessSystemData.yaml  
+  /api/EchoVault/V1/VaultProcess [For System Log Info]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogInfo.yaml  
+  /api/EchoVault/V1/VaultProcess [For System Log Removal]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogRemoval.yaml 
+  /api/EchoVault/V1/VaultProcess [For Get Vault Token Bank Details]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml      
 
   #Lockbox
   /api/LockBox/v1/LockBox:
