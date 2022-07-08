@@ -12,7 +12,6 @@ post:
     content:
       application/json:
         schema: 
-          type: array
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPCreateCHAdminProcess.yaml
   responses:
     '200':

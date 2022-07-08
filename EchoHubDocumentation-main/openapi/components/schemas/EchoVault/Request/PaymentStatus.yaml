@@ -1,6 +1,7 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - ThirdPartyTransactionID
+  - PayorReferenceID
+  - PayTypeID
 type: object
 properties:
 
