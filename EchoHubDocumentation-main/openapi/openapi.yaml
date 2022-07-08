@@ -49,7 +49,6 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@SendEmail.yaml
   /api/ClearingHouse/v1/Portal [Validate an email]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ValidateEmail.yaml
- 
   /api/ClearingHouse/v1/Portal [Approve Pending User Registration]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ApprovePendingUserRegistartion.yaml
   /api/ClearingHouse/v1/Portal [Check on Create Password Link Expiry]:
@@ -126,8 +125,6 @@ paths:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@VenmoPayeeCreate.yaml  
   /api/EchoVault/V1/VaultProcess [For ACH Payee Create]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ACHPayeeCreate.yaml  
-  /api/EchoVault/V1/VaultProcess [For Database Logs Clean Up]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@DatabaseLogsCleanUp.yaml  
   /api/EchoVault/V1/VaultProcess [For Process System Data]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ProcessSystemData.yaml  
   /api/EchoVault/V1/VaultProcess [For System Log Info]:
