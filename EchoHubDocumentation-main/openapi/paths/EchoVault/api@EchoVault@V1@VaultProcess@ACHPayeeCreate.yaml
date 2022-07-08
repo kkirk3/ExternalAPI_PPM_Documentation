@@ -19,7 +19,6 @@ post:
     content:
       application/json:
         schema: 
-          type: array
           $ref: ../../components/schemas/EchoVault/Request/ACHPayeeCreate.yaml
   responses:
     '200':
