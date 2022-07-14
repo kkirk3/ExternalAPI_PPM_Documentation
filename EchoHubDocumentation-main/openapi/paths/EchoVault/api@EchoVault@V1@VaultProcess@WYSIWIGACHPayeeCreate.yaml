@@ -38,8 +38,8 @@ post:
                 TransLog:                  
                   VaultResponseCode: "001"
                   VaultResponseCodeDesc: Vault Token Setup Success
-                  PayorSessionID: PayorSessionID
-                  ProcessType: ProcessType
+                  PayorSessionID: Payor Session ID
+                  ProcessType: Process Type
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -51,8 +51,8 @@ post:
                 TransError:  
                   VaultResponseCode: "900"
                   VaultResponseCodeDesc: Vault Token Setup Failed
-                  PayorSessionID: PayorSessionID
-                  ProcessType: ProcessType
+                  PayorSessionID: Payor Session ID
+                  ProcessType: Process Type
        
             mapName_1012:
               description: Please scroll the above dropdown list for more response codes
