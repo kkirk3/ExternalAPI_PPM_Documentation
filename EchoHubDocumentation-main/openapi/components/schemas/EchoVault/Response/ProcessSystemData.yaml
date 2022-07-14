@@ -39,7 +39,7 @@ properties:
         properties:
           LogResponseCode:
             type: string
-            description: Response code 900
+            description: Response Code 900
           LogResponseCodeDesc:
             type: string
             description: Process Archive and Removed Failed

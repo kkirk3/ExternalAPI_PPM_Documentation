@@ -8,12 +8,7 @@ post:
   security:
     - x-Authorization: []
   description: |
-   This endpoint enables the API user to get or view the vault token details such as the card/account information stored in the ECHO Vault.  
-
-   When the vault token is passed, it will hit the ECHO Vault library and fetch the card/account information based on the vault token. 
-
-   This endpoint uses 'VaultToken' as the input parameter.  
-   Vault Token - This is the token associated with the payee’s existing details (card or account information). A blank field indicates that the session is cancelled without making a payment.
+   This endpoint that is consumed by ECHO Vault ensures to archive and clean the logs in the ECHO Vault system. Clean logs are archived in order to increase data security and release disk space. The logs older than 30 days will be archived. However, the figure is configurable.  
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   responses:
