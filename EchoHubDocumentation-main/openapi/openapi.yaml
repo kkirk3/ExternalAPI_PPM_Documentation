@@ -224,12 +224,6 @@ tags:
      A clearinghouse functions as an intermediary for the transactions between healthcare providers and insurance payers. The clearinghouse is imperative to the processing of all medical claims and records electronically to ensure a faster turnaround on claim processing. 
      ECHO’s clearinghouse portal is a website that allows clearinghouses to check EFT (Electronic Funds Transfer)/ERA (Electronic Remittance Advice) enrollment status for their providers. The portal also provides the bulk EFT and ERA status reports and reposts missing 835 files to the clearinghouse directory.
      The clearinghouse portal controls clearinghouse access by managing user access and limiting users to only the data pertinent to their company. The portal also establishes the domains associated with the clearinghouse, as well as IP ranges where possible. 
-     The clearinghouse portal endpoints: 
-     * Clearinghouse portal – Register User
-     *	Clearinghouse portal – Validate User
-     *	Clearinghouse portal – Send OTP via email
-     *	Clearinghouse portal – Validate OTP sent in email
-     * Clearinghouse Portal – Get the clearinghouse name by domain
 
   #DirectToDebit 
   - name: Direct to Debit
