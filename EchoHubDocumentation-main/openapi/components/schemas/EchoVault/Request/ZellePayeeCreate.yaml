@@ -21,7 +21,7 @@ properties:
     maxLength: 50
     minLength: 1
   
-  EMail: 
+  Email: 
     type: string
     description: 
       This is the email ID of the payee.

@@ -1,0 +1,19 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    maxLength: 50
+    minLength: 1
+
+  RegistrationKey: 
+    type: string
+    description: Registration Key
+    maxLength: 100
+    minLength: 4
+  
+    

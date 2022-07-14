@@ -20,7 +20,6 @@ post:
     content:
       application/json:
         schema: 
-          type: array
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPValidateEmailProcess.yaml
   responses:
     '200':
@@ -40,7 +39,6 @@ post:
                 TransLog:                  
                   TransResponseCode: "001"
                   TransResponseCodeDesc: Email Validated.
-
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -50,6 +48,27 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                  ErrorCode: Error code number
+                  ErrorDesc: Error description
                     
+            mapName_1035:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1035"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+
+            mapName_1038:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1038"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1038"
+                  ErrorDesc: Invalid or Missing OTP                          

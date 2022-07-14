@@ -1,5 +1,5 @@
 required:
-  - EMail
+  - Email
   - Mobile
   - VaultToken
   - PayorSessionID
@@ -7,7 +7,7 @@ required:
 type: object
 properties:
 
-  EMail: 
+  Email: 
     type: string
     description: 
       This is the email ID of the payee.

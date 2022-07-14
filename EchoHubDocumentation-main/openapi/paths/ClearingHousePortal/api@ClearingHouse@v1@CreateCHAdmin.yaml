@@ -1,0 +1,99 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Create Clearing House Admin
+  x-internal: true
+  operationId: CHPCreateCHAdmin
+  security:
+    - x-Authorization: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPCreateCHAdminProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPCreateCHAdminProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: Clearing House Admin Created.
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description
+      
+            mapName_1071:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1071"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1071"
+                  ErrorDesc: Invalid or Missing ClearinghouseName
+
+            mapName_174:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "174"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "174"
+                  ErrorDesc: Invalid or Missing LastName
+
+            mapName_175:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "175"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "175"
+                  ErrorDesc: Invalid or Missing FirstName
+                                  
+            mapName_176:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "176"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "176"
+                  ErrorDesc: Invalid or Missing Email Address
+                 
+            mapName_2015:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "2015"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "2015"
+                  ErrorDesc: Invalid ECHO Security Authorization Token 

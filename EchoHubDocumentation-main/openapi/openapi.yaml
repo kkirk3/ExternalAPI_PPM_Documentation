@@ -49,6 +49,32 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@SendEmail.yaml
   /api/ClearingHouse/v1/Portal [Validate an email]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ValidateEmail.yaml
+  /api/ClearingHouse/v1/Portal [Approve Pending User Registration]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ApprovePendingUserRegistartion.yaml
+  /api/ClearingHouse/v1/Portal [Check on Create Password Link Expiry]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CheckPasswordLinkExpiry.yaml
+  /api/ClearingHouse/v1/Portal [Create Password]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CreatePassword.yaml
+  /api/ClearingHouse/v1/Portal [Decline Pending User Registration]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@DeclinePendingUserRegistration.yaml
+  /api/ClearingHouse/v1/Portal [Get All Pending User Registration]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetAllPendingUserRegistration.yaml
+  /api/ClearingHouse/v1/Portal [Create CH Admin]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CreateCHAdmin.yaml
+  /api/ClearingHouse/v1/Portal [Get CH Admin Details By Registration Key]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetCHAdminByRegistrationKey.yaml
+  /api/ClearingHouse/v1/Portal [Get CH Admin Details By Id]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetCHAdminDetailsByID.yaml
+  /api/ClearingHouse/v1/Portal [Get All CH Admin Requests]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetAllCHAdminRequests.yaml
+  /api/ClearingHouse/v1/Portal [Delete CH Admin]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@DeleteCHAdmin.yaml
+  /api/ClearingHouse/v1/Portal [Get Build Version]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetBuildVersion.yaml
+  /api/ClearingHouse/v1/Portal [Get Active CH By User Name]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetActiveCHByUserName.yaml
+  /api/ClearingHouse/v1/Portal [Register CH Admin]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterCHAdmin.yaml
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
@@ -99,6 +125,14 @@ paths:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@VenmoPayeeCreate.yaml  
   /api/EchoVault/V1/VaultProcess [For ACH Payee Create]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ACHPayeeCreate.yaml  
+  /api/EchoVault/V1/VaultProcess [For Process System Data]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@ProcessSystemData.yaml  
+  /api/EchoVault/V1/VaultProcess [For System Log Info]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogInfo.yaml  
+  /api/EchoVault/V1/VaultProcess [For System Log Removal]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogRemoval.yaml 
+  /api/EchoVault/V1/VaultProcess [For Get Vault Token Bank Details]:
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml      
 
   #Lockbox
   /api/LockBox/v1/LockBox:

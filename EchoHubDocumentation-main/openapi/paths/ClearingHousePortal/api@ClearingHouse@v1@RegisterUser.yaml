@@ -20,7 +20,6 @@ post:
     content:
       application/json:
         schema: 
-          type: array
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPRegisterProcess.yaml
   responses:
     '200':
@@ -40,7 +39,6 @@ post:
                 TransLog:                  
                   TransResponseCode: "001"
                   TransResponseCodeDesc: User Registered
-
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -50,6 +48,94 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                  ErrorCode: Error code number
+                  ErrorDesc: Error description
                     
+            mapName_1035:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1035"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+                            
+            mapName_174:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "174"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "174"
+                  ErrorDesc: Invalid or Missing FirstName
+                            
+            mapName_175:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "175"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "175"
+                  ErrorDesc: Invalid or Missing LastName
+                           
+            mapName_176:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "176"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "176"
+                  ErrorDesc: Invalid or Missing Email Address
+                           
+            mapName_177:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "177"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "177"
+                  ErrorDesc: Invalid or Missing Phone Number
+                            
+            mapName_1075:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1075"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1075"
+                  ErrorDesc: Invalid or Missing Job Title
+                           
+            mapName_1071:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1071"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1071"
+                  ErrorDesc: Invalid or Missing ClearinghouseName
+                         
+            mapName_1072:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1072"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1072"
+                  ErrorDesc: Invalid or Missing Other ClearinghouseName
+                                                                                                                                                                                

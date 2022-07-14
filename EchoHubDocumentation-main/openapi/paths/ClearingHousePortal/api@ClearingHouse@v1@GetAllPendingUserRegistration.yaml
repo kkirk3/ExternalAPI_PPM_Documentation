@@ -1,0 +1,133 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Get All Pending User Registration
+  x-internal: true
+  operationId: CHPGetAllPendingUserRegistration
+  security:
+    - x-Authorization: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPGetAllPendingUserRegistrationProcess.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPGetAllPendingUserRegistrationProcessResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: List of All Pending User Registrations Retrived.
+
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                    ErrorCode: Error code number
+                    ErrorDesc: Error description
+                   
+                    mapName_1035:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "1035"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError:
+                          ErrorCode: "1035"
+                          ErrorDesc: Invalid or Missing UserName
+                          
+                    mapName_1071:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "1071"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError:
+                          ErrorCode: "1071"
+                          ErrorDesc: Invalid or Missing ClearinghouseName
+
+                    mapName_2015:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2015"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError:
+                          ErrorCode: "2015"
+                          ErrorDesc: Invalid ECHO Security Authorization Token 
+
+                    mapName_2018:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2018"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError:
+                          ErrorCode: "2018"
+                          ErrorDesc: Invalid or Missing Page Number
+
+                    mapName_2019:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2019"
+                      value:
+                        ReponseCode: Response Code 900
+                        ReponseCodeDesc: Transaction Failed
+                        ResponseTransactionID: Transaction Number
+                        TransError:
+                          ErrorCode: "2019"
+                          ErrorDesc: Invalid or Missing Page Size
+
+                    mapName_2020:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2020"
+                      value:
+                      ReponseCode: Response Code 900
+                      ReponseCodeDesc: Transaction Failed
+                      ResponseTransactionID: Transaction Number
+                      TransError:
+                        ErrorCode: "2020"
+                        ErrorDesc: Invalid or Missing Sort Order
+
+                    mapName_2021:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2021"
+                      value:
+                      ReponseCode: Response Code 900
+                      ReponseCodeDesc: Transaction Failed
+                      ResponseTransactionID: Transaction Number
+                      TransError:
+                        ErrorCode: "2021"
+                        ErrorDesc: Invalid or Missing Sort Column
+
+                    mapName_2022:
+                      description: Please scroll the above dropdown list for more response codes
+                      summary: "2022"
+                      value:
+                      ReponseCode: Response Code 900
+                      ReponseCodeDesc: Transaction Failed
+                      ResponseTransactionID: Transaction Number
+                      TransError:
+                        ErrorCode: "2022"
+                        ErrorDesc: Invalid or Missing Search Query

@@ -3,7 +3,6 @@ required:
   - PayTypeID
 type: object
 properties:
-
   PayorSessionID: 
     type: string
     description: 
