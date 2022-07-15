@@ -7,16 +7,14 @@ post:
   operationId: EchoVaultSessionCreate
   security:
     - x-Authorization: []
-    
+
   parameters:
-    - in: header
-      name: x-Connect
-      description: x-Connect Id
+    - name: x-Connect
+      in: header
       schema:
         type: integer
         $ref: ../../components/headers/XConnect.yaml
-      style: form
-  
+
   description: |
    This API enables the consumer who chooses to use the embedded web application to create a new session and get the vault session information.  
 

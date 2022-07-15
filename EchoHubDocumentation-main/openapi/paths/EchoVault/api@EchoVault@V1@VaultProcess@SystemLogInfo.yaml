@@ -7,6 +7,14 @@ get:
   operationId: SystemLogInfo
   security:
     - x-Authorization: []
+ 
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+    
   description: |
    This endpoint enables the API user to get the log information from the ECHO Vault system. The log information endpoint fetches the details of all the information for a particular request. The details of the overall execution of the request are captured from log tables. This action requires the request log ID.  
 

@@ -7,6 +7,14 @@ post:
   operationId: ProcessSystemData
   security:
     - x-Authorization: []
+ 
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+    
   description: |
    This endpoint that is consumed by ECHO Vault ensures to archive and clean the logs in the ECHO Vault system. Clean logs are archived in order to increase data security and release disk space. The logs older than 30 days will be archived. However, the figure is configurable.  
    

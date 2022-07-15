@@ -1,0 +1,6 @@
+x-Authorization:
+  schema:
+    type: string 
+  name: x-Authorization
+  in: header
+  required: true

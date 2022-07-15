@@ -6,7 +6,15 @@ get:
   x-internal: true
   operationId: SystemLogRemoval
   security:
-    - x-Authorization: []
+    - x-Authorization: []  
+
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+           
   description: |
    This endpoint enables the API user to remove the log files from the API server and gateway server. The log files are removed from the logs folder on the IIS server, and the files removed are older than 3 days.  
 

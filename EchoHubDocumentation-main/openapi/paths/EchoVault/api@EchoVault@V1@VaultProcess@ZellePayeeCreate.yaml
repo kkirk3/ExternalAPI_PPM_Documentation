@@ -7,6 +7,14 @@ post:
   operationId: EchoVaultZellePayeeCreate
   security:
     - x-Authorization: []
+ 
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+    
   description: |
    This endpoint enables the API user to directly create a payee account for Zelle payment via ECHO Hub for those payees who do not have any PCI compliance information. This API is consumed by the Deluxe MPX portal, SelectPay application, and B2B application to create a payee for Zelle payment.  
 

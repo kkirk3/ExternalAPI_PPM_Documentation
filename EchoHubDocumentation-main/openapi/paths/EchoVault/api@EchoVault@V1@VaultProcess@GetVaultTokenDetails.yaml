@@ -7,6 +7,14 @@ get:
   operationId: EchoVaultGetVaultTokenDetails
   security:
     - x-Authorization: []
+
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+        
   description: |
    This endpoint enables the API user to get or view the vault token details such as the card/account information stored in the ECHO Vault.  
 

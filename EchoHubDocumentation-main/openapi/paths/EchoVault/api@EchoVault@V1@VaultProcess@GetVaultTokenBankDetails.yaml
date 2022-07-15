@@ -7,6 +7,14 @@ get:
   operationId: GetVaultTokenBankDetails
   security:
     - x-Authorization: []
+ 
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+    
   description: |
    This endpoint enables the API user to get bank-related information such as bank account numbers and routing numbers from ECHO Vault. This requires the vault token to return the bank details in an encrypted format.  
 
