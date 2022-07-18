@@ -3,8 +3,12 @@ post:
     - WebPay
   summary: WebPay - Submitted Process
   operationId: WebPaySubmittedProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API user to submit a certain type of payment requested by the payee from an embedded web application. For submitting a payment request, the data is first validated in the ECHO Hub system, and based on the vault token, ECHO Hub finds the ECHO Payee ID or creates it in case ECHO Payee ID does not exist. The payment submit process request is then sent to the appropriate business library by sending ECHO Payee ID and Payor reference ID, and the payment request is submitted.
   

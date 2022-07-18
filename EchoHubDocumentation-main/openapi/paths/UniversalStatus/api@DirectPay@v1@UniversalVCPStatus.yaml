@@ -8,8 +8,12 @@ post:
     * Active
     * Swiped
     * Already cancelled
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to know the Status of a virtual Card Payment.
     required: true

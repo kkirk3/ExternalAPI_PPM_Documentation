@@ -3,8 +3,12 @@ post:
     - Send Email
   summary: Send Email
   operationId: SendEmail
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    The send email API represents the interface through which emails can be sent from ECHO Hub application. This endpoint allows the user to access the functionalities like sending emails through SendGrid or SMTP. Whenever a request is made to the send email endpoint, it verifies all the details before the email is sent. If there are any errors, a response is sent back for each request. The endpoint also validates whether to send email through SMTP or SendGrid. In the case where the email sending fails, it is the consumer’s responsibility to handle the reattempts. 
      

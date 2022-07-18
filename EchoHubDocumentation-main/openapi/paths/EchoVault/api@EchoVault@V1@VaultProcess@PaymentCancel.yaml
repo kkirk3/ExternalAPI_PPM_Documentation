@@ -5,15 +5,18 @@ post:
   summary: ECHO Vault - Payment Cancel
   x-internal: true
   operationId: EchoVaultPaymentCancel
-  security:
-    - x-Authorization: []
-   
   parameters:
     - name: x-Connect
       in: header
       schema:
         type: integer
         $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
 
   description: |
    This endpoint is used when ECHO Hub receives a request to cancel a payment from any of the payment modalities such as Direct to Debit, Venmo, or Zelle. The API allows the ECHO Vault to receive a request from ECHO Hub payment modalities for payment cancellation. The payor is identified with the unique payor reference ID.

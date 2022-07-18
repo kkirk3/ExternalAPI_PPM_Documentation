@@ -3,8 +3,12 @@ post:
     - Venmo
   summary: Venmo Payment Cancel
   operationId: VenmoCancel
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API User to cancel a Venmo Payment. It requires the unique Payor Reference ID.  
    

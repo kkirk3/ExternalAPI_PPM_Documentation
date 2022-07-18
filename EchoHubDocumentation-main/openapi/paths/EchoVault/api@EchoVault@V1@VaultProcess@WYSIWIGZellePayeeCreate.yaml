@@ -5,15 +5,18 @@ post:
   summary: ECHO Vault - WYSIWIG Zelle Payee Create
   x-internal: true
   operationId: EchoVaultWYSIWIGZellePayeeCreate
-  security:
-    - x-Authorization: []
-  
   parameters:
     - name: x-Connect
       in: header
       schema:
         type: integer
         $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
         
   description: |
    This endpoint allows the API user to identify a payee account for a Zelle payment from an embedded web application. The payee can be identified as having an existing account token or the request can add a Zelle payee’s information. This API is consumed by the Deluxe MPX portal, SelectPay application, and B2B application when a provider selects to be paid via Zelle.  

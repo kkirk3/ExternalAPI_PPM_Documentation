@@ -4,8 +4,12 @@ post:
   summary:  Payment Cancel - VCP
   operationId: PaymentVCPCancel
   description: This endpoint allows the API user to cancel a Virtual Card Payment through the Library method.
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to cancel a Virtual Card Payment.
     required: true

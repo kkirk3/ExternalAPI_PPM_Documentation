@@ -5,8 +5,12 @@ post:
   summary: Clearinghouse Portal - Get Clearing House Admin Details By ID
   x-internal: true
   operationId: CHPGetCHAdminDetailsByID
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     required: true
     content:

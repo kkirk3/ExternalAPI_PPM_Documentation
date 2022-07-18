@@ -3,6 +3,9 @@ post:
     - eCheck
   summary: Deluxe eCheck Payment Request
   operationId: DeluxePayeeEcheckRequest
+  security:
+    - x-ApiKey: []
+    - x-ClientKey: []
   description: >
     This endpoint allows the API user to create a Deluxe or MPX eCheck and a
     Deluxe checking account ID for a given Payee.  

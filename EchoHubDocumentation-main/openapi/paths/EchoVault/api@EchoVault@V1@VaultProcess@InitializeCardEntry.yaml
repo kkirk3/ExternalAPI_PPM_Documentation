@@ -5,8 +5,6 @@ get:
   summary: ECHO Vault - Initialize Card Entry
   x-internal: true
   operationId: EchoVaultInitializeCardEntry
-  security:
-    - x-Authorization: []
     
   parameters:
     - name: x-Connect
@@ -14,6 +12,12 @@ get:
       schema:
         type: integer
         $ref: ../../components/headers/XConnect.yaml
+        
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml    
 
   description: |
    This API is used to verify the consumer who chooses to open an embedded web application to have access and get all the vault session details for the ECHO vault. The endpoint is used when ECHO Vault receives the request to initialize the card entry.  

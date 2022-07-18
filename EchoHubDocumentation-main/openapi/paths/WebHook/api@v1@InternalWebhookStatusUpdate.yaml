@@ -3,8 +3,12 @@ post:
     - Webhook
   summary: Internal Webhook Status Update
   operationId: InternalWebhookStatusUpdate
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint helps find all the non-cleared and non-cancelled payments in each payment modality (Direct to Debit, Zelle, and Venmo) and checks their current status. An active batch is triggered once a day and verifies for payments older than 24 hours. This requires the third-party reference ID, which identifies the Payor transaction to get the status. Based on the current status and Reference ID, we call the third-party webhook status update endpoint.
    The current status can be:

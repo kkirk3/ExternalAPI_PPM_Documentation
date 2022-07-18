@@ -3,8 +3,12 @@ post:
     - WebPay
   summary: WebPay - Create Payment
   operationId: WebPayCreatePayment
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API user to create a certain type of payment requested by the payee from an embedded web application. The data is first validated in the ECHO Hub system and based on the vault token, ECHO Hub finds the ECHO Payee ID or creates one if the payee ID does not exist based on the applicable payment account type ID. The request is then sent to the appropriate business library by sending ECHO Payee ID and Payor reference ID, and the payment is created. Upon successful transaction, the business library provides a success message.
   

@@ -5,8 +5,12 @@ post:
   summary: Clearinghouse Portal - Validate OTP sent in email
   x-internal: true
   operationId: CHPValidateEmailProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to validate OTP sent to the registered email address for TFA.  
    

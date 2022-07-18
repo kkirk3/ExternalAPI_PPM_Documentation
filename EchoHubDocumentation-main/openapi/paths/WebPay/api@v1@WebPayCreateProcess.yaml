@@ -3,8 +3,12 @@ post:
     - WebPay
   summary: WebPay - Create Process
   operationId: WebPayCreateProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This API enables a consumer to open an embedded web object to initiate a payment. The API verifies the payment type requested by the consumer from a third-party online application and provides additional details about the payment. The request is then directed to the appropriate business library (MedPay, SelectPay, or B2B) based on the consumer to validate the payment details using the payor reference ID. Upon successful validation of payment details, the business library returns the data that includes the vault session ID and session token for further steps to issuing payment. After the payment details are confirmed, the API responds with the URL of the payment application form to the consumer.
   

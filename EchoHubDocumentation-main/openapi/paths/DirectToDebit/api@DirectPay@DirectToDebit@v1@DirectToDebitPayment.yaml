@@ -10,8 +10,12 @@ post:
    Once the user is authenticated, this endpoint generates an authorization
      token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   operationId: DirectToDebitPayment
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to create a Direct to Debit Payment to the Payee.
     required: true

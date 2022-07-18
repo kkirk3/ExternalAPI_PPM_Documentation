@@ -3,8 +3,12 @@ post:
     - Lockbox
   summary: Payee - Create 
   operationId: LockBoxPayeeCreateProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the user to add a payee name to a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for adding a payee name. Once the payee’s name is added, the ECHO Hub system will send a success message.  
 
