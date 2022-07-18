@@ -24,9 +24,7 @@ externalDocs:
   url: 'https://example.server.io'
 servers:
   - url: /v1
-security:
-  - x-ApiKey: []
-  - x-ClientKey: []
+  
 paths:
   #Authorization
   /api/Authentication/v1/Authentication:
