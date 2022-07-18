@@ -15,49 +15,31 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          VaultResponseCode:
+          LogtoProcess:
             type: string
-            description: Response Code 001
-          VaultResponseCodeDesc:
+            description: LogtoProcess
+          RequestLog:
             type: string
-            description: Vault Token Data Access Success
-          PayTypeID:
+            description: RequestLog
+          RequestLogID:
             type: integer
-            description: Pay Type ID
-          CardNumber:
+            description: RequestLogID
+          ResponseID:
+            type: integer
+            description: ResponseID
+          RequestVaule:
             type: string
-            description: Card Number
-          ExpiryInfo:
+            description: RequestVaule
+          ResponseVaule:
             type: string
-            description: Expiry Info
-          RouteNumber:
+            description: ResponseVaule
+          FailedResponse:
+            type: integer
+            description: FailedResponse
+          creationdate:
             type: string
-            description: Route Number
-          AccountNumber:
-            type: string
-            description: Account Number
-          AccountType:
-            type: string
-            description: Account Type
-          MobileNumber:
-            type: string
-            description: Mobile Number
-          EmailAddress:
-            type: string
-            description: Email Address
-          StreetAddress:
-            type: string
-            description: Street Address
-          AddressCity:
-            type: string
-            description: Address City
-          AddressZip:
-            type: string
-            description: Address Zip
-          RespondStatus:
-            type: string
-            description: Respond Status 
-       
+            description: creationdate
+                
             
   This is the Response for Response Code 900:
     type: object
@@ -79,43 +61,6 @@ properties:
             description: Response Code 900
           VaultResponseCodeDesc:
             type: string
-            description: Vault Token Data Access WYSIWIG Failed
-          PayTypeID:
-            type: integer
-            description: Pay Type ID
-          CardNumber:
-            type: string
-            description: Card Number
-          ExpiryInfo:
-            type: string
-            description: Expiry Info
-          RouteNumber:
-            type: string
-            description: Route Number
-          AccountNumber:
-            type: string
-            description: Account Number
-          AccountType:
-            type: string
-            description: Account Type
-          MobileNumber:
-            type: string
-            description: Mobile Number
-          EmailAddress:
-            type: string
-            description: Email Address
-          StreetAddress:
-            type: string
-            description: Street Address
-          AddressCity: 
-            type: string
-            description: Address City
-          AddressZip:
-            type: string
-            description: Address Zip
-          RespondStatus:
-            type: string
-            description: Respond Status 
-          
+            description: Process Log Detials Failed
           
           
