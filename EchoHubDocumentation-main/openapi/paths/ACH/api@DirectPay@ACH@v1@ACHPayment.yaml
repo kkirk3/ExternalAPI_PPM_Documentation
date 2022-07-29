@@ -3,8 +3,12 @@ post:
     - ACH
   summary: ACH Payment Create
   operationId: ACHPayment
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API user to create an ACH Payment to the Payee. In order to initiate an ACH transfer, payment details such as the Payee’s bank routing and account numbers, account type, and the transaction amount are required along with the intended date to make the payment. It also requires the Payor reference ID to identify the Payor. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
    

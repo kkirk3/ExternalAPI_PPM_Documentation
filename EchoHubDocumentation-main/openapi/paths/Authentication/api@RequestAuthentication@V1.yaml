@@ -3,6 +3,9 @@ get:
     - Authorization  
   summary: Get Authorization Token
   operationId: GetAuthToken
+  security:
+    - x-ApiKey: []
+    - x-ClientKey: []
   description: >
       Once the user is authenticated, this endpoint generates an authorization
       token by using the API key and the Client key. This authorization token is

@@ -5,8 +5,19 @@ get:
   summary: ECHO Vault - System Log Removal
   x-internal: true
   operationId: SystemLogRemoval
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+           
   description: |
    This endpoint enables the API user to remove the log files from the API server and gateway server. The log files are removed from the logs folder on the IIS server, and the files removed are older than 3 days.  
 
@@ -29,40 +40,5 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Data Access Success
-                  PayTypeID: Pay Type ID
-                  CardNumber: Card Number
-                  ExpiryInfo: Expiry Info
-                  RouteNumber: Route Number
-                  AccountNumber: Account Number
-                  AccountType: Account Type
-                  MobileNumber: Mobile Number
-                  EmailAddress: Email Address
-                  StreetAddress: Street Address
-                  AddressCity: Address City
-                  AddressZip: Address Zip 
-                  RespondStatus: Respond Status
-                    
-            mapName_900:   
-              description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
-              value:
-                ReponseCode: "900"
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:  
-                  VaultResponseCode: "900"
-                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
-                  PayTypeID: Pay Type ID
-                  CardNumber: Card Number
-                  ExpiryInfo: Expiry Info
-                  RouteNumber: Route Number
-                  AccountNumber: Account Number
-                  AccountType: Account Type
-                  MobileNumber: Mobile Number
-                  EmailAddress: Email Address
-                  StreetAddress: Street Address
-                  AddressCity: Address City
-                  AddressZip: Address Zip 
-                  RespondStatus: Respond Status
+                  LogResponseCode: "001"
+                  LogResponseCodeDesc: Process Success

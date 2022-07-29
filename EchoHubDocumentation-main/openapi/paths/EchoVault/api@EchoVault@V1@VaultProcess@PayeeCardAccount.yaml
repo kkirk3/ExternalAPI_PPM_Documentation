@@ -5,8 +5,19 @@ post:
   summary: ECHO Vault - WYSIWIG Payee Card Account
   x-internal: true
   operationId: EchoVaultPayeeCardAccount
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+
   description: |
    This API enables a consumer to identify the payee account for PCI-compliant payment from an embedded web application. The payee can be identified as having an existing account token or the request can add a payee’s new account information. This API is consumed when a provider selects to be paid.  
 

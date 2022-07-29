@@ -3,8 +3,12 @@ post:
     - ACH
   summary: ACH Payment Status
   operationId: ACHStatus
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API user to know the status of an ACH Payment. It requires the unique Payor Reference ID.  
    The status of an ACH payment can be:

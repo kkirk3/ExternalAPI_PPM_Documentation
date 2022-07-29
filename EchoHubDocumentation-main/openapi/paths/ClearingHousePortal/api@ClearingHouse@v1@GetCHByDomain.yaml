@@ -6,8 +6,12 @@ post:
   
   x-internal: true
   operationId: CHPGetDomainProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This API is used by the clearinghouse portal in the registration process of clearinghouse portal users/admins to fetch the clearinghouses list mapped to a domain name.  
    

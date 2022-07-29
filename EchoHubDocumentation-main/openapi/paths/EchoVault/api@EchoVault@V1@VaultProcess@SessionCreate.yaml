@@ -5,8 +5,21 @@ post:
   summary: ECHO Vault - WYSIWIG Session Create 
   x-internal: true
   operationId: EchoVaultSessionCreate
-  security:
-    - x-Authorization: []
+  
+
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+  
   description: |
    This API enables the consumer who chooses to use the embedded web application to create a new session and get the vault session information.  
 

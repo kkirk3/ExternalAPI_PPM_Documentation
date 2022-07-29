@@ -4,8 +4,12 @@ post:
   summary:  Payment Cancel - Direct to Debit
   operationId: PaymentD2DCancel
   description: This endpoint allows the API user to cancel a Direct to Debit payment through the Library method. It requires the unique Payor Reference ID.
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to cancel a Direct to Debit Payment.
     required: true

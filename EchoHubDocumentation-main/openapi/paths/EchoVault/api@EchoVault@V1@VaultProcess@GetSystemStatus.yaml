@@ -5,8 +5,19 @@ get:
   summary: ECHO Vault - Get System Status
   x-internal: true
   operationId: EchoVaultGetSystemStatus
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+          
   description: |
    This API ensures that the vault process is up and running.  
 

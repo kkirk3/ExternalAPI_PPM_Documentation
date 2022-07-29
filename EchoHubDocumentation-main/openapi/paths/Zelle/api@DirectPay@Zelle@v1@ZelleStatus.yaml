@@ -21,8 +21,12 @@ post:
    Once the user is authenticated, this endpoint generates an authorization
      token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   operationId: ZelleStatus
-  security:
-    - x-Headers: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to know the status of the Zelle Payment.
     required: true

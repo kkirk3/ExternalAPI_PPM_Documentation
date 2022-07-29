@@ -5,8 +5,19 @@ post:
   summary: ECHO Vault - Payment Status
   x-internal: true
   operationId: EchoVaultPaymentStatus
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+          
   description: |
    This endpoint is used when ECHO Hub receives a request to view the status of a payment that may be Direct to Debit, Venmo, or Zelle. The API allows the ECHO Vault to receive the payment status request from the ECHO Hub system.  
 

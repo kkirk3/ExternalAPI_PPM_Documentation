@@ -3,8 +3,12 @@ get:
     - Lockbox
   summary: Lookup - Status
   operationId: LookUpStatusProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the user to know the status of lockbox batch transactions. The data is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for getting the status of lockbox batch transactions. The ECHO Hub system returns the status response of each batch transaction. Deluxe will consume this API to get the status of batches of lockbox addresses.  
 

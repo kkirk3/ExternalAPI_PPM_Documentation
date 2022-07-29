@@ -14,8 +14,12 @@ post:
       * Cancelled
       * Pickup Ready
 
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     description: This endpoint is used to know the status of a Direct to Debit Payment.
     required: true

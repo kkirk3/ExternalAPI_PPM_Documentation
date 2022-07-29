@@ -5,8 +5,12 @@ post:
   summary: Clearinghouse Portal - Send OTP via email
   x-internal: true
   operationId: CHPSendEmailProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to send OTP through email for TFA, adding an additional layer of security to help protect the user’s account from unauthorized access.  
    

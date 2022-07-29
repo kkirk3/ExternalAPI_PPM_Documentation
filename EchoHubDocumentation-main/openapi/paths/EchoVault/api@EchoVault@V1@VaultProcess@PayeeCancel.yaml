@@ -5,8 +5,19 @@ post:
   summary: ECHO Vault - WYSIWIG Payee Cancel
   x-internal: true
   operationId: EchoVaultPayeeCancel
-  security:
-    - x-Authorization: []
+  
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml    
   description: |
    This endpoint allows the API user to close the embedded web application at the request of the payee. This API is consumed by the WYSIWIG. When a payee clicks the cancel button in the embedded web application, the active session token will be deactivated.  
 

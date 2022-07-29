@@ -24,9 +24,7 @@ externalDocs:
   url: 'https://example.server.io'
 servers:
   - url: /v1
-security:
-  - x-ApiKey: []
-  - x-ClientKey: []
+  
 paths:
   #Authorization
   /api/Authentication/v1/Authentication:
@@ -227,19 +225,6 @@ components:
       description: The Client key
       name: x-ClientKey
       in: header
-    # x-Authorization:
-    #   scheme: x-Authorization
-    #   type: http
-    #   description: The Authorization Token
-    x-Authorization:
-      type: apiKey
-      name: x-Authorization
-      in: header         
-      description: Requests should pass an api_key header.
-    x-Headers:
-      scheme: x-Authorization
-      type: http
-      description: The Authorization Token
       
 
 tags:

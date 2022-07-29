@@ -5,8 +5,19 @@ get:
   summary: ECHO Vault - System Log Info
   x-internal: true
   operationId: SystemLogInfo
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Connect
+      in: header
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+    
   description: |
    This endpoint enables the API user to get the log information from the ECHO Vault system. The log information endpoint fetches the details of all the information for a particular request. The details of the overall execution of the request are captured from log tables. This action requires the request log ID.  
 
@@ -29,21 +40,15 @@ get:
                 ReponseCode: "001"
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Data Access Success
-                  PayTypeID: Pay Type ID
-                  CardNumber: Card Number
-                  ExpiryInfo: Expiry Info
-                  RouteNumber: Route Number
-                  AccountNumber: Account Number
-                  AccountType: Account Type
-                  MobileNumber: Mobile Number
-                  EmailAddress: Email Address
-                  StreetAddress: Street Address
-                  AddressCity: Address City
-                  AddressZip: Address Zip 
-                  RespondStatus: Respond Status
+                TransLog:  
+                  LogtoProcess: LogtoProcess
+                  RequestLog: RequestLog
+                  RequestLogID: RequestLogID
+                  ResponseID: ResponseID
+                  RequestVaule: RequestVaule
+                  ResponseVaule: ResponseVaule
+                  FailedResponse: FailedResponse
+                  creationdate: creationdate
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -53,17 +58,5 @@ get:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: "900"
-                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
-                  PayTypeID: Pay Type ID
-                  CardNumber: Card Number
-                  ExpiryInfo: Expiry Info
-                  RouteNumber: Route Number
-                  AccountNumber: Account Number
-                  AccountType: Account Type
-                  MobileNumber: Mobile Number
-                  EmailAddress: Email Address
-                  StreetAddress: Street Address
-                  AddressCity: Address City
-                  AddressZip: Address Zip 
-                  RespondStatus: Respond Status
+                  LogResponseCode: "900"
+                  LogResponseCodeDesc: Process Log Detials Failed

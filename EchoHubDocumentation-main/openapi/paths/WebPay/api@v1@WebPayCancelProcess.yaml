@@ -3,8 +3,12 @@ post:
     - WebPay
   summary: WebPay - Cancel Process
   operationId: WebPayCancelProcess
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   description: |
    This endpoint allows the API user to cancel a payment request using an embedded web application. When payment has to be cancelled, the ECHO Hub system first receives the request to cancel a WebPay active session. Once the data is validated in the ECHO Hub system, the request is sent to the appropriate business library by sending an empty ECHO Payee ID and the payment is cancelled.
   

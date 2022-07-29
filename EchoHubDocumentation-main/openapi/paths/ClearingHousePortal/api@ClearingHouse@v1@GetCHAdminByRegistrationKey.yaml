@@ -5,8 +5,12 @@ post:
   summary: Clearinghouse Portal - Get Clearing House Admin By Registration Key
   x-internal: true
   operationId: CHPGetCHAdminByRegistrationKey
-  security:
-    - x-Authorization: []
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
   requestBody:
     required: true
     content:
