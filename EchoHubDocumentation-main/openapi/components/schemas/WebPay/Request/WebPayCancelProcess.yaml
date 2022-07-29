@@ -23,7 +23,9 @@ properties:
     minLength: 1 
   ProcessType:
     type: string
-    description: This refers to the business application through which the payment is made.
+    description: This refers to the business application through which the payment is made.  
+
+    
      <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/ProcessTypeID.JPG?raw=true" alt="Process Type ID"/>
     maxLength: 100
     minLength: 1 

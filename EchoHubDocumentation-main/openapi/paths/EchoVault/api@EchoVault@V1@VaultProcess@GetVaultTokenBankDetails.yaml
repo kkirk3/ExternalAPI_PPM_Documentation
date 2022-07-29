@@ -8,6 +8,8 @@ get:
   parameters:
     - name: x-Connect
       in: header
+      description: The x-Connect ID for this endpoint is 94.
+      required: true
       schema:
         type: integer
         
@@ -15,6 +17,7 @@ get:
         
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
