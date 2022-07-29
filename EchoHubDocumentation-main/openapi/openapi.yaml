@@ -274,6 +274,10 @@ tags:
      The main features of ECHO Vault are increased security and control over keys, passwords, and payment details. ECHO Vault prevents the disclosure of information through source code and enables to save payment data safely in a PCI-compliant environment that can be used for future payments.  
      
      Access to ECHO Vault requires proper authentication and authorization. If authentication is successful, the consumer is granted a session token to call the target API, which allows performing certain actions specified by the scope that was granted during authorization.
+
+     All the endpoints under ECHO Vault require x-Connect ID. x-Connect ID is passed in the header. It is a unique identifier that serves the purpose of identifying a particular endpoint.
+
+     <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/X-ConnectIDs.JPG?raw=true" alt="X-ConnectIDs"/>
     
   #Lockbox
   - name: Lockbox

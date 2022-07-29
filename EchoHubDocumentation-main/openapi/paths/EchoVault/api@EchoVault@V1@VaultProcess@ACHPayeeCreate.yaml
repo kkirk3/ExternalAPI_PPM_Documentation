@@ -8,7 +8,7 @@ post:
   parameters:
     - name: x-Connect
       in: header
-      description: The X-Connect ID for this endpoint is 84.
+      description: The x-Connect ID for this endpoint is 84.
       required: true
       schema:
         type: integer

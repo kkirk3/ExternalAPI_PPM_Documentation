@@ -26,11 +26,13 @@ properties:
   ProcessType:
     type: string
     description: This refers to the business application through which the payment is made. 
+     <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/ProcessTypeID.JPG?raw=true" alt="ProcessTypeID"/>
     maxLength: 100
     minLength: 1 
   PaymentType:
     type: string
     description: This is the type of payment used to make a transaction to the payee which can be Direct to Debit, Venmo, Zelle, ACH, etc.
+     <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/PaymenttypeID?raw=true" alt="PaymenttypeID"/>
     maxLength: 100
     minLength: 1 
   VaultToken:
