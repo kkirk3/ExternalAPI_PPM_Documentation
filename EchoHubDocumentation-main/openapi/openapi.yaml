@@ -275,7 +275,11 @@ tags:
      
      Access to ECHO Vault requires proper authentication and authorization. If authentication is successful, the consumer is granted a session token to call the target API, which allows performing certain actions specified by the scope that was granted during authorization.
 
-     All the endpoints under ECHO Vault require x-Connect ID. x-Connect ID is passed in the header. It is a unique identifier that serves the purpose of identifying a particular endpoint.
+     Accessing the ECHO Vault endpoints requires an x-Connect ID. 
+     The x-Connect ID is a unique identifier that identifies a particular endpoint and is passed in the header.
+     
+     The endpoints and the respective x-Connect IDs are:
+
 
      <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/X-ConnectIDs.JPG?raw=true" alt="X-ConnectIDs"/>
     

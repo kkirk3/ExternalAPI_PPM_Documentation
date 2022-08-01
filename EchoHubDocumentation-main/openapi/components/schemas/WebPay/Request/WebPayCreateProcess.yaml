@@ -33,6 +33,8 @@ properties:
   PaymentType:
     type: string
     description: This is the type of payment used to make a transaction to the payee which can be Direct to Debit, Venmo, Zelle, ACH, etc.
+   
+    
      <img src="https://github.com/Uma78mahesh/EchoHubDocumentation-main--3-/blob/master/EchoHubDocumentation-main/docs/PaymenttypeID.JPG?raw=true" alt="PaymenttypeID"/>
     maxLength: 100
     minLength: 1 
