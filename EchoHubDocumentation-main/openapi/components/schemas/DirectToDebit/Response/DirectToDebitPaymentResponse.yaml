@@ -54,15 +54,6 @@ properties:
           EchoHubTransactionId:
             type: string
             description: EchoHub Transaction Number
-      TransError for JSON Validation Failed Code 1020:
-        type: object
-        properties:
-          ErrorCode:
-            type: string
-            description: Response for Payment response code 1020
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing Expiry Year
       TransError for JSON Validation Failed Code 901:
         type: object
         properties:

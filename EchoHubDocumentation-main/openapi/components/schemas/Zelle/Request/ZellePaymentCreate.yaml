@@ -1,9 +1,8 @@
 required:
   - PayorReferenceId
+  - EchoPayeeId
   - PayeeFirstName
   - PayeeLastName
-  - PayeeMobilePhoneNumber
-  - Payeeemailaddress
   - PaymentAmount
   - Addenda 
   - SenderName 
@@ -14,6 +13,11 @@ properties:
     description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
     maxLength: 150
     minLength: 1
+  EchoPayeeId:
+    type: string
+    description: This is the Echo Payee ID. The Payor transaction is identified with their Echo Payee ID.
+    maxLength: 30
+    minLength: 1
   PayeeFirstName: 
      type: string
      description: This is the first name of the Payee.
@@ -21,15 +25,6 @@ properties:
   PayeeLastName:
       type: string
       description: This is the last name of the Payee.
-      maxLength: 100
-  PayeeMobilePhoneNumber:
-      type: string
-      description: This is the mobile number of the Payee.
-      maxLength: 10
-  Payeeemailaddress:
-      type: string
-      description: This is the email ID of the Payee.
-      pattern: ^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$
       maxLength: 100
   PaymentAmount:
       type: string
