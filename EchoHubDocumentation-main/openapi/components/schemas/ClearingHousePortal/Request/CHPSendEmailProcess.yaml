@@ -15,13 +15,7 @@ properties:
     description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
     maxLength: 100
     minLength: 1
-  
-  Email: 
-    type: string
-    description: This is the email address of a clearinghouse user/admin/ECHO admin.
-    maxLength: 250
-    minLength: 1
-    
+      
   OTPExpiration: 
     type: number
     description: This refers to the specific expiry time of the OTP in minutes. It is the default limit set for all accounts.
