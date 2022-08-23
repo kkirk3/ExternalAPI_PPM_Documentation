@@ -1,0 +1,92 @@
+required:
+  - RequestValueType
+  - RequestValue
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    maxLength: 50
+    minLength: 1
+
+  LoggedInUserName: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+  
+  EchoSecAuthorizationToken: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+ 
+  UserName: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+  
+  FirstName: 
+    type: string
+    description: This is the first name of the clearinghouse user/admin/ECHO admin.
+    maxLength: 100
+    minLength: 1
+    
+  LastName: 
+    type: string
+    description: This is the last name of a clearinghouse user/admin/ECHO admin.
+    maxLength: 100
+    minLength: 1
+    
+  Email: 
+    type: string
+    description: This is the email address of a clearinghouse user/admin/ECHO admin.
+    maxLength: 250
+    minLength: 1
+    
+  Phone: 
+    type: integer
+    description: This is the phone number of a clearinghouse user/admin/ECHO admin.
+    maxLength: 10
+    minLength: 10
+    
+  JobTitle: 
+    type: string
+    description: This is a term that describes a particular job position held by a clearinghouse user/admin/ECHO admin.
+    maxLength: 100
+    minLength: 1
+
+  ClearinghouseName: 
+    type: string
+    description: This is the name of the clearinghouse that the user/admin/ECHO admin is associated with.
+    maxLength: 100
+    minLength: 1
+    
+  StatusId: 
+    type: integer
+    description: This field is required when the name of a clearinghouse that the user/admin/ECHO admin is associated with is not in the clearinghouse list. 
+
+  ReasonId: 
+    type: integer
+    description: This field is required when the name of a clearinghouse that the user/admin/ECHO admin is associated with is not in the clearinghouse list.     
+ 
+  OtherReason: 
+      type: string
+      description: This is the name of the clearinghouse that the user/admin/ECHO admin is associated with.
+      maxLength: 100
+      minLength: 1 
+  
+  IsVerified: 
+    type: boolean
+    description: This field is required when the name of a clearinghouse that the user/admin/ECHO admin is associated with is not in the clearinghouse list.     
+
+  RoleId: 
+    type: integer
+    description: This field is required when the name of a clearinghouse that the user/admin/ECHO admin is associated with is not in the clearinghouse list.     
+     
+  ResetPassword: 
+    type: boolean
+    description: This field is required when the name of a clearinghouse that the user/admin/ECHO admin is associated with is not in the clearinghouse list.     
+               

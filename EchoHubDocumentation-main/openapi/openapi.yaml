@@ -73,6 +73,8 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetActiveCHByUserName.yaml
   /api/ClearingHouse/v1/Portal [Register CH Admin]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterCHAdmin.yaml
+  /api/ClearingHouse/v1/Portal [Edit User]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml    
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
