@@ -1,0 +1,78 @@
+post:
+  tags:
+    - B2B Portal
+     
+  summary: B2B Portal - On Demand eCheck
+  x-internal: true
+  operationId: B2BPORTALONDEMANDECHECK
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
+   
+   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+ 
+  requestBody:
+    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/B2B/Request/B2BOnDemandeCheck.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/B2B/Response/B2BOnDemandeCheck.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  TransResponseCode: "001"
+                  TransResponseCodeDesc: User Registered
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  ErrorCode: Error code number
+                  ErrorDesc: Error description
+
+            mapName_1014:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1014"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1014"
+                  ErrorDesc: Invalid or Missing Draft Number
+                        
+            mapName_1059:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1059"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "1059"
+                  ErrorDesc: Invalid or Missing Authorization Token

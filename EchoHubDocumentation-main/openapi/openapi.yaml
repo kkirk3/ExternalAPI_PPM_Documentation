@@ -36,6 +36,27 @@ paths:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHCancel.yaml
   /api/DirectPay/ACH/v1/ACHStatus:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
+    
+  #B2B
+  /api/B2B/v1/Portal [eCheck PDF]:
+    $ref: paths/B2B/api@B2B@v1@Portal@eCheckPDF.yaml
+  /api/B2B/v1/Portal [Portal Login]:    
+    $ref: paths/B2B/api@B2B@v1@Portal@PortalLogin.yaml
+  /api/B2B/v1/Portal [On Demand eCheck]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@OnDemandeCheck.yaml
+  /api/B2B/v1/Portal [Email Notification]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@EmailNotification.yaml
+  /api/B2B/v1/Portal [Get Business Account Profile]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@GetBusinessAccountProfile.yaml
+  /api/B2B/v1/Portal [Update Business Account]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@UpdateBusinessAccount.yaml
+  /api/B2B/v1/Portal [Enroll eCheck PDF]:
+    $ref: paths/B2B/api@B2B@v1@Portal@EnrolleCheckPDF.yaml
+  /api/B2B/v1/Portal [Get User Profile]:    
+    $ref: paths/B2B/api@B2B@v1@Portal@GetUserProfile.yaml
+  /api/B2B/v1/Portal [Update User Profile]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@UpdateUserProfile.yaml      
+
   #ClearingHousePotal 
   /api/ClearingHouse/v1/Portal [Register User]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterUser.yaml
