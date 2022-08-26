@@ -199,6 +199,11 @@ paths:
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  
+  #SelectPay Portal
+  /api/SelectPay/v1/Portal [eCheck]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheck.yaml
+
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml
