@@ -12,14 +12,14 @@ post:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
-   
-   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   This API enables the B2B portal application to update the user profile information. The B2B portal consumes this endpoint and helps the user to keep the profile information current.  
+
+   When there is a request from a B2B form to update a user profile, the data is passed to ECHO Hub. The ECHO Hub system validates the data, and the request is then sent to the B2B library. Once the profile of the user is updated, ECHO Hub sends a success message.     
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
  
   requestBody:
-    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    description: This endpoint is used to update the user profile information.
     required: true
     content:
       application/json:

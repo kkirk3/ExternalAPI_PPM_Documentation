@@ -2,9 +2,9 @@ post:
   tags:
     - B2B Portal
      
-  summary: B2B Portal - Enroll eCheck PDF
+  summary: B2B Enroll App – Payment Selection 
   x-internal: true
-  operationId: B2BPORTALENROLLECHECKPRD
+  operationId: B2BPORTALENROLLAPPPAYMENTSELECTION
   parameters:
     - name: x-Authorization
       in: header
@@ -12,26 +12,26 @@ post:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
-   
-   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   The B2B enroll application uses this API to make a request to submit a user registration for a particular payment type. This endpoint enables user registration and payment conversion.  
+
+   When there is a request from a B2B form for the user registration and payment type selection, the data is passed to ECHO Hub. The ECHO Hub system validates the data, and the request is then sent to the B2B library. Once the user is registered and payment is converted, ECHO Hub sends a success message.  
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
  
   requestBody:
-    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    description: This endpoint helps make a request to submit a user registration.
     required: true
     content:
       application/json:
         schema: 
-          $ref: ../../components/schemas/B2B/Request/B2BEnrolleCheckPDF.yaml
+          $ref: ../../components/schemas/B2B/Request/B2BPaymentSelectionRequest.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/B2B/Response/B2BEnrolleCheckPDF.yaml
+            $ref: ../../components/schemas/B2B/Response/B2BPaymentSelectionResponse.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          

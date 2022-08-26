@@ -1,0 +1,31 @@
+required:
+  - APIFormIdentifierId
+  - AuthorizationToken
+  - paymentType
+  - TaxID
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description: The APIFormIdentifierID is 64. This unique identifier serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    maxLength: 50
+    minLength: 1
+
+  AuthorizationToken: 
+    type: string
+    description: This is a string of code that is used to authorize a user on the API.
+    maxLength: 200
+    minLength: 1
+      
+  paymentType: 
+    type: string
+    description: This is the type of payment used to make a transaction to the payee which can be virtual cards, ACH deposit to a checking account, eChecks (free or fee), or printed and regular electronic checks for instant printing and deposit. 
+    maxLength: 100
+    minLength: 1
+
+  TaxID: 
+    type: string
+    description: TThis is a 9-digit unique identification number of the provider. Tax ID is used to get the provider location details for eChecks.
+    maxLength: 9
+    minLength: 1

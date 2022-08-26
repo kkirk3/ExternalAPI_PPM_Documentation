@@ -7,18 +7,18 @@ properties:
  
   APIFormIdentifierId: 
     type: string
-    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description: The APIFormIdentifierID is 65. This unique identifier serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     maxLength: 50
     minLength: 1
 
   AuthoraizationToken: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is a string of code that is used to authorize a user on the API.
     maxLength: 200
     minLength: 1
           
   Email: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the email ID of the payee.
     maxLength: 100
     minLength: 1

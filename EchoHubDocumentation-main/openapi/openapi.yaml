@@ -37,7 +37,7 @@ paths:
   /api/DirectPay/ACH/v1/ACHStatus:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
     
-  #B2B
+  #B2B Portal
   /api/B2B/v1/Portal [eCheck PDF]:
     $ref: paths/B2B/api@B2B@v1@Portal@eCheckPDF.yaml
   /api/B2B/v1/Portal [Portal Login]:    
@@ -51,7 +51,7 @@ paths:
   /api/B2B/v1/Portal [Update Business Account]:  
     $ref: paths/B2B/api@B2B@v1@Portal@UpdateBusinessAccount.yaml
   /api/B2B/v1/Portal [Enroll eCheck PDF]:
-    $ref: paths/B2B/api@B2B@v1@Portal@EnrolleCheckPDF.yaml
+    $ref: paths/B2B/api@B2B@v1@Portal@PaymentSelection.yaml
   /api/B2B/v1/Portal [Get User Profile]:    
     $ref: paths/B2B/api@B2B@v1@Portal@GetUserProfile.yaml
   /api/B2B/v1/Portal [Update User Profile]:  
@@ -260,6 +260,16 @@ tags:
     description: |
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
+
+  #B2B
+  - name: B2B Potal
+    description: |
+     B2B application portal helps process payments from one business (Payor) to another business (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, B2B only initiates the payment processing and issues the payments through third-party services.   
+    
+     When the payee receives an electronic notification that their payment is readya virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.  
+     
+     In addition, the consumer is offered features like account and user management, payment and account activity history, and payment preferences specific to a payor. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery. 
+  
   #ClearingHousePotal
   - name: Clearinghouse Portal
     description: |
@@ -401,6 +411,7 @@ tags:
           * Zelle payment status
           * Zelle payment cancel
 
+    
 
       
       

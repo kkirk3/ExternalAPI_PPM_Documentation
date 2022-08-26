@@ -14,90 +14,90 @@ properties:
  
   APIFormIdentifierId: 
     type: string
-    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description: The APIFormIdentifierID is 66. This unique identifier serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     maxLength: 50
     minLength: 1
 
   AuthorizationToken: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is a string of code that is used to authorize a user on the API.
     maxLength: 200
     minLength: 1
 
   Email: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the email ID of the payee.
     maxLength: 100
     minLength: 1
  
   FirstName: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the first name of the payee.
     maxLength: 50
     minLength: 1
       
   LastName: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the last name of the payee.
     maxLength: 50
     minLength: 1
     
   Title: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is a word such as 'Mr' or 'Mrs' that is used before the payee’s name.
     maxLength: 255
     minLength: 1
               
   Addressline1: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: Address Line 1 is generally for the civic number and street name (street address) where the payee is located.
     maxLength: 255
     minLength: 1
       
   Addressline2: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: Address Line 2 is the additional address information like the suite or unit number where the payee is located.
     maxLength: 255
     minLength: 1
     
   City: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the name of the city where the payee is located.
     maxLength: 50
     minLength: 1
         
   State: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the name of the state where the payee is located.
     maxLength: 50
     minLength: 1
       
   Zip: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the zip code of the location where the transaction was performed.
     maxLength: 50
     minLength: 1
           
   PhoneNumber: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the phone number of the payee.
     maxLength: 10
     minLength: 1
       
   AlternatePhone: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description:  This is the alternate phone number of the payee.
     maxLength: 10
     minLength: 1
             
   Fax: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the fax number of the payee. 
     maxLength: 10
     minLength: 1
           
   Website: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is the website of the payee.
     maxLength: 255
     minLength: 1            
