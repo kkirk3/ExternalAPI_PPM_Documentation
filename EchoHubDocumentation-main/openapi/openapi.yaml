@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: ECHOHUB API
   description: >-
-    API Endpoints for the ECHOHUB Project. Team
+    API Endpoints for the ECHOHUB clients.
 
 
     # Authentication
@@ -10,24 +10,20 @@ info:
     Authentication is a process by which a system verifies the identity of a
     user accessing this API.       
 
-
     <!-- ReDoc-Inject: <security-definitions> -->
   version: v1
-  termsOfService: https://example.com
+  
   contact:
-    name: ECHO Health Inc.
-    url: https://echohealthinc.com
+    name: ECHO Health Inc.    
     email: Echo_Hub@echohealthinc.com
-externalDocs:
-  description: |
-    description external docs text
-  url: 'https://example.server.io'
+
 servers:
-  - url: /v1
+  - url: https://dev-api.echohealthinc.com/echoexternalapi/api/v1
+  - url: https://qa-api.echohealthinc.com/echoexternalapi/api/v1
   
 paths:
   #Authorization
-  /api/Authentication/v1/Authentication:
+  /GetToken:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   #ACH
   /api/DirectPay/ACH/v1/ACHPayment:
@@ -161,7 +157,7 @@ paths:
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml 
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
