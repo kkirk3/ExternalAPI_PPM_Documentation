@@ -24,7 +24,7 @@ properties:
     description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
       
   GuestUserToken: 
-    type: String
+    type: string
     description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
     maxLength: 500
     minLength: 1    
