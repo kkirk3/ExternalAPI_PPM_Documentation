@@ -1,14 +1,16 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
-# apiDefinitions:
-#   main: openapi/openapi.yaml
+apiDefinitions:
+  main: openapi/openapi.yaml
 lint:
   extends:
     - recommended
   rules:
     no-unused-components: warning
-    
+features.openapi:
+  hideDownloadButton: true   
 referenceDocs:
   showConsole: false
+  hideDownloadButton: false
   htmlTemplate: ./docs/index.html
   theme:
     colors:
