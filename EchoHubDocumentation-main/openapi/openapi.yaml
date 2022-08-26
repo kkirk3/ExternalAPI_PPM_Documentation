@@ -3,7 +3,9 @@ info:
   title: ECHOHUB API
   description: >-
     API Endpoints for the ECHOHUB clients.
-
+    
+        QA url: https://qa-api.echohealthinc.com/echoexternalapi/api              
+        Prod Url : https://api.echohealthinc.com/echoexternalapi/api
 
     # Authentication
 
@@ -11,12 +13,14 @@ info:
     user accessing this API.       
 
     <!-- ReDoc-Inject: <security-definitions> -->
+    
   version: v1
   
   contact:
     name: ECHO Health Inc.    
     email: Echo_Hub@echohealthinc.com
-
+    
+    
 servers:
   - url: https://dev-api.echohealthinc.com/echoexternalapi/api/v1
   - url: https://qa-api.echohealthinc.com/echoexternalapi/api/v1
