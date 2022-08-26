@@ -9,7 +9,7 @@ lint:
     
 referenceDocs:
   showConsole: false
-  hideDownloadButton: true
+  downloadDefinitionUrl: invisible
   htmlTemplate: ./docs/index.html
   theme:
     colors:
