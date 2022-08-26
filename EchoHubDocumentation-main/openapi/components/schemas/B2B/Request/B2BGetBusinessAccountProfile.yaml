@@ -11,12 +11,12 @@ properties:
         
   AuthorizationToken: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is a string of code that is used to authorize a user on the API.
     maxLength: 200
     minLength: 1
 
   TaxID: 
     type: string
-    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    description: This is a 9-digit unique identification number of the provider. Tax ID is used to get the provider location details for eChecks.
     maxLength: 9
     minLength: 1
