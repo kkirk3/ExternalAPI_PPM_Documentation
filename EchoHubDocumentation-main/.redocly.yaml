@@ -6,8 +6,10 @@ lint:
     - recommended
   rules:
     no-unused-components: warning
+    
 referenceDocs:
   showConsole: false
+  hideDownloadButton: true
   htmlTemplate: ./docs/index.html
   theme:
     colors:
