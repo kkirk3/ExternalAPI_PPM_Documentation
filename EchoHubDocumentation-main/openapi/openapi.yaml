@@ -157,7 +157,7 @@ paths:
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml 
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
