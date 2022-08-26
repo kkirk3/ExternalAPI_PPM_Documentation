@@ -1,10 +1,10 @@
 post:
   tags:
-    - B2B Portal
+    - SelectPay Portal
      
-  summary: B2B Portal - eCheck PDF
+  summary: SelectPay Portal - Email Notification
   x-internal: true
-  operationId: B2BPORTALECHECKPDF
+  operationId: SELECTPORTALEMAILNOTIFICATION
   parameters:
     - name: x-Authorization
       in: header
@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema: 
-          $ref: ../../components/schemas/B2B/Request/B2BeCheckPDF.yaml
+          $ref: ../../components/schemas/SelectPay/Request/SelectPayEmailNotification.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/B2B/Response/B2BeCheckPDF.yaml
+            $ref: ../../components/schemas/SelectPay/Response/SelectPayEmailNotification.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
@@ -55,24 +55,13 @@ post:
                   ErrorCode: Error code number
                   ErrorDesc: Error description
 
-            mapName_1001:
+            mapName_1089:
               description: Please scroll the above dropdown list for more response codes
-              summary: "1001"
+              summary: "1089"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1001"
-                  ErrorDesc: Invalid or Missing Transaction ID
-                        
-            mapName_1004:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1004"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                  ErrorCode: "1004"
-                  ErrorDesc: Invalid or Missing Checking Account ID
+                  ErrorCode: "1089"
+                  ErrorDesc: Invalid or Missing NotificationType

@@ -1,0 +1,12 @@
+x-ApiKey:
+  schema:
+    type: string 
+  name: X-ApiKey
+  in: header
+  required: true
+x-ClientKey:
+  schema:
+    type: string 
+  name: X-ClientKey
+  in: header
+  required: true  

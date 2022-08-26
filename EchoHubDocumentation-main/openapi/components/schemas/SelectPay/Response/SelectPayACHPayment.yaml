@@ -1,0 +1,135 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          TransResponseCode:
+            type: string
+            description: Transaction response code number
+          TransResponseCodeDesc:
+            type: string
+            description: User Registered
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  Error code number
+          ErrorDesc:
+           type: string
+           description: Error description
+           
+      TransError JSON Validation Failed Code 1013:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1013"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing ApplicationId
+               
+      TransError JSON Validation Failed Code 1014:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1014"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Draft Number
+
+      TransError JSON Validation Failed Code 156:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "156"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Zip Code
+      
+      TransError JSON Validation Failed Code 1023:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1023"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing GuestUserToken
+
+      TransError JSON Validation Failed Code 162:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "162"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Routing Number
+            
+      TransError JSON Validation Failed Code 163:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "163"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Bank Account Number
+
+      TransError JSON Validation Failed Code 198:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "198"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Account Type
+            
+      TransError JSON Validation Failed Code 177:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "177"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Phone Number
+            
+      TransError JSON Validation Failed Code 1076:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1076"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Echo PayeeID

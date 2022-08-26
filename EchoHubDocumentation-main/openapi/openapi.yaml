@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: ECHOHUB API
   description: >-
-    API Endpoints for the ECHOHUB Project. Team
+    API Endpoints for the ECHOHUB clients.
 
 
     # Authentication
@@ -10,24 +10,20 @@ info:
     Authentication is a process by which a system verifies the identity of a
     user accessing this API.       
 
-
     <!-- ReDoc-Inject: <security-definitions> -->
   version: v1
-  termsOfService: https://example.com
+  
   contact:
-    name: ECHO Health Inc.
-    url: https://echohealthinc.com
+    name: ECHO Health Inc.    
     email: Echo_Hub@echohealthinc.com
-externalDocs:
-  description: |
-    description external docs text
-  url: 'https://example.server.io'
+
 servers:
-  - url: /v1
+  - url: https://dev-api.echohealthinc.com/echoexternalapi/api/v1
+  - url: https://qa-api.echohealthinc.com/echoexternalapi/api/v1
   
 paths:
   #Authorization
-  /api/Authentication/v1/Authentication:
+  /GetToken:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   #ACH
   /api/DirectPay/ACH/v1/ACHPayment:
@@ -161,7 +157,7 @@ paths:
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml 
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
@@ -199,6 +195,29 @@ paths:
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  
+  #SelectPay Portal
+  /api/SelectPay/v1/Portal [Landing Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@LandingPage.yaml  
+  /api/SelectPay/v1/Portal [User Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@UserPage.yaml   
+  /api/SelectPay/v1/Portal [eCheck]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheck.yaml
+  /api/SelectPay/v1/Portal [Payment History]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentHistory.yaml
+  /api/SelectPay/v1/Portal [eCheck PDF]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheckPDF.yaml
+  /api/SelectPay/v1/Portal [Routing Number]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@RoutingNumber.yaml 
+  /api/SelectPay/v1/Portal [Payment Form]:    
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentForm.yaml    
+  /api/SelectPay/v1/Portal [Email Notification]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@EmailNotification.yaml
+  /api/SelectPay/v1/Portal [ACH Payment Form]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
+ 
+
+
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml
