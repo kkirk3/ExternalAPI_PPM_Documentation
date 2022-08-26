@@ -284,8 +284,8 @@ tags:
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
 
-  #B2B
-  - name: B2B Potal
+  #B2B 
+  - name: B2B Portal
     description: |
      B2B application portal helps process payments from one business (Payor) to another business (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, B2B only initiates the payment processing and issues the payments through third-party services.   
     
