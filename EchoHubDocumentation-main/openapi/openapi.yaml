@@ -4,8 +4,8 @@ info:
   description: >-
     API Endpoints for the ECHOHUB clients.
     
-        QA url: https://qa-api.echohealthinc.com/echoexternalapi/api              
-        Prod Url : https://api.echohealthinc.com/echoexternalapi/api
+        SandBox url: https://sandbox.echohealthincapi.com/
+        Production Url : https://api.echohealthincapi.com/
 
     # Authentication
 
@@ -22,8 +22,8 @@ info:
     
     
 servers:
-  - url: https://dev-api.echohealthinc.com/echoexternalapi/api/v1
-  - url: https://qa-api.echohealthinc.com/echoexternalapi/api/v1
+  - url: https://sandbox.echohealthincapi.com/api/v1
+  - url: https://api.echohealthincapi.com/api/v1
   
 paths:
   #Authorization
