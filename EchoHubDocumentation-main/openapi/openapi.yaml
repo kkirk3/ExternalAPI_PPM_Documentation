@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: ECHOHUB API
   description: >-
-    API Endpoints for the ECHOHUB Project. Team
+    API Endpoints for the ECHOHUB Project Team
 
 
     # Authentication
