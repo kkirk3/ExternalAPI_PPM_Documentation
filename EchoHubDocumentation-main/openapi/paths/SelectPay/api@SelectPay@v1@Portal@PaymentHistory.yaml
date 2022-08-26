@@ -2,9 +2,9 @@ post:
   tags:
     - SelectPay Portal
      
-  summary: SelectPay Portal - eCheck
+  summary: SelectPay Portal - Payment History
   x-internal: true
-  operationId: SELECTPORTALECHECK
+  operationId: SELECTPORTALPAYMENTHISTORY
   parameters:
     - name: x-Authorization
       in: header
@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema: 
-          $ref: ../../components/schemas/SelectPay/Request/SelectPayeCheck.yaml
+          $ref: ../../components/schemas/SelectPay/Request/SelectPayPaymentHistory.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/SelectPay/Response/SelectPayeCheck.yaml
+            $ref: ../../components/schemas/SelectPay/Response/SelectPayPaymentHistory.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          

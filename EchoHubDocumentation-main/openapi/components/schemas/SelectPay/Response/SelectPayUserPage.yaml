@@ -73,13 +73,3 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Zip Code
-      
-      TransError JSON Validation Failed Code 1023:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1023"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing GuestUserToken

@@ -201,8 +201,26 @@ paths:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
   
   #SelectPay Portal
+  /api/SelectPay/v1/Portal [Landing Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@LandingPage.yaml  
+  /api/SelectPay/v1/Portal [User Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@UserPage.yaml   
   /api/SelectPay/v1/Portal [eCheck]:
     $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheck.yaml
+  /api/SelectPay/v1/Portal [Payment History]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentHistory.yaml
+  /api/SelectPay/v1/Portal [eCheck PDF]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheckPDF.yaml
+  /api/SelectPay/v1/Portal [Routing Number]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@RoutingNumber.yaml 
+  /api/SelectPay/v1/Portal [Payment Form]:    
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentForm.yaml    
+  /api/SelectPay/v1/Portal [Email Notification]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@EmailNotification.yaml
+  /api/SelectPay/v1/Portal [ACH Payment Form]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
+ 
+
 
   #Send Email
   /api/Messaging/v1/SendEmail:

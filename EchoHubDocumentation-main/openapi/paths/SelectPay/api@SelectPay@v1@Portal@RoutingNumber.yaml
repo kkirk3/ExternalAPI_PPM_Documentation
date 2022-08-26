@@ -2,9 +2,9 @@ post:
   tags:
     - SelectPay Portal
      
-  summary: SelectPay Portal - eCheck
+  summary: SelectPay Portal - Routing Number
   x-internal: true
-  operationId: SELECTPORTALECHECK
+  operationId: SELECTPORTALROUTINGNUMBER
   parameters:
     - name: x-Authorization
       in: header
@@ -24,14 +24,14 @@ post:
     content:
       application/json:
         schema: 
-          $ref: ../../components/schemas/SelectPay/Request/SelectPayeCheck.yaml
+          $ref: ../../components/schemas/SelectPay/Request/SelectPayRoutingNumber.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/SelectPay/Response/SelectPayeCheck.yaml
+            $ref: ../../components/schemas/SelectPay/Response/SelectPayRoutingNumber.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
@@ -98,3 +98,14 @@ post:
                 TransError:
                   ErrorCode: "1023"
                   ErrorDesc: Invalid or Missing GuestUserToken
+
+            mapName_162:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "162"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  ErrorCode: "162"
+                  ErrorDesc: Invalid or Missing Routing Number
