@@ -2,7 +2,7 @@ post:
   tags:
     - SelectPay Portal
      
-  summary: SelectPay Portal - Landiing Page
+  summary: SelectPay Portal - Landing Page
   x-internal: true
   operationId: SELECTPORTALLANDINGPAGE
   parameters:
