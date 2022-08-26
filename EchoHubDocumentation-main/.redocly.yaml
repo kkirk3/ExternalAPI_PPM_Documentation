@@ -1,6 +1,6 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
-apiDefinitions:
-  main: openapi/openapi.yaml
+# apiDefinitions:
+#   main: openapi/openapi.yaml
 lint:
   extends:
     - recommended
@@ -9,7 +9,6 @@ lint:
     
 referenceDocs:
   showConsole: false
-  downloadDefinitionUrl: invisible
   htmlTemplate: ./docs/index.html
   theme:
     colors:
