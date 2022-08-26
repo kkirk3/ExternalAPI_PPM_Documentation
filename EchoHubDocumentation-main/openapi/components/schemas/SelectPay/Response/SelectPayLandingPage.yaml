@@ -44,42 +44,12 @@ properties:
            type: string
            description: Error description
            
-      TransError JSON Validation Failed Code 1013:
+      TransError JSON Validation Failed Code 1012:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "1013"
+            description: "1012"
           ErrorDesc:
             type: string
-            description: Invalid or Missing ApplicationId
-               
-      TransError JSON Validation Failed Code 1014:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1014"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing Draft Number
-
-      TransError JSON Validation Failed Code 156:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "156"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing Zip Code
-      
-      TransError JSON Validation Failed Code 1023:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1023"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing GuestUserToken
+            description: Invalid or Missing ApplicationIdentifier

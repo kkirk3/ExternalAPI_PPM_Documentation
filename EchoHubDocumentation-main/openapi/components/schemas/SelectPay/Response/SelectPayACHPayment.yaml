@@ -83,3 +83,53 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing GuestUserToken
+
+      TransError JSON Validation Failed Code 162:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "162"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Routing Number
+            
+      TransError JSON Validation Failed Code 163:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "163"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Bank Account Number
+
+      TransError JSON Validation Failed Code 198:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "198"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Account Type
+            
+      TransError JSON Validation Failed Code 177:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "177"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Phone Number
+            
+      TransError JSON Validation Failed Code 1076:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1076"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Echo PayeeID
