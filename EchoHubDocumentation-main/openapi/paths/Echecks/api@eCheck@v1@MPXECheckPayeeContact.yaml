@@ -34,15 +34,15 @@ post:
                   ReponseCode: Response for Payment response code 001
                   ReponseCodeDesc: Successful Transaction                  
                   TransLog:
-                        CardBlockCode: Card Block Code
-                        Type: Type Of Payment
-                        NumberOfAuth: Number Of Auth
-                        NumberOfTxns: Number Of Transactions
-                        ResultCode: Result Code
-                        ResultMessage: Result Message
-                        DeluxeResponseCode: Deluxe Response Code                              
-                        DeluxeMessage: Deluxe Message
-                        IsDuplicate: Yes/No
+                  -      CardBlockCode: Card Block Code
+                         Type: Type Of Payment
+                         NumberOfAuth: Number Of Auth
+                         NumberOfTxns: Number Of Transactions
+                         ResultCode: Result Code
+                         ResultMessage: Result Message
+                         DeluxeResponseCode: Deluxe Response Code                              
+                         DeluxeMessage: Deluxe Message
+                         IsDuplicate: Yes/No
               mapName1:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "900"
@@ -51,15 +51,15 @@ post:
                       ReponseCodeDesc: Transaction Failure
                       ResponseTransactionID: Transaction Number
                       TransError:
-                        CardBlockCode: Card Block Code
-                        Type : Type Of Payment
-                        NumberOfAuth: NumberOfAuth
-                        NumberOfTxns: Number Of Transactions
-                        ResultCode: Result Code
-                        ResultMessage: Result Message
-                        DeluxeResponseCode: Deluxe Response Code
-                        DeluxeMessage: Deluxe Message
-                        IsDuplicate: Yes/No  
+                       -    CardBlockCode: Card Block Code
+                            Type : Type Of Payment
+                            NumberOfAuth: NumberOfAuth
+                            NumberOfTxns: Number Of Transactions
+                            ResultCode: Result Code
+                            ResultMessage: Result Message
+                            DeluxeResponseCode: Deluxe Response Code
+                            DeluxeMessage: Deluxe Message
+                            IsDuplicate: Yes/No  
               mapName2:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "909"
@@ -67,9 +67,9 @@ post:
                       ReponseCode: Response for Payment response code 909
                       ReponseCodeDesc: Invalid JSON                
                       TransError:
-                        ErrorCode: 909 
-                        ErrorCodeDesc : Invalid JSON
-                        creationdate: Date and Time of the Response
+                       -  ErrorCode: 909 
+                          ErrorCodeDesc : Invalid JSON
+                          creationdate: Date and Time of the Response
               mapName3:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "150"
@@ -78,8 +78,8 @@ post:
                       ReponseCodeDesc: Invalid JSON
                       ResponseTransactionID: Transaction Number                
                       TransError:
-                        ErrorCode: 150 
-                        ErrorCodeDesc : Invalid or Missing Tax ID                        
+                      -  ErrorCode: 150 
+                         ErrorCodeDesc : Invalid or Missing Tax ID                        
               mapName4:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "159"
@@ -88,8 +88,8 @@ post:
                       ReponseCodeDesc: Invalid JSON
                       ResponseTransactionID: Transaction Number                
                       TransError:
-                        ErrorCode: 159 
-                        ErrorCodeDesc : Invalid or Missing Check Number
+                      -  ErrorCode: 159 
+                         ErrorCodeDesc : Invalid or Missing Check Number
               mapName5:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "1008"
@@ -98,8 +98,8 @@ post:
                       ReponseCodeDesc: Invalid JSON
                       ResponseTransactionID: Transaction Number                
                       TransError:
-                        ErrorCode: 1008 
-                        ErrorCodeDesc : Invalid or Missing Request Type
+                      -  ErrorCode: 1008 
+                         ErrorCodeDesc : Invalid or Missing Request Type
                                               
                                
                     
