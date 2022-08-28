@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: User Registered
+                 - TransResponseCode: "001"
+                   TransResponseCodeDesc: User Registered
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                 - ErrorCode: Error code number
+                   ErrorDesc: Error description
 
             mapName_1013:
               description: Please scroll the above dropdown list for more response codes
@@ -63,8 +63,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1013"
-                  ErrorDesc: Invalid or Missing ApplicationId
+                 - ErrorCode: "1013"
+                   ErrorDesc: Invalid or Missing ApplicationId
                         
             mapName_1014:
               description: Please scroll the above dropdown list for more response codes
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1014"
-                  ErrorDesc: Invalid or Missing Draft Number
+                 - ErrorCode: "1014"
+                   ErrorDesc: Invalid or Missing Draft Number
 
             mapName_156:
               description: Please scroll the above dropdown list for more response codes
@@ -85,8 +85,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "156"
-                  ErrorDesc: Invalid or Missing Zip Code
+                 - ErrorCode: "156"
+                   ErrorDesc: Invalid or Missing Zip Code
 
             mapName_1023:
               description: Please scroll the above dropdown list for more response codes
@@ -96,8 +96,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1023"
-                  ErrorDesc: Invalid or Missing GuestUserToken
+                 - ErrorCode: "1023"
+                   ErrorDesc: Invalid or Missing GuestUserToken
 
             mapName_162:
               description: Please scroll the above dropdown list for more response codes
@@ -107,8 +107,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "162"
-                  ErrorDesc: Invalid or Missing Routing Number
+                 - ErrorCode: "162"
+                   ErrorDesc: Invalid or Missing Routing Number
 
             mapName_163:
               description: Please scroll the above dropdown list for more response codes
@@ -118,8 +118,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "163"
-                  ErrorDesc: Invalid or Missing Bank Account Number
+                 - ErrorCode: "163"
+                   ErrorDesc: Invalid or Missing Bank Account Number
 
             mapName_198:
               description: Please scroll the above dropdown list for more response codes
@@ -129,8 +129,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "198"
-                  ErrorDesc: Invalid or Missing Account Type
+                 - ErrorCode: "198"
+                   ErrorDesc: Invalid or Missing Account Type
 
             mapName_177:
               description: Please scroll the above dropdown list for more response codes
@@ -140,8 +140,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "177"
-                  ErrorDesc: Invalid or Missing Phone Number
+                 - ErrorCode: "177"
+                   ErrorDesc: Invalid or Missing Phone Number
 
             mapName_1076:
               description: Please scroll the above dropdown list for more response codes
@@ -151,5 +151,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1076"
-                  ErrorDesc: Invalid or Missing Echo PayeeID
+                 - ErrorCode: "1076"
+                   ErrorDesc: Invalid or Missing Echo PayeeID

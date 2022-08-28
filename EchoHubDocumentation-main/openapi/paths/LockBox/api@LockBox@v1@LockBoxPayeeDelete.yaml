@@ -34,8 +34,8 @@ delete:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  ResponseCode: "001"
-                  ResponseCodeDesc: Payee Delete Success
+                 - ResponseCode: "001"
+                   ResponseCodeDesc: Payee Delete Success
 
                     
             mapName_900:   
@@ -46,6 +46,6 @@ delete:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                   - ErrorCode: Error code number
+                     ErrorDesc: Error description
                         
