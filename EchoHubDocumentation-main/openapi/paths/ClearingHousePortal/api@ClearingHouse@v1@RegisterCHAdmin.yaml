@@ -33,8 +33,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: Clearing House Admin Registered.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Clearing House Admin Registered.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -44,8 +44,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                -    ErrorCode: Error code number
+                     ErrorDesc: Error description
 
             mapName_2016:
               description: Please scroll the above dropdown list for more response codes
@@ -55,8 +55,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "2016"
-                  ErrorDesc: Invalid or Missing Key
+                -  ErrorCode: "2016"
+                   ErrorDesc: Invalid or Missing Key
 
             mapName_1035:
               description: Please scroll the above dropdown list for more response codes
@@ -66,8 +66,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1035"
-                  ErrorDesc: Invalid or Missing UserName
+                -  ErrorCode: "1035"
+                   ErrorDesc: Invalid or Missing UserName
 
             mapName_177:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "177"
-                  ErrorDesc: Invalid or Missing PhoneNumber
+                -  ErrorCode: "177"
+                   ErrorDesc: Invalid or Missing PhoneNumber
 
             mapName_2025:
               description: Please scroll the above dropdown list for more response codes
@@ -88,5 +88,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "2025"
-                  ErrorDesc: Invalid or Missing Job Title
+                -  ErrorCode: "2025"
+                   ErrorDesc: Invalid or Missing Job Title

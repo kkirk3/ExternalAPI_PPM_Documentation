@@ -42,8 +42,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: Clearing House Portal details retrived.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Clearing House Portal details retrived.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -53,8 +53,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
 
             mapName_1073:
               description: Please scroll the above dropdown list for more response codes
@@ -64,6 +64,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1073"
-                  ErrorDesc: Invalid or Missing Domain Name                  
+                -  ErrorCode: "1073"
+                   ErrorDesc: Invalid or Missing Domain Name                  
                     

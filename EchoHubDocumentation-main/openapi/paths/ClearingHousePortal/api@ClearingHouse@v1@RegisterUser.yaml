@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: User Registered
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: User Registered
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
                     
             mapName_1035:
               description: Please scroll the above dropdown list for more response codes
@@ -63,8 +63,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1035"
-                  ErrorDesc: Invalid or Missing UserName
+                -  ErrorCode: "1035"
+                   ErrorDesc: Invalid or Missing UserName
                             
             mapName_174:
               description: Please scroll the above dropdown list for more response codes
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "174"
-                  ErrorDesc: Invalid or Missing FirstName
+                -  ErrorCode: "174"
+                   ErrorDesc: Invalid or Missing FirstName
                             
             mapName_175:
               description: Please scroll the above dropdown list for more response codes
@@ -85,8 +85,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "175"
-                  ErrorDesc: Invalid or Missing LastName
+                -  ErrorCode: "175"
+                   ErrorDesc: Invalid or Missing LastName
                            
             mapName_176:
               description: Please scroll the above dropdown list for more response codes
@@ -96,8 +96,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "176"
-                  ErrorDesc: Invalid or Missing Email Address
+                -  ErrorCode: "176"
+                   ErrorDesc: Invalid or Missing Email Address
                            
             mapName_177:
               description: Please scroll the above dropdown list for more response codes
@@ -107,8 +107,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "177"
-                  ErrorDesc: Invalid or Missing Phone Number
+                -  ErrorCode: "177"
+                   ErrorDesc: Invalid or Missing Phone Number
                             
             mapName_1075:
               description: Please scroll the above dropdown list for more response codes
@@ -118,8 +118,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1075"
-                  ErrorDesc: Invalid or Missing Job Title
+                -  ErrorCode: "1075"
+                   ErrorDesc: Invalid or Missing Job Title
                            
             mapName_1071:
               description: Please scroll the above dropdown list for more response codes
@@ -129,8 +129,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1071"
-                  ErrorDesc: Invalid or Missing ClearinghouseName
+                -  ErrorCode: "1071"
+                   ErrorDesc: Invalid or Missing ClearinghouseName
                          
             mapName_1072:
               description: Please scroll the above dropdown list for more response codes
@@ -140,6 +140,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1072"
-                  ErrorDesc: Invalid or Missing Other ClearinghouseName
+                -  ErrorCode: "1072"
+                   ErrorDesc: Invalid or Missing Other ClearinghouseName
                                                                                                                                                                                 

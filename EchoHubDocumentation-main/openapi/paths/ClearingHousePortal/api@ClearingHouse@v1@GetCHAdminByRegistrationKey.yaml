@@ -33,8 +33,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: Clearing House Admin Details Retrived.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Clearing House Admin Details Retrived.
 
                     
             mapName_900:   
@@ -45,8 +45,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                -    ErrorCode: Error code number
+                     ErrorDesc: Error description
                  
             mapName_2023:
               description: Please scroll the above dropdown list for more response codes
@@ -56,5 +56,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "2023"
-                  ErrorDesc: Invalid or Missing Registration Key   
+                -  ErrorCode: "2023"
+                   ErrorDesc: Invalid or Missing Registration Key   

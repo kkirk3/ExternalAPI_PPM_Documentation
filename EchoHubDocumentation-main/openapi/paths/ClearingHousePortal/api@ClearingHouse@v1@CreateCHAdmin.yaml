@@ -33,8 +33,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: Clearing House Admin Created.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Clearing House Admin Created.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -44,8 +44,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error code number
-                    ErrorDesc: Error description
+                  -  ErrorCode: Error code number
+                     ErrorDesc: Error description
       
             mapName_1071:
               description: Please scroll the above dropdown list for more response codes
@@ -55,8 +55,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1071"
-                  ErrorDesc: Invalid or Missing ClearinghouseName
+                -  ErrorCode: "1071"
+                   ErrorDesc: Invalid or Missing ClearinghouseName
 
             mapName_174:
               description: Please scroll the above dropdown list for more response codes
@@ -66,8 +66,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "174"
-                  ErrorDesc: Invalid or Missing LastName
+                -  ErrorCode: "174"
+                   ErrorDesc: Invalid or Missing LastName
 
             mapName_175:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "175"
-                  ErrorDesc: Invalid or Missing FirstName
+                -  ErrorCode: "175"
+                   ErrorDesc: Invalid or Missing FirstName
                                   
             mapName_176:
               description: Please scroll the above dropdown list for more response codes
@@ -88,8 +88,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "176"
-                  ErrorDesc: Invalid or Missing Email Address
+                -  ErrorCode: "176"
+                   ErrorDesc: Invalid or Missing Email Address
                  
             mapName_2015:
               description: Please scroll the above dropdown list for more response codes
@@ -99,5 +99,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "2015"
-                  ErrorDesc: Invalid ECHO Security Authorization Token 
+                -  ErrorCode: "2015"
+                   ErrorDesc: Invalid ECHO Security Authorization Token 
