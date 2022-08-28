@@ -43,5 +43,5 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  LogResponseCode: "001"
-                  LogResponseCodeDesc: Process Success
+                 - LogResponseCode: "001"
+                   LogResponseCodeDesc: Process Success

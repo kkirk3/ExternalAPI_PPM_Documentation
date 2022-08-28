@@ -50,10 +50,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  PaymentResponseCode: "001"
-                  PaymentResponseCodeDesc: Payment Successful
-                  PaymentTransaction: Payment Transaction Number
-                  PaymentTransactionMsg: Payment Transaction Message
+                 - PaymentResponseCode: "001"
+                   PaymentResponseCodeDesc: Payment Successful
+                   PaymentTransaction: Payment Transaction Number
+                   PaymentTransactionMsg: Payment Transaction Message
 
                     
             mapName_900:   
@@ -64,10 +64,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  PaymentResponseCode: "900"
-                  PaymentResponseCodeDesc: Payment Failed
-                  PaymentTransaction: Payment Transaction Number
-                  PaymentTransactionMsg: Payment Transaction Message
+                 - PaymentResponseCode: "900"
+                   PaymentResponseCodeDesc: Payment Failed
+                   PaymentTransaction: Payment Transaction Number
+                   PaymentTransactionMsg: Payment Transaction Message
                     
             mapName_1017:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1017"
-                  ErrorDesc: Invalid or Missing Payor Reference ID
+                 - ErrorCode: "1017"
+                   ErrorDesc: Invalid or Missing Payor Reference ID
             
             mapName_1018:
               description: Please scroll the above dropdown list for more response codes
@@ -88,8 +88,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                   ErrorCode: "1018"
-                   ErrorDesc: Invalid or Missing Pay Amount
+                  - ErrorCode: "1018"
+                    ErrorDesc: Invalid or Missing Pay Amount
 
             mapName_1015:
               description: Please scroll the above dropdown list for more response codes
@@ -99,8 +99,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1015"
-                  ErrorDesc: Invalid or Missing Payee First Name
+                 - ErrorCode: "1015"
+                   ErrorDesc: Invalid or Missing Payee First Name
 
             mapName_1016:
               description: Please scroll the above dropdown list for more response codes
@@ -110,8 +110,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payee Last Name
+                 - ErrorCode: "1016"
+                   ErrorDesc: Invalid or Missing Payee Last Name
 
             mapName_1001:
               description: Please scroll the above dropdown list for more response codes
@@ -121,8 +121,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1001"
-                  ErrorDesc: Invalid or Missing Vault Token
+                 - ErrorCode: "1001"
+                   ErrorDesc: Invalid or Missing Vault Token
 
             mapName_1019:
               description: Please scroll the above dropdown list for more response codes
@@ -132,8 +132,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1019"
-                  ErrorDesc: Invalid or Missing Addenda
+                 - ErrorCode: "1019"
+                   ErrorDesc: Invalid or Missing Addenda
 
             mapName_1020:
               description: Please scroll the above dropdown list for more response codes
@@ -143,8 +143,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1020"
-                  ErrorDesc: Invalid or Missing Sender Name
+                 - ErrorCode: "1020"
+                   ErrorDesc: Invalid or Missing Sender Name
 
             mapName_1021:
               description: Please scroll the above dropdown list for more response codes
@@ -154,8 +154,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1021"
-                  ErrorDesc: Invalid or Missing Zelle Bank
+                 - ErrorCode: "1021"
+                   ErrorDesc: Invalid or Missing Zelle Bank
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -165,5 +165,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID
+                 - ErrorCode: "1009"
+                   ErrorDesc: Invalid or Missing Pay Type ID

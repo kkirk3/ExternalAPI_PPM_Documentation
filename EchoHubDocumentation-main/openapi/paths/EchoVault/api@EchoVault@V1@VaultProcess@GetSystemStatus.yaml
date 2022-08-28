@@ -46,8 +46,8 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  StatusResponseCode: "001"
-                  StatusResponseCodeDesc: Status Verified
+                -  StatusResponseCode: "001"
+                   StatusResponseCodeDesc: Status Verified
 
                     
             mapName_900:   
@@ -58,6 +58,6 @@ get:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    ErrorCode: Error Code Number
-                    ErrorDesc: Error Description
+                -    ErrorCode: Error Code Number
+                     ErrorDesc: Error Description
                     
