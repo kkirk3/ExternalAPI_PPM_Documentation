@@ -51,10 +51,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Setup Success
-                  PayorSessionID: Payor Session ID
-                  ProcessType: Process Type
+                  -  VaultResponseCode: "001"
+                     VaultResponseCodeDesc: Vault Token Setup Success
+                     PayorSessionID: Payor Session ID
+                     ProcessType: Process Type
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -64,10 +64,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: "900"
-                  VaultResponseCodeDesc: Vault Token Setup Failed
-                  PayorSessionID: Payor Session ID
-                  ProcessType: Process Type
+                -  VaultResponseCode: "900"
+                   VaultResponseCodeDesc: Vault Token Setup Failed
+                   PayorSessionID: Payor Session ID
+                   ProcessType: Process Type
                     
             mapName_1012:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1012"
-                  ErrorDesc: Invalid or Missing Routing Number
+                -  ErrorCode: "1012"
+                   ErrorDesc: Invalid or Missing Routing Number
 
             mapName_1013:
               description: Please scroll the above dropdown list for more response codes
@@ -88,8 +88,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1013"
-                  ErrorDesc: Invalid or Missing Bank Account Number
+                -  ErrorCode: "1013"
+                   ErrorDesc: Invalid or Missing Bank Account Number
 
             mapName_1014:
               description: Please scroll the above dropdown list for more response codes
@@ -99,8 +99,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1014"
-                  ErrorDesc: Invalid or Missing Account Type
+                -  ErrorCode: "1014"
+                   ErrorDesc: Invalid or Missing Account Type
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -110,6 +110,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID
+                -  ErrorCode: "1009"
+                   ErrorDesc: Invalid or Missing Pay Type ID
           

@@ -50,10 +50,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Setup Success
-                  PayorSessionID: Payor Session ID
-                  ProcessType: Process Type
+                 - VaultResponseCode: "001"
+                   VaultResponseCodeDesc: Vault Token Setup Success
+                   PayorSessionID: Payor Session ID
+                   ProcessType: Process Type
 
                     
             mapName_900:   
@@ -64,10 +64,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: "900"
-                  VaultResponseCodeDesc: Vault Token Setup Failed
-                  PayorSessionID: Payor Session ID
-                  ProcessType: Process Type
+                 - VaultResponseCode: "900"
+                   VaultResponseCodeDesc: Vault Token Setup Failed
+                   PayorSessionID: Payor Session ID
+                   ProcessType: Process Type
 
             mapName_1015:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1015"
-                  ErrorDesc: Invalid or Missing Payee First Name       
+                 - ErrorCode: "1015"
+                   ErrorDesc: Invalid or Missing Payee First Name       
                         
             mapName_1016:
               description: Please scroll the above dropdown list for more response codes
@@ -88,8 +88,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payee Last Name          
+                 - ErrorCode: "1016"
+                   ErrorDesc: Invalid or Missing Payee Last Name          
                         
             mapName_1010:
               description: Please scroll the above dropdown list for more response codes
@@ -99,8 +99,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1010"
-                  ErrorDesc: Invalid or Missing Email Address          
+                 - ErrorCode: "1010"
+                   ErrorDesc: Invalid or Missing Email Address          
                       
             mapName_1011:
               description: Please scroll the above dropdown list for more response codes
@@ -110,8 +110,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1011"
-                  ErrorDesc: Invalid or Missing Mobile Number          
+                 - ErrorCode: "1011"
+                   ErrorDesc: Invalid or Missing Mobile Number          
                         
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -121,6 +121,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID
+                 - ErrorCode: "1009"
+                   ErrorDesc: Invalid or Missing Pay Type ID
                     

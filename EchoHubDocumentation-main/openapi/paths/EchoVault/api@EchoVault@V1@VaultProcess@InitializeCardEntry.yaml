@@ -47,22 +47,22 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Success
-                  PayTypeID: PayTypeID
-                  CardNumber: CardNumber
-                  ExpiryInfo: ExpiryInfo
-                  RouteNumber: RouteNumber
-                  AccountNumber: AccountNumber
-                  AccountType: AccountType
-                  MobileNumber: MobileNumber
-                  EmailAddress: EmailAddress
-                  StreetAddress: StreetAddress
-                  AddressCity: AddressCity
-                  AddressZip: AddressZip 
-                  VaultURL: VaultURL
-                  WYSIWIGUrl: WYSIWIGUrl
-                  RespondStatus: RespondStatus
+                -  VaultResponseCode: "001"
+                   VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Success
+                   PayTypeID: PayTypeID
+                   CardNumber: CardNumber
+                   ExpiryInfo: ExpiryInfo
+                   RouteNumber: RouteNumber
+                   AccountNumber: AccountNumber
+                   AccountType: AccountType
+                   MobileNumber: MobileNumber
+                   EmailAddress: EmailAddress
+                   StreetAddress: StreetAddress
+                   AddressCity: AddressCity
+                   AddressZip: AddressZip 
+                   VaultURL: VaultURL
+                   WYSIWIGUrl: WYSIWIGUrl
+                   RespondStatus: RespondStatus
 
                     
             mapName_900:   
@@ -73,19 +73,19 @@ get:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: "900"
-                  VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
-                  PayTypeID: PayTypeID
-                  CardNumber: CardNumber
-                  ExpiryInfo: ExpiryInfo
-                  RouteNumber: RouteNumber
-                  AccountNumber: AccountNumber
-                  AccountType: AccountType
-                  MobileNumber: MobileNumber
-                  EmailAddress: EmailAddress
-                  StreetAddress: StreetAddress
-                  AddressCity: AddressCity
-                  AddressZip: AddressZip 
-                  VaultURL: VaultURL
-                  WYSIWIGUrl: WYSIWIGUrl
-                  RespondStatus: RespondStatus
+                -  VaultResponseCode: "900"
+                   VaultResponseCodeDesc: Vault Token Data Access WYSIWIG Failed
+                   PayTypeID: PayTypeID
+                   CardNumber: CardNumber
+                   ExpiryInfo: ExpiryInfo
+                   RouteNumber: RouteNumber
+                   AccountNumber: AccountNumber
+                   AccountType: AccountType
+                   MobileNumber: MobileNumber
+                   EmailAddress: EmailAddress
+                   StreetAddress: StreetAddress
+                   AddressCity: AddressCity
+                   AddressZip: AddressZip 
+                   VaultURL: VaultURL
+                   WYSIWIGUrl: WYSIWIGUrl
+                   RespondStatus: RespondStatus

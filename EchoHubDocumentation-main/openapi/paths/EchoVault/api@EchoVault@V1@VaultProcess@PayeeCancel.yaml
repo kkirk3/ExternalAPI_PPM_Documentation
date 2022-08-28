@@ -50,8 +50,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Setup Cancelled
+                -  VaultResponseCode: "001"
+                   VaultResponseCodeDesc: Vault Token Setup Cancelled
 
                     
             mapName_900:   
@@ -62,8 +62,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    VaultErrorCode: Error Code Number
-                    VaultErrorDesc: Vault Token Setup Cancel Failed
+                  -  VaultErrorCode: Error Code Number
+                     VaultErrorDesc: Vault Token Setup Cancel Failed
                     
 
             mapName_1008:
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1016"
-                  ErrorDesc: Invalid or Missing Payor Session ID
+                 -  ErrorCode: "1016"
+                    ErrorDesc: Invalid or Missing Payor Session ID
 
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -85,6 +85,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID
+                  - ErrorCode: "1009"
+                    ErrorDesc: Invalid or Missing Pay Type ID
                                   
