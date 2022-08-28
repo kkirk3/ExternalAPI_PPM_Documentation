@@ -22,8 +22,8 @@ info:
     
     
 servers:
-  - url: https://sandbox.echohealthincapi.com/api/v1
-  - url: https://api.echohealthincapi.com/api/v1
+  - url: https://sandbox.echohealthincapi.com
+  - url: https://api.echohealthincapi.com
   
 paths:
   #Authorization
