@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: User Registered
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: User Registered
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
 
             mapName_1123:
               description: Please scroll the above dropdown list for more response codes
@@ -63,8 +63,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1123"
-                  ErrorDesc: Invalid or Missing Logged In User Name
+                -  ErrorCode: "1123"
+                   ErrorDesc: Invalid or Missing Logged In User Name
                         
             mapName_2015:
               description: Please scroll the above dropdown list for more response codes
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                    ErrorCode: "2015"
-                    ErrorDesc: Invalid or Missing Echo Security Authorization Token
+                -    ErrorCode: "2015"
+                     ErrorDesc: Invalid or Missing Echo Security Authorization Token
 
             mapName_1035:
               description: Please scroll the above dropdown list for more response codes
@@ -85,8 +85,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1035"
-                  ErrorDesc: Invalid or Missing UserName
+                -  ErrorCode: "1035"
+                   ErrorDesc: Invalid or Missing UserName
                             
             mapName_174:
               description: Please scroll the above dropdown list for more response codes
@@ -96,8 +96,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "174"
-                  ErrorDesc: Invalid or Missing FirstName
+                -  ErrorCode: "174"
+                   ErrorDesc: Invalid or Missing FirstName
                             
             mapName_175:
               description: Please scroll the above dropdown list for more response codes
@@ -107,8 +107,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "175"
-                  ErrorDesc: Invalid or Missing LastName
+                -  ErrorCode: "175"
+                   ErrorDesc: Invalid or Missing LastName
                            
             mapName_176:
               description: Please scroll the above dropdown list for more response codes
@@ -118,8 +118,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "176"
-                  ErrorDesc: Invalid or Missing Email Address
+                -  ErrorCode: "176"
+                   ErrorDesc: Invalid or Missing Email Address
                            
             mapName_177:
               description: Please scroll the above dropdown list for more response codes
@@ -129,8 +129,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "177"
-                  ErrorDesc: Invalid or Missing Phone Number
+                -  ErrorCode: "177"
+                   ErrorDesc: Invalid or Missing Phone Number
                             
             mapName_1075:
               description: Please scroll the above dropdown list for more response codes
@@ -140,8 +140,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1075"
-                  ErrorDesc: Invalid or Missing Job Title
+                -  ErrorCode: "1075"
+                   ErrorDesc: Invalid or Missing Job Title
                            
             mapName_1071:
               description: Please scroll the above dropdown list for more response codes
@@ -151,8 +151,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1071"
-                  ErrorDesc: Invalid or Missing ClearinghouseName
+                -  ErrorCode: "1071"
+                   ErrorDesc: Invalid or Missing ClearinghouseName
                          
             mapName_120:
               description: Please scroll the above dropdown list for more response codes
@@ -162,8 +162,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "120"
-                  ErrorDesc: Invalid or Missing Status ID
+                -  ErrorCode: "120"
+                   ErrorDesc: Invalid or Missing Status ID
 
             mapName_1114:
               description: Please scroll the above dropdown list for more response codes
@@ -173,8 +173,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1114"
-                  ErrorDesc: Invalid or Missing ReasonId
+                -  ErrorCode: "1114"
+                   ErrorDesc: Invalid or Missing ReasonId
                         
             mapName_1115:
               description: Please scroll the above dropdown list for more response codes
@@ -184,8 +184,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1115"
-                  ErrorDesc: Invalid or Missing OtherReason
+                -  ErrorCode: "1115"
+                   ErrorDesc: Invalid or Missing OtherReason
                               
             mapName_1116:
               description: Please scroll the above dropdown list for more response codes
@@ -195,8 +195,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1116"
-                  ErrorDesc: Invalid or Missing IsVerified
+                -  ErrorCode: "1116"
+                   ErrorDesc: Invalid or Missing IsVerified
                             
             mapName_1128:
               description: Please scroll the above dropdown list for more response codes
@@ -206,8 +206,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1128"
-                  ErrorDesc: Invalid or Missing Role Id
+                -  ErrorCode: "1128"
+                   ErrorDesc: Invalid or Missing Role Id
 
             mapName_1117:
               description: Please scroll the above dropdown list for more response codes
@@ -217,6 +217,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1117"
-                  ErrorDesc: Invalid or Missing ResetPassword
+                -  ErrorCode: "1117"
+                   ErrorDesc: Invalid or Missing ResetPassword
                                                                                                                                                                                 
