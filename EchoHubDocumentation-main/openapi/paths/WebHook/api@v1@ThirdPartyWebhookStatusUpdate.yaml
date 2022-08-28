@@ -39,10 +39,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment Response Code 001
-                    PaymentResponseCodeDesc: Webhook Status Update Success
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 001
+                     PaymentResponseCodeDesc: Webhook Status Update Success
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -51,21 +51,21 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: Webhook Status Update Failed
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
-                    mapName_1009:   
-                    description: Please scroll the above dropdown list for more response codes          
-                    summary: "1009"
-                    #description: TransError for JSON Validation Failed Code 1009
-                    value:
-                      ReponseCode: Response Code 900
-                      ReponseCodeDesc: Transaction Failed
-                      ResponseTransactionID: Transaction Number
-                      TransError :
-                        ErrorCode : "1009"
-                        ErrorDesc : Invalid or Missing Payor API Form Identifier
+                   - PaymentResponseCode: Response for Payment Response Code 900
+                     PaymentResponseCodeDesc: Webhook Status Update Failed
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
+            mapName_1009:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1009"
+          #description: TransError for JSON Validation Failed Code 1009
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError :
+                 - ErrorCode : "1009"
+                   ErrorDesc : Invalid or Missing Payor API Form Identifier
             mapName_1040:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1040"
@@ -75,8 +75,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1040"
-                  ErrorDesc : Invalid or Missing PayorId
+                 - ErrorCode : "1040"
+                   ErrorDesc : Invalid or Missing PayorId
             mapName_1041:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1041"
@@ -86,8 +86,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1041"
-                  ErrorDesc : Invalid or Missing PayeeId
+                 - ErrorCode : "1041"
+                   ErrorDesc : Invalid or Missing PayeeId
             mapName_1042:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1042"
@@ -97,8 +97,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1042"
-                  ErrorDesc : Invalid or Missing ReferenceId
+                 - ErrorCode : "1042"
+                   ErrorDesc : Invalid or Missing ReferenceId
             mapName_1043:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1043"
@@ -108,8 +108,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1043"
-                  ErrorDesc : Invalid or Missing Amount
+                 - ErrorCode : "1043"
+                   ErrorDesc : Invalid or Missing Amount
             mapName_1044:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1044"
@@ -119,5 +119,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1044"
-                  ErrorDesc : Invalid or Missing Status            
+                 - ErrorCode : "1044"
+                   ErrorDesc : Invalid or Missing Status            

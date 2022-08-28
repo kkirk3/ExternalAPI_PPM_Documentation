@@ -35,10 +35,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment Response Code 001
-                    PaymentResponseCodeDesc: Transaction Successful
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: ECHO Hub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 001
+                     PaymentResponseCodeDesc: Transaction Successful
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -47,10 +47,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: No Access to ECHO Vault
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: ECHO Hub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 900
+                     PaymentResponseCodeDesc: No Access to ECHO Vault
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_1009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1009"
@@ -60,8 +60,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1009"
-                  ErrorDesc : Invalid or Missing Payor API Form Identifier
+                 - ErrorCode : "1009"
+                   ErrorDesc : Invalid or Missing Payor API Form Identifier
             mapName_1066:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1066"
@@ -71,8 +71,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1066"
-                  ErrorDesc : Invalid or Missing Payor Session ID
+                 - ErrorCode : "1066"
+                   ErrorDesc : Invalid or Missing Payor Session ID
             mapName_1067:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1067"
@@ -82,8 +82,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1067"
-                  ErrorDesc : Invalid or Missing ECHO Vault Token
+                 - ErrorCode : "1067"
+                   ErrorDesc : Invalid or Missing ECHO Vault Token
             mapName_1060:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1060"
@@ -93,5 +93,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1060"
-                  ErrorDesc : Invalid or Missing Process Type       
+                 - ErrorCode : "1060"
+                   ErrorDesc : Invalid or Missing Process Type       

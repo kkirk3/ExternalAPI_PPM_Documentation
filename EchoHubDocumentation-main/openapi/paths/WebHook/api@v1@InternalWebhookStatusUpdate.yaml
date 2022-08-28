@@ -49,10 +49,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment Response Code 001
-                    PaymentResponseCodeDesc: Internal Webhook Status Success
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 001
+                     PaymentResponseCodeDesc: Internal Webhook Status Success
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -61,10 +61,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: Internal Webhook Status Failed
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 900
+                     PaymentResponseCodeDesc: Internal Webhook Status Failed
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
             mapName_1042:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1042"
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1042"
-                  ErrorDesc : Invalid or Missing ReferenceId
+                 - ErrorCode : "1042"
+                   ErrorDesc : Invalid or Missing ReferenceId
             mapName_1044:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1044"
@@ -85,5 +85,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1044"
-                  ErrorDesc : Invalid or Missing Status            
+                 - ErrorCode : "1044"
+                   ErrorDesc : Invalid or Missing Status            

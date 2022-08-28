@@ -38,7 +38,7 @@ post:
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
                   Translog :
-                    PDFFile : PDF File in Base 64 string Format                    
+                    - PDFFile : PDF File in Base 64 string Format                    
             mapName_1014:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"                
@@ -47,8 +47,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : Response for Error Code 1014
-                    ErrorCodeDesc : Invalid or Missing Draft Number                    
+                   -  ErrorCode : Response for Error Code 1014
+                      ErrorCodeDesc : Invalid or Missing Draft Number                    
             mapName_156:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "156"                
@@ -57,5 +57,5 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : Response for Error Code 156
-                      ErrorDesc : Invalid or Missing Zip Code              
+                     - ErrorCode : Response for Error Code 156
+                       ErrorDesc : Invalid or Missing Zip Code              
