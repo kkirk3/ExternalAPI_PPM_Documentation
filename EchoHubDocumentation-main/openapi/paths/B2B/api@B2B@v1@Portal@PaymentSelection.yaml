@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: User Registered
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: User Registered
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
 
             mapName_1059:
               description: Please scroll the above dropdown list for more response codes
@@ -63,8 +63,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1059"
-                  ErrorDesc: Invalid or Missing Authorization Token
+                -  ErrorCode: "1059"
+                   ErrorDesc: Invalid or Missing Authorization Token
                         
             mapName_1065:
               description: Please scroll the above dropdown list for more response codes
@@ -74,8 +74,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1065"
-                  ErrorDesc: Invalid or Missing Payment Type
+                -  ErrorCode: "1065"
+                   ErrorDesc: Invalid or Missing Payment Type
 
             mapName_150:
               description: Please scroll the above dropdown list for more response codes
@@ -85,5 +85,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "150"
-                  ErrorDesc: Invalid or Missing Tax ID
+                -  ErrorCode: "150"
+                   ErrorDesc: Invalid or Missing Tax ID
