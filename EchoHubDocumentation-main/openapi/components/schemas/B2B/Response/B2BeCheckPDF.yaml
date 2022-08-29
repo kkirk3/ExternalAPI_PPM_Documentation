@@ -1,0 +1,65 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          TransResponseCode:
+            type: string
+            description: Transaction response code number
+          TransResponseCodeDesc:
+            type: string
+            description: User Registered
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  Error code number
+          ErrorDesc:
+           type: string
+           description: Error description
+           
+      TransError JSON Validation Failed Code 1001:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1001"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Transaction ID
+               
+      TransError JSON Validation Failed Code 1004:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1004"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Checking Account ID

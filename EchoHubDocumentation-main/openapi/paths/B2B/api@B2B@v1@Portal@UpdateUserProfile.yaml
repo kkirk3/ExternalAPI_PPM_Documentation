@@ -1,0 +1,210 @@
+post:
+  tags:
+    - B2B Portal
+     
+  summary: B2B Portal - Update User Profile
+  x-internal: true
+  operationId: B2BPORTALUPDATEUSERPROFILE
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This API enables the B2B portal application to update the user profile information. The B2B portal consumes this endpoint and helps the user to keep the profile information current.  
+
+   When there is a request from a B2B form to update a user profile, the data is passed to ECHO Hub. The ECHO Hub system validates the data, and the request is then sent to the B2B library. Once the profile of the user is updated, ECHO Hub sends a success message.     
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+ 
+  requestBody:
+    description: This endpoint is used to update the user profile information.
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/B2B/Request/B2BUpdateUserProfile.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/B2B/Response/B2BUpdateUserProfile.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: User Registered
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
+
+            mapName_1059:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1059"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1059"
+                   ErrorDesc: Invalid or Missing Authorization Token
+                  
+            mapName_176:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "176"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "176"
+                   ErrorDesc: Invalid or Missing Email Address
+
+            mapName_174:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "174"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "174"
+                   ErrorDesc: Invalid or Missing Firstname
+
+            mapName_175:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "175"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "175"
+                   ErrorDesc: Invalid or Missing Lastname
+
+            mapName_1122:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1122"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1122"
+                   ErrorDesc: Invalid Title
+                        
+            mapName_152:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "152"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "152"
+                   ErrorDesc: Invalid or Missing Address Line 1
+                              
+            mapName_1093:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1093"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1093"
+                   ErrorDesc: Invalid Address Line 2
+                                    
+            mapName_154:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "154"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "154"
+                   ErrorDesc: Invalid or Missing City
+                                          
+            mapName_155:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "155"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "155"
+                   ErrorDesc: Invalid or Missing State
+                                                
+            mapName_156:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "156"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "156"
+                   ErrorDesc: Invalid or Missing Zip Code
+                                                      
+            mapName_177:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "177"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "177"
+                   ErrorDesc: Invalid or Missing Phone Number
+                                                            
+            mapName_1095:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1095"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1095"
+                   ErrorDesc: Invalid Alternate Phone Number
+                                                                  
+            mapName_1096:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1096"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1096"
+                   ErrorDesc: Invalid Fax Phone Number
+                                                                        
+            mapName_1097:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1097"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1097"
+                   ErrorDesc: Invalid Website

@@ -52,9 +52,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Session Setup Success
-                  VaultSessionID: "Vault Session ID"
+                 -  VaultResponseCode: "001"
+                    VaultResponseCodeDesc: Vault Session Setup Success
+                    VaultSessionID: "Vault Session ID"
 
                     
             mapName_900:   
@@ -65,8 +65,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  VaultResponseCode: Error Code Number
-                  VaultResponseCodeDesc: Error Description
+                 - VaultResponseCode: Error Code Number
+                   VaultResponseCodeDesc: Error Description
                     
             mapName_1024:
               description: Please scroll the above dropdown list for more response codes
@@ -77,5 +77,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1024"
-                  ErrorDesc: Invalid or Missing WYSIWIG URL
+                 - ErrorCode: "1024"
+                   ErrorDesc: Invalid or Missing WYSIWIG URL

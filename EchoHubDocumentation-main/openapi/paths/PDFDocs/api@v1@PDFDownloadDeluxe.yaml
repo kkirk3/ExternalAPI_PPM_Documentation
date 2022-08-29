@@ -37,10 +37,10 @@ post:
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
                   Translog :
-                    PaymentResponseCode: Payment Response Code for 001
-                    PaymentresponseCodeDesc: Deluxe EcheckPDF Succesful
-                    ECHOHubTransactonId: EchoHub Transaction Number
-                    PDFFile : PDF File in Base 64 string Format                    
+                   - PaymentResponseCode: Payment Response Code for 001
+                     PaymentresponseCodeDesc: Deluxe EcheckPDF Succesful
+                     ECHOHubTransactonId: EchoHub Transaction Number
+                     PDFFile : PDF File in Base 64 string Format                    
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"                
@@ -49,8 +49,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : Response for Error Code 1004
-                    ErrorCodeDesc : Invalid or Missing Checking Account ID                    
+                   - ErrorCode : Response for Error Code 1004
+                     ErrorCodeDesc : Invalid or Missing Checking Account ID                    
             mapName_903:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "903"                
@@ -59,6 +59,6 @@ post:
                     ReponseCodeDesc: Invalid Token
                     
                     TransError :
-                      ErrorCode : Response for Error Code 903
-                      ErrorDesc : Invalid Token
-                      CreationDate: Current DateTime              
+                     - ErrorCode : Response for Error Code 903
+                       ErrorDesc : Invalid Token
+                       CreationDate: Current DateTime              

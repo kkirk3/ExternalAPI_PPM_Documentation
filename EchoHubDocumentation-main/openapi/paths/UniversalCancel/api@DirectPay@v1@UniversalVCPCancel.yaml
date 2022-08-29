@@ -33,10 +33,10 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
-                  PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : Card Block was Successful
-                  IsBlocked : IsBlocked
+                TransLog :
+                 - PaymentResponseCode : Response for Payment Response Code 001
+                   PaymentResponseCodeDesc : Card Block was Successful
+                   IsBlocked : IsBlocked
             mapName_4000:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "4000"
@@ -46,52 +46,52 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4000
-                    PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
-                    IsBlocked : IsBlocked
-                    TransactionStatus: This is the Transaction Status like Approved, Declined etc         
-                    TransactionDate: This is the Date when the transaction was performed
-                    TransactionTime: This is the Time when the transaction was performed
-                    PostedDate: This is the Date when the transaction was posted. When
+                   - PaymentResponseCode: Response for Payment response code 4000
+                     PaymentResponseCodeDesc: This card is Expired, Payment cannot be blocked/voided
+                     IsBlocked : IsBlocked
+                     TransactionStatus: This is the Transaction Status like Approved, Declined etc         
+                     TransactionDate: This is the Date when the transaction was performed
+                     TransactionTime: This is the Time when the transaction was performed
+                     PostedDate: This is the Date when the transaction was posted. When
                                   the transaction was authorized but not posted, this
                                   value would be empty
-                    PostedTime: This is the Time when the transaction was posted. When
+                     PostedTime: This is the Time when the transaction was posted. When
                                     the transaction was authorized but not posted, this
                                     value would be empty
-                    DeclineCode: When a transaction is declined, we see the Decline Code,
+                     DeclineCode: When a transaction is declined, we see the Decline Code,
                                     that describes the reason for decline
-                    DeclineMessage: When a transaction is declined, we would get the Decline
+                     DeclineMessage: When a transaction is declined, we would get the Decline
                                     message that describes the reason for decline
-                    CorrectiveAction: This is the Corrective Action to be taken when a
+                     CorrectiveAction: This is the Corrective Action to be taken when a
                                       transaction is declined
-                    PromptedId: This is the ID that was prompted during the transaction
-                    MccGroup: This is the Merchant Category Code (MCC) Group where the
+                     PromptedId: This is the ID that was prompted during the transaction
+                     MccGroup: This is the Merchant Category Code (MCC) Group where the
                               transaction was performed
-                    MccNumber: This is the Merchant Category Code (MCC) Number where
+                     MccNumber: This is the Merchant Category Code (MCC) Number where
                               the transaction was performed
-                    MccDescription: This is the Merchant Category Code (MCC) description
+                     MccDescription: This is the Merchant Category Code (MCC) description
                                 where the transaction was performed
-                    MerchantName: This is the Merchant Name where the transaction was
+                     MerchantName: This is the Merchant Name where the transaction was
                                 performed 
-                    MerchantAddress: This is the Merchant address where the transaction was
+                     MerchantAddress: This is the Merchant address where the transaction was
                                 performed
-                    MerchantCity: This is the Merchant city where the transaction was
+                     MerchantCity: This is the Merchant city where the transaction was
                                 performed
-                    MerchantState: This is the Merchant state where the transaction was
+                     MerchantState: This is the Merchant state where the transaction was
                                 performed
-                    MerchantZip: This is the Merchant zip where the transaction was
+                     MerchantZip: This is the Merchant zip where the transaction was
                                 performed
-                    AcceptLocation: This is the Location where the transaction was accepted
-                    PreAuthAmount: This is the Pre-Authorized Amount
-                    PostedAmount: This is the Posted Amount, and this field would be empty
+                     AcceptLocation: This is the Location where the transaction was accepted
+                     PreAuthAmount: This is the Pre-Authorized Amount
+                     PostedAmount: This is the Posted Amount, and this field would be empty
                                     when the transaction is not posted yet
-                    ApprovalCode: This is the Transaction Approval code
-                    ReversalFlag: This can be Y or N, which denotes whether a transaction
+                     ApprovalCode: This is the Transaction Approval code
+                     ReversalFlag: This can be Y or N, which denotes whether a transaction
                                     is reversed or not
-                    Records_Id: This is the Unique Record ID from the card vendor
-                    ResponseCodeDescription: This is the Transaction Response Code returned by the
+                     Records_Id: This is the Unique Record ID from the card vendor
+                     ResponseCodeDescription: This is the Transaction Response Code returned by the
                                             card vendor
-                    IdMatchNumber: This is the Card Vendor Match Number
+                     IdMatchNumber: This is the Card Vendor Match Number
             mapName_4001:
               summary: "4001"
               description: Please scroll the above dropdown list for more response codes          
@@ -100,9 +100,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4001
-                    PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
-                    IsBlocked : IsBlocked
+                   - PaymentResponseCode: Response for Payment response code 4001
+                     PaymentResponseCodeDesc: The Provider has already cancelled the card, Payment cannot be blocked/voided
+                     IsBlocked : IsBlocked
             mapName_4002:
               summary: "4002"
               description: Please scroll the above dropdown list for more response codes          
@@ -111,9 +111,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4002
-                    PaymentResponseCodeDesc: Provider has used the card, Payment cannot be blocked/voided
-                    IsBlocked : IsBlocked
+                   - PaymentResponseCode: Response for Payment response code 4002
+                     PaymentResponseCodeDesc: Provider has used the card, Payment cannot be blocked/voided
+                     IsBlocked : IsBlocked
             mapName_4003:
               summary: "4003"
               description: Please scroll the above dropdown list for more response codes          
@@ -122,8 +122,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4003
-                    PaymentResponseCodeDesc: Reissue failed, this card has already been settled/reissued
+                   - PaymentResponseCode: Response for Payment response code 4003
+                     PaymentResponseCodeDesc: Reissue failed, this card has already been settled/reissued
             mapName_4004:
               summary: "4004"
               description: Please scroll the above dropdown list for more response codes          
@@ -132,8 +132,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4004
-                    PaymentResponseCodeDesc: Reissue failed, this card has not been blocked
+                   - PaymentResponseCode: Response for Payment response code 4004
+                     PaymentResponseCodeDesc: Reissue failed, this card has not been blocked
             mapName_4005:
               summary: "4005"
               description: Please scroll the above dropdown list for more response codes          
@@ -142,8 +142,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4005
-                    PaymentResponseCodeDesc: The provided request value is invalid
+                   - PaymentResponseCode: Response for Payment response code 4005
+                     PaymentResponseCodeDesc: The provided request value is invalid
             mapName_4006:
               summary: "4006"
               description: Please scroll the above dropdown list for more response codes          
@@ -152,8 +152,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4006
-                    PaymentResponseCodeDesc: Requested action is not authorized for this Payor
+                   - PaymentResponseCode: Response for Payment response code 4006
+                     PaymentResponseCodeDesc: Requested action is not authorized for this Payor
             mapName_4007:
               summary: "4007"
               description: Please scroll the above dropdown list for more response codes          
@@ -162,8 +162,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:
-                    PaymentResponseCode: Response for Payment response code 4007
-                    PaymentResponseCodeDesc: No records found, Please contact VCP
+                   - PaymentResponseCode: Response for Payment response code 4007
+                     PaymentResponseCodeDesc: No records found, Please contact VCP
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -173,9 +173,9 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  PaymentResponseCode : Response for Payment Response Code 900
-                  PaymentResponseCodeDesc : VCP Block Card Failed
-                  IsBlocked : IsBlocked
+                 - PaymentResponseCode : Response for Payment Response Code 900
+                   PaymentResponseCodeDesc : VCP Block Card Failed
+                   IsBlocked : IsBlocked
             mapName_1033:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1033"
@@ -185,8 +185,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1033"
-                    ErrorDesc : Invalid or Missing Library Method
+                   - ErrorCode : "1033"
+                     ErrorDesc : Invalid or Missing Library Method
             mapName_1025:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1025"
@@ -196,8 +196,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1025"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"        
+                   - ErrorCode : "1025"
+                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"        
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -207,8 +207,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1027"
-                    ErrorDesc : Invalid or Missing Request Value
+                   - ErrorCode : "1027"
+                     ErrorDesc : Invalid or Missing Request Value
             mapName_1029:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1029"
@@ -218,8 +218,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1029"
-                    ErrorDesc : Invalid or Missing Action. Action must be one of the following - "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"        
+                   - ErrorCode : "1029"
+                     ErrorDesc : Invalid or Missing Action. Action must be one of the following - "Block", "BlockAndReissue", "BlockAndOptOut", "Reissue"        
             mapName_1028:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1028"
@@ -229,5 +229,5 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1028"
-                    ErrorDesc : Invalid or Missing Request By               
+                   - ErrorCode : "1028"
+                     ErrorDesc : Invalid or Missing Request By               

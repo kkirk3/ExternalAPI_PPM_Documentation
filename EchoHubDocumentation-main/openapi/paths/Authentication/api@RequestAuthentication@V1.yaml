@@ -3,21 +3,27 @@ get:
     - Authorization  
   summary: Get Authorization Token
   operationId: GetAuthToken
-  security:
-    - x-ApiKey: []
-    - x-ClientKey: []
+  parameters:
+    - name: x-ApiKey
+      in: header
+      description: This is the ApiKey which has to be passed in Headers to obtain the Token
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/AuthenticationHeader.yaml
+    - name: x-ClientKey
+      in: header
+      description: This is the ClientKey which has to be passed in Headers to obtain the Token
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/AuthenticationHeader.yaml    
+    
   description: >
       Once the user is authenticated, this endpoint generates an authorization
       token by using the API key and the Client key. This authorization token is
       valid for 30 minutes.
-  requestBody:
-    description:  |
-      This endpoint is used to generate the Authorization Token.
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: ../../components/schemas/Authentication/Request/AuthenticationRequest.yaml
+  
   responses:
     '200':
       description: Success
@@ -26,34 +32,43 @@ get:
           schema:
             $ref: ../../components/schemas/Authentication/Response/AuthenticationResponse.yaml
           examples:
-            mapName:   
+            mapName001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
                 ReponseCode: Response for Payment response code 001
-                ReponseCodeDesc: Successful Transaction                
+                ReponseCodeDesc: Transaction Approved                
                 TransLog:  
-                   AuthToken: Authorization token
+                  - AuthToken: Authorization token
 
-
-            mapName1:   
+            mapName900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response for Payment response code 900
+                ReponseCodeDesc: Security Validation Process Failed                
+                TransError:  
+                  - ErrorCode: Error Code 900                     
+                    ErrorCodeDesc: Security Validation Process Failed
+                    creationdate: Current Date & Time
+            mapName901:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "901"
               value:
                 ReponseCode: Response for Payment response code 901
                 ReponseCodeDesc:  Transaction  Failure
                 TransError:  
-                    ErrorCode: Response for Payment response code 901
-                    ErrorCodeDesc: Invalid Customer ID
-                    creationDate: Current Date & Time
-            mapName2:   
+                   - ErrorCode: Error Code 901
+                     ErrorCodeDesc: Invalid Customer ID
+                     creationdate: Current Date & Time
+            mapName905:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "905"
                 value:
                   ReponseCode: Response for Payment response code 905
                   ReponseCodeDesc: Transaction  Failure              
                   TransError:  
-                      ErrorCode: Response for Payment response code 905
+                    - ErrorCode: Error Code 905
                       ErrorCodeDesc: Invalid Endpoint
-                      creationDate: Current Date & Time        
+                      creationdate: Current Date & Time        
                     

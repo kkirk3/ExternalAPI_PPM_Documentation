@@ -50,10 +50,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  VaultResponseCode: "001"
-                  VaultResponseCodeDesc: Vault Token Setup Success
-                  PayorSessionID: Payor Session ID
-                  ProcessType: Process Type
+                 - VaultResponseCode: "001"
+                   VaultResponseCodeDesc: Vault Token Setup Success
+                   PayorSessionID: Payor Session ID
+                   ProcessType: Process Type
                    
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -63,10 +63,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    EVaultResponseCode: "900"
-                    VaultResponseCodeDesc: Vault Token Setup Failed
-                    PayorSessionID: Payor Session ID
-                    ProcessType: Process Type             
+                   - EVaultResponseCode: "900"
+                     VaultResponseCodeDesc: Vault Token Setup Failed
+                     PayorSessionID: Payor Session ID
+                     ProcessType: Process Type             
                                 
             mapName_1001:
               description: Please scroll the above dropdown list for more response codes
@@ -76,8 +76,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1001"
-                  ErrorDesc: Invalid or Missing Vault Token
+                 - ErrorCode: "1001"
+                   ErrorDesc: Invalid or Missing Vault Token
                   
             mapName_1008:
               description: Please scroll the above dropdown list for more response codes
@@ -87,8 +87,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1008"
-                  ErrorDesc: Invalid or Missing Payor Session ID
+                 - ErrorCode: "1008"
+                   ErrorDesc: Invalid or Missing Payor Session ID
                   
             mapName_1010:
               description: Please scroll the above dropdown list for more response codes
@@ -98,8 +98,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1010"
-                  ErrorDesc: Invalid or Missing Email Address
+                 - ErrorCode: "1010"
+                   ErrorDesc: Invalid or Missing Email Address
                   
             mapName_1011:
               description: Please scroll the above dropdown list for more response codes
@@ -109,8 +109,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1011"
-                  ErrorDesc: Invalid or Missing Mobile Number
+                 - ErrorCode: "1011"
+                   ErrorDesc: Invalid or Missing Mobile Number
                   
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -120,6 +120,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID 
+                 - ErrorCode: "1009"
+                   ErrorDesc: Invalid or Missing Pay Type ID 
                     

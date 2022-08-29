@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  LogResponseCode: "001"
-                  LogResponseCodeDesc: Process Archive and Removed Success
+                 - LogResponseCode: "001"
+                   LogResponseCodeDesc: Process Archive and Removed Success
                                       
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,5 +52,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  LogResponseCode: "900"
-                  LogResponseCodeDesc: Process Archive and Removed Failed
+                 - LogResponseCode: "900"
+                   LogResponseCodeDesc: Process Archive and Removed Failed

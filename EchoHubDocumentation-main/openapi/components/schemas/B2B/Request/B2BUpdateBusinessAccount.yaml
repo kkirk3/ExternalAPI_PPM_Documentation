@@ -1,0 +1,87 @@
+required:
+  - APIFormIdentifierId
+  - AuthorizationToken
+  - TaxID
+  - Addressline1
+  - City
+  - State
+  - Zip
+  - PhoneNumber
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+
+  AuthorizationToken: 
+    type: string
+    description: This is a string of code that is used to authorize a user on the API.
+    maxLength: 200
+    minLength: 1
+
+  TaxID: 
+    type: string
+    description: This is a 9-digit unique identification number of the provider. Tax ID is used to get the provider location details for eChecks.
+    maxLength: 9
+    minLength: 1
+
+  Email: 
+    type: string
+    description: This is the email ID of the business account.
+    maxLength: 100
+    minLength: 1
+  
+  Addressline1: 
+    type: string
+    description: Address Line 1 is generally for the civic number and street name (street address) where the business account is located.
+    maxLength: 255
+    minLength: 1
+      
+  Addressline2: 
+    type: string
+    description: Address Line 2 is the additional address information like the suite or unit number where the business account is located.
+    maxLength: 255
+    minLength: 1
+    
+  City: 
+    type: string
+    description: This is the name of the city where the business account is located.
+    maxLength: 50
+    minLength: 1
+        
+  State: 
+    type: string
+    description: This is the name of the state where the business account is located.
+    maxLength: 50
+    minLength: 1
+      
+  Zip: 
+    type: string
+    description: This is the zip code of the location where the transaction was performed.
+    maxLength: 50
+    minLength: 1
+          
+  PhoneNumber: 
+    type: string
+    description: This is the phone number of the business account.
+    maxLength: 10
+    minLength: 1
+      
+  AlternatePhone: 
+    type: string
+    description: This is the alternate phone number of the business account.
+    maxLength: 10
+    minLength: 1
+            
+  Fax: 
+    type: string
+    description: This is the fax number of the business account. 
+    maxLength: 10
+    minLength: 1
+          
+  Website: 
+    type: string
+    description: This is the website of the business account.
+    maxLength: 255
+    minLength: 1            

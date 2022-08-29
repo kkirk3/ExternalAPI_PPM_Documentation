@@ -50,10 +50,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  PaymentResponseCode: "001"
-                  PaymentResponseCodeDesc: Payment Status Successful
-                  PaymentTransaction: Payment Transaction Number
-                  PaymentTransactionMsg: Payment Transaction Message
+                -  PaymentResponseCode: "001"
+                   PaymentResponseCodeDesc: Payment Status Successful
+                   PaymentTransaction: Payment Transaction Number
+                   PaymentTransactionMsg: Payment Transaction Message
 
                     
             mapName_900:   
@@ -64,10 +64,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  PaymentResponseCode: "900"
-                  PaymentResponseCodeDesc: Payment Status Failed
-                  PaymentTransaction: Payment Transaction Number
-                  PaymentTransactionMsg: Payment Transaction Message
+                 - PaymentResponseCode: "900"
+                   PaymentResponseCodeDesc: Payment Status Failed
+                   PaymentTransaction: Payment Transaction Number
+                   PaymentTransactionMsg: Payment Transaction Message
                         
             mapName_1022:
               description: Please scroll the above dropdown list for more response codes
@@ -77,8 +77,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1022"
-                  ErrorDesc: Invalid or Missing Third-Party TransactionID
+                  - ErrorCode: "1022"
+                    ErrorDesc: Invalid or Missing Third-Party TransactionID
                       
             mapName_1009:
               description: Please scroll the above dropdown list for more response codes
@@ -88,8 +88,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1009"
-                  ErrorDesc: Invalid or Missing Pay Type ID
+                 - ErrorCode: "1009"
+                   ErrorDesc: Invalid or Missing Pay Type ID
           
             mapName_1017:
               description: Please scroll the above dropdown list for more response codes
@@ -99,5 +99,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1017"
-                  ErrorDesc: Invalid or Missing Payor Reference ID
+                 - ErrorCode: "1017"
+                   ErrorDesc: Invalid or Missing Payor Reference ID

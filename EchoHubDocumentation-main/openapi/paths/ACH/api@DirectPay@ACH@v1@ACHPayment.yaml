@@ -29,7 +29,7 @@ post:
           schema:
             $ref: ../../components/schemas/ACH/Response/ACHPaymentResponse.yaml
           examples:
-            mapName:   
+            mapName001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
@@ -37,10 +37,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: ACH  Payment Cancelled Successfully
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 001
+                      PaymentResponseCodeDesc: ACH  Payment Cancelled Successfully
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -49,7 +49,8 @@ post:
                 ReponseCodeDesc: Payment could not be cancelled, Please contact customer care
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: Duplicate Payor Reference ID
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 900
+                      PaymentResponseCodeDesc: Duplicate Payor Reference ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                      

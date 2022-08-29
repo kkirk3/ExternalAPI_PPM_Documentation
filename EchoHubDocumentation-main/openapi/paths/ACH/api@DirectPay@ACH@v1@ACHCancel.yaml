@@ -37,10 +37,10 @@ post:
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
                   TransLog:
-                    PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : ACH Payment Cancel Successful
-                    TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                   -  PaymentResponseCode : Response for Payment Response Code 001
+                      PaymentResponseCodeDesc : ACH Payment Cancel Successful
+                      TransactionId : Transaction Number
+                      PayhubTransactionId : PayhubTransactionId
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
@@ -50,10 +50,10 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransLog:
-                    PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : ACH Cancel Payment Failed
-                    TransactionId : Transaction Number
-                    PayhubTransactionId : PayhubTransactionId
+                    - PaymentResponseCode : Response for Payment Response Code 900
+                      PaymentResponseCodeDesc : ACH Cancel Payment Failed
+                      TransactionId : Transaction Number
+                      PayhubTransactionId : PayhubTransactionId
             mapName_1031:   
                   description: Please scroll the above dropdown list for more response codes          
                   summary: "1031"
@@ -63,8 +63,8 @@ post:
                       ReponseCodeDesc: Transaction Failed
                       ResponseTransactionID: Transaction Number
                       TransError :
-                        ErrorCode : "1031"
-                        ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                        - ErrorCode : "1031"
+                          ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
                     description: Please scroll the above dropdown list for more response codes          
                     summary: "1027"
@@ -74,6 +74,6 @@ post:
                         ReponseCodeDesc: Transaction Failed
                         ResponseTransactionID: Transaction Number
                         TransError :
-                          ErrorCode : "1027"
-                          ErrorDesc : Invalid or Missing Request Value               
+                         - ErrorCode : "1027"
+                           ErrorDesc : Invalid or Missing Request Value               
         

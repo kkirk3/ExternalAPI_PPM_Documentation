@@ -41,8 +41,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: User Validated.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: User Validated.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +52,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
                     
             mapName_1035:
               description: Please scroll the above dropdown list for more response codes
@@ -63,8 +63,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1035"
-                  ErrorDesc: Invalid or Missing UserName
+                -  ErrorCode: "1035"
+                   ErrorDesc: Invalid or Missing UserName
                          
             mapName_1015:
               description: Please scroll the above dropdown list for more response codes
@@ -74,5 +74,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "1015"
-                  ErrorDesc: Invalid or Missing Password
+                -  ErrorCode: "1015"
+                   ErrorDesc: Invalid or Missing Password

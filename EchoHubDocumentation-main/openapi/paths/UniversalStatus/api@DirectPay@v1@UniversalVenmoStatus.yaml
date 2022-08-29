@@ -44,10 +44,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : Venmo Payment is in Paid Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 001
+                   PaymentResponseCodeDesc : Venmo Payment is in Paid Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_3008:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3008"
@@ -57,10 +57,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3008
-                  PaymentResponseCodeDesc : Venmo Payment is in Submitted Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 3008
+                   PaymentResponseCodeDesc : Venmo Payment is in Submitted Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number                 
             mapName_3009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3009"
@@ -70,10 +70,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3009
-                  PaymentResponseCodeDesc : Venmo Payment is in Pending Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number    
+                 - PaymentResponseCode : Response for Payment Response Code 3009
+                   PaymentResponseCodeDesc : Venmo Payment is in Pending Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number    
             mapName_3010:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3010"
@@ -83,10 +83,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3010
-                  PaymentResponseCodeDesc : Venmo Payment is in Reject Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 3010
+                   PaymentResponseCodeDesc : Venmo Payment is in Reject Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number                 
             mapName_3011:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3011"
@@ -96,10 +96,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3011
-                  PaymentResponseCodeDesc : Venmo Payment is in Cancelled Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 3011
+                   PaymentResponseCodeDesc : Venmo Payment is in Cancelled Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_3012:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3012"
@@ -109,10 +109,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3012
-                  PaymentResponseCodeDesc : Venmo Payment is in Returned Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 3012
+                   PaymentResponseCodeDesc : Venmo Payment is in Returned Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number                 
             mapName_3013:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3013"
@@ -122,10 +122,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3013
-                  PaymentResponseCodeDesc : Venmo Payment is in Pickup Ready Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 3013
+                   PaymentResponseCodeDesc : Venmo Payment is in Pickup Ready Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_3014:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3014"
@@ -135,10 +135,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3014
-                  PaymentResponseCodeDesc : Venmo Payment is in Refunded Status
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 3014
+                   PaymentResponseCodeDesc : Venmo Payment is in Refunded Status
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_3015:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "3015"
@@ -148,10 +148,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 3015
-                  PaymentResponseCodeDesc : Venmo Payment Unknown
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 3015
+                   PaymentResponseCodeDesc : Venmo Payment Unknown
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -161,10 +161,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  PaymentResponseCode : Response for Payment Response Code 900
-                  PaymentResponseCodeDesc : Venmo Status Failed
-                  TransactionId : Transaction Number
-                  ECHOHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 900
+                   PaymentResponseCodeDesc : Venmo Status Failed
+                   TransactionId : Transaction Number
+                   ECHOHubTransactionId : EchoHub Transaction Number
             mapName_1033:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1033"
@@ -174,8 +174,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1033"
-                    ErrorDesc : Invalid or Missing Library Method
+                   - ErrorCode : "1033"
+                     ErrorDesc : Invalid or Missing Library Method
             mapName_1031:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1031"
@@ -185,8 +185,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1031"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                   - ErrorCode : "1031"
+                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -196,5 +196,5 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1027"
-                    ErrorDesc : Invalid or Missing Request Value       
+                   - ErrorCode : "1027"
+                     ErrorDesc : Invalid or Missing Request Value       

@@ -2,32 +2,32 @@ openapi: 3.1.0
 info:
   title: ECHOHUB API
   description: >-
-    API Endpoints for the ECHOHUB Project. Team
-
+    API Endpoints for the ECHOHUB clients.
+    
+        SandBox url: https://sandbox.echohealthincapi.com/
+        Production Url : https://api.echohealthincapi.com/
 
     # Authentication
 
     Authentication is a process by which a system verifies the identity of a
     user accessing this API.       
 
-
     <!-- ReDoc-Inject: <security-definitions> -->
+    
   version: v1
-  termsOfService: https://example.com
+  
   contact:
-    name: ECHO Health Inc.
-    url: https://echohealthinc.com
+    name: ECHO Health Inc.    
     email: Echo_Hub@echohealthinc.com
-externalDocs:
-  description: |
-    description external docs text
-  url: 'https://example.server.io'
+    
+    
 servers:
-  - url: /v1
+  - url: https://sandbox.echohealthincapi.com
+  - url: https://api.echohealthincapi.com
   
 paths:
   #Authorization
-  /api/Authentication/v1/Authentication:
+  /GetToken:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   #ACH
   /api/DirectPay/ACH/v1/ACHPayment:
@@ -41,6 +41,27 @@ paths:
   #PayeeAccountDetails
   /api/ECHODir/v1/EDirector:
     $ref: paths/PayeeAccountDetails/api@ECHODir@v1@EDirector.yaml
+    
+  #B2B Portal
+  /api/B2B/v1/Portal [eCheck PDF]:
+    $ref: paths/B2B/api@B2B@v1@Portal@eCheckPDF.yaml
+  /api/B2B/v1/Portal [Portal Login]:    
+    $ref: paths/B2B/api@B2B@v1@Portal@PortalLogin.yaml
+  /api/B2B/v1/Portal [On Demand eCheck]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@OnDemandeCheck.yaml
+  /api/B2B/v1/Portal [Email Notification]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@EmailNotification.yaml
+  /api/B2B/v1/Portal [Get Business Account Profile]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@GetBusinessAccountProfile.yaml
+  /api/B2B/v1/Portal [Update Business Account]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@UpdateBusinessAccount.yaml
+  /api/B2B/v1/Portal [Enroll eCheck PDF]:
+    $ref: paths/B2B/api@B2B@v1@Portal@PaymentSelection.yaml
+  /api/B2B/v1/Portal [Get User Profile]:    
+    $ref: paths/B2B/api@B2B@v1@Portal@GetUserProfile.yaml
+  /api/B2B/v1/Portal [Update User Profile]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@UpdateUserProfile.yaml      
+
   #ClearingHousePotal 
   /api/ClearingHouse/v1/Portal [Register User]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterUser.yaml
@@ -145,7 +166,7 @@ paths:
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
   /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml 
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
@@ -183,6 +204,29 @@ paths:
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  
+  #SelectPay Portal
+  /api/SelectPay/v1/Portal [Landing Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@LandingPage.yaml  
+  /api/SelectPay/v1/Portal [User Page]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@UserPage.yaml   
+  /api/SelectPay/v1/Portal [eCheck]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheck.yaml
+  /api/SelectPay/v1/Portal [Payment History]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentHistory.yaml
+  /api/SelectPay/v1/Portal [eCheck PDF]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@eCheckPDF.yaml
+  /api/SelectPay/v1/Portal [Routing Number]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@RoutingNumber.yaml 
+  /api/SelectPay/v1/Portal [Payment Form]:    
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@PaymentForm.yaml    
+  /api/SelectPay/v1/Portal [Email Notification]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@EmailNotification.yaml
+  /api/SelectPay/v1/Portal [ACH Payment Form]:
+    $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
+ 
+
+
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml
@@ -244,6 +288,16 @@ tags:
     description: |
        An ACH (Automated Clearing House) payment is a type of electronic bank-to-bank payment made through the ACH network that coordinates electronic payments and automated money transfers. Also known as direct payments, ACH payments are a way to transfer money from one bank account to another without using paper checks, credit card networks, wire transfers, or cash.  
        The ACH network makes money transfers easier and simpler. ACH payments can be automated; they are secure, inexpensive, and make recordkeeping easier. A bank routing number, also known as an ABA (American Bankers' Association) number, is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.    
+
+  #B2B 
+  - name: B2B Portal
+    description: |
+     B2B application portal helps process payments from one business (Payor) to another business (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, B2B only initiates the payment processing and issues the payments through third-party services.   
+    
+     When the payee receives an electronic notification that their payment is readya virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.  
+     
+     In addition, the consumer is offered features like account and user management, payment and account activity history, and payment preferences specific to a payor. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery. 
+  
   #ClearingHousePotal
   - name: Clearinghouse Portal
     description: |
@@ -385,6 +439,7 @@ tags:
           * Zelle payment status
           * Zelle payment cancel
 
+    
 
       
       

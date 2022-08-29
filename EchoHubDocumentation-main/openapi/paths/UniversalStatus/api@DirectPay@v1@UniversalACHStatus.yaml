@@ -51,10 +51,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : ACH Payment instruction has been authorized and will be routed for processing
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 001
+                   PaymentResponseCodeDesc : ACH Payment instruction has been authorized and will be routed for processing
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
                   
             mapName_9000:   
               description: Please scroll the above dropdown list for more response codes          
@@ -65,10 +65,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9000
-                  PaymentResponseCodeDesc : ACH Payment cannot be cancelled when the status is Released
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 9000
+                   PaymentResponseCodeDesc : ACH Payment cannot be cancelled when the status is Released
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9001"
@@ -78,10 +78,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9001
-                  PaymentResponseCodeDesc : ACH Payment Unknown
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number    
+                 - PaymentResponseCode : Response for Payment Response Code 9001
+                   PaymentResponseCodeDesc : ACH Payment Unknown
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number    
             mapName_9002:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9002"
@@ -91,10 +91,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9002
-                  PaymentResponseCodeDesc : ACH Payment instruction that has not yet been claimed by the Payee, is successfully cancelled by the Payor
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 9002
+                   PaymentResponseCodeDesc : ACH Payment instruction that has not yet been claimed by the Payee, is successfully cancelled by the Payor
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9003:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9003"
@@ -104,10 +104,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9003
-                  PaymentResponseCodeDesc : ACH Payment instruction has been submitted and is awaiting authorization by the Payor
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9003
+                   PaymentResponseCodeDesc : ACH Payment instruction has been submitted and is awaiting authorization by the Payor
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9004:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9004"
@@ -117,10 +117,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9004
-                  PaymentResponseCodeDesc : ACH Payment instruction is under review
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 9004
+                   PaymentResponseCodeDesc : ACH Payment instruction is under review
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9005:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9005"
@@ -130,10 +130,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9005
-                  PaymentResponseCodeDesc : ACH Payment instruction is waiting for acceptance by the Payee
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9005
+                   PaymentResponseCodeDesc : ACH Payment instruction is waiting for acceptance by the Payee
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9006:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9006"
@@ -143,10 +143,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9006
-                  PaymentResponseCodeDesc : ACH notification has been sent to the Payee to alert them to the pending payment
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9006
+                   PaymentResponseCodeDesc : ACH notification has been sent to the Payee to alert them to the pending payment
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9007:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9007"
@@ -156,10 +156,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9007
-                  PaymentResponseCodeDesc : ACH Payment instruction is successfully routed to the Payee
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number                 
+                 - PaymentResponseCode : Response for Payment Response Code 9007
+                   PaymentResponseCodeDesc : ACH Payment instruction is successfully routed to the Payee
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9008:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9008"
@@ -169,10 +169,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9008
-                  PaymentResponseCodeDesc : ACH Payment instruction is successfully delivered to the Payee
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number   
+                 - PaymentResponseCode : Response for Payment Response Code 9008
+                   PaymentResponseCodeDesc : ACH Payment instruction is successfully delivered to the Payee
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number   
             mapName_9009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9009"
@@ -182,10 +182,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9009
-                  PaymentResponseCodeDesc : ACH Payment instruction is not claimed by the Payee within the expiration period
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9009
+                   PaymentResponseCodeDesc : ACH Payment instruction is not claimed by the Payee within the expiration period
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9010:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9010"
@@ -194,11 +194,11 @@ post:
                 ReponseCode: Response Code 9010
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9010
-                  PaymentResponseCodeDesc : ACH payment process was not successful
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number                 
+                TransLog :
+                 - PaymentResponseCode : Response for Payment Response Code 9010
+                   PaymentResponseCodeDesc : ACH payment process was not successful
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_9011:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9011"
@@ -208,10 +208,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9011
-                  PaymentResponseCodeDesc : ACH Payment in Add Pending Authorization status is successfully deleted by the Payor
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9011
+                   PaymentResponseCodeDesc : ACH Payment in Add Pending Authorization status is successfully deleted by the Payor
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9012:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9012"
@@ -221,10 +221,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9012
-                  PaymentResponseCodeDesc : ACH Payment instruction is routed to an individual who has been designated by the Payor as an approver for the transaction and is awaiting approval
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9012
+                   PaymentResponseCodeDesc : ACH Payment instruction is routed to an individual who has been designated by the Payor as an approver for the transaction and is awaiting approval
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9013:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9013"
@@ -234,10 +234,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9013
-                  PaymentResponseCodeDesc : The ACH Payment transaction is approved by the Payee
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9013
+                   PaymentResponseCodeDesc : The ACH Payment transaction is approved by the Payee
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_9014:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "9014"
@@ -247,10 +247,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 Translog :
-                  PaymentResponseCode : Response for Payment Response Code 9014
-                  PaymentResponseCodeDesc : The ACH Payment transaction is declined by the Payee
-                  TransactionId : Transaction Number
-                  EchoHubTransactionId : EchoHub Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 9014
+                   PaymentResponseCodeDesc : The ACH Payment transaction is declined by the Payee
+                   TransactionId : Transaction Number
+                   EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
@@ -260,10 +260,10 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : ACH Payment Status Failed
-                    TransactionId : Transaction Number
-                    EchoHubTransactionId : EchoHub Transaction Number
+                   - PaymentResponseCode : Response for Payment Response Code 900
+                     PaymentResponseCodeDesc : ACH Payment Status Failed
+                     TransactionId : Transaction Number
+                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_1033:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1033"
@@ -273,8 +273,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1033"
-                    ErrorDesc : Invalid or Missing Library Method
+                   - ErrorCode : "1033"
+                     ErrorDesc : Invalid or Missing Library Method
             mapName_1031:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1031"
@@ -284,8 +284,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1031"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                   - ErrorCode : "1031"
+                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -295,5 +295,5 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1027"
-                    ErrorDesc : Invalid or Missing Request Value               
+                   - ErrorCode : "1027"
+                     ErrorDesc : Invalid or Missing Request Value               

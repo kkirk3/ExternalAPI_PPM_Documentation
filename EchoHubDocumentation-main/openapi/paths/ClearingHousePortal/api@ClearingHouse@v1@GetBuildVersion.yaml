@@ -33,8 +33,8 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  TransResponseCode: "001"
-                  TransResponseCodeDesc: Fetched Build Version.
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Fetched Build Version.
 
                     
             mapName_900:   
@@ -45,8 +45,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  ErrorCode: Error code number
-                  ErrorDesc: Error description
+                -  ErrorCode: Error code number
+                   ErrorDesc: Error description
                     
             mapName_2015:
               description: Please scroll the above dropdown list for more response codes
@@ -56,5 +56,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                  ErrorCode: "2015"
-                  ErrorDesc: Invalid ECHO Security Authorization Token                                                             
+                -  ErrorCode: "2015"
+                   ErrorDesc: Invalid ECHO Security Authorization Token                                                             

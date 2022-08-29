@@ -17,10 +17,10 @@ properties:
         properties:
           TransResponseCode:
             type: string
-            description: Transaction response code number
+            description: "2021"
           TransResponseCodeDesc:
             type: string
-            description: User Registered
+            description: User details updated successfuly
             
   This is the Response for Response Code 900:
     type: object
@@ -39,11 +39,29 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description: "900"
           ErrorDesc:
            type: string
-           description: Error description
-           
+           description: Invalid UserName
+      TransError for Payment Response Code 2000:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: "2000"
+          ErrorDesc:
+            type: string
+            description: Unable to process the request, please contact system administrator
+      TransError for Payment Response Code 2020:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: "2020"
+          ErrorDesc:
+            type: string
+            description: Unauthorized Access
+         
       TransError JSON Validation Failed Code 1123:
         type: object
         properties:

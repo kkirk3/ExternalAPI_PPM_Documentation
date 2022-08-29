@@ -33,11 +33,11 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                  BatchTransactionId: Transaction ID
-                  BatchCount: Batch Count
-                  BatchFailedCount: Batch Failed Count
-                  BatchTransactions:
-                    lbxDirectoryId: Lockbox Directory ID
-                    PaymentTransactionId: Payment Transaction ID  
+                 - BatchTransactionId: Transaction ID
+                   BatchCount: Batch Count
+                   BatchFailedCount: Batch Failed Count
+                   BatchTransactions:
+                     lbxDirectoryId: Lockbox Directory ID
+                     PaymentTransactionId: Payment Transaction ID  
 
            

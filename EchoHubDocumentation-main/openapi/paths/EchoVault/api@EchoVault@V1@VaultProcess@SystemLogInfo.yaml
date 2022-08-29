@@ -44,14 +44,14 @@ get:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                  LogtoProcess: LogtoProcess
-                  RequestLog: RequestLog
-                  RequestLogID: RequestLogID
-                  ResponseID: ResponseID
-                  RequestVaule: RequestVaule
-                  ResponseVaule: ResponseVaule
-                  FailedResponse: FailedResponse
-                  creationdate: creationdate
+                 - LogtoProcess: LogtoProcess
+                   RequestLog: RequestLog
+                   RequestLogID: RequestLogID
+                   ResponseID: ResponseID
+                   RequestVaule: RequestVaule
+                   ResponseVaule: ResponseVaule
+                   FailedResponse: FailedResponse
+                   creationdate: creationdate
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -61,5 +61,5 @@ get:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  LogResponseCode: "900"
-                  LogResponseCodeDesc: Process Log Detials Failed
+                 - LogResponseCode: "900"
+                   LogResponseCodeDesc: Process Log Detials Failed

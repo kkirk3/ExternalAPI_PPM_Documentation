@@ -37,10 +37,10 @@ post:
                 ReponseCode: Response Code 001
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
-                Translog :
-                  PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : VCP Status Payment Successful
-                  TransactionId : Transaction Number
+                TransLog :
+                 - PaymentResponseCode : Response for Payment Response Code 001
+                   PaymentResponseCodeDesc : VCP Status Payment Successful
+                   TransactionId : Transaction Number
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -50,9 +50,9 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  PaymentResponseCode : Response for Payment Response Code 900
-                  PaymentResponseCodeDesc : VCP Card Status call failed
-                  TransactionId : Transaction Number
+                 - PaymentResponseCode : Response for Payment Response Code 900
+                   PaymentResponseCodeDesc : VCP Card Status call failed
+                   TransactionId : Transaction Number
             mapName_1033:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1033"
@@ -62,8 +62,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1033"
-                    ErrorDesc : Invalid or Missing Library Method
+                   - ErrorCode : "1033"
+                     ErrorDesc : Invalid or Missing Library Method
             mapName_1025:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1025"
@@ -73,8 +73,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1025"
-                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"  
+                   - ErrorCode : "1025"
+                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types - "DraftNumber", "CardNumberToken", "PayerCheckClaimNumber", "ClaimNumber", "PayHubPaymentId"  
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -84,8 +84,8 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1027"
-                    ErrorDesc : Invalid or Missing Request Value
+                   - ErrorCode : "1027"
+                     ErrorDesc : Invalid or Missing Request Value
             mapName_1026:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1026"
@@ -95,5 +95,5 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    ErrorCode : "1026"
-                    ErrorDesc : Invalid or Missing Action. Action must be either "Status" or "Transaction"
+                   - ErrorCode : "1026"
+                     ErrorDesc : Invalid or Missing Action. Action must be either "Status" or "Transaction"

@@ -40,10 +40,10 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    PaymentResponseCode: Response for Payment response code 001
-                    PaymentResponseCodeDesc: Direct to Debit Payment Successful
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                -    PaymentResponseCode: Response for Payment response code 001
+                     PaymentResponseCodeDesc: Direct to Debit Payment Successful
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -52,10 +52,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 900
-                    PaymentResponseCodeDesc: Direct to Debit Payment Failed
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: EchoHub Transaction Number
+                -    PaymentResponseCode: Response for Payment response code 900
+                     PaymentResponseCodeDesc: Direct to Debit Payment Failed
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: EchoHub Transaction Number
           # # x-examples:
           # x-examples1:
             mapName12:   
@@ -65,8 +65,8 @@ post:
                 ReponseCode: Response for Payment response code 1020
                 ReponseCodeDesc: Successful Transaction                
                 TransError:  
-                    ErrorCode: 1020
-                    ErrorDescription: Invalid or Missing Expiry Year                    
+                -    ErrorCode: 1020
+                     ErrorDescription: Invalid or Missing Expiry Year                    
             mapName13:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "5001"
@@ -75,5 +75,5 @@ post:
                 ReponseCodeDesc: Payment could not be processed, Please contact customer care
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment response code 5001
-                    PaymentResponseCodeDesc: Duplicate Payor Reference ID          
+                -    PaymentResponseCode: Response for Payment response code 5001
+                     PaymentResponseCodeDesc: Duplicate Payor Reference ID          

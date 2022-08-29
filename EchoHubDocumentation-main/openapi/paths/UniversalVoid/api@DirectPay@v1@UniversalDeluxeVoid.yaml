@@ -34,10 +34,10 @@ post:
                   ReponseCodeDesc: Successful Transaction
                   ResponseTransactionID: Transaction Number
                   Translog :
-                    PaymentResponseCode : Response for Payment Response Code 001
-                    PaymentResponseCodeDesc : Deluxe Void Payment Successful
-                    TransactionId : Transaction Number
-                    EchoHubTransactionId : EchoHub Transaction Number
+                   - PaymentResponseCode : Response for Payment Response Code 001
+                     PaymentResponseCodeDesc : Deluxe Void Payment Successful
+                     TransactionId : Transaction Number
+                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
@@ -47,10 +47,10 @@ post:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError :
-                    PaymentResponseCode : Response for Payment Response Code 900
-                    PaymentResponseCodeDesc : Deluxe Void Payment Failed
-                    TransactionId : Transaction Number
-                    EchoHubTransactionId : EchoHub Transaction Number
+                   - PaymentResponseCode : Response for Payment Response Code 900
+                     PaymentResponseCodeDesc : Deluxe Void Payment Failed
+                     TransactionId : Transaction Number
+                     EchoHubTransactionId : EchoHub Transaction Number
             mapName_1033:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1033"
@@ -60,8 +60,8 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1033"
-                      ErrorDesc : Invalid or Missing Library Method
+                     - ErrorCode : "1033"
+                       ErrorDesc : Invalid or Missing Library Method
             mapName_1001:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1001"
@@ -71,8 +71,8 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1001"
-                      ErrorDesc : Invalid or Missing Transaction ID
+                     - ErrorCode : "1001"
+                       ErrorDesc : Invalid or Missing Transaction ID
             mapName_1004:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1004"
@@ -82,8 +82,8 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1004"
-                      ErrorDesc : Invalid or Missing Checking Account ID                 
+                     - ErrorCode : "1004"
+                       ErrorDesc : Invalid or Missing Checking Account ID                 
             mapName_1031:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1031"
@@ -93,8 +93,8 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1031"
-                      ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                     - ErrorCode : "1031"
+                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
             mapName_1027:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1027"
@@ -104,8 +104,8 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1027"
-                      ErrorDesc : Invalid or Missing Request Value
+                     - ErrorCode : "1027"
+                       ErrorDesc : Invalid or Missing Request Value
             mapName_1032:   
                 description: Please scroll the above dropdown list for more response codes          
                 summary: "1032"
@@ -115,5 +115,5 @@ post:
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number
                     TransError :
-                      ErrorCode : "1032"
-                      ErrorDesc : Invalid or Missing Force Flag                  
+                     - ErrorCode : "1032"
+                       ErrorDesc : Invalid or Missing Force Flag                  
