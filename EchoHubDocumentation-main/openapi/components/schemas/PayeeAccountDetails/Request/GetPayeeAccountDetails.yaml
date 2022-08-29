@@ -1,0 +1,11 @@
+required:
+  - ECHOPayeeID
+type: object
+properties:
+  ECHOPayeeID:
+    type: string
+    description: 
+      This is the ECHOPayeeID.
+    maxLength: 150
+    minLength: 1
+  
