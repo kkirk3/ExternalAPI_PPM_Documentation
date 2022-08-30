@@ -15,12 +15,9 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          TransResponseCode:
+          TransResponseCodeDesc: 
             type: string
-            description: Transaction response code number
-          TransResponseCodeDesc:
-            type: string
-            description: User Registered
+            description: true or false
             
   This is the Response for Response Code 900:
     type: object
@@ -39,10 +36,16 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  "8000"
           ErrorDesc:
-           type: string
-           description: Error description
+            type: object
+            properties:
+              ErrorCode:
+                type: string
+                description:  "8002"
+              ErrorDesc:
+                type: string
+                description: Unauthorized Access
            
       TransError JSON Validation Failed Code 1013:
         type: object

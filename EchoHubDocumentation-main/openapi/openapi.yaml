@@ -225,8 +225,6 @@ paths:
   /api/SelectPay/v1/Portal [ACH Payment Form]:
     $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
  
-
-
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml
