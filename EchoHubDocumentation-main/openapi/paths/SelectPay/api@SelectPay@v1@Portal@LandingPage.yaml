@@ -41,20 +41,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - TransResponseCode: "001"
-                   TransResponseCodeDesc: User Registered
+                 - ConfigCollections: []
+                   PaymentList: null
                     
-            mapName_900:   
-              description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
-              value:
-                ReponseCode: "900"
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:  
-                 - ErrorCode: Error code number
-                   ErrorDesc: Error description
-
             mapName_1012:
               description: Please scroll the above dropdown list for more response codes
               summary: "1012"

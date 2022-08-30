@@ -41,9 +41,7 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - TransResponseCode: "001"
-                   TransResponseCodeDesc: User Registered
-                    
+                 - ""
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -52,8 +50,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                 - ErrorCode: Error code number
-                   ErrorDesc: Error description
+                - ErrorCode: "8000"
+                  ErrorDesc:
+                  - ErrorCode: "8002"
+                    ErrorDesc: Unauthorized Access
 
             mapName_1013:
               description: Please scroll the above dropdown list for more response codes
