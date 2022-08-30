@@ -41,8 +41,18 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - TransResponseCode: "001"
-                   TransResponseCodeDesc: User Registered
+                 - GuestUserToken: GuestUserToken
+                   Response:
+                    Zip: Zip
+                    PayeeName: PayeeName
+                    StatusCode: StatusCode
+                    Message: Message
+                    Email: Email
+                    DraftNumber: DraftNumber
+                    FirstName: FirstName
+                    LastName: LastName
+                    SubPayorName: SubPayorName
+                    ApplicationID: ApplicationID
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -52,8 +62,7 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                 - ErrorCode: Error code number
-                   ErrorDesc: Error description
+                 - LogErrorMessage: Unable to validate payee details
 
             mapName_1013:
               description: Please scroll the above dropdown list for more response codes

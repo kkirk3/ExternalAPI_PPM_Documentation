@@ -1,0 +1,6 @@
+x-AccessId:
+  schema:
+    type: int 
+  name: x-AccessId
+  in: header
+  required: true

@@ -1,0 +1,74 @@
+type: object
+properties:
+  This is the Response for response code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment response code 001:
+        type: object
+        properties:
+          PaymentResponseCode:
+            type: string
+            description: Response for Payment response code 001
+          PaymentResponseCodeDesc:
+            type: string
+            description: Get ECHO Payee Details Success
+          TransactionId:
+            type: string
+            description: Transaction Number
+          EchoHubTransactionId:
+            type: string
+            description: ECHO Hub Transaction Number
+          AccountNumber:
+            type: string
+            description: Account Number
+          MobileNumber:
+            type: string
+            description: Mobile Number
+          Email:
+            type: string
+            description: Email
+          RoutingNumber:
+            type: string
+            description: Routing Number
+            
+  This is the Response for response code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Payee could not be processed, Please contact customer care
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment response code 900:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: Response for Payment response code 001
+          ErrorDesc:
+            type: string
+            description: Invalid ECHO Payee ID
+      TransError JSON Validation Failed Code 1010:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: "1010"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing ECHO Payee ID
+      
+      

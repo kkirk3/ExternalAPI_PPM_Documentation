@@ -36,6 +36,11 @@ paths:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHCancel.yaml
   /api/DirectPay/ACH/v1/ACHStatus:
     $ref: paths/ACH/api@DirectPay@ACH@v1@ACHStatus.yaml
+  /api/DirectPay/ACH/v1/ACHPayeeCreate:
+    $ref: paths/ACH/api@DirectPay@ACH@v1@ACHPayeeCreate.yaml
+  #PayeeAccountDetails
+  /api/ECHODir/v1/EDirector:
+    $ref: paths/PayeeAccountDetails/api@ECHODir@v1@EDirector.yaml
     
   #B2B Portal
   /api/B2B/v1/Portal [eCheck PDF]:
@@ -220,8 +225,6 @@ paths:
   /api/SelectPay/v1/Portal [ACH Payment Form]:
     $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
  
-
-
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml

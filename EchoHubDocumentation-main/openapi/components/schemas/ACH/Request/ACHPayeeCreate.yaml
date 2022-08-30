@@ -1,0 +1,29 @@
+required:
+  - BankAccount
+  - RoutingNumber 
+  - AccountType 
+  - MobileNumber
+  
+type: object
+properties:
+  BankAccount:
+    type: string
+    description: This is the Bank Account of the Payee. 
+    maxLength: 150
+    minLength: 1
+  RoutingNumber :
+    type: string
+    description: This is the Routing Number of the Payee.
+    maxLength: 150
+    minLength: 1
+  AccountType :
+    type: integer
+    description: This is the Account Type .
+    maxLength: 150
+    minLength: 1
+  MobileNumber :
+    type: string
+    description: This is the MobileNumber unique identifier.
+    maxLength: 9
+
+  

@@ -33,17 +33,7 @@ post:
           schema:
             $ref: ../../components/schemas/SelectPay/Response/SelectPayEmailNotification.yaml
           examples:
-            mapName_001:   
-              description: Please scroll the above dropdown list for more response codes          
-              summary: "001"
-              value:
-                ReponseCode: "001"
-                ReponseCodeDesc: Successful Transaction
-                ResponseTransactionID: Transaction Number
-                TransLog:                  
-                 - TransResponseCode: "001"
-                   TransResponseCodeDesc: User Registered
-                    
+            
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -52,8 +42,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                 - ErrorCode: Error code number
-                   ErrorDesc: Error description
+                 - LogErrorMessage: Unable to Generate Email Notification
+                   
 
             mapName_1089:
               description: Please scroll the above dropdown list for more response codes
