@@ -1,0 +1,81 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Get Status Options and Get Roles
+  x-internal: true
+  operationId: CHPGetStatusOptionsandGetRoles
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/CHPGetStatusOptionsandRoles.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/CHPGetStatusOptionsandRolesResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Clearing House Admin Registered.
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: Error code number
+                     ErrorDesc: Error description
+
+            mapName_1310:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1310"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1310"
+                   ErrorDesc: Invalid or Missing Echo Security Authorization Token
+
+            mapName_1099:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1099"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1099"
+                   ErrorDesc: Invalid or Missing Action Type
+
+            mapName_1035:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1035"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                -  ErrorCode: "1035"
+                   ErrorDesc: Invalid or Missing UserName
