@@ -1,0 +1,137 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Add or Update CH to Domain Mapping
+  x-internal: true
+  operationId: CHPAddorUpdateCHtoDomainMapping
+  parameters:
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
+   
+   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+ 
+  requestBody:
+    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/AddOrUpdateCHToDomainMapping.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/AddOrUpdateCHToDomainMapping.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "2021"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                - TransResponseCode: "2021"
+                  TransResponseCodeDesc: User details updated successfuly
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                - ErrorCode: "900"
+                  ErrorDesc: Invalid UserName
+                - ErrorCode: "2000"
+                  ErrorDesc: Unable to process the request, please contact system administrator
+                - ErrorCode: "2020"
+                  ErrorDesc: Unauthorized Access
+
+            mapName_1099:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1099"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1099"
+                  ErrorDesc: Invalid or Missing Action Type
+                        
+            mapName_2015:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "2015"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "2015"
+                  ErrorDesc: Invalid or Missing Echo Security Authorization Token
+
+            mapName_1035:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1035"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+                            
+            mapName_1087:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1087"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1087"
+                  ErrorDesc: Invalid or Missing ID
+                            
+            mapName_1100:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1100"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1100"
+                  ErrorDesc: Invalid or Missing Source Type
+                   
+            mapName_1071:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1071"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1071"
+                  ErrorDesc: Invalid or Missing ClearinghouseName
+                         
+            mapName_1073:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1073"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1073"
+                  ErrorDesc: Invalid or Missing Domain Name

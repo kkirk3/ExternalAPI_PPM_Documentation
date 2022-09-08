@@ -1,0 +1,56 @@
+required:
+  - APIFormIdentifierId
+  - Id
+  - UserName
+  - EchoSecAuthorizationToken
+  - ActionType
+  - SourceType
+  - ClearinghouseName
+  - DomainName
+ 
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    
+  Id: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+  
+  UserName: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+        
+  EchoSecAuthorizationToken: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+
+  ActionType: 
+    type: string
+    description: This is the first name of the clearinghouse user/admin/ECHO admin.
+    maxLength: 100
+    minLength: 1
+    
+  SourceType: 
+    type: string
+    description: This is the last name of a clearinghouse user/admin/ECHO admin.
+    maxLength: 100
+    minLength: 1
+    
+  ClearinghouseName: 
+    type: string
+    description: This is the name of the clearinghouse that the user/admin/ECHO admin is associated with.
+    maxLength: 100
+    minLength: 1
+    
+  DomainName: 
+      type: string
+      description: This is the name of the clearinghouse that the user/admin/ECHO admin is associated with.
+      maxLength: 100
+      minLength: 1
