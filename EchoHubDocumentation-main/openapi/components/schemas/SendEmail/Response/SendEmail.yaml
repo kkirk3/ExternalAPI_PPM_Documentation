@@ -12,15 +12,26 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransLog for Payment response code 001:
+      TransLog for Sendgird Email response code 001:
         type: object
         properties:
           EmailResponseCode:
             type: string
-            description: Response for Payment response code 001
+            description: "001"
           EmailResponseCodeDesc:
             type: string
-            description: Email Sent Successfully via SendGrid
+            description: Email Sent Successfully via Sendgrid
+      TransLog for SMTP Email response code 001:
+        type: object
+        properties:
+          EmailResponseCode:
+            type: string
+            description: "001"
+          EmailResponseCodeDesc:
+            type: string
+            description: Email Sent Successfully via SMTP
+           
+
   This is the Response for response code 900:
     type: object
     properties:
@@ -33,15 +44,25 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment response code 900:
+      TransError for Sendgrid Eamil response code 900:
         type: object
         properties:
           EmailResponseCode:
             type: string
-            description: Response for Payment response code 001
+            description: "10003"
           EmailResponseCodeDesc:
             type: string
-            description: Email Sent Failed
+            description: Email send failed via Sendgrid
+      TransError for SMTP Eamil response code 900:
+        type: object
+        properties:
+          EmailResponseCode:
+            type: string
+            description: "10004"
+          EmailResponseCodeDesc:
+            type: string
+            description: Email send failed via SMTP
+
       TransError JSON Validation Failed Code 1045:
         type: object
         properties:
@@ -50,7 +71,8 @@ properties:
             description: "1045"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Sender Email
+            description: Invalid or Missing SenderEmail
+
       TransError JSON Validation Failed Code 1046:
         type: object
         properties:
@@ -59,7 +81,8 @@ properties:
             description: "1046"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Email To
+            description: Invalid or Missing EmailTo
+
       TransError JSON Validation Failed Code 1047:
         type: object
         properties:
@@ -69,6 +92,7 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Subject
+
       TransError JSON Validation Failed Code 1048:
         type: object
         properties:
@@ -78,3 +102,102 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing Body
+
+      TransError JSON Validation Failed Code 1049:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1049"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing CCEmail
+            
+      TransError JSON Validation Failed Code 1050:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1050"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing BCCEmail
+            
+      TransError JSON Validation Failed Code 1051:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1051"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Attachments
+            
+      TransError JSON Validation Failed Code 1052:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1052"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Categories
+            
+      TransError JSON Validation Failed Code 1053:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1053"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing IsHTMLBody
+            
+      TransError JSON Validation Failed Code 1054:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1054"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing SendBy
+            
+      TransError JSON Validation Failed Code 1129:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1129"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing AttachmentByteArray
+            
+      TransError JSON Validation Failed Code 1130:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1130"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing AttachmentFileName
+            
+      TransError JSON Validation Failed Code 1131:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1131"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Disposition
+            
+      TransError JSON Validation Failed Code 1132:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1132"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Content_id
+            
+      TransError JSON Validation Failed Code 1133:
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1133"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing AttachmentType

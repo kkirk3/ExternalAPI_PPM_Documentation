@@ -1,10 +1,10 @@
 post:
   tags:
-    - SelectPay Portal
+    - Clearinghouse Portal 
      
-  summary: SelectPay Portal - User Page
+  summary: Clearinghouse Portal - Get Find 835 Search By Options
   x-internal: true
-  operationId: SELECTPORTALUSERPAGE
+  operationId: CHPGetFind835SearchByOptions
   parameters:
     - name: x-Authorization
       in: header
@@ -24,35 +24,25 @@ post:
     content:
       application/json:
         schema: 
-          $ref: ../../components/schemas/SelectPay/Request/SelectPayUserPage.yaml
+          $ref: ../../components/schemas/ClearingHousePortal/Request/GetFind835SearchByOptions.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/SelectPay/Response/SelectPayUserPage.yaml
+            $ref: ../../components/schemas/ClearingHousePortal/Response/GetFind835SearchByOptions.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
-                ReponseCode: "001"
+                ReponseCode: "2021"
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - GuestUserToken: GuestUserToken
-                   Response:
-                    Zip: Zip
-                    PayeeName: PayeeName
-                    StatusCode: StatusCode
-                    Message: Message
-                    Email: Email
-                    DraftNumber: DraftNumber
-                    FirstName: FirstName
-                    LastName: LastName
-                    SubPayorName: SubPayorName
-                    ApplicationID: ApplicationID
+                - TransResponseCode: "2021"
+                  TransResponseCodeDesc: User details updated successfuly
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -62,48 +52,54 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                 - LogErrorMessage: Unable to validate payee details
+                - ErrorCode: "900"
+                  ErrorDesc: Invalid UserName
+                - ErrorCode: "2000"
+                  ErrorDesc: Unable to process the request, please contact system administrator
+                - ErrorCode: "2020"
+                  ErrorDesc: Unauthorized Access
 
-            mapName_1013:
+                       
+            mapName_2015:
               description: Please scroll the above dropdown list for more response codes
-              summary: "1013"
+              summary: "2015"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                 - ErrorCode: "1013"
-                   ErrorDesc: Invalid or Missing ApplicationId
-                        
-            mapName_1014:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1014"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                 - ErrorCode: "1014"
-                   ErrorDesc: Invalid or Missing Draft Number
+                - ErrorCode: "2015"
+                  ErrorDesc: Invalid or Missing Echo Security Authorization Token
 
-            mapName_156:
+            mapName_1035:
               description: Please scroll the above dropdown list for more response codes
-              summary: "156"
+              summary: "1035"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                 - ErrorCode: "156"
-                   ErrorDesc: Invalid or Missing Zip Code
-
-            mapName_1023:
+                - ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+                            
+            mapName_1137:
               description: Please scroll the above dropdown list for more response codes
-              summary: "1023"
+              summary: "1137"
               value:
                 ReponseCode: Response Code 900
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:
-                 - ErrorCode: "1023"
-                   ErrorDesc: Invalid or Missing GuestUserToken
+                - ErrorCode: "1137"
+                  ErrorDesc: Invalid or Missing Module Id
+                            
+            mapName_1138:
+              description: Please scroll the above dropdown list for more response codes
+              summary: "1138"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:
+                - ErrorCode: "1138"
+                  ErrorDesc: Invalid or Missing Card Id

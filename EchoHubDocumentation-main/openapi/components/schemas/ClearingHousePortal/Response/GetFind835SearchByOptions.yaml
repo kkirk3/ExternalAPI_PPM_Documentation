@@ -13,8 +13,14 @@ properties:
         type: string
         description: Transaction Number
       TransLog for Payment Response Code 001:
-        type: string
-        description: ""
+        type: object
+        properties:
+          TransResponseCode:
+            type: string
+            description: "2021"
+          TransResponseCodeDesc:
+            type: string
+            description: User details updated successfuly
             
   This is the Response for Response Code 900:
     type: object
@@ -33,63 +39,65 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  "8000"
+            description: "900"
           ErrorDesc:
-            type: object
-            properties:
-              ErrorCode:
-                type: string
-                description:  "8002"
-              ErrorDesc:
-                type: string
-                description: Unauthorized Access
-           
-      TransError JSON Validation Failed Code 1013:
+           type: string
+           description: Invalid UserName
+      TransError for Payment Response Code 2000:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: "2000"
+          ErrorDesc:
+            type: string
+            description: Unable to process the request, please contact system administrator
+      TransError for Payment Response Code 2020:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description: "2020"
+          ErrorDesc:
+            type: string
+            description: Unauthorized Access
+         
+      TransError JSON Validation Failed Code 2015:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "1013"
+            description: "2015"
           ErrorDesc:
             type: string
-            description: Invalid or Missing ApplicationId
-               
-      TransError JSON Validation Failed Code 1014:
+            description: Invalid or Missing Echo Security Authorization Token                
+          
+      TransError JSON Validation Failed Code 1035:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "1014"
+            description: "1035"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Draft Number
+            description: Invalid or Missing UserName
 
-      TransError JSON Validation Failed Code 156:
+      TransError JSON Validation Failed Code 1137:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "156"
+            description: "1187"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Zip Code
-      
-      TransError JSON Validation Failed Code 1023:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1023"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing GuestUserToken
+            description: Invalid or Module Id
 
-      TransError JSON Validation Failed Code 162:
+      TransError JSON Validation Failed Code 1138:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "162"
+            description: "1138"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Routing Number
+            description: Invalid or Missing Card Id

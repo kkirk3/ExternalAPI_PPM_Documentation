@@ -1,27 +1,5 @@
 type: object
 properties:
-  This is the Response for Response Code 001:
-    type: object
-    properties:
-      ReponseCode:
-        type: string
-        description: Response Code 001
-      ReponseCodeDesc:
-        type: string
-        description: Successful Transaction
-      ResponseTransactionID:
-        type: string
-        description: Transaction Number
-      TransLog for Payment Response Code 001:
-        type: object
-        properties:
-          TransResponseCode:
-            type: string
-            description: Transaction response code number
-          TransResponseCodeDesc:
-            type: string
-            description: User Registered
-            
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -37,12 +15,9 @@ properties:
       TransError for Payment Response Code 900:
         type: object
         properties:
-          ErrorCode:
-            type: string
-            description:  Error code number
-          ErrorDesc:
+          LogErrorMessage:
            type: string
-           description: Error description
+           description: Unable to Generate Email Notification
            
       TransError JSON Validation Failed Code 1089:
         type: object

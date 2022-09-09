@@ -35,11 +35,11 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:  
-                    GrossAmount: Gross Amount
-                    FeeAmount: Fee Amount
-                    PayAmount: Pay Amount
-                    PayorSessionID: Payor Session ID
-                    URL: URL
+                  -   GrossAmount: Gross Amount
+                      FeeAmount: Fee Amount
+                      PayAmount: Pay Amount
+                      PayorSessionID: Payor Session ID
+                      URL: URL
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -48,10 +48,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                    PaymentResponseCode: Response for Payment Response Code 900
-                    PaymentResponseCodeDesc: No Access to ECHO Vault
-                    TransactionId: Transaction Number
-                    EchoHubTransactionId: ECHO Hub Transaction Number
+                   - PaymentResponseCode: Response for Payment Response Code 900
+                     PaymentResponseCodeDesc: No Access to ECHO Vault
+                     TransactionId: Transaction Number
+                     EchoHubTransactionId: ECHO Hub Transaction Number
             mapName_1009:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1009"
@@ -61,8 +61,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1009"
-                  ErrorDesc : Invalid or Missing Payor API Form Identifier
+                 - ErrorCode : "1009"
+                   ErrorDesc : Invalid or Missing Payor API Form Identifier
             mapName_1031:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1031"
@@ -72,8 +72,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1031"
-                  ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be either "PAYORREFERENCEID" or "ECHOHUBTRANSACTIONID"
+                 - ErrorCode : "1031"
+                   ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be either "PAYORREFERENCEID" or "ECHOHUBTRANSACTIONID"
             mapName_1027:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1027"
@@ -83,8 +83,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1027"
-                  ErrorDesc : Invalid or Missing Request Value
+                 - ErrorCode : "1027"
+                   ErrorDesc : Invalid or Missing Request Value
             mapName_1060:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1060"
@@ -94,8 +94,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1060"
-                  ErrorDesc : Invalid or Missing Process Type
+                 - ErrorCode : "1060"
+                   ErrorDesc : Invalid or Missing Process Type
             mapName_1065:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "1065"
@@ -105,5 +105,5 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError :
-                  ErrorCode : "1065"
-                  ErrorDesc : Invalid or Missing Payment Type
+                 - ErrorCode : "1065"
+                   ErrorDesc : Invalid or Missing Payment Type

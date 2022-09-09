@@ -101,6 +101,11 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterCHAdmin.yaml
   /api/ClearingHouse/v1/Portal [Edit User]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml    
+  /api/ClearingHouse/v1/Portal [AddOrUpdateCHToDomainMapping]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@AddOrUpdateCHToDomainMapping.yaml
+  /api/ClearingHouse/v1/Portal [GetFind835SearchByOptions]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFind835SearchByOptions.yaml 
+       
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
@@ -225,8 +230,6 @@ paths:
   /api/SelectPay/v1/Portal [ACH Payment Form]:
     $ref: paths/SelectPay/api@SelectPay@v1@Portal@ACHPayment.yaml     
  
-
-
   #Send Email
   /api/Messaging/v1/SendEmail:
     $ref: paths/SendEmail/api@v1@SendEmail.yaml

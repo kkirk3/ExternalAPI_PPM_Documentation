@@ -1,0 +1,33 @@
+required:
+  - APIFormIdentifierId
+  - ModuleId
+  - UserName
+  - EchoSecAuthorizationToken
+  - CardId
+
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    
+  ModuleId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+
+  CardId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+      
+  UserName: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1
+        
+  EchoSecAuthorizationToken: 
+    type: string
+    description: This is a unique name for each account and enables the user to maintain personal settings and identification with the portal.
+    maxLength: 100
+    minLength: 1

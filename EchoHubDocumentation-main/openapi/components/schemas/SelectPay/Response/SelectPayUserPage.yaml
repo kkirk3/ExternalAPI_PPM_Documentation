@@ -15,12 +15,42 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          TransResponseCode:
+          GuestUserToken:
             type: string
-            description: Transaction response code number
-          TransResponseCodeDesc:
-            type: string
-            description: User Registered
+            description: GuestUserToken
+          Response:
+            type: object
+            properties: 
+              Zip:
+                type: string
+                description: Zip
+              PayeeName:
+                type: string
+                description: PayeeName
+              StatusCode:
+                type: string
+                description: StatusCode
+              Message:
+                type: string
+                description: Message
+              Email:
+                type: string
+                description: Email
+              DraftNumber:
+                type: integer
+                description: DraftNumber
+              FirstName:
+                type: string
+                description: FirstName
+              LastName:
+                type: string
+                description: LastName
+              SubPayorName:
+                type: string
+                description: SubPayorName
+              ApplicationID:
+                type: integer
+                description: ApplicationID
             
   This is the Response for Response Code 900:
     type: object
@@ -39,10 +69,10 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  "900"
           ErrorDesc:
            type: string
-           description: Error description
+           description: Unable to validate payee details
            
       TransError JSON Validation Failed Code 1013:
         type: object

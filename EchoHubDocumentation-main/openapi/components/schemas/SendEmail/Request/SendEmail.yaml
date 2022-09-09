@@ -81,10 +81,12 @@ properties:
           * When the Disposition is passed as Attachment, the image is sent as an attachment.  
            
           * When the Disposition is passed as Inline, the image is sent in the body of the email.
-        
       Content_Id:
         type: string
         description: This is the name given to the image when the parameter disposition is passed as “inline”.
+      AttachmentType:
+        type: string
+        description: This is the type of the attachment
   Categories:
     type: string
     description: |
