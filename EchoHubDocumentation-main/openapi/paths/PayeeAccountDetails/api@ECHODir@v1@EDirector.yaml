@@ -1,6 +1,6 @@
 post:
   tags:
-    - PayeeAccountDetails
+    - Payee Account Details
   summary: Get Payee Account Details
   operationId: PayeeAccountDetails
   parameters:
@@ -15,11 +15,16 @@ post:
         type: string
         $ref: ../../components/headers/xAccessId.yaml
   description: |
-   This endpoint allows the API user to cancel an ACH Payment. It requires the unique Payor Reference ID.
-   
+   This API allows getting the account details for an ECHO Payee ID so that the information can be shown to the user. Systems of record use this endpoint to get the account information of ACH, Zelle, Venmo, or D2D payment modalities for a payee.  
+
+   When there is a request for retrieving account information for an ECHO Payee ID, the data is first validated in the ECHO Hub system. After validation, the data is sent to the Vault Connect library to retrieve the Vault Token associated with the ECHO Payee ID. The request is then passed to the ECHO Vault endpoint to get the account details. Once the details are obtained, the ECHO Hub will send the response to the calling application/consumer.  
+
+   This endpoint uses ‘ECHOPayeeID’ as the input parameter.
+   ECHOPayeeID – This is the cross-reference ID for the ECHO Hub to know what the vault token is, in order to interface with the Vault.  
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   requestBody:
-    description: This endpoint is used to cancel an ACH Payment.
+    description: This endpoint is used to get the account details for an ECHO Payee ID.
     required: true
     content:
       application/json:

@@ -391,6 +391,18 @@ tags:
   - name:  Payment Void
     description: |      
            The  Payment Void endpoint allows the API user to access and void a payment like Deluxe eCheck based on the Library method. This endpoint helps validate and call a particular API internally based on the unique Payor Reference ID. This is used for in-house application only.
+           SelectPay application portal helps in the processing of payments from one business (Payor) to a consumer (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, SelectPay only initiates the payment processing and issues the payments through third-party services. 
+           When the payee receives an electronic notification that their payment is ready, they can visit the portal and verify with their payment confirmation number and billing zip code. Once verified, they can use the portal to select from payment modality options such as electronic checks for instant printing and deposit, Venmo, Zelle, Direct to Debit card push, and ACH deposit to a checking account. 
+           In addition, the consumer is offered the ability to view the history of payment activity and manage future payment options to a defaulted payment modality type for recurring payments. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery.
+   #SelectPay
+  - name : SelectPay Portal
+    description: |   
+     SelectPay application portal helps in the processing of payments from one business (Payor) to a consumer (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, SelectPay only initiates the payment processing and issues the payments through third-party services.  
+
+     When the payee receives an electronic notification that their payment is ready, they can visit the portal and verify with their payment confirmation number and billing zip code. Once verified, they can use the portal to select from payment modality options such as electronic checks for instant printing and deposit, Venmo, Zelle, Direct to Debit card push, and ACH deposit to a checking account.   
+
+     In addition, the consumer is offered the ability to view the history of payment activity and manage future payment options to a defaulted payment modality type for recurring payments. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery.
+
   #Send Email
   - name : Send Email
     description: |
