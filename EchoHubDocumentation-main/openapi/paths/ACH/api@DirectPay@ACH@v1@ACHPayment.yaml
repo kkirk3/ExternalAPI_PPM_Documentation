@@ -38,7 +38,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:  
                   -   PaymentResponseCode: Response for Payment response code 001
-                      PaymentResponseCodeDesc: ACH  Payment Cancelled Successfully
+                      PaymentResponseCodeDesc: ACH  Payment Successful
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   

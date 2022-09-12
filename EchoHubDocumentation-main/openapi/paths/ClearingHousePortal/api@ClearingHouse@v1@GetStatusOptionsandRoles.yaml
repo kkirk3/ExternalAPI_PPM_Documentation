@@ -34,7 +34,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                 -  TransResponseCode: "001"
-                   TransResponseCodeDesc: Clearing House Admin Registered.
+                   TransResponseCodeDesc: Get Status Options or Roles.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          

@@ -1,10 +1,11 @@
 required:
   - PayorReferenceId
+  - PayeeFirstName
   - Amount
-  - RemoteABA
-  - RemoteAccount
-  - AccountType
+  - EchoPayeeID
+  - TPAID
   - EffectiveDate
+  - SystemOfRecords
   
 type: object
 properties:
@@ -13,28 +14,34 @@ properties:
     description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
     maxLength: 150
     minLength: 1
+  PayeeFirstName:
+    type: string
+    description: This is the first name of the Payee.
+    maxLength: 150
+    minLength: 1
+  PayeeLastName:
+    type: string
+    description: This is the last name of the Payee.
+    maxLength: 150
+    minLength: 1
   Amount:
     type: number
     description: This is the amount to be paid to the Payee.
-  RemoteABA:
-    type: string
-    description: This is the Payee’s ABA (American Bankers' Association) number. It is a 9-digit unique routing number assigned to every bank to identify the bank account.
-    maxLength: 9
-  RemoteAccount:
+  EchoPayeeID:
     type: integer
-    description: This is the account number of the Payee.
-    maxLength: 50
-  AccountType:
+    description: This is the cross-reference ID for the ECHO Hub to know what the vault token is, in order to interface with the Vault.
+    maxLength: 150
+    minLength: 1
+  TPAID:
     type: string
-    description: This is the account type of the Payee which can be either C or S. 
-     *	C - Checking Account
-     * S - Savings Account
-    maxLength: 1
+    description: This is the unique identifier for a TPA.
+    maxLength: 150
+    minLength: 1
   EffectiveDate:
     type: string
     description: This is the date scheduled for the amount to be deposited in the Payee’s bank account.
-  Administrator:
+  SystemOfRecords:
     type: string
-    description: This is the identifier of the health plan administrator or other Payor entity for which the payment is being issued to a Payee.
+    description: This is the calling application that is used by the consumer.
     maxLength: 5
   
