@@ -100,11 +100,16 @@ paths:
   /api/ClearingHouse/v1/Portal [Register CH Admin]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterCHAdmin.yaml
   /api/ClearingHouse/v1/Portal [Edit User]:
-    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml
-  /api/ClearingHouse/v1/Portal [Forgot Password or Forgot Username]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml    
+  /api/ClearingHouse/v1/Portal [AddOrUpdateCHToDomainMapping]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@AddOrUpdateCHToDomainMapping.yaml
+  /api/ClearingHouse/v1/Portal [GetFind835SearchByOptions]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFind835SearchByOptions.yaml
+  /api/ClearingHouse/v1/Portal [Forgot Passsqord or UserName]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ForgotPasswordOrUserName.yaml
-  /api/ClearingHouse/v1/Portal [Get Status Options and Get Roles]:
-    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml    
+  /api/ClearingHouse/v1/Portal [Get Status Options and Roles]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml 
+       
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
