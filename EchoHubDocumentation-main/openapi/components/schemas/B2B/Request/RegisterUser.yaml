@@ -1,0 +1,97 @@
+required:
+  - APIFormIdentifierId
+  - AuthorizationToken
+  - PaymentType
+  - TaxID
+  - BusinessName
+  - Address1
+  - City
+  - State
+  - Zip
+  - FirstName
+  - LastName
+  - PhoneNumber
+  - EmailAddress
+  - Password
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+
+  AuthorizationToken: 
+    type: string
+    description: This is a string of code that is used to authorize a user on the API.
+    maxLength: 200
+    minLength: 1
+
+  PaymentType: 
+    type: integer
+    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+  
+  TaxID: 
+    type: string
+    description: This is a string of code that is used to authorize a user on the API.
+    maxLength: 50
+    minLength: 1
+    
+  BusinessName: 
+    type: string
+    description: This is a string of code that is used to authorize a user on the API.
+    maxLength: 50
+    minLength: 1
+    
+  Address1: 
+    type: string
+    description: Address Line 1 is generally for the civic number and street name (street address) where the payee is located.
+    maxLength: 255
+    minLength: 1
+    
+  Address2: 
+    type: string
+    description: Address Line 1 is generally for the civic number and street name (street address) where the payee is located.
+    maxLength: 255
+    minLength: 1
+    
+  City: 
+    type: string
+    description: This is the name of the city where the payee is located.
+    maxLength: 50
+    minLength: 1
+        
+  State: 
+    type: string
+    description: This is the name of the state where the payee is located.
+    maxLength: 50
+    minLength: 1
+      
+  Zip: 
+    type: string
+    description: This is the zip code of the location where the transaction was performed.
+    maxLength: 50
+    minLength: 1
+
+  FirstName: 
+    type: string
+    description: This is the first name of the payee.
+    maxLength: 50
+    minLength: 1
+      
+  LastName: 
+    type: string
+    description: This is the last name of the payee.
+    maxLength: 50
+    minLength: 1
+
+  EmailAddress: 
+    type: string
+    description: This is the email ID of the payee.
+    maxLength: 100
+    minLength: 1
+     
+  Password: 
+    type: string
+    description: This is a word such as 'Mr' or 'Mrs' that is used before the payee’s name.
+    maxLength: 100
+    minLength: 1
