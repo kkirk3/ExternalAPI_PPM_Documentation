@@ -1,6 +1,7 @@
-x-Authorization:
+x-RequestUrl:
   schema:
     type: string 
-  name: x-Authorization
+  name: x-RequestUrl
   in: header
   required: true
+

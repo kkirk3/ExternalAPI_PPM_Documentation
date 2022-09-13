@@ -4,11 +4,29 @@ post:
   summary: ACH Payment Create
   operationId: ACHPayment
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the API user to create an ACH Payment to the Payee. In order to initiate an ACH transfer, payment details such as the Payee’s bank routing and account numbers, account type, and the transaction amount are required along with the intended date to make the payment. It also requires the Payor reference ID to identify the Payor. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
    
@@ -51,6 +69,34 @@ post:
                 TransError:  
                   -   PaymentResponseCode: Response for Payment response code 900
                       PaymentResponseCodeDesc: Duplicate Payor Reference ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1010
+                      PaymentResponseCodeDesc: Invalid or Missing Payor Reference ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 174
+                      PaymentResponseCodeDesc: Invalid or Missing FirstName
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1043
+                      PaymentResponseCodeDesc: Invalid or Missing Amount
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1076
+                      PaymentResponseCodeDesc: Invalid or Missing Echo Payee ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1091
+                      PaymentResponseCodeDesc: Invalid or Missing TPA ID
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1056
+                      PaymentResponseCodeDesc: Invalid or Missing Effective Date
+                      TransactionId: Transaction Number
+                      EchoHubTransactionId: EchoHub Transaction Number
+                  -   PaymentResponseCode: Response for Payment response code 1101
+                      PaymentResponseCodeDesc: Invalid or Missing System Of Records
                       TransactionId: Transaction Number
                       EchoHubTransactionId: EchoHub Transaction Number
                       
