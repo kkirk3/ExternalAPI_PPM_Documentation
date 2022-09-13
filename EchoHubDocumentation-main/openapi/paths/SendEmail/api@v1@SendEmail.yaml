@@ -53,168 +53,33 @@ post:
                   ErrorDesc: Email send failed via Sendgrid
                 - ErrorCode: "10004"
                   ErrorDesc: Email send failed via SMTP
-
-            mapName_1045:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1045"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1045"
                   ErrorDesc: Invalid or Missing SenderEmail
-
-            mapName_1046:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1046"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1046"
                   ErrorDesc: Invalid or Missing EmailTo
-
-            mapName_1047:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1047"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1047"
                   ErrorDesc: Invalid or Missing Subject
-                  
-            mapName_1048:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1048"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1048"
                   ErrorDesc: Invalid or Missing Body
-
-            mapName_1049:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1049"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1049"
                   ErrorDesc: Invalid or Missing CCEmail
-
-            mapName_1050:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1050"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1050"
                   ErrorDesc: Invalid or Missing BCCEmail
-
-            mapName_1051:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1051"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1051"
                   ErrorDesc: Invalid or Missing Attachments
-
-            mapName_1052:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1052"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1052"
                   ErrorDesc: Invalid or Missing Categories
-
-            mapName_1053:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1053"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1053"
                   ErrorDesc: Invalid or Missing IsHTMLBody
-
-            mapName_1054:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1054"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1054"
                   ErrorDesc: Invalid or Missing SendBy
-
-            mapName_1129:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1129"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1129"
                   ErrorDesc: Invalid or Missing AttachmentByteArray
-
-            mapName_1130:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1130"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1130"
                   ErrorDesc: Invalid or Missing AttachmentFileName
-
-            mapName_1131:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1131"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1131"
                   ErrorDesc: Invalid or Missing Disposition
-
-            mapName_1132:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1132"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1132"
                   ErrorDesc: Invalid or Missing Contect_id
-
-            mapName_1133:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1133"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1133"
                   ErrorDesc: Invalid or Missing AttachmentType
