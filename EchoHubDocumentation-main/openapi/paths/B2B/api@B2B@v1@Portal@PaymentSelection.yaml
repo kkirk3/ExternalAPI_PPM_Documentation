@@ -54,36 +54,9 @@ post:
                 TransError:  
                 -  ErrorCode: Error code number
                    ErrorDesc: Error description
-
-            mapName_1059:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1059"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1059"
                    ErrorDesc: Invalid or Missing Authorization Token
-                        
-            mapName_1065:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1065"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1065"
                    ErrorDesc: Invalid or Missing Payment Type
-
-            mapName_150:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "150"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "150"
                    ErrorDesc: Invalid or Missing Tax ID

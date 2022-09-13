@@ -54,27 +54,8 @@ post:
                 TransError:  
                 -  ErrorCode: Error code number
                    ErrorDesc: Error description
-
-            mapName_1059:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1059"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1059"
                    ErrorDesc: Invalid or Missing Authorization Token
-                                    
-
-            mapName_176:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "176"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "176"
                    ErrorDesc: Invalid or Missing Email Address
-                        
+                   

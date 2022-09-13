@@ -54,25 +54,7 @@ post:
                 TransError:  
                 -  ErrorCode: Error code number
                    ErrorDesc: Error description
-
-            mapName_176:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "176"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "176"
                    ErrorDesc: Invalid or Missing Email Address
-                        
-            mapName_1015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1015"
                    ErrorDesc: Invalid or Missing Password

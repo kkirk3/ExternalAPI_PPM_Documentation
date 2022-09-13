@@ -54,25 +54,7 @@ post:
                 TransError:  
                   - ErrorCode: Error code number
                     ErrorDesc: Error description
-
-            mapName_1001:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1001"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1001"
-                   ErrorDesc: Invalid or Missing Transaction ID
-                        
-            mapName_1004:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1004"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1004"
-                   ErrorDesc: Invalid or Missing Checking Account ID
+                  - ErrorCode: "1001"
+                    ErrorDesc: Invalid or Missing Transaction ID
+                  - ErrorCode: "1004"
+                    ErrorDesc: Invalid or Missing Checking Account ID
