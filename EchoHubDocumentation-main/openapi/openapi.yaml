@@ -63,6 +63,8 @@ paths:
     $ref: paths/B2B/api@B2B@v1@Portal@UpdateUserProfile.yaml
   /api/B2B/v1/Portal [Register User]:  
     $ref: paths/B2B/api@B2B@v1@Portal@RegisterUser.yaml
+  /api/B2B/v1/Portal [Validate User]:  
+    $ref: paths/B2B/api@B2B@v1@Portal@ValidateUser.yaml    
 
   #ClearingHousePotal 
   /api/ClearingHouse/v1/Portal [Register User]:
