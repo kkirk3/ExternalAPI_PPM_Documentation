@@ -52,49 +52,13 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                 - ErrorCode: Error code number
-                   ErrorDesc: Error description
-
-            mapName_1013:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1013"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                 - ErrorCode: "1013"
-                   ErrorDesc: Invalid or Missing ApplicationId
-                        
-            mapName_1014:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1014"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                 - ErrorCode: "1014"
-                   ErrorDesc: Invalid or Missing Draft Number
-
-            mapName_156:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "156"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                 - ErrorCode: "156"
-                   ErrorDesc: Invalid or Missing Zip Code
-
-            mapName_1023:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1023"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                 - ErrorCode: "1023"
-                   ErrorDesc: Invalid or Missing GuestUserToken
+                  - ErrorCode: Error code number
+                    ErrorDesc: Error description
+                  - ErrorCode: "1013"
+                    ErrorDesc: Invalid or Missing ApplicationId
+                  - ErrorCode: "1014"
+                    ErrorDesc: Invalid or Missing Draft Number
+                  - ErrorCode: "156"
+                    ErrorDesc: Invalid or Missing Zip Code
+                  - ErrorCode: "1023"
+                    ErrorDesc: Invalid or Missing GuestUserToken
