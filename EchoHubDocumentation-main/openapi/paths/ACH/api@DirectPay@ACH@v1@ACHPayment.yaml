@@ -57,7 +57,7 @@ post:
                 TransLog:  
                   -   PaymentResponseCode: Response for Payment response code 001
                       PaymentResponseCodeDesc: ACH  Payment Successful
-                      TransactionId: Transaction Number
+                      TransactionId: Transaction Number     
                       EchoHubTransactionId: EchoHub Transaction Number
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
