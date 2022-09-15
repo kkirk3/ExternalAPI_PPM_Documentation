@@ -70,6 +70,10 @@ post:
                   ReponseCodeDesc: Payment could not be Updated, Please contact customer care
                   ResponseTransactionID: Transaction Number
                   TransError:  
+                    -  ErrorCode : "1031"
+                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                    -  ErrorCode : "1027"
+                       ErrorDesc : Invalid or Missing Request Value
                     -  PaymentResponseCode: Response for Payment response code 900
                        PaymentResponseCodeDesc: Duplicate Payor Reference ID
                        TransactionId: Transaction Number
