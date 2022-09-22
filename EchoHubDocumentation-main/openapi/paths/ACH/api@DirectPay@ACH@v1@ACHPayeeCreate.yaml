@@ -28,12 +28,12 @@ post:
         type: string
         $ref: ../../components/headers/xAccessId.yaml
   description: |
-   This endpoint allows the API user to create an ACH Payment to the Payee. In order to initiate an ACH transfer, payment details such as the Payee’s bank routing and account numbers, account type, and the transaction amount are required along with the intended date to make the payment. It also requires the Payor reference ID to identify the Payor. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
+   This endpoint allows the user to add a payee name for an ACH payment. The data for adding a payee is first validated in the ECHO Hub system and is then directed to the ACH library. Once the payee’s name is added, the ECHO Hub system will send a success message.
    
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
 
   requestBody:
-    description: This endpoint is used to create an ACH Payment to the Payee.
+    description: This endpoint is used to create a Payee.
     required: true
     content:
       application/json:

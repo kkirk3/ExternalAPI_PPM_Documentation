@@ -28,8 +28,10 @@ post:
         type: string
         $ref: ../../components/headers/xAccessId.yaml
   description: |
-   This endpoint allows the API user to create an ACH Payment to the Payee. In order to initiate an ACH transfer, payment details such as the Payee’s bank routing and account numbers, account type, and the transaction amount are required along with the intended date to make the payment. It also requires the Payor reference ID to identify the Payor. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
-   
+   This API is used to create ECHO-funded ACH payments. The endpoint allows the processing of ACH payment requests from the ECHO Hub so that payees can receive payments to their bank accounts. In order to initiate an ACH transfer, payment details such as the Payee’s bank routing and account numbers, account type, and the transaction amount are required along with the intended date to make the payment. It also requires the Payor reference ID to identify the Payor. This is the Payor’s unique reference ID for them to access the status or cancellation of the Payment. This is unique to all payments submitted by a Payor.  
+  
+   The ACH payment library in the ECHO Hub system receives requests to make ECHO-funded ACH payments. Once the data is validated, the payment is created using the TPA ID. The TPA ID helps fetch the bank-related information to create an ACH staging record that contains all the payment details. On successful creation of the staging record to make a payment, the ECHO Hub returns a success message. In case the ACH Staging record is not created, an error response is returned.  
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and Client key. This authorization token is valid for 30 minutes.
 
   requestBody:

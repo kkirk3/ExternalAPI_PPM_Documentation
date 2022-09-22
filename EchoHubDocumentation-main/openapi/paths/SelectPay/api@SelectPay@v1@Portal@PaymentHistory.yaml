@@ -12,10 +12,10 @@ post:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
+   This API enables the SelectPay application to request ECHO Hub to retrieve a payee’s existing payment account information. The SelectPay application consumes this API while requesting payment accounts for a given payee so that the details can be shown to the payee.  
    
-   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
-   
+   When there is a request from the SelectPay form to get payee payment account information, the data is passed to the ECHO Hub system. Once, the data is validated in the ECHO Hub system, the request is sent to the SelectPay library. When the payment account information is retrieved, the ECHO Hub will send a success message.
+  
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
  
   requestBody:
