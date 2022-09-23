@@ -83,7 +83,7 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ApprovePendingUserRegistartion.yaml
   /api/ClearingHouse/v1/Portal [Check on Create Password Link Expiry]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CheckPasswordLinkExpiry.yaml
-  /api/ClearingHouse/v1/Portal [Create Password]:
+  /api/ClearingHouse/v1/Portal:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CreatePassword.yaml
   /api/ClearingHouse/v1/Portal [Decline Pending User Registration]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@DeclinePendingUserRegistration.yaml
