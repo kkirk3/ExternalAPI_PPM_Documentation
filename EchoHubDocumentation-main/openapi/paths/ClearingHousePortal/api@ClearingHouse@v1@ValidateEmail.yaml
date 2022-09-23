@@ -52,27 +52,19 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -  ErrorCode: Error code number
-                   ErrorDesc: Error description
+                - ErrorCode: "2020"
+                  ErrorDesc: Unauthorized Access
+                - ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+                - ErrorCode: "2013"
+                  ErrorDesc: Invalid or Missing ECHO Security Authorization Token
+                - ErrorCode: "1099"
+                  ErrorDesc: Invalid or Missing Action Type
+                - ErrorCode: "1107"
+                  ErrorDesc: Invalid or Missing TFAOption
+                - ErrorCode: "1145"
+                  ErrorDesc: Invalid or Missing UUID
+                - ErrorCode: "1038"
+                  ErrorDesc: Invalid or Missing OTP
                     
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1035"
-                   ErrorDesc: Invalid or Missing UserName
-
-            mapName_1038:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1038"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1038"
-                   ErrorDesc: Invalid or Missing OTP                          
+           

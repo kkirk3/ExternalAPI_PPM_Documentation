@@ -39,10 +39,10 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  "2020"
           ErrorDesc:
            type: string
-           description: Error description
+           description: Unauthorized Access
 
       TransError JSON Validation Failed Code 1035:
         type: object
@@ -53,6 +53,38 @@ properties:
           ErrorDesc:
             type: string
             description: Invalid or Missing UserName
+
+      TransError JSON Validation Failed Code 2013:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "2013"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing ECHO Security Authorization Token
+                    
+                  
+      TransError JSON Validation Failed Code 1099:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1099"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Action Type
+                    
+                        
+      TransError JSON Validation Failed Code 1107:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1107"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing TFAOption
                       
       TransError JSON Validation Failed Code 1074:
         type: object
