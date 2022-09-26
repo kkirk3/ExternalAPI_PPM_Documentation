@@ -25,6 +25,10 @@ servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
 
+security:
+  - x-ApiKey: []
+  - x-ClientKey: []
+  
 paths:
   #Authorization
   /GetToken:
@@ -115,7 +119,9 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ForgotPasswordOrUserName.yaml
   /api/ClearingHouse/v1/Portal [Get Status Options and Roles]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml 
-       
+  /api/ClearingHouse/v1/Portal [GetEFTDropdownVallues]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindEFTDropdownValues.yaml
+
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
