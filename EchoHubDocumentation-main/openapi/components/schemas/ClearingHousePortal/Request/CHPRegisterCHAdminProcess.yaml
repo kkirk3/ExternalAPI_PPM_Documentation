@@ -1,10 +1,14 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - APIFormIdentifierID
+  - Key
+  - UserName
+  - Phone
+  - JobTitle
+  - CountryCode
 type: object
 properties:
  
-  APIFormIdentifierId: 
+  APIFormIdentifierID: 
     type: integer
     description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
   Key: 
@@ -30,4 +34,10 @@ properties:
     description: JobTitle
     maxLength: 50
     minLength: 16
+    
+  CountryCode: 
+    type: integer
+    description: Country Code.
+    maxLength: 100
+    minLength: 1
   
