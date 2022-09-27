@@ -1,0 +1,45 @@
+type: object
+properties:
+  This is the Response for Response Code 001:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 001
+      ReponseCodeDesc:
+        type: string
+        description: Successful Transaction
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransLog for Payment Response Code 001:
+        type: object
+        properties:
+          ResponseCode:
+            type: string
+            description: Response Code 001
+          ResponseCodeDesc:
+            type: string
+            description: Sucess
+            
+  This is the Response for Response Code 900:
+    type: object
+    properties:
+      ReponseCode:
+        type: string
+        description: Response Code 900
+      ReponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
+      TransError for Payment Response Code 900:
+        type: object
+        properties:
+          ResponseCode:
+            type: string
+            description: Response code 900
+          ResponseCodeDesc:
+            type: string
+            description: Process Failed

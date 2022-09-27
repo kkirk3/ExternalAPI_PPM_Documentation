@@ -24,7 +24,7 @@ info:
 servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
-
+ 
 paths:
   #Authorization
   /GetToken:
@@ -173,7 +173,9 @@ paths:
   /api/EchoVault/V1/VaultProcess [For System Log Removal]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogRemoval.yaml 
   /api/EchoVault/V1/VaultProcess [For Get Vault Token Bank Details]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml      
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml
+  /api/EchoVault/V1/VaultProcess [For System WYSIWIG Dups]:
+      $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SendNotificationWYSIWIGURL.yaml      
 
   #Lockbox
   /api/LockBox/v1/LockBox:
