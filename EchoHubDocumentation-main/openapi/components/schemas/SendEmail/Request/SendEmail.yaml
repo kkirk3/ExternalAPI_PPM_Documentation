@@ -65,7 +65,7 @@ properties:
         description: This is the name of the recipient of Cc email.
   Attachments:
     type: object
-    description: This is an additional file sent with an email message. 
+    description: This is an additional file sent with an email message. The size of an email should not exceed 30 MB. Out of the 30 MB, attachment file size should not exceed 10 MB, and email body and headers should not exceed 20 MB.
     properties:
       AttachmentByteArray:
         type: string
@@ -73,7 +73,8 @@ properties:
           This is to convert the attachment file content into a byte array format.
       AttachmentFileName:
         type: string
-        description: This is the name of the attachment.
+        description: This is the name of the attachment. The file names should contain the file extensions. Four file types are allowed that are PDF, Excel, Zip, and PNG files. 
+         
       Disposition:
         type: string
         description: This field can be either “Attachment” or “Inline” for an image to be sent in the email.  
@@ -86,7 +87,7 @@ properties:
         description: This is the name given to the image when the parameter disposition is passed as “inline”.
       AttachmentType:
         type: string
-        description: This is the type of the attachment
+        description: This is the mime type of the attachment file. Four file types are allowed that are PDF, Excel, Zip, and PNG files.  
   Categories:
     type: string
     description: |
