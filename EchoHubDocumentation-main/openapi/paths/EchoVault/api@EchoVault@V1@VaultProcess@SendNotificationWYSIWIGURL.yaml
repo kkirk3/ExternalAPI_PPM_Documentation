@@ -2,7 +2,7 @@ get:
   tags:
     - ECHO Vault 
      
-  summary: ECHO Vault - Send Notification WYSIWIG URL
+  summary: ECHO Vault - Send WYSIWIG ALERT Notification
   x-internal: true
   operationId: SendNotificationWYSIWIGURL
   parameters:
@@ -21,7 +21,7 @@ get:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
        
-  description: description......
+  description: Description is under progress....
   
   responses:
     '200':
