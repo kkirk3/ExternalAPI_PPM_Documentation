@@ -310,11 +310,12 @@ tags:
   #B2B 
   - name: B2B Portal
     description: |
-     B2B application portal helps process payments from one business (Payor) to another business (Payee). However, B2B only initiates the payment processing and issues the payments through third-party services.   
+     B2B application portal helps process payments from one business (Payor) to another business (Payee). However, B2B only initiates the payment processing and issues the payments through third-party services.  
 
-     When the payee receives a virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.   
-     
+     When the payee receives a virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.  
+
      In addition, the consumer is offered features like account and user management, payment and account activity history, and payment preferences specific to a payor. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery. 
+    
     
   #ClearingHousePotal
   - name: Clearinghouse Portal
@@ -388,8 +389,12 @@ tags:
      This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
      
      Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
-   
-
+  
+  #Payee Account Details
+  - name: Payee Account Details
+    description: |
+     Payee account details refer to the information of the account or accounts in the name of the payee to which the payor may transfer funds. Providing payee information helps to know who receives the money and where to send the check or electronic payment.  
+     
   #Universal Payment Cancel
   - name: Payment Cancel
     description: | 
