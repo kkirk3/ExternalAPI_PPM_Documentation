@@ -48,7 +48,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: string
+            type: integer
             description: "1099"
           ErrorDesc:
             type: string
@@ -58,7 +58,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: string
+            type: integer
             description: "1073"
           ErrorDesc:
             type: string
