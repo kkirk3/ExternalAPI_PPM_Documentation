@@ -41,8 +41,11 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                -  TransResponseCode: "001"
-                   TransResponseCodeDesc: Email sent.
+                - ResponseCode: "2005"
+                  ResponseCodeDesc: OTP sent successfully
+                - ResponseCode: "2033"
+                  ResponseCodeDesc: Push notification sent to your registered mobile number
+                  Result: GUID
 
                     
             mapName_900:   

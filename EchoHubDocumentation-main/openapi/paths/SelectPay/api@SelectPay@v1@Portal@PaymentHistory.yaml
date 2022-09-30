@@ -19,7 +19,7 @@ post:
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
  
   requestBody:
-    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    description: This endpoint is used to retrieve a payee’s existing payment account information. 
     required: true
     content:
       application/json:
