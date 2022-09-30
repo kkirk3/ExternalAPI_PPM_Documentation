@@ -54,16 +54,9 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError:  
                 -  ErrorCode: Error code number
-                   ErrorDesc: Error description
-
-            mapName_1073:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1073"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
+                   ErrorDesc: Error description 
+                -  ErrorCode: "1099"
+                   ErrorDesc: Invalid or Missing Action Type           
                 -  ErrorCode: "1073"
                    ErrorDesc: Invalid or Missing Domain Name                  
                     
