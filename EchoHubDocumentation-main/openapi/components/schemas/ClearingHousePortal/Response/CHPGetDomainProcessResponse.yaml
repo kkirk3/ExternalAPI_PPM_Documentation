@@ -43,7 +43,17 @@ properties:
           ErrorDesc:
            type: string
            description: Error description
-          
+      
+      TransError JSON Validation Failed Code 1099:
+        type: object
+        properties:
+          ErrorCode:
+            type: integer
+            description: "1099"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing Action Type
+
       TransError JSON Validation Failed Code 1073:
         type: object
         properties:

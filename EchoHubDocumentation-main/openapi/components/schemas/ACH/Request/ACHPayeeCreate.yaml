@@ -8,7 +8,7 @@ type: object
 properties:
   BankAccount:
     type: string
-    description: This is the bank account of the payee. 
+    description: This is the bank account number of the payee. 
     maxLength: 150
     minLength: 1
   RoutingNumber :
@@ -18,8 +18,8 @@ properties:
     minLength: 1
   AccountType :
     type: integer
-    description: 	AccountType - This is the account type of the payee which can be either C or S.
-     * C - Checking Account 
+    description: AccountType - This is the account type of the payee which can be either C or S.  
+     * C - Checking Account    
      * S - Savings Account
     
     maxLength: 150
