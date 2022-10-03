@@ -5,11 +5,29 @@ post:
   operationId: PaymentDeluxeVoid
   description: This endpoint allows the API user to void a Deluxe eCheck payment through the Library method. The Deluxe Transaction ID is required to identify the payment to be voided.
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     description: This endpoint is used to void a Deluxe eCheck Payment.
     required: true

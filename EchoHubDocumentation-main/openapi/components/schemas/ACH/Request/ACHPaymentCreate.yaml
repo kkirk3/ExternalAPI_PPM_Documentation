@@ -1,5 +1,5 @@
 required:
-  - PayorReferenceId
+  - PayorReferenceID
   - PayeeFirstName
   - Amount
   - EchoPayeeID
@@ -9,7 +9,7 @@ required:
   
 type: object
 properties:
-  PayorReferencedId:
+  PayorReferencedID:
     type: string
     description: This is the Payor Reference ID. The Payor transaction is identified with their Payor Reference ID.
     maxLength: 150

@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPValidateProcess
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This API will enable the clearinghouse portal users/admins/ECHO admins to log in to the portal. When a user tries to log in to the portal, this endpoint validates the provided credentials against a list of username and password pairs.  
    

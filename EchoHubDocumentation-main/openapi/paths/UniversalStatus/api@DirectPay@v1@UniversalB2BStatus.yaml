@@ -1,11 +1,11 @@
 post:
   tags:
     - Payment Status
-  summary: Payment Status - Direct to Debit
-  operationId: PaymentD2DStatus
+  summary: Payment Status - B2B
+  operationId: PaymentB2BStatus
   description: |
-    This endpoint allows the API user to know the status of a Direct to Debit Payment through the Library method.  
-    The status of the Direct to Debit payment can be:  
+    This endpoint allows the API user to know the status of a B2B Payment through the Library method.  
+    The status of the B2B payment can be:  
       * Submitted
       * Success
       * Pending
@@ -39,19 +39,19 @@ post:
         type: string
         $ref: ../../components/headers/xAccessId.yaml
   requestBody:
-    description: This endpoint is used to know the status of a Direct to Debit Payment.
+    description: This endpoint is used to know the status of a B2B Payment.
     required: true
     content:
       application/json:
         schema:
-          $ref: ../../components/schemas/UniversalStatus/Request/UniversalDirectToDebitStatus.yaml
+          $ref: ../../components/schemas/UniversalStatus/Request/UniversalB2BStatus.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/UniversalStatus/Response/UniversalDirectToDebitResponseStatus.yaml
+            $ref: ../../components/schemas/UniversalStatus/Response/UniversalB2BResponseStatus.yaml
           examples:  
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
@@ -63,7 +63,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                   PaymentResponseCode : Response for Payment Response Code 001
-                  PaymentResponseCodeDesc : Direct to Debit Payment is in Paid Status
+                  PaymentResponseCodeDesc : B2B Payment is in Paid Status
                   TransactionId : Transaction Number
                   EchoHubTransactionId : EchoHub Transaction Number 
             mapName_3000:   
@@ -76,7 +76,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3000
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Submitted Status
+                   PaymentResponseCodeDesc : B2B Payment is in Submitted Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3001:   
@@ -89,7 +89,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3001
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Pending Status
+                   PaymentResponseCodeDesc : B2B Payment is in Pending Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_3002:   
@@ -102,7 +102,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3002
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Reject Status
+                   PaymentResponseCodeDesc : B2B Payment is in Reject Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3003:   
@@ -115,7 +115,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3003
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Cancelled Status
+                   PaymentResponseCodeDesc : B2B Payment is in Cancelled Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3004:   
@@ -128,7 +128,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3004
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Returned Status
+                   PaymentResponseCodeDesc : B2B Payment is in Returned Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number              
             mapName_3005:   
@@ -141,7 +141,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3005
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Pickup Ready Status
+                   PaymentResponseCodeDesc : B2B Payment is in Pickup Ready Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3006:   
@@ -154,7 +154,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3006
-                   PaymentResponseCodeDesc : Direct to Debit Payment is in Refunded Status
+                   PaymentResponseCodeDesc : B2B Payment is in Refunded Status
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3007:   
@@ -167,7 +167,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog :
                  - PaymentResponseCode : Response for Payment Response Code 3007
-                   PaymentResponseCodeDesc : Direct to Debit Payment Unknown
+                   PaymentResponseCodeDesc : B2B Payment Unknown
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number                 
             mapName_3020:   
@@ -180,7 +180,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3020
-                   PaymentResponseCodeDesc : Direct to Debit Card - Invalid card number. Please try another card or select a different payment type.
+                   PaymentResponseCodeDesc : B2B Card - Invalid card number. Please try another card or select a different payment type.
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3021:   
@@ -193,7 +193,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3021
-                   PaymentResponseCodeDesc : Direct to Debit Card does not support Direct to Debit payments. Please try another card or select a different payment type.
+                   PaymentResponseCodeDesc : B2B Card does not support B2B payments. Please try another card or select a different payment type.
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_3022:   
@@ -206,7 +206,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 Translog :
                  - PaymentResponseCode : Response for Payment Response Code 3022
-                   PaymentResponseCodeDesc : Direct to Debit Card is expired. Please try another card or select a different payment type.
+                   PaymentResponseCodeDesc : B2B Card is expired. Please try another card or select a different payment type.
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number
             mapName_900:   
@@ -219,7 +219,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransError :
                  - PaymentResponseCode : Response for Payment Response Code 900
-                   PaymentResponseCodeDesc : Direct to Debit Status Failed
+                   PaymentResponseCodeDesc : B2B Status Failed
                    TransactionId : Transaction Number
                    EchoHubTransactionId : EchoHub Transaction Number 
             mapName_1033:   
