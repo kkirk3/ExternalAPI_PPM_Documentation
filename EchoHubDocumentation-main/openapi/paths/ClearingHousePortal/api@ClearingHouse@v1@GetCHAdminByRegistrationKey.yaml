@@ -63,16 +63,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -    ErrorCode: Error code number
-                     ErrorDesc: Error description
-                 
-            mapName_2023:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2023"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "2023"
-                   ErrorDesc: Invalid or Missing Registration Key   
+                   ErrorDesc: Invalid or Missing Registration Key 
+           

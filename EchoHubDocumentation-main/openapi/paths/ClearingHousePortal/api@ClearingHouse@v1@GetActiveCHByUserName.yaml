@@ -62,27 +62,7 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -  ErrorCode: Error code number
-                   ErrorDesc: Error description
-           
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1035"
                    ErrorDesc: Invalid or Missing UserName
-                         
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "2015"
-                   ErrorDesc: Invalid ECHO Security Authorization Token                        
+                   ErrorDesc: Invalid ECHO Security Authorization Token 
