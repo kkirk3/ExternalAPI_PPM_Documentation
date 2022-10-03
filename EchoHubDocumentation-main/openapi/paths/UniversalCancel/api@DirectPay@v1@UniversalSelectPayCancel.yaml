@@ -1,0 +1,75 @@
+post:
+  tags:
+    - Payment Cancel
+  summary: Payment Cancel - SelectPay
+  operationId: SelectPayCancel
+  parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
+    - name: x-Authorization
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+  description: |
+   This endpoint allows the API user to cancel an SelectPay Payment. It requires the unique Payor Reference ID.
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to cancel an SelectPay Payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalCancel/Request/UniversalSelectPayCancel.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalCancel/Response/UniversalSelectPayResponseCancel.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  ReponseCode: Response Code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  TransLog:
+                   -  PaymentResponseCode : Response for Payment Response Code 001
+                      PaymentResponseCodeDesc : SelectPay Payment Cancel Successful
+                      TransactionId : Transaction Number
+                      PayhubTransactionId : PayhubTransactionId
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Payment could not be cancelled, Please contact customer care
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  - ErrorCode : "1031"
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                  - ErrorCode : "1027"
+                    ErrorDesc : Invalid or Missing Request Value
+                        
+        

@@ -18,9 +18,9 @@ info:
   
   contact:
     name: ECHO Health Inc.    
-    email: Echo_Hub@echohealthinc.com
-    
-    
+    email: Echo.Hub@echohealthinc.com
+   
+
 servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
@@ -212,6 +212,13 @@ paths:
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalZelleCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For VCP] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVCPCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For B2B] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalB2BCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For MedPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalMedPayCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For SelectPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalSelectPayCancel.yaml
+    
   #Universal Payment Status
   /api/DirectPay/v1/PaymentStatus [For ACH] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalACHStatus.yaml
@@ -223,9 +230,23 @@ paths:
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalZelleStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For B2B] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalB2BStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For MedPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalMedPayStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For SelectPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalSelectPayStatus.yaml
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For VCP]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalVCPVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For B2B]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalB2BVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For SelectPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalSelectPayVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For MedPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalMedPayVoid.yaml
   
   #SelectPay Portal
   /api/SelectPay/v1/Portal [Landing Page]:

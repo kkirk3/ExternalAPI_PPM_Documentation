@@ -1,0 +1,105 @@
+post:
+  tags:
+    -  Payment Void
+  summary:  Payment Void - SelectPay
+  operationId: PaymentSelectPayVoid
+  description: This endpoint allows the API user to void a SelectPay payment through the Library method. The Deluxe Transaction ID is required to identify the payment to be voided.
+  parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
+    - name: x-Authorization
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+  requestBody:
+    description: This endpoint is used to void a SelectPay Payment.
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/UniversalVoid/Request/UniversalSelectPayVoid.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/UniversalVoid/Response/UniversalSelectPayVoidResponse.yaml
+          examples:  
+            mapName_001:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "001"
+                #description: TransLog for Payment Response Code 001
+                value:
+                  ReponseCode: Response Code 001
+                  ReponseCodeDesc: Successful Transaction
+                  ResponseTransactionID: Transaction Number
+                  Translog :
+                   - PaymentResponseCode : Response for Payment Response Code 001
+                     PaymentResponseCodeDesc : SelectPay Void Payment Successful
+                     TransactionId : Transaction Number
+                     EchoHubTransactionId : EchoHub Transaction Number
+            mapName_900:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "900"
+                #description: TransError for Payment Response Code 900
+                value:
+                  ReponseCode: Response Code 900
+                  ReponseCodeDesc: Transaction Failed
+                  ResponseTransactionID: Transaction Number
+                  TransError :
+                   - PaymentResponseCode : Response for Payment Response Code 900
+                     PaymentResponseCodeDesc : SelectPay Void Payment Failed
+                     TransactionId : Transaction Number
+                     EchoHubTransactionId : EchoHub Transaction Number
+            mapName_1033:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1033"
+                #description: TransError for JSON Validation Failed Code 1033
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                     - ErrorCode : "1033"
+                       ErrorDesc : Invalid or Missing Library Method
+            mapName_1031:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1031"
+                #description: TransError for JSON Validation Failed Code 1031
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                     - ErrorCode : "1031"
+                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+            mapName_1027:   
+                description: Please scroll the above dropdown list for more response codes          
+                summary: "1027"
+                #description: TransError for JSON Validation Failed Code 1027
+                value:
+                    ReponseCode: Response Code 900
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError :
+                     - ErrorCode : "1027"
+                       ErrorDesc : Invalid or Missing Request Value
+                           
