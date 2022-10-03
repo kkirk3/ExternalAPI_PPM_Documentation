@@ -6,47 +6,47 @@ properties:
  
   APIFormIdentifierId: 
     type: integer
-    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description: The APIFormIdentifierID is 52. This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     
   ClearinghouseName: 
     type: string
-    description: Clearing House Portal Name
+    description: This is the name of the specified clearinghouse.
     maxLength: 100
     minLength: 4
   
   EchoSecAuthorizationToken: 
     type: string
-    description: This is a string of ECHO Security Authorization Token.
+    description: This is a string of code that is used to authorize a user on the API.
     maxLength: 50
     minLength: 16
     
   PageNumber: 
     type: string
-    description: This is a string Page Number.
+    description: This field helps to fetch the items of a specified page from the result set of the clearinghouse portal.
     maxLength: 50
     minLength: 16
     
   PageSize: 
     type: string
-    description:  Page Size.
+    description:  This field specifies the number of items to display on a page from the result set.
     maxLength: 50
     minLength: 1
 
   SortOrder: 
     type: string
-    description: Sort Order
+    description: This field is used to specify the sort direction in the clearinghouse portal.
     maxLength: 100
     minLength: 4
     
   SortColumn: 
     type: string
-    description: Sort Column
+    description: This field is used to specify the column to sort the query results in the clearinghouse portal.
     maxLength: 100
     minLength: 4
   
   SearchQuery: 
     type: string
-    description: Search Query
+    description: This is an optional field where the words and phrases are entered into a search box to pull up a list of items in the clearinghouse portal.
     maxLength: 50
     minLength: 16
   

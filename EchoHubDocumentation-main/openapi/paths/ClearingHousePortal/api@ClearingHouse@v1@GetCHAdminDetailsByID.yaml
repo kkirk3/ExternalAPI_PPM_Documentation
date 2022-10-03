@@ -11,7 +11,15 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint is used to obtain the clearinghouse admin details by using the ‘clearinghouse admin registration request ID’. The clearinghouse portal will consume this API in the clearinghouse settings under ‘Admin Features’ to view the details of the clearinghouse admin registration status.  
+
+   The data for getting the clearinghouse admin details are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the details are obtained, the ECHO Hub will return a response with the clearinghouse admin details.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+
   requestBody:
+    description: This endpoint is used to get the clearinghouse admin details by using the registration request ID.
     required: true
     content:
       application/json:

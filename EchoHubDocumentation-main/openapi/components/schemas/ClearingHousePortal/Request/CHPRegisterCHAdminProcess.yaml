@@ -10,28 +10,28 @@ properties:
  
   APIFormIdentifierID: 
     type: integer
-    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description: The APIFormIdentifierID is 56. This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
   Key: 
     type: string
-    description: Key
+    description: when a clearinghouse admin request is created, a unique URL is sent to the clearinghouse admin via email to complete the registration process which will have a key as part of the unique URL.
     maxLength: 100
     minLength: 4
   
   UserName: 
     type: string
-    description: User Name
+    description: This is a unique name for each account and enables the clearinghouse admin to maintain personal settings and identification with the portal.
     maxLength: 50
     minLength: 16
     
   Phone: 
     type: string
-    description: Phone
+    description: This is the phone number of a clearinghouse admin.
     maxLength: 100
     minLength: 4
   
   JobTitle: 
     type: string
-    description: JobTitle
+    description: This is a term that describes a particular job position held by a clearinghouse admin.
     maxLength: 50
     minLength: 16
     

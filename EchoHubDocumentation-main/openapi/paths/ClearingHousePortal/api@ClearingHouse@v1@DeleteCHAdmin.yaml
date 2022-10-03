@@ -11,12 +11,21 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+description: |
+ This endpoint is used to delete the clearinghouse admin registration request by deactivating the unique link sent via email. The clearinghouse portal will consume this API in the clearinghouse settings under ‘Admin Features’ to delete the clearinghouse admin registrations. Once deleted, the action cannot be reverted from the clearinghouse portal.  
+     
+ The data for deleting a clearinghouse admin is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the clearinghouse admin is deleted, the ECHO Hub will send a success message.  
+     
+  Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+     
   requestBody:
+  description: This endpoint is used to delete the clearinghouse admin registration request.
     required: true
     content:
       application/json:
         schema: 
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPDeleteCHAdminProcess.yaml
+  
   responses:
     '200':
       description: Success

@@ -11,7 +11,15 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint consumed by the clearinghouse portal is used to decline the pending user registration request and deactivate the account by the clearinghouse admin/ECHO admin. An email is sent to the user notifying the status update. Hence, the user who requested registration will not be able to access the portal.  
+
+   The data for declining pending user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the request is declined, the ECHO Hub will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  
   requestBody:
+    description: This endpoint is used to decline the pending user registration request.
     required: true
     content:
       application/json:

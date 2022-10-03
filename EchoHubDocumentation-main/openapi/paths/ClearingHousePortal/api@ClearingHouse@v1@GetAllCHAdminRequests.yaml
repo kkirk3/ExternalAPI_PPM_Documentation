@@ -11,9 +11,17 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint is used to fetch all the clearinghouse admin registration requests for a specified clearinghouse.  
+
+   The data for getting the clearinghouse admin registration requests are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the data is obtained, the ECHO Hub will return a response with all the clearinghouse admin registration requests.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+
   requestBody:
-    required: true
-    content:
+   description: This endpoint is used to get all the clearinghouse admin registration requests.
+   required: true
+   content:
       application/json:
         schema: 
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPGetAllCHAdminRequestsProcess.yaml

@@ -11,7 +11,15 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint allows approving the pending user registration request in order to activate the account and send an email with the link to create a password. The clearinghouse portal will consume this API to allow clearinghouse admins or ECHO admins to approve the user registration request.  
+
+   The data for approving pending user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the request is approved, the ECHO Hub will send a success message.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+
   requestBody:
+    description: This endpoint is used to approve the pending user registration request.
     required: true
     content:
       application/json:

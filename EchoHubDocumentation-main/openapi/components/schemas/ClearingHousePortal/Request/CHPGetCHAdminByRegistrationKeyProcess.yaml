@@ -6,11 +6,11 @@ properties:
  
   APIFormIdentifierId: 
     type: integer
-    description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description: The APIFormIdentifierID is 50. This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
 
   RegistrationKey: 
     type: string
-    description: Registration Key
+    description: A registration key is a unique ID generated from the system when an admin is registered in the clearinghouse portal.
     maxLength: 100
     minLength: 4
   

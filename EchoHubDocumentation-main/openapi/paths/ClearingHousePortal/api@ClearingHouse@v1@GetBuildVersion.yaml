@@ -11,7 +11,15 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint helps to get the clearinghouse portal latest build version of the application deployed. The clearinghouse portal will consume this API in the ‘clearinghouse about section’ to display the application build version.  
+
+   The data for getting the build version details are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the data is obtained, the ECHO Hub will return a response with the latest build version.  
+
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  
   requestBody:
+    description: This endpoint is used to get the clearinghouse portal's latest build version.
     required: true
     content:
       application/json:

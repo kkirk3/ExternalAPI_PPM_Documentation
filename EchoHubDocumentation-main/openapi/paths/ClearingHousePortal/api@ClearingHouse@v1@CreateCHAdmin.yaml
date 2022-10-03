@@ -11,12 +11,22 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+description: |
+ This API is used in the registration process of clearinghouse admins by ECHO admins. The endpoint is used to create a clearinghouse admin registration request for a specified clearinghouse and will generate a unique link for registration.  
+       
+ The data for creating a clearinghouse admin is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the clearinghouse admin is created for registration, the ECHO Hub will send a success message.
+       
+ Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+       
   requestBody:
+  description: This endpoint is used to create a clearinghouse admin registration request. 
     required: true
     content:
       application/json:
         schema: 
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPCreateCHAdminProcess.yaml
+
+
   responses:
     '200':
       description: Success

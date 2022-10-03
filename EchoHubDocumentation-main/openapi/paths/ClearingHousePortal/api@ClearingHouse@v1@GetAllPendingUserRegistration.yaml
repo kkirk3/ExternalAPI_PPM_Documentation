@@ -11,7 +11,14 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+  description: |
+   This endpoint is used to fetch all the pending user registration requests mapped to a username and/or clearinghouse name. The clearinghouse portal will consume this API to allow clearinghouse admins/ECHO admins to approve or decline the user registration requests.  
+
+   The data for getting all the pending user registration requests are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the requested data is obtained, the ECHO Hub will return a response with all the pending registration requests.  
+  
+
   requestBody:
+    description: This endpoint is used to get all the pending user registration requests.
     required: true
     content:
       application/json:
