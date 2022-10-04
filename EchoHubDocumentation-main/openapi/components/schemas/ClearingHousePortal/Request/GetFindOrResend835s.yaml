@@ -1,0 +1,77 @@
+required:
+  - APIFormIdentifierID
+  - UserName
+  - EchoSecAuthorizationToken
+  - PageNumber
+  - PageSize
+  - SortOrder
+  - SortColumn
+  - TaxId
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    maxLength: 50
+    minLength: 1
+  
+  UserName: 
+    type: string
+    description: User Name
+    maxLength: 50
+    minLength: 16
+
+  EchoSecAuthorizationToken: 
+    type: string
+    description: This is the EchoSecAuthorizationToken.
+    maxLength: 100
+    minLength: 10
+    
+  PageNumber: 
+    type: string
+    description: Page Number
+    minLength: 1
+  
+  PageSize: 
+    type: string
+    description: Page Size
+    minLength: 1
+    
+  SortOrder: 
+    type: string
+    description: ASC/DESC
+    maxLength: 100
+    minLength: 1
+  
+  SortColumn: 
+    type: string
+    description: Sort Column
+    maxLength: 100
+    minLength: 1
+    
+  SearchQuery: 
+    type: string
+    description: Search Query
+    maxLength: 250
+    
+  TaxId: 
+    type: string
+    description: Tax Id
+    maxLength: 100
+    minLength: 9
+    
+  SearchOption: 
+    type: string
+    description: Search Option
+    maxLength: 500
+
+  SearchValue: 
+    type: string
+    description: Search Value
+    maxLength: 500
+
+  RId: 
+    type: string
+    description: RId
+    maxLength: 8000

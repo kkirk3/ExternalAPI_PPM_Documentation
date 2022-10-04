@@ -115,6 +115,10 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ForgotPasswordOrUserName.yaml
   /api/ClearingHouse/v1/Portal [Get Status Options and Roles]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml 
+  /api/ClearingHouse/v1/Portal [Get Find Or Resend 835s]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindOrResend835s.yaml 
+  /api/ClearingHouse/v1/Portal [Post 835 Or Get Latest Reposting 835 FilePath]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@Post835OrGetLatestReposting835FilePath.yaml 
        
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:

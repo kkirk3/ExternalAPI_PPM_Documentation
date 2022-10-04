@@ -1,0 +1,186 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Post 835 Or Get Latest Reposting 835 FilePath
+  x-internal: true
+  operationId: Post835OrGetLatestReposting835FilePath
+  parameters:
+    - name: x-RequestUrl
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml    
+    - name: x-Authorization
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/Post835OrGetLatestReposting835FilePath.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/Post835OrGetLatestReposting835FilePathResponse.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Get Status Options or Roles.
+                      
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 900
+                     ErrorDesc: Process Class Library not exist.
+      
+            mapName_101:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "101"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 101
+                     ErrorDesc: Invalid JSON String
+      
+            mapName_1039:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1039"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1039
+                     ErrorDesc: Invalid or Missing Echo Security Authorization Token
+
+            mapName_1035:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1035"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1035
+                     ErrorDesc: Invalid or Missing UserName
+
+            mapName_150:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "150"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 150
+                     ErrorDesc: Invalid or Missing Tax Id
+
+            mapName_1134:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1134"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1134
+                     ErrorDesc: Invalid or Missing Search Option
+     
+            mapName_1135:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1135"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1135
+                     ErrorDesc: Invalid or Missing Search Value
+     
+            mapName_1136:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1136"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1136
+                     ErrorDesc: Invalid or Missing RId
+     
+            mapName_1085:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1085"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1085
+                     ErrorDesc: Invalid or Missing Sort Query
+     
+            mapName_1139:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1139"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1139
+                     ErrorDesc: Invalid or Missing File Name
+     
+            mapName_1140:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1140"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1140
+                     ErrorDesc: Invalid or Missing Path Name
+     
+            mapName_1014:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "1014"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                -    ErrorCode: 1014
+                     ErrorDesc: Invalid or Missing Draft Number
+     
+           
