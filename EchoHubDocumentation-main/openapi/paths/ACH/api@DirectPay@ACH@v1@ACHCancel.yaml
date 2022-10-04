@@ -4,11 +4,29 @@ post:
   summary: ACH Payment Cancel
   operationId: ACHCancel
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the API user to cancel an ACH Payment. It requires the unique Payor Reference ID.
    
@@ -41,39 +59,17 @@ post:
                       PaymentResponseCodeDesc : ACH Payment Cancel Successful
                       TransactionId : Transaction Number
                       PayhubTransactionId : PayhubTransactionId
-            mapName_900:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "900"
-                #description: TransError for Payment Response Code 900
-                value:
-                  ReponseCode: Response Code 900
-                  ReponseCodeDesc: Transaction Failed
-                  ResponseTransactionID: Transaction Number
-                  TransLog:
-                    - PaymentResponseCode : Response for Payment Response Code 900
-                      PaymentResponseCodeDesc : ACH Cancel Payment Failed
-                      TransactionId : Transaction Number
-                      PayhubTransactionId : PayhubTransactionId
-            mapName_1031:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "1031"
-                  #description: TransError for JSON Validation Failed Code 1031
-                  value:
-                      ReponseCode: Response Code 900
-                      ReponseCodeDesc: Transaction Failed
-                      ResponseTransactionID: Transaction Number
-                      TransError :
-                        - ErrorCode : "1031"
-                          ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
-            mapName_1027:   
-                    description: Please scroll the above dropdown list for more response codes          
-                    summary: "1027"
-                    #description: TransError for JSON Validation Failed Code 1027
-                    value:
-                        ReponseCode: Response Code 900
-                        ReponseCodeDesc: Transaction Failed
-                        ResponseTransactionID: Transaction Number
-                        TransError :
-                         - ErrorCode : "1027"
-                           ErrorDesc : Invalid or Missing Request Value               
+            mapName1:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: Response Code 900
+                ReponseCodeDesc: Payment could not be cancelled, Please contact customer care
+                ResponseTransactionID: Transaction Number
+                TransError:
+                  - ErrorCode : "1031"
+                    ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                  - ErrorCode : "1027"
+                    ErrorDesc : Invalid or Missing Request Value
+                        
         

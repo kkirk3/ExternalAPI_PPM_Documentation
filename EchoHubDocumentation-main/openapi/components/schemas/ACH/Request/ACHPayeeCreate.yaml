@@ -8,22 +8,25 @@ type: object
 properties:
   BankAccount:
     type: string
-    description: This is the Bank Account of the Payee. 
+    description: This is the bank account number of the payee. 
     maxLength: 150
     minLength: 1
   RoutingNumber :
     type: string
-    description: This is the Routing Number of the Payee.
+    description: This is a 9-digit, unique ID assigned to every bank that is required to identify the bank account for sending and receiving money.
     maxLength: 150
     minLength: 1
   AccountType :
     type: integer
-    description: This is the Account Type .
+    description: AccountType - This is the account type of the payee which can be either C or S.  
+     * C - Checking Account    
+     * S - Savings Account
+    
     maxLength: 150
     minLength: 1
   MobileNumber :
     type: string
-    description: This is the MobileNumber unique identifier.
+    description: This is the mobile number of the payee.
     maxLength: 9
 
   

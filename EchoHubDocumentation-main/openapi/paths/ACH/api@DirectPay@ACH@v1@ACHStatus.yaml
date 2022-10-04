@@ -4,11 +4,29 @@ post:
   summary: ACH Payment Status
   operationId: ACHStatus
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the API user to know the status of an ACH Payment. It requires the unique Payor Reference ID.  
    The status of an ACH payment can be:
@@ -41,136 +59,58 @@ post:
                   ResponseTransactionID: Transaction Number
                   TransLog:  
                      - PaymentResponseCode: Response for Payment response code 001
-                       PaymentResponseCodeDesc: ACH Payment Successful
+                       PaymentResponseCodeDesc: ACH Status Update Successful
                        TransactionId: Transaction Number
                        EchoHubTransactionId: EchoHub Transaction Number                            
               mapName1:   
                 description: Please scroll the above dropdown list for more response codes          
-                summary: "3008"
-                value:
-                  ReponseCode: Response Code 001
-                  ReponseCodeDesc: Successful Transaction
-                  ResponseTransactionID: Transaction Number
-                  TransError:  
-                    -  PaymentResponseCode: Response for Payment response code 3008
-                       PaymentResponseCodeDesc: ACH Payment is in Submitted status
-                       TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number    
-              mapName2:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "3009"
-                value:
-                  ReponseCode: Response Code 001
-                  ReponseCodeDesc: Successful Transaction
-                  ResponseTransactionID: Transaction Number
-                  TransError:  
-                    -  PaymentResponseCode: Response for Payment response code 3009
-                       PaymentResponseCodeDesc: ACH Payment is in Pending status
-                       TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number        
-              mapName3:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "3010"
-                value:
-                  ReponseCode: Response Code 001
-                  ReponseCodeDesc: Successful Transaction
-                  ResponseTransactionID: Transaction Number
-                  TransError:  
-                    -  PaymentResponseCode: Response for Payment response code 3010
-                       PaymentResponseCodeDesc: ACH Payment is in Reject status
-                       TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number            
-              mapName4:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "3011"
-                  value:
-                    ReponseCode: Response Code 001
-                    ReponseCodeDesc: Successful Transaction
-                    ResponseTransactionID: Transaction Number
-                    TransError:  
-                    -    PaymentResponseCode: Response for Payment response code 3011
-                         PaymentResponseCodeDesc: ACH Payment is in Cancelled status
-                         TransactionId: Transaction Number
-                         EchoHubTransactionId: EchoHub Transaction Number                
-              mapName5:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "3012"
-                  value:
-                    ReponseCode: Response Code 001
-                    ReponseCodeDesc: Successful Transaction
-                    ResponseTransactionID: Transaction Number
-                    TransError:  
-                    -  PaymentResponseCode: Response for Payment response code 3012
-                       PaymentResponseCodeDesc: ACH Payment is in Returned status
-                       TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number                      
-              mapName6:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "3013"
-                  value:
-                    ReponseCode: Response Code 001
-                    ReponseCodeDesc: Successful Transaction
-                    ResponseTransactionID: Transaction Number
-                    TransError:  
-                    -   PaymentResponseCode: Response for Payment response code 3013
-                        PaymentResponseCodeDesc: ACH Payment is in PickUp ready status
-                        TransactionId: Transaction Number
-                        EchoHubTransactionId: EchoHub Transaction Number                            
-              mapName7:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "3014"
-                  value:
-                    ReponseCode: Response Code 001
-                    ReponseCodeDesc: Successful Transaction
-                    ResponseTransactionID: Transaction Number
-                    TransError:  
-                    -  PaymentResponseCode: Response for Payment response code 3014
-                       PaymentResponseCodeDesc: ACH Payment is in Refunded status
-                       TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number                                    
-              mapName8:   
-                      description: Please scroll the above dropdown list for more response codes          
-                      summary: "3015"
-                      value:
-                        ReponseCode: Response Code 001
-                        ReponseCodeDesc: Successful Transaction
-                        ResponseTransactionID: Transaction Number
-                        TransError:  
-                        -  PaymentResponseCode: Response for Payment response code 3015
-                           PaymentResponseCodeDesc: ACH Payment Unknown
-                           TransactionId: Transaction Number
-                           EchoHubTransactionId: EchoHub Transaction Number                                                        
-              mapName9:   
-                description: Please scroll the above dropdown list for more response codes          
                 summary: "900"
                 value:
                   ReponseCode: Response Code 900
-                  ReponseCodeDesc: Payment could not be processed, Please contact customer care
+                  ReponseCodeDesc: Payment could not be Updated, Please contact customer care
                   ResponseTransactionID: Transaction Number
                   TransError:  
+                    -  ErrorCode : "1031"
+                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                    -  ErrorCode : "1027"
+                       ErrorDesc : Invalid or Missing Request Value
                     -  PaymentResponseCode: Response for Payment response code 900
                        PaymentResponseCodeDesc: Duplicate Payor Reference ID
                        TransactionId: Transaction Number
-                       EchoHubTransactionId: EchoHub Transaction Number                                            
-              mapName_1031:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "1031"
-                  #description: TransError for JSON Validation Failed Code 1031
-                  value:
-                      ReponseCode: Response Code 900
-                      ReponseCodeDesc: Transaction Failed
-                      ResponseTransactionID: Transaction Number
-                      TransError :
-                      -  ErrorCode : "1031"
-                         ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
-              mapName_1027:   
-                  description: Please scroll the above dropdown list for more response codes          
-                  summary: "1027"
-                  #description: TransError for JSON Validation Failed Code 1027
-                  value:
-                      ReponseCode: Response Code 900
-                      ReponseCodeDesc: Transaction Failed
-                      ResponseTransactionID: Transaction Number
-                      TransError :
-                       - ErrorCode : "1027"
-                         ErrorDesc : Invalid or Missing Request Value               
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3008
+                       PaymentResponseCodeDesc: ACH Payment is in Submitted status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3009
+                       PaymentResponseCodeDesc: ACH Payment is in Pending status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3010
+                       PaymentResponseCodeDesc: ACH Payment is in Reject status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number  
+                    -  PaymentResponseCode: Response for Payment response code 3011
+                       PaymentResponseCodeDesc: ACH Payment is in Cancelled status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3012
+                       PaymentResponseCodeDesc: ACH Payment is in Returned status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3013
+                       PaymentResponseCodeDesc: ACH Payment is in PickUp ready status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3014
+                       PaymentResponseCodeDesc: ACH Payment is in Refunded status
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  PaymentResponseCode: Response for Payment response code 3015
+                       PaymentResponseCodeDesc: ACH Payment Unknown
+                       TransactionId: Transaction Number
+                       EchoHubTransactionId: EchoHub Transaction Number
+                    -  ErrorCode : "1031"
+                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                    -  ErrorCode : "1027"
+                       ErrorDesc : Invalid or Missing Request Value

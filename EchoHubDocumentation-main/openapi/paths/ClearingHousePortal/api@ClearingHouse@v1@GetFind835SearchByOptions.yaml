@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPGetFind835SearchByOptions
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
    
@@ -41,9 +59,72 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                - TransResponseCode: "2021"
-                  TransResponseCodeDesc: User details updated successfuly
-                    
+                  -   SearchOptions:
+                        -
+                          SearchOption: "Draft Number"
+                          FormControlName: "draftNumber"
+                          SearchType: "Textbox"
+                          IsMultiSelect: "0"
+                          Api: ""
+                          FieldValidation: "^[0-9]*$"
+                          ValidationMessage: "Only digits allowed"
+                        -
+                          SearchOption: "Payer Check Number"
+                          FormControlName: "payerCheckNumber"
+                          SearchType: "Textbox"
+                          IsMultiSelect: "0"
+                          Api: ""
+                          FieldValidation: "^[a-zA-Z0-9]*$"
+                          ValidationMessage: "Only alphanumeric allowed"
+                        -
+                          SearchOption: "Trace Number"
+                          FormControlName: "traceNumber"
+                          SearchType: "Textbox"
+                          IsMultiSelect: "0"
+                          Api: ""
+                          FieldValidation: ""
+                          ValidationMessage: ""
+                        -
+                          SearchOption: "Date Range"
+                          FormControlName: "dateRange"
+                          SearchType: "Date"
+                          IsMultiSelect: "0"
+                          Api: ""
+                          FieldValidation: ""
+                          ValidationMessage: ""
+                        -
+                          SearchOption: "Date Range, Dollar Amount"
+                          FormControlName: "dateRange,dollarAmount"
+                          SearchType: "Date,Textbox"
+                          IsMultiSelect: "0,0"
+                          Api: ""
+                          FieldValidation: "'',^\\d*\\.?\\d*$"
+                          ValidationMessage: "'',Only digits allowed"
+                        -
+                          SearchOption: "Date Range, Payer Name"
+                          FormControlName: "dateRange,payerName"
+                          SearchType: "Date,Textbox"
+                          IsMultiSelect: "0,0"
+                          Api: ""
+                          FieldValidation: ""
+                          ValidationMessage": ""  
+                        -
+                          SearchOption: "Date Range, Payor ID"
+                          FormControlName: "dateRange,payorId"
+                          SearchType: "Date,Textbox"
+                          IsMultiSelect: "0,0"
+                          Api: ""
+                          FieldValidation: "'',^[a-zA-Z0-9]*$"
+                          ValidationMessage: "'',Only alphanumeric allowed"
+                        -
+                          SearchOption: "Date Range, ECHO TPAID"
+                          FormControlName: "dateRange,echoTpaId"
+                          SearchType: "Date,Dropdown"
+                          IsMultiSelect: "0,1"
+                          Api: "'',providersetup/tpa"
+                          FieldValidation: ""
+                          ValidationMessage: ""
+                  
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
@@ -52,54 +133,13 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                - ErrorCode: "900"
-                  ErrorDesc: Invalid UserName
-                - ErrorCode: "2000"
-                  ErrorDesc: Unable to process the request, please contact system administrator
                 - ErrorCode: "2020"
                   ErrorDesc: Unauthorized Access
-
-                       
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "2015"
                   ErrorDesc: Invalid or Missing Echo Security Authorization Token
-
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1035"
                   ErrorDesc: Invalid or Missing UserName
-                            
-            mapName_1137:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1137"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1137"
                   ErrorDesc: Invalid or Missing Module Id
-                            
-            mapName_1138:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1138"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1138"
                   ErrorDesc: Invalid or Missing Card Id

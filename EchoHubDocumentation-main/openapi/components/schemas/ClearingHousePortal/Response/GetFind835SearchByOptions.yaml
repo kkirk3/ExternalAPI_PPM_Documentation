@@ -12,16 +12,202 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransLog for Payment Response Code 001:
+      TransLog for Draft Number Response Code 001:
         type: object
         properties:
-          TransResponseCode:
-            type: string
-            description: "2021"
-          TransResponseCodeDesc:
-            type: string
-            description: User details updated successfuly
-            
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Draft Number"
+              FormControlName:
+                type: string
+                description: "draftNumber"
+              SearchType:
+                type: string
+                description: "Textbox"
+              IsMultiSelect:
+                type: string
+                description:  "0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: "^[0-9]*$"
+              ValidationMessage:
+                type: string
+                description: "Only digits allowed"
+
+      TransLog for Payer Check Number Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Payer Check Number"
+              FormControlName:
+                type: string
+                description: "payerCheckNumber"
+              SearchType:
+                type: string
+                description: "Textbox"
+              IsMultiSelect:
+                type: string
+                description:  "0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: "^[a-zA-Z0-9]*$"
+              ValidationMessage:
+                type: string
+                description: "Only alphanumeric allowed"
+                  
+      TransLog for Trace Number Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Trace Number"
+              FormControlName:
+                type: string
+                description: "traceNumber"
+              SearchType:
+                type: string
+                description: "Textbox"
+              IsMultiSelect:
+                type: string
+                description:  "0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: ""
+              ValidationMessage:
+                type: string
+                description: ""  
+                  
+      TransLog for Date Range Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Date Range"
+              FormControlName:
+                type: string
+                description: "dateRange"
+              SearchType:
+                type: string
+                description: "Date"
+              IsMultiSelect:
+                type: string
+                description:  "0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: ""
+              ValidationMessage:
+                type: string
+                description: ""  
+                        
+      TransLog for Date Range, Dollar Amount Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Date Range, Dollar Amount"
+              FormControlName:
+                type: string
+                description: "dateRange,dollarAmount"
+              SearchType:
+                type: string
+                description: "Date,Textbox"
+              IsMultiSelect:
+                type: string
+                description:  "0,0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: ""
+              ValidationMessage:
+                type: string
+                description: ""  
+                
+      TransLog for Date Range, Payor ID Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Date Range, Payor ID"
+              FormControlName:
+                type: string
+                description: "dateRange,payorId"
+              SearchType:
+                type: string
+                description: "Date,Textbox"
+              IsMultiSelect:
+                type: string
+                description:  "0,0"
+              Api:
+                type: string
+                description:  ""
+              FieldValidation:
+                type: string
+                description: "'',^[a-zA-Z0-9]*$"
+              ValidationMessage:
+                type: string
+                description: "'',Only alphanumeric allowed"  
+                
+      TransLog for Date Range, ECHO TPAID Response Code 001:
+        type: object
+        properties:
+          SearchOptions:
+            type: array
+            properties: 
+              SearchOption:
+                type: string
+                description: "Date Range, ECHO TPAID"
+              FormControlName:
+                type: string
+                description: "dateRange,echoTpaId"
+              SearchType:
+                type: string
+                description: "Date,Dropdown"
+              IsMultiSelect:
+                type: string
+                description:  "0,0"
+              Api:
+                type: string
+                description:  "Date,Dropdown"
+              FieldValidation:
+                type: string
+                description: ""
+              ValidationMessage:
+                type: string
+                description: ""
+                   
   This is the Response for Response Code 900:
     type: object
     properties:
@@ -34,6 +220,7 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
+        
       TransError for Payment Response Code 900:
         type: object
         properties:
@@ -43,15 +230,7 @@ properties:
           ErrorDesc:
            type: string
            description: Invalid UserName
-      TransError for Payment Response Code 2000:
-        type: object
-        properties:
-          ErrorCode:
-            type: string
-            description: "2000"
-          ErrorDesc:
-            type: string
-            description: Unable to process the request, please contact system administrator
+     
       TransError for Payment Response Code 2020:
         type: object
         properties:

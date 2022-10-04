@@ -1,0 +1,56 @@
+get:
+  tags:
+    - ECHO Vault 
+     
+  summary: ECHO Vault - Send WYSIWIG ALERT Notification
+  x-internal: true
+  operationId: SendNotificationWYSIWIGURL
+  parameters:
+    - name: x-Connect
+      in: header
+      description: The x-Connect ID for this endpoint is 103.
+      required: true
+      schema:
+        type: integer
+        $ref: ../../components/headers/XConnect.yaml
+        
+    - name: x-Authorization
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+       
+  description: Description is under progress....
+  
+  responses:
+    '200':
+      description: Success
+      
+      content:
+        application/json:
+          
+          schema:
+            $ref: ../../components/schemas/EchoVault/Response/SendNotificationWYSIWIGURL.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "001"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                  - ResponseCode: "001"
+                    ResponseCodeDesc: Success
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                  - ResponseCode: "900"
+                    ResponseCodeDesc: Process Failed

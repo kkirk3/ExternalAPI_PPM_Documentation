@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPRegisterCHAdmin
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     required: true
     content:
@@ -44,49 +62,13 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -    ErrorCode: Error code number
-                     ErrorDesc: Error description
-
-            mapName_2016:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2016"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "2016"
-                   ErrorDesc: Invalid or Missing Key
-
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1035"
-                   ErrorDesc: Invalid or Missing UserName
-
-            mapName_177:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "177"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "177"
-                   ErrorDesc: Invalid or Missing PhoneNumber
-
-            mapName_2025:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2025"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "2025"
-                   ErrorDesc: Invalid or Missing Job Title
+                -    ErrorCode: "2016"
+                     ErrorDesc: Invalid or Missing Key
+                -    ErrorCode: "1035"
+                     ErrorDesc: Invalid or Missing UserName
+                -    ErrorCode: "177"
+                     ErrorDesc: Invalid or Missing PhoneNumber
+                -    ErrorCode: "2025"
+                     ErrorDesc: Invalid or Missing Job Title
+                -    ErrorCode: "1348"
+                     ErrorDesc: Invalid or Missing Country Code

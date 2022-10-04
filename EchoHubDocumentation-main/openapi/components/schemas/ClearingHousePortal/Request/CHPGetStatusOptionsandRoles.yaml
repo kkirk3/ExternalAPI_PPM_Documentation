@@ -6,21 +6,21 @@ required:
 type: object
 properties:
  
-  APIFormIdentifierId: 
+  APIFormIdentifierID: 
     type: string
-    description:  This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    description:  The API form identifier is 67. This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     maxLength: 50
     minLength: 1
   
   UserName: 
     type: string
-    description: User Name
+    description: This is the username of the person logged in to the portal. It can be clearinghouse admin/ECHO admin.
     maxLength: 50
     minLength: 16
 
   EchoSecAuthorizationToken: 
     type: string
-    description: This is the EchoSecAuthorizationToken.
+    description: This is a string of code that is used to authorize a user on the API.
     maxLength: 100
     minLength: 10
     

@@ -18,13 +18,13 @@ info:
   
   contact:
     name: ECHO Health Inc.    
-    email: Echo_Hub@echohealthinc.com
+    email: Echo.Hub@echohealthinc.com
     
-    
+
 servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
-  
+ 
 paths:
   #Authorization
   /GetToken:
@@ -83,7 +83,7 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ApprovePendingUserRegistartion.yaml
   /api/ClearingHouse/v1/Portal [Check on Create Password Link Expiry]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CheckPasswordLinkExpiry.yaml
-  /api/ClearingHouse/v1/Portal [Create Password]:
+  /api/ClearingHouse/v1/Portal:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@CreatePassword.yaml
   /api/ClearingHouse/v1/Portal [Decline Pending User Registration]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@DeclinePendingUserRegistration.yaml
@@ -115,11 +115,15 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ForgotPasswordOrUserName.yaml
   /api/ClearingHouse/v1/Portal [Get Status Options and Roles]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml 
+  /api/ClearingHouse/v1/Portal [GetEFTDropdownVallues]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindEFTDropdownValues.yaml
+  /api/ClearingHouse/v1/Portal [GetEFTERAEnrollmentStatus]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetEFTERAEnrollmentStatus.yaml
   /api/ClearingHouse/v1/Portal [Get Find Or Resend 835s]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindOrResend835s.yaml 
   /api/ClearingHouse/v1/Portal [Post 835 Or Get Latest Reposting 835 FilePath]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@Post835OrGetLatestReposting835FilePath.yaml 
-       
+
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitPayment.yaml
@@ -177,7 +181,9 @@ paths:
   /api/EchoVault/V1/VaultProcess [For System Log Removal]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SystemLogRemoval.yaml 
   /api/EchoVault/V1/VaultProcess [For Get Vault Token Bank Details]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml      
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@GetVaultTokenBankDetails.yaml
+  /api/EchoVault/V1/VaultProcess [For System WYSIWIG Dups]:
+      $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@SendNotificationWYSIWIGURL.yaml      
 
   #Lockbox
   /api/LockBox/v1/LockBox:
@@ -209,6 +215,13 @@ paths:
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalZelleCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For VCP] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVCPCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For B2B] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalB2BCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For MedPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalMedPayCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For SelectPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalSelectPayCancel.yaml
+    
   #Universal Payment Status
   /api/DirectPay/v1/PaymentStatus [For ACH] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalACHStatus.yaml
@@ -220,9 +233,23 @@ paths:
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalZelleStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For B2B] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalB2BStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For MedPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalMedPayStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For SelectPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalSelectPayStatus.yaml
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For VCP]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalVCPVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For B2B]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalB2BVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For SelectPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalSelectPayVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For MedPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalMedPayVoid.yaml
   
   #SelectPay Portal
   /api/SelectPay/v1/Portal [Landing Page]:
@@ -309,12 +336,12 @@ tags:
   #B2B 
   - name: B2B Portal
     description: |
-     B2B application portal helps process payments from one business (Payor) to another business (Payee). The application allows the payor to brand the portal and determine the payment modalities to offer the payee. However, B2B only initiates the payment processing and issues the payments through third-party services.   
-    
-     When the payee receives an electronic notification that their payment is readya virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.  
+     B2B application portal helps process payments from one business (Payor) to another business (Payee). However, B2B only initiates the payment processing and issues the payments through third-party services.   
+
+     When the payee receives a virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.   
      
      In addition, the consumer is offered features like account and user management, payment and account activity history, and payment preferences specific to a payor. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery. 
-  
+    
   #ClearingHousePotal
   - name: Clearinghouse Portal
     description: |
@@ -467,8 +494,3 @@ tags:
           * Zelle payment create
           * Zelle payment status
           * Zelle payment cancel
-
-    
-
-      
-      

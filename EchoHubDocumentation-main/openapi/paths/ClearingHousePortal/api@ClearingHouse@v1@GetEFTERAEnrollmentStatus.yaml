@@ -1,0 +1,102 @@
+post:
+  tags:
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - GetEFTERAEnrollmentStatus
+  x-internal: true
+  operationId: GetEFTERAEnrollmentStatus
+  parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
+    - name: x-Authorization
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+  description: |
+   This endpoint is used for clearinghouse portal user registration. The API allows clearinghouse portal consumers to register themselves on the portal. Once registered, the users can access information in the clearinghouse with post-approval from the clearinghouse admins.  
+   
+   The data for user registration is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse portal. Once the user is registered, the ECHO Hub will send a success message.  
+   
+   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+ 
+  requestBody:
+    description: This endpoint is used to Edit a user in the clearinghouse portal.
+    required: true
+    content:
+      application/json:
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/GetEFTERAEnrollmentStatus.yaml
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/ClearingHousePortal/Response/GetEFTERAEnrollmentStatus.yaml
+          examples:
+            mapName_001:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "001"
+              value:
+                ReponseCode: "2021"
+                ReponseCodeDesc: Successful Transaction
+                ResponseTransactionID: Transaction Number
+                TransLog:                  
+                - TransResponseCode: "2021"
+                  TransResponseCodeDesc: User details updated successfuly
+                    
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                - ErrorCode: "900"
+                  ErrorDesc: Invalid UserName
+                - ErrorCode: "2000"
+                  ErrorDesc: Unable to process the request, please contact system administrator
+                - ErrorCode: "2020"
+                  ErrorDesc: Unauthorized Access
+                - ErrorCode: "1035"
+                  ErrorDesc: Invalid or Missing UserName
+                - ErrorCode: "2015"
+                  ErrorDesc: Invalid or Missing Echo Security Authorization Token
+                - ErrorCode: "1071"
+                  ErrorDesc: Invalid or Missing ClearinghouseName
+                - ErrorCode: "1081"
+                  ErrorDesc: Invalid or Missing Page Number
+                - ErrorCode: "1082"
+                  ErrorDesc: Invalid or Missing Page Size
+                - ErrorCode: "1083"
+                  ErrorDesc: Invalid or Missing Sort Order
+                - ErrorCode: "1084"
+                  ErrorDesc: Invalid or Missing Sort Column
+                - ErrorCode: "1085"
+                  ErrorDesc: Invalid or Missing Search Query
+                - ErrorCode: "150"
+                  ErrorDesc: Invalid or Missing Tax ID
+                - ErrorCode: "1149"
+                  ErrorDesc: Invalid or Missing Enrollment Type
+                - ErrorCode: "1134"
+                  ErrorDesc: Invalid or Missing Search Option
+                - ErrorCode: "1135"
+                  ErrorDesc: Invalid or Missing Search Value

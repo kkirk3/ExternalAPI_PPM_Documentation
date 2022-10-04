@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPGetStatusOptionsandGetRoles
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     required: true
     content:
@@ -44,38 +62,11 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -    ErrorCode: Error code number
-                     ErrorDesc: Error description
-
-            mapName_1310:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1310"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1310"
-                   ErrorDesc: Invalid or Missing Echo Security Authorization Token
-
-            mapName_1099:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1099"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1099"
-                   ErrorDesc: Invalid or Missing Action Type
-
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1035"
-                   ErrorDesc: Invalid or Missing UserName
+                  -  ErrorCode: "6"
+                     ErrorDesc: Invalid JSON String
+                  -  ErrorCode: "1310"
+                     ErrorDesc: Invalid or Missing Echo Security Authorization Token
+                  -  ErrorCode: "1099"
+                     ErrorDesc: Invalid or Missing Action Type
+                  -  ErrorCode: "1035"
+                     ErrorDesc: Invalid or Missing UserName

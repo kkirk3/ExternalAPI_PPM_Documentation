@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPCreateCHAdmin
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     required: true
     content:
@@ -44,60 +62,13 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  -  ErrorCode: Error code number
-                     ErrorDesc: Error description
-      
-            mapName_1071:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1071"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "1071"
-                   ErrorDesc: Invalid or Missing ClearinghouseName
-
-            mapName_174:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "174"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "174"
-                   ErrorDesc: Invalid or Missing LastName
-
-            mapName_175:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "175"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "175"
-                   ErrorDesc: Invalid or Missing FirstName
-                                  
-            mapName_176:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "176"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "176"
-                   ErrorDesc: Invalid or Missing Email Address
-                 
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "2015"
-                   ErrorDesc: Invalid ECHO Security Authorization Token 
+                  -  ErrorCode: "1071"
+                     ErrorDesc: Invalid or Missing ClearinghouseName
+                  -  ErrorCode: "174"
+                     ErrorDesc: Invalid or Missing LastName
+                  -  ErrorCode: "175"
+                     ErrorDesc: Invalid or Missing FirstName
+                  -  ErrorCode: "176"
+                     ErrorDesc: Invalid or Missing Email Address
+                  -  ErrorCode: "2015"
+                     ErrorDesc: Invalid ECHO Security Authorization Token 
