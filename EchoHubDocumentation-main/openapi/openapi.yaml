@@ -123,6 +123,8 @@ paths:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindOrResend835s.yaml 
   /api/ClearingHouse/v1/Portal [Post 835 Or Get Latest Reposting 835 FilePath]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@Post835OrGetLatestReposting835FilePath.yaml 
+  /api/ClearingHouse/v1/Portal [Get Update CH Settings]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetUpdateCHSettings.yaml   
 
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
