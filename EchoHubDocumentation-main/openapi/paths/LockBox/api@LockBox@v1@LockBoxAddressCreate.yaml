@@ -57,7 +57,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                  - ResponseCode: "001"
-                   ResponseCodeDesc: Lockbox Create Success
+                   ResponseCodeDesc: Lockbox created successfully
 
                     
             mapName_900:   
@@ -68,6 +68,18 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                   - ErrorCode: Error code number
-                     ErrorDesc: Error description
+                   - ErrorCode: 1092
+                     ErrorDesc: Invalid Address Line 1
+                   - ErrorCode: 154
+                     ErrorDesc: Invalid or Missing City
+                   - ErrorCode: 155
+                     ErrorDesc: Invalid or Missing State
+                   - ErrorCode: 156
+                     ErrorDesc: Invalid or Missing Zip Code
+                   - ErrorCode: 150
+                     ErrorDesc: Invalid or Missing Tax ID
+                   - ErrorCode: 1063
+                     ErrorDesc: Agreement not a valid value
+                   - ErrorCode: 2017
+                     ErrorDesc: Status not a valid value
                     
