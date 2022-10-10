@@ -12,15 +12,24 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransLog for Payment Response Code 001:
+      TransLog for Send Email, Call, SMS TFA Response Code 001:
         type: object
         properties:
-          TransResponseCode:
+          ResponseCode:
             type: string
-            description: Transaction response code number
-          TransResponseCodeDesc:
+            description: "2005"
+          ResponseCodeDesc:
             type: string
-            description: Email Sent.
+            description: OTP sent successfully
+      TransLog for Send One Push TFA Response Code 001:
+        type: object
+        properties:
+          ResponseCode:
+            type: string
+            description: "2033"
+          ResponseCodeDesc:
+            type: string
+            description: Push notification sent to your registered mobile number
             
   This is the Response for Response Code 900:
     type: object
@@ -34,7 +43,7 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment Response Code 900:
+      TransError for SendEmailTFA Response Code 900:
         type: object
         properties:
           ErrorCode:

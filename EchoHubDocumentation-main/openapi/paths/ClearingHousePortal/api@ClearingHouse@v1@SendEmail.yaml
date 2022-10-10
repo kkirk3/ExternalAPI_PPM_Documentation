@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPSendEmailProcess
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    The clearinghouse portal will consume this API in the login process of clearinghouse portal users/admins/ECHO admins to send OTP through email for TFA, adding an additional layer of security to help protect the user’s account from unauthorized access.  
    
@@ -41,8 +59,11 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                -  TransResponseCode: "001"
-                   TransResponseCodeDesc: Email sent.
+                - ResponseCode: "2005"
+                  ResponseCodeDesc: OTP sent successfully
+                - ResponseCode: "2033"
+                  ResponseCodeDesc: Push notification sent to your registered mobile number
+                  Result: GUID
 
                     
             mapName_900:   

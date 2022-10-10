@@ -12,7 +12,7 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransLog for Payment Response Code 001:
+      TransLog for ValidateEmailTFA Response Code 001:
         type: object
         properties:
           TransResponseCode:
@@ -34,7 +34,7 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment Response Code 900:
+      TransError for ValidateEmailTFA Response Code 900:
         type: object
         properties:
           ErrorCode:

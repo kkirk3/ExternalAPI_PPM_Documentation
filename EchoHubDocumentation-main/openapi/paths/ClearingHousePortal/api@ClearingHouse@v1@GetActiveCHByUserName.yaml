@@ -6,8 +6,21 @@ post:
   x-internal: true
   operationId: CHPGetActiveCHByUserName
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
@@ -18,6 +31,11 @@ post:
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
         
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     description: This endpoint is used to obtain all the active clearinghouse lists by username.
     required: true
@@ -52,27 +70,7 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -  ErrorCode: Error code number
-                   ErrorDesc: Error description
-           
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "1035"
                    ErrorDesc: Invalid or Missing UserName
-                         
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "2015"
-                   ErrorDesc: Invalid ECHO Security Authorization Token                        
+                   ErrorDesc: Invalid ECHO Security Authorization Token 

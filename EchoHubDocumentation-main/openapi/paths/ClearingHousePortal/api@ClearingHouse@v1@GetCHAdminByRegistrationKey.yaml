@@ -6,22 +6,39 @@ post:
   x-internal: true
   operationId: CHPGetCHAdminByRegistrationKey
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-  description: |
-   This endpoint is used to obtain the clearinghouse admin details by using the ‘Registration Key’ that is sent to the user via email. The clearinghouse portal will consume this API for user registration as a clearinghouse admin and auto-populates the details such as first name, last name, email ID, and clearinghouse name.  
-
-   The data for getting the clearinghouse admin details are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the details are obtained, the ECHO Hub will return a response with the clearinghouse admin details.  
-
-   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
-    
-  requestBody: 
-   description: This endpoint is used to obtain the clearinghouse admin details by using the Registration Key.
-   required: true
-   content:
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+      description: |
+        This endpoint is used to obtain the clearinghouse admin details by using the ‘Registration Key’ that is sent to the user via email. The clearinghouse portal will consume this API for user registration as a clearinghouse admin and auto-populates the details such as first name, last name, email ID, and clearinghouse name.  
+     
+        The data for getting the clearinghouse admin details are first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the details are obtained, the ECHO Hub will return a response with the clearinghouse admin details.  
+     
+        Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+  requestBody:
+    description: This endpoint is used to obtain the clearinghouse admin details by using the Registration Key.
+    required: true
+    content:
       application/json:
         schema: 
           $ref: ../../components/schemas/ClearingHousePortal/Request/CHPGetCHAdminByRegistrationKeyProcess.yaml
@@ -53,16 +70,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -    ErrorCode: Error code number
-                     ErrorDesc: Error description
-                 
-            mapName_2023:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2023"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 -  ErrorCode: "2023"
-                   ErrorDesc: Invalid or Missing Registration Key   
+                   ErrorDesc: Invalid or Missing Registration Key 
+           

@@ -6,11 +6,29 @@ post:
   x-internal: true
   operationId: CHPEditUser
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This API allows the ECHO admins or clearinghouse admins of the portal to edit the user details based on the request from the respective user. The endpoint helps to edit user details and update their information in the ‘User Management’ dashboard.
 
@@ -59,169 +77,34 @@ post:
                   ErrorDesc: Unable to process the request, please contact system administrator
                 - ErrorCode: "2020"
                   ErrorDesc: Unauthorized Access
-
-            mapName_1123:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1123"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1123"
                   ErrorDesc: Invalid or Missing Logged In User Name
-                        
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "2015"
                   ErrorDesc: Invalid or Missing Echo Security Authorization Token
-
-            mapName_1035:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1035"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1035"
                   ErrorDesc: Invalid or Missing UserName
-                            
-            mapName_174:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "174"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "174"
                   ErrorDesc: Invalid or Missing FirstName
-                            
-            mapName_175:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "175"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "175"
                   ErrorDesc: Invalid or Missing LastName
-                           
-            mapName_176:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "176"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "176"
                   ErrorDesc: Invalid or Missing Email Address
-                           
-            mapName_177:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "177"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "177"
                   ErrorDesc: Invalid or Missing Phone Number
-                            
-            mapName_1075:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1075"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1075"
                   ErrorDesc: Invalid or Missing Job Title
-                           
-            mapName_1071:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1071"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1071"
                   ErrorDesc: Invalid or Missing ClearinghouseName
-                         
-            mapName_120:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "120"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "120"
-                  ErrorDesc: Invalid or Missing Status ID
-
-            mapName_1114:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1114"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
+                  ErrorDesc: Invalid or Missing Status ID            
                 - ErrorCode: "1114"
                   ErrorDesc: Invalid or Missing ReasonId
-                        
-            mapName_1115:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1115"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1115"
-                  ErrorDesc: Invalid or Missing OtherReason
-                              
-            mapName_1116:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1116"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
+                  ErrorDesc: Invalid or Missing OtherReason          
                 - ErrorCode: "1116"
                   ErrorDesc: Invalid or Missing IsVerified
-                            
-            mapName_1128:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1128"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
                 - ErrorCode: "1128"
-                  ErrorDesc: Invalid or Missing Role Id
-
-            mapName_1117:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "1117"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
+                  ErrorDesc: Invalid or Missing Role Id           
                 - ErrorCode: "1117"
                   ErrorDesc: Invalid or Missing ResetPassword
                                                                                                                                                                                 

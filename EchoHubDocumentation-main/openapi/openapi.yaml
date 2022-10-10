@@ -13,18 +13,17 @@ info:
     user accessing this API.       
 
     <!-- ReDoc-Inject: <security-definitions> -->
-    
+
   version: v1
-  
+
   contact:
-    name: ECHO Health Inc.    
-    email: Echo_Hub@echohealthinc.com
-    
-    
+    name: ECHO Health Inc.
+    email: Echo.Hub@echohealthinc.com
+
 servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
- 
+  
 
 paths:
   #Authorization
@@ -50,7 +49,7 @@ paths:
     $ref: paths/B2B/api@B2B@v1@Portal@PortalLogin.yaml
   /api/B2B/v1/Portal [On Demand eCheck]:  
     $ref: paths/B2B/api@B2B@v1@Portal@OnDemandeCheck.yaml
-  /api/B2B/v1/Portal [Email Notification]:  
+  /api/B2B/v1/Portal [Email Notification]:
     $ref: paths/B2B/api@B2B@v1@Portal@EmailNotification.yaml
   /api/B2B/v1/Portal [Get Business Account Profile]:  
     $ref: paths/B2B/api@B2B@v1@Portal@GetBusinessAccountProfile.yaml
@@ -107,7 +106,7 @@ paths:
   /api/ClearingHouse/v1/Portal [Register CH Admin]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@RegisterCHAdmin.yaml
   /api/ClearingHouse/v1/Portal [Edit User]:
-    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml    
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@EditUser.yaml
   /api/ClearingHouse/v1/Portal [AddOrUpdateCHToDomainMapping]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@AddOrUpdateCHToDomainMapping.yaml
   /api/ClearingHouse/v1/Portal [GetFind835SearchByOptions]:
@@ -115,9 +114,11 @@ paths:
   /api/ClearingHouse/v1/Portal [Forgot Passsqord or UserName]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@ForgotPasswordOrUserName.yaml
   /api/ClearingHouse/v1/Portal [Get Status Options and Roles]:
-    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml 
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetStatusOptionsandRoles.yaml
   /api/ClearingHouse/v1/Portal [GetEFTDropdownVallues]:
     $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetFindEFTDropdownValues.yaml
+  /api/ClearingHouse/v1/Portal [GetEFTERAEnrollmentStatus]:
+    $ref: paths/ClearingHousePortal/api@ClearingHouse@v1@GetEFTERAEnrollmentStatus.yaml
 
   #DirectToDebit
   /api/DirectPay/DirectToDebit/v1/DirectToDebitPayment:
@@ -125,13 +126,13 @@ paths:
   /api/DirectPay/DirectToDebit/v1/DirectToDebitCancel:
     $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitCancel.yaml
   /api/DirectPay/DirectToDebit/v1/DirectToDebitStatus:
-    $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitStatus.yaml 
+    $ref: paths/DirectToDebit/api@DirectPay@DirectToDebit@v1@DirectToDebitStatus.yaml
   #eCheck
-  /api/eCheck/v1/MPXECheckPayeeContact: 
+  /api/eCheck/v1/MPXECheckPayeeContact:
     $ref: paths/Echecks/api@eCheck@v1@MPXECheckPayeeContact.yaml
   /api/DirectPay/Deluxe/v1/DeluxeEcheck:
     $ref: paths/Echecks/api@DirectPay@Deluxe@v1@DeluxeEcheck.yaml
-  #eCheckPDF 
+  #eCheckPDF
   /api/PDFDocs/v1/PDFDownload [For SelectPay]:
     $ref: paths/PDFDocs/api@v1@PDFDownloadSelectPay.yaml
   /api/PDFDocs/v1/PDFDownload [For Deluxe]:
@@ -144,7 +145,7 @@ paths:
   /api/EchoVault/V1/VaultProcess [For Initialize Card Entry]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@InitializeCardEntry.yaml
   /api/EchoVault/V1/VaultProcess [For Payee Cancel]:
-    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCancel.yaml  
+    $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCancel.yaml
   /api/EchoVault/V1/VaultProcess [For Payee Card Account]:
     $ref: paths/EchoVault/api@EchoVault@V1@VaultProcess@PayeeCardAccount.yaml  
   /api/EchoVault/V1/VaultProcess [For Payment Create]:
@@ -210,6 +211,13 @@ paths:
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalZelleCancel.yaml
   /api/DirectPay/v1/PaymentCancel [For VCP] :
     $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalVCPCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For B2B] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalB2BCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For MedPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalMedPayCancel.yaml
+  /api/DirectPay/v1/PaymentCancel [For SelectPay] :
+    $ref: paths/UniversalCancel/api@DirectPay@v1@UniversalSelectPayCancel.yaml
+    
   #Universal Payment Status
   /api/DirectPay/v1/PaymentStatus [For ACH] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalACHStatus.yaml
@@ -221,9 +229,23 @@ paths:
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalZelleStatus.yaml
   /api/DirectPay/v1/PaymentStatus [For VCP] :
     $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalVCPStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For B2B] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalB2BStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For MedPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalMedPayStatus.yaml
+  /api/DirectPay/v1/PaymentStatus [For SelectPay] :
+    $ref: paths/UniversalStatus/api@DirectPay@v1@UniversalSelectPayStatus.yaml
   #Universal Payment Void
   /api/DirectPay/v1/PaymentVoid:
     $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalDeluxeVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For VCP]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalVCPVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For B2B]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalB2BVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For SelectPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalSelectPayVoid.yaml
+  /api/DirectPay/v1/PaymentVoid [For MedPay]:
+    $ref: paths/UniversalVoid/api@DirectPay@v1@UniversalMedPayVoid.yaml
   
   #SelectPay Portal
   /api/SelectPay/v1/Portal [Landing Page]:
@@ -310,12 +332,11 @@ tags:
   #B2B 
   - name: B2B Portal
     description: |
-     B2B application portal helps process payments from one business (Payor) to another business (Payee). However, B2B only initiates the payment processing and issues the payments through third-party services.  
+     B2B application portal helps process payments from one business (Payor) to another business (Payee). However, B2B only initiates the payment processing and issues the payments through third-party services.   
 
-     When the payee receives a virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.  
-
+     When the payee receives a virtual card payment and desires to have a different form of payment, they can visit the portal and verify with their tax ID and payment draft number and create an account. Once logged into the portal, the user can select from payment modality options such as virtual cards, ACH deposit to a checking account, Direct to Debit card push, early (for a fee), and regular electronic checks for instant printing and deposit.   
+     
      In addition, the consumer is offered features like account and user management, payment and account activity history, and payment preferences specific to a payor. If in case, a payment notification is not acted on in a timely manner, the payment will drop to a paper check to ensure payment delivery. 
-    
     
   #ClearingHousePotal
   - name: Clearinghouse Portal
@@ -389,12 +410,8 @@ tags:
      This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
      
      Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
-  
-  #Payee Account Details
-  - name: Payee Account Details
-    description: |
-     Payee account details refer to the information of the account or accounts in the name of the payee to which the payor may transfer funds. Providing payee information helps to know who receives the money and where to send the check or electronic payment.  
-     
+   
+
   #Universal Payment Cancel
   - name: Payment Cancel
     description: | 

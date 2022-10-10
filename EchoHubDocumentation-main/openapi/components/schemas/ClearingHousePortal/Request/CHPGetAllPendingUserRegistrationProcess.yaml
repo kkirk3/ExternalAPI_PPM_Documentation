@@ -1,10 +1,17 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - APIFormIdentifierID
+  - UserName
+  - ClearinghouseName
+  - EchoSecAuthorizationToken
+  - PageNumber
+  - PageSize
+  - SortOrder
+  - SortColumn
+  - SearchQuery
 type: object
 properties:
  
-  APIFormIdentifierId: 
+  APIFormIdentifierID: 
     type: integer
     description: The APIFormIdentifierID is 48. This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
 

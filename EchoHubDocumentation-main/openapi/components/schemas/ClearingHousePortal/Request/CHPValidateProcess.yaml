@@ -1,10 +1,11 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - APIFormIdentifierID
+  - UserName
+  - Password
 type: object
 properties:
  
-  APIFormIdentifierId: 
+  APIFormIdentifierID: 
     type: integer
     description: This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
     

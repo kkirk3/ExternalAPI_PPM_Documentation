@@ -6,20 +6,39 @@ post:
   x-internal: true
   operationId: CHPDeleteCHAdmin
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-description: |
- This endpoint is used to delete the clearinghouse admin registration request by deactivating the unique link sent via email. The clearinghouse portal will consume this API in the clearinghouse settings under ‘Admin Features’ to delete the clearinghouse admin registrations. Once deleted, the action cannot be reverted from the clearinghouse portal.  
      
- The data for deleting a clearinghouse admin is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the clearinghouse admin is deleted, the ECHO Hub will send a success message.  
-     
-  Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
-     
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
+  description: |
+        This endpoint is used to delete the clearinghouse admin registration request by deactivating the unique link sent via email. The clearinghouse portal will consume this API in the clearinghouse settings under ‘Admin Features’ to delete the clearinghouse admin registrations. Once deleted, the action cannot be reverted from the clearinghouse portal.  
+            
+        The data for deleting a clearinghouse admin is first validated in the ECHO Hub system, and the request is then sent to the clearinghouse library. Once the clearinghouse admin is deleted, the ECHO Hub will send a success message.  
+            
+         Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+       
   requestBody:
-  description: This endpoint is used to delete the clearinghouse admin registration request.
+    description: This endpoint is used to delete the clearinghouse admin registration request.
     required: true
     content:
       application/json:
@@ -44,7 +63,6 @@ description: |
                 TransLog:                  
                 -  TransResponseCode: "001"
                    TransResponseCodeDesc: Clearing House Admin Entry Deleted.
-
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -54,27 +72,8 @@ description: |
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  -  ErrorCode: Error code number
-                     ErrorDesc: Error description
-   
-            mapName_2024:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2024"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "2024"
-                   ErrorDesc: Invalid or Missing Id
-                                 
-            mapName_2015:
-              description: Please scroll the above dropdown list for more response codes
-              summary: "2015"
-              value:
-                ReponseCode: Response Code 900
-                ReponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:
-                -  ErrorCode: "2015"
-                   ErrorDesc: Invalid ECHO Security Authorization Token                                        
+                  -  ErrorCode: "2024"
+                     ErrorDesc: Invalid or Missing Id
+                  -  ErrorCode: "2015"
+                     ErrorDesc: Invalid ECHO Security Authorization Token 
+                                                   

@@ -1,6 +1,7 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - APIFormIdentifierId
+  - CHUserId
+  - EchoSecAuthorizationToken
 type: object
 properties:
  

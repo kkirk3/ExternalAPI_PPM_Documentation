@@ -5,11 +5,29 @@ post:
   operationId: PaymentVenmoCancel
   description: This endpoint allows the API user to cancel a Venmo payment through the Library method. It requires the unique Payor Reference ID.
   parameters:
+    - name: x-RequestUrl
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestUrl.yaml
+    - name: x-RequestFromAPP
+      in: header
+      required: true
+      schema:
+        type: string
+        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
+    - name: x-AccessId
+      in: header
+      schema:
+        type: string
+        $ref: ../../components/headers/xAccessId.yaml
   requestBody:
     description: This endpoint is used to cancel a Venmo Payment.
     required: true
@@ -51,36 +69,10 @@ post:
                      PaymentResponseCodeDesc : Venmo Cancel Payment Failed
                      TransactionId : Transaction Number
                      EchoHubTransactionId : EchoHub Transaction Number
-            mapName_1033:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "1033"
-                #description: TransError for JSON Validation Failed Code 1033
-                value:
-                    ReponseCode: Response Code 900
-                    ReponseCodeDesc: Transaction Failed
-                    ResponseTransactionID: Transaction Number
-                    TransError :
-                     - ErrorCode : "1033"
-                       ErrorDesc : Invalid or Missing Library Method
-            mapName_1031:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "1031"
-                #description: TransError for JSON Validation Failed Code 1031
-                value:
-                    ReponseCode: Response Code 900
-                    ReponseCodeDesc: Transaction Failed
-                    ResponseTransactionID: Transaction Number
-                    TransError :
-                     - ErrorCode : "1031"
-                       ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
-            mapName_1027:   
-                description: Please scroll the above dropdown list for more response codes          
-                summary: "1027"
-                #description: TransError for JSON Validation Failed Code 1027
-                value:
-                    ReponseCode: Response Code 900
-                    ReponseCodeDesc: Transaction Failed
-                    ResponseTransactionID: Transaction Number
-                    TransError :
-                     - ErrorCode : "1027"
-                       ErrorDesc : Invalid or Missing Request Value                    
+                   - ErrorCode : "1033"
+                     ErrorDesc : Invalid or Missing Library Method
+                   - ErrorCode : "1031"
+                     ErrorDesc : Invalid or Missing Request Value Type. Request Value Type should be one of the following types "PayorReferenceID", "ECHOHubTransactionID"        
+                   - ErrorCode : "1027"
+                     ErrorDesc : Invalid or Missing Request Value
+                            
