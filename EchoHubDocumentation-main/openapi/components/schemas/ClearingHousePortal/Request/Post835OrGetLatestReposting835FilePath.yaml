@@ -1,0 +1,68 @@
+required:
+  - APIFormIdentifierID
+  - UserName
+  - EchoSecAuthorizationToken
+  - ActionType
+  - TaxId
+  
+type: object
+properties:
+ 
+  APIFormIdentifierId: 
+    type: string
+    description:  This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.
+    maxLength: 50
+    minLength: 1
+  
+  UserName: 
+    type: string
+    description: User Name
+    maxLength: 50
+    minLength: 16
+
+  EchoSecAuthorizationToken: 
+    type: string
+    description: This is the EchoSecAuthorizationToken.
+    maxLength: 100
+    minLength: 10
+    
+  TaxId: 
+    type: string
+    description: Tax Id
+    maxLength: 100
+    minLength: 9
+    
+  PathName: 
+    type: string
+    description: Path Name
+    maxLength: 100
+
+  FileName: 
+    type: string
+    description: File Name
+    maxLength: 500
+    
+  SearchOption: 
+    type: string
+    description: File Name
+    maxLength: 500
+
+  SearchValue: 
+    type: string
+    description: Search Value
+    maxLength: 500
+  
+  DraftNumber: 
+    type: string
+    description: Draft Number
+    maxLength: 200
+
+  RId: 
+    type: string
+    description: RId
+    maxLength: 8000
+    
+  SearchQuery: 
+    type: string
+    description: Search Query
+    maxLength: 250

@@ -26,4 +26,4 @@ properties:
     
   ActionType: 
     type: string
-    description: The value for this field can be either "GetStatusOptions" or "GetRoles".
+    description: The value for this field can be either "GetStatusOptions", "GetRoles", "GetTPAs" or any other string value.

@@ -1,8 +1,10 @@
-put:
+post:
   tags:
-    - Lockbox
-  summary: Payee - Update
-  operationId: LockBoxPayeeUpdateProcess
+    - Clearinghouse Portal 
+     
+  summary: Clearinghouse Portal - Get Update CH Settings
+  x-internal: true
+  operationId: GetUpdateCHSettings
   parameters:
     - name: x-RequestUrl
       in: header
@@ -24,28 +26,25 @@ put:
         $ref: ../../components/headers/xAuthorization.yaml
     - name: x-AccessId
       in: header
+      required: false
       schema:
         type: string
         $ref: ../../components/headers/xAccessId.yaml
-  description: This endpoint allows the user to update a payee name in a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a payee name in a lockbox. Once a payee’s name is updated, the ECHO Hub system will send a success message.  
-
-  
-   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
-  
+        descritption: |
+          
   requestBody:
-    description: This endpoint is used to update a payee name in a given lockbox.
     required: true
     content:
       application/json:
-        schema:
-          $ref: ../../components/schemas/LockBox/Request/LockBoxPayeeUpdateProcess.yaml
+        schema: 
+          $ref: ../../components/schemas/ClearingHousePortal/Request/GetUpdateCHSettingsRequest.yaml
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/LockBox/Response/LockBoxPayeeUpdateProcessResponse.yaml
+            $ref: ../../components/schemas/ClearingHousePortal/Response/GetUpdateCHSettingsResponse.yaml
           examples:
             mapName_001:   
               description: Please scroll the above dropdown list for more response codes          
@@ -55,9 +54,8 @@ put:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - ResponseCode: "001"
-                   ResponseCodeDesc: Payee Update Success
-
+                -  TransResponseCode: "001"
+                   TransResponseCodeDesc: Success.
                     
             mapName_900:   
               description: Please scroll the above dropdown list for more response codes          
@@ -67,5 +65,14 @@ put:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                   - ErrorCode: Error code number
-                     ErrorDesc: Error description   
+                  -  ErrorCode: "6"
+                     ErrorDesc: Invalid JSON String
+                  -  ErrorCode: "1035"
+                     ErrorDesc: Invalid or Missing UserName
+                  -  ErrorCode: "1039"
+                     ErrorDesc: Invalid or Missing EchoSecurityAuthToken
+                  -  ErrorCode: "1099"
+                     ErrorDesc: Invalid or Missing Action Type
+                  -  ErrorCode: "1071"
+                     ErrorDesc: Invalid or Missing ClearingHouseName
+
