@@ -35,15 +35,69 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment Response Code 900:
+      TransError for Payment Response Code 1092:
         type: object
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  "1092"
           ErrorDesc:
            type: string
-           description: Error description
+           description: Invalid Address Line 1
+      TransError for Payment Response Code 154:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "154"
+          ErrorDesc:
+           type: string
+           description: Invalid or Missing City
+      TransError for Payment Response Code 155:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "155"
+          ErrorDesc:
+           type: string
+           description: Invalid or Missing State
+      TransError for Payment Response Code 156:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "156"
+          ErrorDesc:
+           type: string
+           description: Invalid or Missing Zip Code
+      TransError for Payment Response Code 150:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "150"
+          ErrorDesc:
+           type: string
+           description: Invalid or Missing Tax ID
+      TransError for Payment Response Code 1063:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "1063"
+          ErrorDesc:
+           type: string
+           description: Agreement not a valid value
+      TransError for Payment Response Code 2017:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "2017"
+          ErrorDesc:
+           type: string
+           description: Status not a valid value
           
           
           

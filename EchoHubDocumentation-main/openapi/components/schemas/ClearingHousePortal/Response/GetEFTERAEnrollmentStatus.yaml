@@ -67,7 +67,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1035"
           ErrorDesc:
             type: string
@@ -77,7 +77,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "2015"
           ErrorDesc:
             type: string
@@ -87,7 +87,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1071"
           ErrorDesc:
             type: string
@@ -97,7 +97,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1081"
           ErrorDesc:
             type: string
@@ -107,7 +107,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1082"
           ErrorDesc:
             type: string
@@ -117,7 +117,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1083"
           ErrorDesc:
             type: string
@@ -127,7 +127,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1084"
           ErrorDesc:
             type: string
@@ -137,7 +137,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1085"
           ErrorDesc:
             type: string
@@ -147,7 +147,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "150"
           ErrorDesc:
             type: string
@@ -157,7 +157,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1149"
           ErrorDesc:
             type: string
@@ -167,7 +167,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1134"
           ErrorDesc:
             type: string
@@ -177,7 +177,7 @@ properties:
         type: object
         properties:
           ErrorCode:
-            type: integer
+            type: string
             description: "1135"
           ErrorDesc:
             type: string
