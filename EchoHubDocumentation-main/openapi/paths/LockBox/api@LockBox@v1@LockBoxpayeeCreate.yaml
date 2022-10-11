@@ -4,29 +4,11 @@ post:
   summary: Payee - Create 
   operationId: LockBoxPayeeCreateProcess
   parameters:
-    - name: x-RequestUrl
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestUrl.yaml
-    - name: x-RequestFromAPP
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
-      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-    - name: x-AccessId
-      in: header
-      schema:
-        type: string
-        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the user to add a payee name to a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for adding a payee name. Once the payee’s name is added, the ECHO Hub system will send a success message.  
 
@@ -56,7 +38,7 @@ post:
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                  - ResponseCode: "001"
-                   ResponseCodeDesc: Payee Create Success
+                   ResponseCodeDesc: Payee Created Successfully
 
                     
             mapName_900:   
@@ -67,5 +49,10 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                   - ErrorCode: Error code number
-                     ErrorDesc: Error description     
+                  -  ErrorCode: "6"
+                     ErrorDesc: Invalid JSON String
+                  -  ErrorCode: "1041"
+                     ErrorDesc: Invalid or Missing Payee ID
+                  -  ErrorCode: "1000"
+                     ErrorDesc: Invalid or Missing Payee Name
+                  

@@ -4,29 +4,11 @@ get:
   summary: Lookup - Status
   operationId: LookUpStatusProcess
   parameters:
-    - name: x-RequestUrl
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestUrl.yaml
-    - name: x-RequestFromAPP
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
-      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-    - name: x-AccessId
-      in: header
-      schema:
-        type: string
-        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the user to know the status of lockbox batch transactions. The data is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for getting the status of lockbox batch transactions. The ECHO Hub system returns the status response of each batch transaction. Deluxe will consume this API to get the status of batches of lockbox addresses.  
 
@@ -55,7 +37,16 @@ get:
                    BatchCount: Batch Count
                    BatchFailedCount: Batch Failed Count
                    BatchTransactions:
-                     lbxDirectoryId: Lockbox Directory ID
-                     PaymentTransactionId: Payment Transaction ID  
-
+                    - lbxDirectoryId: Lockbox Directory ID
+                      PaymentTransactionId: Payment Transaction ID  
+                    
+            mapName_900:   
+              summary: "900"
+              value:
+                ReponseCode: "900"
+                ReponseCodeDesc: Failed Transaction
+                ResponseTransactionID: Transaction Number
+                TransError:  
+                 -  ErrorCode: Error Code Number
+                    ErrorDesc: Invalid Batch Transaction ID
            

@@ -4,29 +4,11 @@ post:
   summary: Lookup 
   operationId: LookUpMatchProcess
   parameters:
-    - name: x-RequestUrl
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestUrl.yaml
-    - name: x-RequestFromAPP
-      in: header
-      required: true
-      schema:
-        type: string
-        $ref: ../../components/headers/xRequestFromAPP.yaml
     - name: x-Authorization
       in: header
-      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-    - name: x-AccessId
-      in: header
-      schema:
-        type: string
-        $ref: ../../components/headers/xAccessId.yaml
   description: |
    This endpoint allows the user to look for matches on lockboxes in the lockbox directory. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for performing the lookup.  
   
@@ -55,9 +37,9 @@ post:
                 ReponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - LockBoxResponseCode: "001"
-                   LockBoxResponseCodeDesc: Lockbox Queue Success
-                   BatchTransactionId: Transaction Number
+                  - LockBoxResponseCode: "001"
+                    LockBoxResponseCodeDesc: Lockbox Queue Success
+                    BatchTransactionId: Transaction Validated
 
                     
             mapName_900:   
@@ -68,6 +50,6 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                   - ErrorCode: Error code number
-                     ErrorDesc: Error description
+                   -  ErrorCode: Error Code Number
+                      ErrorDesc: Error Description
                     
