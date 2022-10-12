@@ -17,7 +17,7 @@ properties:
         properties:
           LockBoxResponseCode:
             type: string
-            description: Lockbox response code number
+            description: Lockbox Response Code Number
           LockBoxResponseCodeDesc:
             type: string
             description: Lockbox Queue Success
@@ -42,8 +42,8 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code nNumber
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
           

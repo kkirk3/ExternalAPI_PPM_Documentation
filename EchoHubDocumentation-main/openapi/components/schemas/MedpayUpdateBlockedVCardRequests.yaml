@@ -1,9 +1,0 @@
-required:
-  - DraftNumber
-type: object
-properties:
-  DraftNumber:
-    type: integer
-    description: This is a unique number based on which payment is made to the Provider.
-    pattern: ^(0|[1-9][0-9]*)$
-    maxLength: 11

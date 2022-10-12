@@ -23,7 +23,7 @@ properties:
             description: Batch Count
           BatchFailedCount:
             type: string
-            description: Transaction Number
+            description: Batch Failed Count
           BatchTransactions:
             type: array
             items:

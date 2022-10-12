@@ -38,14 +38,14 @@ get:
                 ReponseCode: Response for Payment Response Code 001
                 ReponseCodeDesc: Successful Transaction                
                 TransLog:  
-                  - AuthToken: Authorization token
+                  - AuthToken: Authorization Token
 
             mapName1:   
               description: Please scroll the above dropdown list for more response codes          
               summary: "901"
               value:
                 ReponseCode: Response for Payment Response Code 901
-                ReponseCodeDesc:  Transaction  Failure
+                ReponseCodeDesc:  Transaction  Failed
                 TransError:  
                   -  ErrorCode: Response for Payment Response Code 901
                      ErrorCodeDesc: Invalid Consumer  ID
@@ -55,7 +55,7 @@ get:
                 summary: "905"
                 value:
                   ReponseCode: Response for Payment Response Code 905
-                  ReponseCodeDesc: Transaction  Failure              
+                  ReponseCodeDesc: Transaction  Failed              
                   TransError:  
                     -  ErrorCode: Response for Payment Response Code 905
                        ErrorCodeDesc: Invalid Endpoint

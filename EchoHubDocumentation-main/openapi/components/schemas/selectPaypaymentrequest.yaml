@@ -1,7 +1,0 @@
-required:
-  - APIFormIdentifierID
-type: object
-properties:
-  APIFormIdentifierID:
-    type: string
-    description: API FormIdentifier ID

@@ -17,10 +17,10 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response code number
+            description: Response Code Number
           ResponseCodeDesc:
             type: string
-            description: Payee Delete Success
+            description: Payee Deleted Successfully
           
             
   This is the Response for Response Code 900:
@@ -40,9 +40,9 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error code number
+            description:  Error Code Number
           ErrorDesc:
            type: string
-           description: Error description
+           description: Error Description
           
           

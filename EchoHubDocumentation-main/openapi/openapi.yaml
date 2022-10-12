@@ -163,8 +163,8 @@ paths:
 
      
     
-  /api/LockBox/v1/Payee:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
+  # /api/LockBox/v1/Payee:
+  #   $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
   /api/LockBox/v1/Payee/{lbxDirectoryId}:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
     parameters: 
