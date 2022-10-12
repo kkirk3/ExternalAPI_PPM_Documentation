@@ -24,14 +24,14 @@ properties:
         description: Response Code 901
       ResponseCodeDesc:
         type: string
-        description: Invalid Customer ID
+        description: Invalid Consumer ID
      
       TransError for Payment Response Code 901:
         type: object
         properties:
           ErrorCode:
             type: string
-            description: Response code for 901
+            description: ErrorCode code for 901
           ErrorCodeDesc:
             type: string
             description: Invalid Consumer ID
