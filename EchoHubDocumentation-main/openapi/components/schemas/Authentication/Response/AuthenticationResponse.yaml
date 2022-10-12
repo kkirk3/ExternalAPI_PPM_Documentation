@@ -31,7 +31,7 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: ErrorCode code for 901
+            description: Error Code for 901
           ErrorCodeDesc:
             type: string
             description: Invalid Consumer ID
@@ -53,11 +53,11 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: Response code for 905
+            description: Error code for 905
           ErrorCodeDesc:
             type: string
             description: Invalid Endpoint
-          creationDate:
+          creationdate:
             type: string
             description: Current Date & Time          
                 
