@@ -26,6 +26,7 @@ servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
 
+
 paths:
   #Authorization
   /GetToken:
@@ -36,20 +37,168 @@ paths:
   #Lockbox
   /api/LockBox/v1/LockBox:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressCreate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [PUT]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressUpdate.yaml
-  /api/LockBox/v1/LockBox/'lbxDirectoryId' [DELETE]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxAddressDelete.yaml
+  /api/LockBox/v1/LockBox/{lbxDirectoryId}:
+    put:
+      tags: 
+        -  Lockbox
+      summary: Lockbox - Update 
+      x-internal: true
+      operationId: LockBoxUpdateProcess
+      parameters:
+        - name: lbxDirectoryId
+          in: path 
+          required: true
+          schema:
+            type: string
+        - name: x-Authorization
+          in: header 
+          schema:
+            type: string    
+            $ref: components/headers/xAuthorization.yaml
+      description:
+        This endpoint allows the user to update a lockbox in the directory of addresses. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a lockbox. Once the lockbox is updated, the ECHO Hub system will send a success message.  
+    
+        Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+      requestBody:
+        description: This endpoint allows is used to update a lockbox in the directory of addresses.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: components/schemas/LockBox/Request/LockBoxUpdateProcess.yaml
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: components/schemas/LockBox/Response/LockBoxUpdateProcessResponse.yaml
+              examples:
+                mapName_001:
+                  description: Please scroll the above dropdown list for more response codes 
+                  summary: "001"
+                  value:
+                    ReponseCode: "001"
+                    ReponseCodeDesc: Successful Transaction
+                    ResponseTransactionID: Transaction Number
+                    TransLog:                  
+                      - ResponseCode: "001"
+                        ResponseCodeDesc: Lockbox Updated Successfully
+
+                mapName_900:   
+                  description: Please scroll the above dropdown list for more response codes          
+                  summary: "900"
+                  value:
+                    ReponseCode: "900"
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number 
+                    TransError:  
+                      - ErrorCode: 1092
+                        ErrorDesc: Invalid Address Line 1
+                      - ErrorCode: 154
+                        ErrorDesc: Invalid or Missing City
+                      - ErrorCode: 155
+                        ErrorDesc: Invalid or Missing State
+                      - ErrorCode: 156
+                        ErrorDesc: Invalid or Missing Zip Code
+                      - ErrorCode: 150
+                        ErrorDesc: Invalid or Missing Tax ID
+                      - ErrorCode: 1063
+                        ErrorDesc: Agreement Not a Valid Value
+                      - ErrorCode: 2017
+                        ErrorDesc: Status Not a Valid Value 
+    delete:
+      tags:
+        - Lockbox
+      summary: Lockbox - Delete 
+      operationId: LockBoxDeleteProcess
+      parameters:
+        - name: lbxDirectoryId
+          in: path
+          required: true
+          schema: 
+            type: string
+        - name: x-Authorization
+          in: header
+          schema:
+            type: string
+            $ref: components/headers/xAuthorization.yaml
+      description: |
+        This endpoint allows the user to delete a lockbox from the directory of lockboxes. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for deleting a lockbox. Once the lockbox is deleted, the ECHO Hub system will send a success message.  
+        
+        This endpoint uses ‘lbxDirectoryId’ as the input parameter.  
+        lbxDirectoryId – This is a unique identifier for a payee and the associated P.O box.  
+        
+        Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.                             
+      responses:  
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: components/schemas/LockBox/Response/LockBoxDeleteProcessResponse.yaml
+              examples:  
+                mapName_001:
+                  description: Please scroll the above dropdown list for more response codes
+                  summary: "001"
+                  value:
+                    ReponseCode: "001"
+                    ReponseCodeDesc: Successful Transaction
+                    ResponseTransactionID: Transaction Number
+                    TransLog:
+                    - ResponseCode: "001"
+                      ResponseCodeDesc: Lockbox Deleted Successfully 
+                mapName_900:   
+                  description: Please scroll the above dropdown list for more response codes          
+                  summary: "900"
+                  value:
+                    ReponseCode: "900"
+                    ReponseCodeDesc: Transaction Failed
+                    ResponseTransactionID: Transaction Number
+                    TransError:  
+                      - ErrorCode: Error Code Number
+                        ErrorDesc: Error Description      
+
+
+
+     
+    
   /api/LockBox/v1/Payee:
     $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId' [PUT]:
-    $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeUpdate.yaml
-  /api/LockBox/v1/Payee/'lbxDirectoryId'/'payeeId' [DELETE]:
+  /api/LockBox/v1/Payee/{lbxDirectoryId}:
+    $ref: paths/LockBox/api@LockBox@v1@LockBoxpayeeCreate.yaml
+    parameters: 
+      - name: lbxDirectoryId
+        in: path
+        required: true
+        schema:
+          type: string
+ 
+  /api/LockBox/v1/Payee/{lbxDirectoryId}/{payeeId}:  
     $ref: paths/LockBox/api@LockBox@v1@LockBoxPayeeDelete.yaml
+    parameters:
+      - name: lbxDirectoryId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: payeeId 
+        in: path
+        required: true
+        schema: 
+          type: string 
   /api/LockBox/v1/Lookup:
     $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
-  /api/LockBox/v1/Lookup/'BatchTransactionId':
-    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml
+  /api/LockBox/v1/Lookup/{BatchTransactionId}:  
+    $ref: paths/LockBox/api@LockBox@v1@LookupStatus.yaml              
+    parameters: 
+      - name: BatchTransactionId
+        in: path
+        required: true
+        schema: 
+          type: string 
+      
+  
   
 
 components:
