@@ -53,7 +53,7 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description: Error code for 905
+            description: Error Code for 905
           ErrorCodeDesc:
             type: string
             description: Invalid Endpoint
