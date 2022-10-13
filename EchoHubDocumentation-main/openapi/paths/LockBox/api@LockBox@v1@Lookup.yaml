@@ -39,7 +39,7 @@ post:
                 TransLog:                  
                   - LockBoxResponseCode: "001"
                     LockBoxResponseCodeDesc: Lockbox Queue Success
-                    BatchTransactionId: Transaction Validated
+                    BatchTransactionId: Batch Transaction ID Number
 
                     
             mapName_900:   
