@@ -35,7 +35,7 @@ properties:
           ErrorCodeDesc:
             type: string
             description: Invalid Consumer ID
-          creationDate:
+          creationdate:
             type: string
             description: Current Date & Time
   This is the Response for Response Code 905:

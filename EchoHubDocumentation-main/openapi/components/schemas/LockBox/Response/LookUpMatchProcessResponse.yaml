@@ -42,7 +42,7 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error Code nNumber
+            description:  Error Code Number
           ErrorDesc:
            type: string
            description: Error Description

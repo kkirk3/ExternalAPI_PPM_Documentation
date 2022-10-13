@@ -47,7 +47,7 @@ get:
                 ReponseCode: Response for Payment Response Code 901
                 ReponseCodeDesc:  Transaction  Failed
                 TransError:  
-                  -  ErrorCode: Response for Payment Response Code 901
+                  -  ErrorCode: Error Code for 901
                      ErrorCodeDesc: Invalid Consumer  ID
                      creationdate: Current Date & Time
             mapName2:   
@@ -57,7 +57,7 @@ get:
                   ReponseCode: Response for Payment Response Code 905
                   ReponseCodeDesc: Transaction  Failed              
                   TransError:  
-                    -  ErrorCode: Response for Payment Response Code 905
+                    -  ErrorCode: Error Code for 905
                        ErrorCodeDesc: Invalid Endpoint
                        creationdate: Current Date & Time  
                        
@@ -68,7 +68,7 @@ get:
                   ReponseCode: Response for Payment Response Code 900
                   ReponseCodeDesc: Security Validation Process Failed                
                   TransError:  
-                    - ErrorCode: Error Code 900                     
+                    - ErrorCode: Error Code for 900                     
                       ErrorCodeDesc: Security Validation Process Failed
                       creationdate: Current Date & Time
                     
