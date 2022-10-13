@@ -29,7 +29,7 @@ servers:
 
 paths:
   #Authorization
-  /GetToken:
+  /api/v1/GetToken:
     $ref: paths/Authentication/api@RequestAuthentication@V1.yaml
   
 
