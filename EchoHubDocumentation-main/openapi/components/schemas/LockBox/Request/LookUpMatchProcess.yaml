@@ -4,7 +4,7 @@ required:
 type: object
 properties:
 
-  “Lookup”: 
+  Lookup: 
     type: array
     items:
       type: object
