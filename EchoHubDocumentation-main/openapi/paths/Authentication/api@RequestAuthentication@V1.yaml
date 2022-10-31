@@ -36,7 +36,7 @@ get:
               summary: "001"
               value:
                 ReponseCode: Response for Payment Response Code 001
-                ReponseCodeDesc: Successful Transaction                
+                ReponseCodeDesc: Transaction Approved                
                 TransLog:  
                   - AuthToken: Authorization Token
 

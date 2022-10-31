@@ -1,6 +1,7 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - lbxDirectoryId
+  - payeeId
+  - payeeName
 type: object
 properties:
 

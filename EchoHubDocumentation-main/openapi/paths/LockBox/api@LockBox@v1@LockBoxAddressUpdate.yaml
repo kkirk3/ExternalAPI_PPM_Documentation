@@ -11,9 +11,9 @@ put:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   This endpoint allows the user to update a lockbox in the directory of addresses. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a lockbox. Once the lockbox is updated, the ECHO Hub system will send a success message.  
-
-   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+    This endpoint allows the user to update a lockbox in the directory of addresses. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for updating a lockbox. Once the lockbox is updated, the ECHO Hub system will send a success message.  
+   
+    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   
   requestBody:
     description: This endpoint allows is used to update a lockbox in the directory of addresses.
@@ -49,7 +49,9 @@ put:
                 ReponseCode: "900"
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
-                TransError:  
+                TransError:
+                  - ErrorCode: 1061
+                    ErrorDesc: Invalid or Missing LockBox Directory ID  
                   - ErrorCode: 1092
                     ErrorDesc: Invalid Address Line 1
                   - ErrorCode: 154
@@ -64,4 +66,6 @@ put:
                     ErrorDesc: Agreement Not a Valid Value
                   - ErrorCode: 2017
                     ErrorDesc: Status Not a Valid Value
+                  - ErrorCode: 11006
+                    ErrorDesc: LBX Directory ID Not Found
                     

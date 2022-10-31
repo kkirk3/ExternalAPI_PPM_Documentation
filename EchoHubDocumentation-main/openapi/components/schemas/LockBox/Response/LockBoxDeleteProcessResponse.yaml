@@ -17,7 +17,7 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response Code Number
+            description: Response Code 001
           ResponseCodeDesc:
             type: string
             description: Lockbox Deleted Successfully
@@ -40,9 +40,9 @@ properties:
         properties:
           ErrorCode:
             type: string
-            description:  Error Code Number
+            description:  Error Code 11001
           ErrorDesc:
            type: string
-           description: Error Description
+           description: Lockbox Doesn't Exist
           
            

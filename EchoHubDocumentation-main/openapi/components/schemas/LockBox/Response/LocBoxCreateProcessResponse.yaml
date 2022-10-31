@@ -17,7 +17,7 @@ properties:
         properties:
           ResponseCode:
             type: string
-            description: Response Code Number
+            description: Response Code 001
           ResponseCodeDesc:
             type: string
             description: Lockbox Created Successfully
@@ -35,6 +35,15 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
+      TransError for Payment Response Code 1061:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "1061"
+          ErrorDesc:
+            type: string
+            description: Invalid or Missing LockBox Directory ID
       TransError for Payment Response Code 1092:
         type: object
         properties:
@@ -98,6 +107,15 @@ properties:
           ErrorDesc:
            type: string
            description: Status Not a Valid Value
+      TransError for Payment Response Code 11005:
+        type: object
+        properties:
+          ErrorCode:
+            type: string
+            description:  "11005"
+          ErrorDesc:
+            type: string
+            description: Lockbox Already Exists
           
           
           

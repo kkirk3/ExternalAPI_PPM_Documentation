@@ -50,8 +50,8 @@ post:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  -  ErrorCode: "6"
-                     ErrorDesc: Invalid JSON String
+                  -  ErrorCode: "1061"
+                     ErrorDesc: Invalid or Missing LockBox Directory ID
                   -  ErrorCode: "1092"
                      ErrorDesc: Invalid Address Line 1
                   -  ErrorCode: "154"
@@ -66,4 +66,6 @@ post:
                      ErrorDesc: Agreement Not a Valid Value
                   -  ErrorCode: "2017"
                      ErrorDesc: Status Not a Valid Value
+                  -  ErrorCode: "11005"
+                     ErrorDesc: Lockbox Already Exists
                     

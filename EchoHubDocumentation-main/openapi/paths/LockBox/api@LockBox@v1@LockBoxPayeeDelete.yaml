@@ -46,6 +46,6 @@ delete:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                  - ErrorCode: Error Code Number
-                    ErrorDesc: Error Description
+                  - ErrorCode: "11003"
+                    ErrorDesc: Payee Doesn't Exist
                         

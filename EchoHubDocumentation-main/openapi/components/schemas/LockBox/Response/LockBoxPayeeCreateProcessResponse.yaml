@@ -44,15 +44,15 @@ properties:
           ErrorDesc:
            type: string
            description: Error Description
-      TransError JSON Validation Failed Code 6:
+      TransError JSON Validation Failed Code 1061:
         type: object
         properties:
           ErrorCode:
             type: integer
-            description: "6"
+            description: "1061"
           ErrorDesc:
             type: string
-            description: Invalid JSON String
+            description: Invalid or Missing LockBox Directory ID
       TransError JSON Validation Failed Code 1041:
         type: object
         properties:
@@ -70,6 +70,24 @@ properties:
             description: "1000"
           ErrorDesc:
             type: string
-            description: Invalid or Missing Payee Name                  
+            description: Invalid or Missing Payee Name
+      TransError JSON Validation Failed Code 11001:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "11001"
+            ErrorDesc:
+              type: string
+              description: Lockbox Doesn't Exist
+      TransError JSON Validation Failed Code 11002:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "11002"
+            ErrorDesc:
+              type: string
+              description: Payee Already Exists                  
                       
           

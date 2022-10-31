@@ -1,6 +1,12 @@
 required:
-  - RequestValueType
-  - RequestValue
+  - lbxDirectoryId
+  - addressLine1
+  - city
+  - state
+  - zip
+  - taxId
+  - agreement
+  - status
 type: object
 properties:
   
