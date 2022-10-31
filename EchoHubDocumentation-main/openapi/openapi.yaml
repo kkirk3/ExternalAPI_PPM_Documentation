@@ -29,8 +29,7 @@ security:
   - x-ApiKey: []
   - x-ClientKey: []
 
-security: 
-  -  {}
+
 paths:
   #Authorization
   /api/v1/GetToken:
