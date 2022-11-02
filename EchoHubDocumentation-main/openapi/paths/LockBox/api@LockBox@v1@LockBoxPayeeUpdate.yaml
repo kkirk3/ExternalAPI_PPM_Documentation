@@ -49,9 +49,11 @@ put:
                 ReponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
-                -  ErrorCode: "6"
-                   ErrorDesc: Invalid JSON String
+                -  ErrorCode: "1061"
+                   ErrorDesc: Invalid or Missing LockBox Directory ID
                 -  ErrorCode: "1041"
                    ErrorDesc: Invalid or Missing Payee ID
                 -  ErrorCode: "1000"
-                   ErrorDesc: Invalid or Missing Payee Name  
+                   ErrorDesc: Invalid or Missing Payee Name
+                -  ErrorCode: "11003"
+                   ErrorDesc: Payee Doesn't Exist

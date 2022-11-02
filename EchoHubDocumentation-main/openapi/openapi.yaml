@@ -25,9 +25,7 @@ info:
 servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
-security:
-  - x-ApiKey: []
-  - x-ClientKey: []
+
 
 
 paths:
@@ -95,7 +93,9 @@ paths:
                     ReponseCode: "900"
                     ReponseCodeDesc: Transaction Failed
                     ResponseTransactionID: Transaction Number 
-                    TransError:  
+                    TransError:
+                      - ErrorCode: 1061
+                        ErrorDesc: Invalid or Missing LockBox Directory ID   
                       - ErrorCode: 1092
                         ErrorDesc: Invalid Address Line 1
                       - ErrorCode: 154
@@ -109,7 +109,9 @@ paths:
                       - ErrorCode: 1063
                         ErrorDesc: Agreement Not a Valid Value
                       - ErrorCode: 2017
-                        ErrorDesc: Status Not a Valid Value 
+                        ErrorDesc: Status Not a Valid Value
+                      - ErrorCode: 11006
+                        ErrorDesc: LBX Directory ID Not Found 
     delete:
       tags:
         - Lockbox
@@ -245,12 +247,15 @@ paths:
                   ReponseCodeDesc: Transaction Failed
                   ResponseTransactionID: Transaction Number
                   TransError:  
-                   -  ErrorCode: "6"
-                      ErrorDesc: Invalid JSON String
+                   -  ErrorCode: "1061"
+                      ErrorDesc: Invalid or Missing LockBox Directory ID
                    -  ErrorCode: "1041"
                       ErrorDesc: Invalid or Missing Payee ID
                    -  ErrorCode: "1000"
-                      ErrorDesc: Invalid or Missing Payee Name         
+                      ErrorDesc: Invalid or Missing Payee Name 
+                   -  ErrorCode: "11003"
+                      ErrorDesc: Payee Doesn't Exist        
+                      
   /api/LockBox/v1/Lookup:
     $ref: paths/LockBox/api@LockBox@v1@Lookup.yaml
   /api/LockBox/v1/Lookup/{BatchTransactionId}:  

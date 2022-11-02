@@ -35,15 +35,7 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment Response Code 900:
-        type: object
-        properties:
-          ErrorCode:
-            type: string
-            description:  Error Code Number
-          ErrorDesc:
-           type: string
-           description: Error Description
+     
       TransError JSON Validation Failed Code 1061:
         type: object
         properties:

@@ -35,15 +35,34 @@ properties:
       ResponseTransactionID:
         type: string
         description: Transaction Number
-      TransError for Payment Response Code 900:
-        type: object
-        properties:
-          ErrorCode:
-            type: string
-            description:  Error Code Number
-          ErrorDesc:
-           type: string
-           description: Error Description
+
+      TransError JSON Validation Failed Code 1061:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1061"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing LockBox Directory ID
+      TransError JSON Validation Failed Code 1041:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1041"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Payee ID
+      TransError JSON Validation Failed Code 1000:
+          type: object
+          properties:
+            ErrorCode:
+              type: integer
+              description: "1000"
+            ErrorDesc:
+              type: string
+              description: Invalid or Missing Payee Name
       TransError JSON Validation Failed Code 11003:
           type: object
           properties:
