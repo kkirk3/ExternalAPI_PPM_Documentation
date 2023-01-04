@@ -3,10 +3,10 @@ properties:
   This is the Response for Response Code 001:
     type: object
     properties:
-      ReponseCode:
+      ResponseCode:
         type: string
         description: Response Code 001
-      ReponseCodeDesc:
+      ResponseCodeDesc:
         type: string
         description: Successful Transaction
       ResponseTransactionID:

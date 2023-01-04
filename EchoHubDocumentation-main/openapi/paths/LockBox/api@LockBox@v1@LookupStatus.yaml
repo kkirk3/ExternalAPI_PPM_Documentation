@@ -29,8 +29,8 @@ get:
             mapName_001:   
               summary: "001"
               value:
-                ReponseCode: "001"
-                ReponseCodeDesc: Successful Transaction
+                ResponseCode: "001"
+                ResponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                  - BatchTransactionId: Transaction ID
@@ -43,8 +43,8 @@ get:
             mapName_900:   
               summary: "900"
               value:
-                ReponseCode: "900"
-                ReponseCodeDesc: Failed Transaction
+                ResponseCode: "900"
+                ResponseCodeDesc: Failed Transaction
                 ResponseTransactionID: Transaction Number
                 TransError:  
                  -  ErrorCode: Error Code Number

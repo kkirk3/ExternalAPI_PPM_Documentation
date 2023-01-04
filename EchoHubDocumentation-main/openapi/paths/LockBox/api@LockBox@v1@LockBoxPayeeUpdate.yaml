@@ -33,8 +33,8 @@ put:
               description: Please scroll the above dropdown list for more response codes          
               summary: "001"
               value:
-                ReponseCode: "001"
-                ReponseCodeDesc: Successful Transaction
+                ResponseCode: "001"
+                ResponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
                   - ResponseCode: "001"
@@ -45,8 +45,8 @@ put:
               description: Please scroll the above dropdown list for more response codes          
               summary: "900"
               value:
-                ReponseCode: "900"
-                ReponseCodeDesc: Transaction Failed
+                ResponseCode: "900"
+                ResponseCodeDesc: Transaction Failed
                 ResponseTransactionID: Transaction Number
                 TransError:  
                 -  ErrorCode: "1061"
