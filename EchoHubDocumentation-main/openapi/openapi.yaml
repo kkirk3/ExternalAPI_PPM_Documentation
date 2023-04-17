@@ -69,8 +69,8 @@ tags:
     description: |
       This endpoint helps to generate the Authorization Token for accessing the endpoints.
   
-  #Lockbox
-  - name: ICR
+  #PPM
+  - name: PPM
     description: |
       Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
 
