@@ -3,7 +3,7 @@ properties:
   This is the Response for Response Code 001:
     type: object
     properties:
-      ResponseCode:
+      TransactionID:
         type: string
         description: Response Code 001
       ResponseCodeDesc:
@@ -15,71 +15,73 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          ResponseCode:
+          TransactionID:
+            type: integer
+            description: Transaction ID
+          EmployeeStatus:
             type: string
-            description: Response Code Number
-          ResponseCodeDesc:
+            description: Employee Status
+          PaymentType:
             type: string
-            description: Payee Created Successfully
+            description: Payment Type
+          CCSubscribe:
+            type: string
+            description: CC Subscriber 
+          CCSubscribeID:
+            type: string
+            description:  CC Subscriber ID
+          CCSubscribeKey:
+            type: string
+            description:  CC Subscriber Key
+          CC1Subscribe:
+            type: string
+            description:  CC1 Subscriber 
+          CC1SubscribeID:
+            type: string
+            description: CC1 Subscriber  ID
+          CC1SubscribeKey:
+            type: string
+            description: CC1 Subscriber Key
+          ExpDate:
+            type: string
+            description: Exp Date
+          ZipCode:
+            type: number
+            description: Zip code
+          Subscribe:
+            type: string
+            description: Subscriber details
+          SubscribeID:
+            type: string
+            description: Subscriber ID
+          SubscribeKey:
+            type: string
+            description: Subscriber Key
+          RoutingNumber:
+            type: string
+            description: Routing Number
           
             
-  This is the Response for Response Code 900:
-    type: object
-    properties:
-      ResponseCode:
-        type: string
-        description: Response Code 900
-      ResponseCodeDesc:
-        type: string
-        description: Transaction Failed
-      ResponseTransactionID:
-        type: string
-        description: Transaction Number
+  #This is the Response for Response Code 900:
+    #type: object
+    #properties:
+      #ResponseCode:
+        #type: string
+        #description: Response Code 900
+      #ResponseCodeDesc:
+        #type: string
+        #description: Transaction Failed
+      #ResponseTransactionID:
+        #type: string
+        #description: Transaction Number
      
-      TransError JSON Validation Failed Code 1061:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1061"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing LockBox Directory ID
-      TransError JSON Validation Failed Code 1041:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1041"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing Payee ID 
-      TransError JSON Validation Failed Code 1000:
-        type: object
-        properties:
-          ErrorCode:
-            type: integer
-            description: "1000"
-          ErrorDesc:
-            type: string
-            description: Invalid or Missing Payee Name
-      TransError JSON Validation Failed Code 11001:
-          type: object
-          properties:
-            ErrorCode:
-              type: integer
-              description: "11001"
-            ErrorDesc:
-              type: string
-              description: Lockbox Doesn't Exist
-      TransError JSON Validation Failed Code 11002:
-          type: object
-          properties:
-            ErrorCode:
-              type: integer
-              description: "11002"
-            ErrorDesc:
-              type: string
-              description: Payee Already Exists                  
-                      
-          
+      #TransError JSON Validation Failed Code 1061:
+        #type: object
+        #properties:
+          #ErrorCode:
+           # type: integer
+            #description: "1061"
+          #ErrorDesc:
+            #type: string
+            #description: Invalid or Missing LockBox Directory ID
+      
