@@ -1,10 +1,10 @@
 post:
   tags:
-    - PPM
+    - Premium Payment Management (PPM)
      
   summary: Enrollment
   x-internal: true
-  operationId: LockBoxCreateProcess
+  operationId: Enrollment
   parameters:
     - name: x-Authorization
       in: header
@@ -69,3 +69,4 @@ post:
                   -  ErrorCode: "11005"
                      ErrorDesc: Lockbox Already Exists
                     
+

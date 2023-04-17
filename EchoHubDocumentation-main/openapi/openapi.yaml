@@ -4,7 +4,7 @@ openapi: 3.1.0
 info:
   title: ECHOHUb API
   description: >-
-    API Endpoints for the Lockbox  clients.
+    API Endpoints for the PPM clients.
 
         SandBox url: https://sandbox.echohealthincapi.com/
         Production Url : https://api.echohealthincapi.com/
@@ -37,14 +37,14 @@ paths:
   
 
   
-  #ICR - Enrollment
+  #PPM - Enrollment
   /api/PPM/v1/Portal:
     $ref: paths/ICR/api@ICR@v1@Enrollment.yaml
   
      
     
   
-  # ICR - PaymentInquiry
+  # PPM - PaymentInquiry
   /api/PPM/v1/Poral:
     $ref: paths/ICR/api@ICR@v1@PaymentInquiry.yaml
     
@@ -70,7 +70,7 @@ tags:
       This endpoint helps to generate the Authorization Token for accessing the endpoints.
   
   #PPM
-  - name: PPM
+  - name: Premium Payment Management (PPM)
     description: |
       Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
 
