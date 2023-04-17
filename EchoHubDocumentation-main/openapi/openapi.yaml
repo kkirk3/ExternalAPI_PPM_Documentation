@@ -45,7 +45,7 @@ paths:
     
   
   # PPM - PaymentInquiry
-  /api/PPM/v1/Poral:
+  /api/PPM/v1/Portal.:
     $ref: paths/ICR/api@ICR@v1@PaymentInquiry.yaml
     
  
@@ -72,28 +72,10 @@ tags:
   #PPM
   - name: Premium Payment Management (PPM)
     description: |
-      Lockbox refers to a payment service that helps speed up receiving and processing check payments. With lockbox service, the checks are mailed to a separate P.O (Post Office) box address maintained by the lockbox provider, such as a bank. The checks are collected, opened, scanned, and deposited directly by the bank. Each day, the deposits will be entered into an automated system with details available via web access.
-
-      On the other hand, lockbox express provides a more efficient system to receive and deposit check payments. The checks and any other payment documents are sent electronically and when received are scanned in a single process reducing the manual effort required to handle the documents several times. 
-
-      Clients can use the Lockbox APIs to build the directory of eligible P.O. Boxes (lockboxes) and then to submit payment information to determine which payments can be sent electronically to an eligible lockbox.  
-
-      Lockbox payment has three APIs - Lockbox, Lockbox Payee and Lockbox Lookup  
-
-      (1) Lockbox  
-      The Lockbox API is used to maintain a list of a client’s eligible lockboxes for delivering electronic payments to the payees. This helps a client send the payment addresses to ECHO Hub for processing the payments. 
-
-      The lockbox API allows ‘Post’, ‘Put’, and ‘Delete’ operations which correspond to add, update, and delete lockbox addresses respectively.  
-
-
-      (2) Lockbox Payee  
-      Lockbox payee API is used to maintain a list of payees associated with each of the lockboxes. This helps a client deliver electronic payments to the payees using the lockbox express process by sending the payment addresses to ECHO Hub for processing payments.  
-
-      The lockbox payee API allows ‘Post’, ‘Put’, and ‘Delete’ operations for a given lockbox payee which correspond to add, update, and delete payee names respectively.  
-
-      (3) Lockbox Lookup  
-      This API enables the consumer to send a list of payment addresses to perform a lookup for a match on a lockbox in the lockbox directory. Lockbox lookup API helps a client to send payment addresses to ECHO Hub for determining matches to a Lockbox.  
-
-      Lockbox lookup allows ‘Post’ and ‘Get’ operations. The Post method helps to find a lockbox match in the lockbox directory while the Get method helps to know the status of lockbox batch transactions.
-
+     <span style="background-color:lightsteelblue;font-weight:bold;"> Premium Payment Management (PPM) </span> is a web-based application that offers a seamless experience to manage the Individual Coverage Reimbursement plan of the employees, associated with businesses of all sizes.
+      The application is accessible on the following supported web browsers:-
+    
+      * Google Chrome
+      * Mozilla Firefox
+      * Microsoft Edge
   
