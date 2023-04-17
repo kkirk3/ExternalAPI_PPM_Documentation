@@ -16,7 +16,7 @@ properties:
  
   APIFormIdentifierID: 
     type: integer
-    default: 9
+    default: 0
     description: 
       This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.  
     
@@ -24,99 +24,122 @@ properties:
   EmployerTIN: 
     type: string
     description: 
-      Brokers will need to stay aligned with what ID they have put in our system or this call will fail. Some brokers make up SSN and some change over the course of a year.
-    maxLength: 50
+      EmployerTIN Desc.
+    maxLength: 9
     minLength: 1
   
   EmployeeIDSSN: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      EmployeeIDSSN Desc.
     maxLength: 50
     minLength: 1
       
   EmployeeFirstName: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      EmployeeFirstName Desc.
     maxLength: 200
     minLength: 1
     
   EmployeeLastName: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      EmployeeLastName Desc.
     maxLength: 200
     minLength: 1
   
   CarrierCode: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      CarrierCode Desc.
     maxLength: 10
     minLength: 1
   
   Plan: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      Plan Desc.
     maxLength: 50
     minLength: 1
     
   CoverageStartDate: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-    
+      CoverageStartDate Desc. Must be 1st of the Month.
+    maxLength: 8
+
 
   Premium: 
     type: number
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      Premium Desc.
+    maxLength: 8
+    minLength: 1
     
   EmployeeState: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-
+      EmployeeState Desc.
+    maxLength: 2
+    minLength: 1
 
   EmployeePayPremium: 
     type: integer
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-      
+      EmployeePayPremium Desc.
+    maxLength: 1
+
+  EmployeeEmail:
+    type: string
+    description: 
+      EmployeeEmail Desc.
+    maxLength: 350
+    
   EmployeePhoneNumber: 
     type: number
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-      
+      EmployeePhoneNumber Desc.
+    maxLength: 50
+    minLength: 1 
+
   EmployeeHireDate: 
-    type: number
+    type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      EmployeeHireDate Desc.
+    maxLength: 8
+
 
   Location: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      Location Desc.
+    maxLength: 200
+    minLength: 1 
 
   ICHRAAllotted: 
-    type: string
+    type: number
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-
+      ICHRAAllotted Desc.
+    maxLength: 8
+    minLength: 1 
 
   ReimbursementTier: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
-
+      ReimbursementTier Desc.
+    maxLength: 100
+    minLength: 1 
+  
   Lives: 
-    type: string
+    type: integer
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      Lives Desc.
+    maxLength: 1
+
 
   DateOfBirth: 
     type: string
     description: 
-      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
+      DateOfBirth Desc.
+    maxLength: 8
