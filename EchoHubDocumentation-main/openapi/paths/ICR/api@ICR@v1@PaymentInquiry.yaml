@@ -37,58 +37,64 @@ post:
                 ResponseCodeDesc: Successful Transaction
                 ResponseTransactionID: Transaction Number
                 TransLog:                  
-                 - ResponseCode: "001"
-                   ResponseCodeDesc: Payee Created Successfully
+                 - TransactionID: "Transaction ID"
+                   EmployeeStatus: Employee Status
+                   PaymentType: Payment Type
+                   CCSubscribe : CC Subscriber
+                   CCSubscribeID : CC Subscriber ID
+                   CCSubscribeKey: CC Subscriber Key
+                   CC1Subscribe : CC1 Subscriber
+                   CC1SubscribeID : CC1 Subscriber ID
+                   CC1SubscribeKey : CC1 Subscriber Key
+                   ExpDate: Exp Date
+                   ZipCode : Zip Code
+                   Subscribe : Subscriber Details
+                   SubscribeID : Subscriber ID
+                   SubscribeKey : Subscriber Key
+                   RoutingNumber : Routing Number
 
                     
-            mapName_900:   
-              description: Please scroll the above dropdown list for more response codes          
-              summary: "900"
-              value:
-                ResponseCode: "900"
-                ResponseCodeDesc: Transaction Failed
-                ResponseTransactionID: Transaction Number
-                TransError:  
-                  -  ErrorCode: "1061"
-                     ErrorDesc: Invalid or Missing LockBox Directory ID
-                  -  ErrorCode: "1041"
-                     ErrorDesc: Invalid or Missing Payee ID
-                  -  ErrorCode: "1000"
-                     ErrorDesc: Invalid or Missing Payee Name
-                  -  ErrorCode: "11001"
-                     ErrorDesc: Lockbox Doesn't Exist
-                  -  ErrorCode: "11002"
-                     ErrorDesc: Payee Already Exists
+           # mapName_900:   
+            #  description: Please scroll the above dropdown list for more response codes          
+            #  summary: "900"
+             # value:
+             #   ResponseCode: "900"
+             #   ResponseCodeDesc: Transaction Failed
+              #  ResponseTransactionID: Transaction Number
+             #   TransError:  
+              #    -  ErrorCode: "1061"
+               #      ErrorDesc: Invalid or Missing LockBox Directory ID
+                  
                   
 
 x-code-samples: 
-- lang: "c#"
-  source: |
-    using System;
-    using System.Net.Http;
-    using System.Threading.Tasks;
-    using System.Text;
-    using Newtonsoft.Json.Linq;
-    
-    public class Program
-    {
-      private readonly IHttpClientFactory _httpClientFactory;
-      public static async Task Main(string[] args)
+  - lang: "c#"
+    source: |
+      using System;
+      using System.Net.Http;
+      using System.Threading.Tasks;
+      using System.Text;
+      using Newtonsoft.Json.Linq;
+      
+      public class Program
       {
-        var client = _httpClientFactory.CreateClient();
-        client.DefaultRequestHeaders.Add("x-RequestUrl", "string");
-        client.DefaultRequestHeaders.Add("x-RequestFromAPP", "string");
-        client.DefaultRequestHeaders.Add("x-Authorization", "string");
-        client.DefaultRequestHeaders.Add("x-AccessId", "string");
-        JObject json = JObject.Parse(@"{
-            APIFormIdentifierID: 9,
-            EmployerTIN: 0,
-            EmployeeIDSSN: 'string
-          }");
-        var postData = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
-        var request = await client.PostAsync("https://eshb198-pymenthub.echohealthinc.com/api/PPM/v1/Portal", postData);
-        var response = await request.Content.ReadAsStringAsync();
-    
-        Console.WriteLine(response);
+        private readonly IHttpClientFactory _httpClientFactory;
+        public static async Task Main(string[] args)
+        {
+          var client = _httpClientFactory.CreateClient();
+          client.DefaultRequestHeaders.Add("x-RequestUrl", "string");
+          client.DefaultRequestHeaders.Add("x-RequestFromAPP", "string");
+          client.DefaultRequestHeaders.Add("x-Authorization", "string");
+          client.DefaultRequestHeaders.Add("x-AccessId", "string");
+          JObject json = JObject.Parse(@"{
+              APIFormIdentifierID: 9,
+              EmployerTIN: 0,
+              EmployeeIDSSN: 'string
+            }");
+          var postData = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
+          var request = await client.PostAsync("https://eshb198-pymenthub.echohealthinc.com/api/PPM/v1/Portal", postData);
+          var response = await request.Content.ReadAsStringAsync();
+      
+          Console.WriteLine(response);
+        }
       }
-    }
