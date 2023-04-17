@@ -1,28 +1,28 @@
 required:
-  - lbxDirectoryId
-  - payeeId
-  - payeeName
+  - APIFormIdentifierID
+  - EmployerTIN
+  - EmployeeIDSSN
 type: object
 properties:
 
-  lbxDirectoryId: 
-    type: string
+  APIFormIdentifierID: 
+    type: integer
+    default: 9
     description: 
-      This is a unique identifier for a payee and the associated P.O box.
-    maxLength: 50
-    minLength: 1
+      This is a unique identifier that serves the purpose of identifying a particular request. It helps identify and map the request to the correct endpoint.  
+    
 
-  payeeId: 
+  EmployerTIN: 
     type: string
     description: 
-      This is the unique identifier for the payee. The payee is identified with the payee ID. 
+      Brokers will need to stay aligned with what ID they have put in our system or this call will fail. Some brokers make up SSN and some change over the course of a year.
     maxLength: 50
     minLength: 1
   
-  payeeName: 
+  EmployeeIDSSN: 
     type: string
     description: 
-      This is the name of the payee.
+      Mail stop is a code that is assigned by the receiving lockbox facility. This code designates a specific part of a facility’s delivery area.
     maxLength: 50
     minLength: 1
             

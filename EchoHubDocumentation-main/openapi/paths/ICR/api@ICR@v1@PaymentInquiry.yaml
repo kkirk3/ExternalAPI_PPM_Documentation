@@ -1,6 +1,6 @@
 post:
   tags:
-    - ICR
+    - PPM
   summary: Payment Inquiry 
   operationId: LockBoxPayeeCreateProcess
   parameters:
