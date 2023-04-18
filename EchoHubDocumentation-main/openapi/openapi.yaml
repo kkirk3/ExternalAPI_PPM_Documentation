@@ -38,14 +38,14 @@ paths:
 
   
   #PPM - Enrollment
-  /api/PPM/v1/Portal:
+  /api/PPM/v1/Portal [Enrollment]:
     $ref: paths/ICR/api@ICR@v1@Enrollment.yaml
   
      
     
   
   # PPM - PaymentInquiry
-  /api/PPM/v1/Portal.:
+  /api/PPM/v1/Portal [Payment Inquiry]:
     $ref: paths/ICR/api@ICR@v1@PaymentInquiry.yaml
     
  
