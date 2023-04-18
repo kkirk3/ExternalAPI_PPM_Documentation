@@ -14,7 +14,7 @@ post:
   description: |
    The Payment Inquiry endpoint enables one to view the premium payment information against an enrollment.
 
-   Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
+   
   
   requestBody:
     description: The Payment Inquiry endpoint enables one to view the premium payment information against an enrollment.

@@ -73,7 +73,7 @@ properties:
   Premium: 
     type: number
     description: 
-      Premium is the amount paid for an insurance plan.
+      This is the premium is the amount paid for an insurance plan.
     maxLength: 8
     minLength: 1
     
@@ -87,7 +87,7 @@ properties:
   EmployeePayPremium: 
     type: integer
     description: 
-      The premium amount to be paid by the employee.
+      It is a boolean. This field indicates whether employees are paying their own premiums.
     maxLength: 1
 
   EmployeeEmail:
