@@ -14,7 +14,7 @@ post:
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
-  #x-hideTryItPanel: true
+  x-hideTryItPanel: true
   description: |
    This endpoint is used to create enrollments for an employee to make premium payments to the insurance carrier. The enrollment details would be added by a Broker in their API call to ECHO Hub to enroll an employee.
   requestBody:

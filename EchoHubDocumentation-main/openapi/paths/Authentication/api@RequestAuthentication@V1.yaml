@@ -18,6 +18,8 @@ get:
       schema:
         type: string
         $ref: ../../components/headers/AuthenticationHeader.yaml    
+  x-hideTryItPanel: true
+
   description: >
       Once the user is authenticated, this endpoint generates an authorization
       token by using the API key and the Client key. This authorization token is
