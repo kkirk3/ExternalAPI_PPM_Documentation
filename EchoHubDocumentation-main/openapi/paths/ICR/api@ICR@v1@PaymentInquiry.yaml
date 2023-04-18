@@ -56,16 +56,30 @@ post:
                    RoutingNumber : Routing Number
 
                     
-           # mapName_900:   
-            #  description: Please scroll the above dropdown list for more response codes          
-            #  summary: "900"
-             # value:
-             #   ResponseCode: "900"
-             #   ResponseCodeDesc: Transaction Failed
-              #  ResponseTransactionID: Transaction Number
-             #   TransError:  
-              #    -  ErrorCode: "1061"
-               #      ErrorDesc: Invalid or Missing LockBox Directory ID
+            mapName_900:   
+              description: Please scroll the above dropdown list for more response codes          
+              summary: "900"
+              value:
+                ResponseCode: "900"
+                ResponseCodeDesc: Transaction Failed
+                ResponseTransactionID: Transaction Number
+                TransError:                  
+                  - TransactionID: ECHOHub Transaction ID
+                    EmployeeStatus: Employee Status
+                    PaymentType: Payment Type
+                    CCSubscribe: CC Subscribe       
+                    CCSubscribeID: CC Subscribe ID
+                    CCSubscribeKey: CC Subscribe Key
+                    CC1Subscribe: CC1 Subscribe       
+                    CC1SubscribeID: CC1 Subscribe ID
+                    CC1SubscribeKey: CC1 Subscribe Key
+                    ExpDate: Exp Date
+                    ZipCode: Zip Code
+                    Subscribe: Subscribe       
+                    SubscribeID: Subscribe ID
+                    SubscribeKey: Subscribe Key
+                    RoutingNumber: Routing Number
+  
                   
                   
 
