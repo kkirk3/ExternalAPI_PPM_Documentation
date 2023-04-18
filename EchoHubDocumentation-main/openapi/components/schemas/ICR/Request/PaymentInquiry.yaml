@@ -16,7 +16,7 @@ properties:
     description: 
       This is a 9-digit unique identifier that is assigned to a business entity for easy identification by the revenue department.
     maxLength: 9
-    minLength: 9
+    minLength: 1
   
   EmployeeIDSSN: 
     type: integer
