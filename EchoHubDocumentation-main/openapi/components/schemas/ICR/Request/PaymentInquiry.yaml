@@ -21,7 +21,7 @@ properties:
   EmployeeIDSSN: 
     type: integer
     description: 
-      This is the employee's SSN (Social Security Number).
+      This is the employee's SSN (Social Security Number) or the employee ID provided by the employer.
     maxLength: 50
     minLength: 1
             
