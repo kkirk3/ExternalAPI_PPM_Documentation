@@ -31,7 +31,7 @@ properties:
   EmployeeIDSSN: 
     type: string
     description: 
-      This is the employee's SSN (Social Security Number).
+      This is the employee's SSN (Social Security Number) or the employee ID provided by the employer.
     maxLength: 50
     minLength: 1
       
@@ -73,7 +73,7 @@ properties:
   Premium: 
     type: number
     description: 
-      This is the premium is the amount paid for an insurance plan.
+      This is the premium amount paid for an insurance plan.
     maxLength: 8
     minLength: 1
     
@@ -113,7 +113,7 @@ properties:
   Location: 
     type: string
     description: 
-      This is the employer location on the employee ID.
+      This is the employer location on the employer ID.
     maxLength: 200
     minLength: 1 
 
