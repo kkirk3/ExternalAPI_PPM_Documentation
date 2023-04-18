@@ -22,124 +22,124 @@ properties:
     
 
   EmployerTIN: 
-    type: string
+    type: number
     description: 
-      EmployerTIN Desc.
+      This is a 9-digit unique identifier that is assigned to a business entity for easy identification by the revenue department.
     maxLength: 9
     minLength: 1
   
   EmployeeIDSSN: 
     type: string
     description: 
-      EmployeeIDSSN Desc.
+      This is the employee's SSN (Social Security Number).
     maxLength: 50
     minLength: 1
       
   EmployeeFirstName: 
     type: string
     description: 
-      EmployeeFirstName Desc.
+      This is the first name of the employee.
     maxLength: 200
     minLength: 1
     
   EmployeeLastName: 
     type: string
     description: 
-      EmployeeLastName Desc.
+      This is the last name of the employee.
     maxLength: 200
     minLength: 1
   
   CarrierCode: 
     type: string
     description: 
-      CarrierCode Desc.
+      This is the unique ID assigned to the carrier or the insurance company.
     maxLength: 10
     minLength: 1
   
   Plan: 
     type: string
     description: 
-      Plan Desc.
+      This is the insurance plan chosen by the employee.
     maxLength: 50
     minLength: 1
     
   CoverageStartDate: 
     type: string
     description: 
-      CoverageStartDate Desc. Must be 1st of the Month.
+      This is the insurance coverage start date or the plan's effective date. It must be the 1st of a month.
     maxLength: 8
 
 
   Premium: 
     type: number
     description: 
-      Premium Desc.
+      Premium is the amount paid for an insurance plan.
     maxLength: 8
     minLength: 1
     
   EmployeeState: 
     type: string
     description: 
-      EmployeeState Desc.
+      This is the state code of the employee.
     maxLength: 2
     minLength: 1
 
   EmployeePayPremium: 
     type: integer
     description: 
-      EmployeePayPremium Desc.
+      The premium amount to be paid by the employee.
     maxLength: 1
 
   EmployeeEmail:
     type: string
     description: 
-      EmployeeEmail Desc.
+      This is the email address of the employee.
     maxLength: 350
     
   EmployeePhoneNumber: 
     type: number
     description: 
-      EmployeePhoneNumber Desc.
+      This is the phone number of the employee.
     maxLength: 50
     minLength: 1 
 
   EmployeeHireDate: 
     type: string
     description: 
-      EmployeeHireDate Desc.
+      This is the hire date of the employee.
     maxLength: 8
 
 
   Location: 
     type: string
     description: 
-      Location Desc.
+      This is the employer location on the employee ID.
     maxLength: 200
     minLength: 1 
 
   ICHRAAllotted: 
     type: number
     description: 
-      ICHRAAllotted Desc.
+      This is the amount that the employer contributes towards the premium.
     maxLength: 8
     minLength: 1 
 
   ReimbursementTier: 
     type: string
     description: 
-      ReimbursementTier Desc.
+      This is the tier type on the employer ID.
     maxLength: 100
     minLength: 1 
   
   Lives: 
     type: integer
     description: 
-      Lives Desc.
+      This is the number of dependents including self.
     maxLength: 1
 
 
   DateOfBirth: 
     type: string
     description: 
-      DateOfBirth Desc.
+      This is the date of birth of the employee.
     maxLength: 8

@@ -15,9 +15,9 @@ post:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   PPM Desc.
+   This endpoint is used to create enrollments for an employee to make premium payments to the insurance carrier. The enrollment details would be added by a Broker in their API call to ECHO Hub to enroll an employee.
   requestBody:
-    description: Enrollment Desc..
+    description: This endpoint is used to create enrollments for an employee to make premium payments to the insurance carrier. 
     required: true
     content:
       application/json:

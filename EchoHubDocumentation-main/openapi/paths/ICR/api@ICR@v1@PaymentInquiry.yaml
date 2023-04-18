@@ -6,16 +6,18 @@ post:
   parameters:
     - name: x-Authorization
       in: header
+      description: Once the user is authenticated, the Get Token endpoint generates an authorization token by passing the respective consumer's API key and Client key. This authorization token is valid for 30 minutes.
+      required: true
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
   description: |
-   This endpoint allows the user to add a payee name to a given lockbox. The data is first validated in the ECHO Hub system and is directed to the ECHO Hub internal lockbox endpoint. The request is then sent to the lockbox express library for adding a payee name. Once the payee’s name is added, the ECHO Hub system will send a success message.  
+   The Payment Inquiry endpoint enables one to view the premium payment information against an enrollment.
 
    Once the user is authenticated, this endpoint generates an authorization token by using the API key and the Client key. This authorization token is valid for 30 minutes.
   
   requestBody:
-    description: This endpoint is used to add a payee name to a given lockbox.
+    description: The Payment Inquiry endpoint enables one to view the premium payment information against an enrollment.
     required: true
     content:
       application/json:
