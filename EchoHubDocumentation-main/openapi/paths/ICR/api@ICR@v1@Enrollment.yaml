@@ -8,6 +8,9 @@ post:
   parameters:
     - name: x-Authorization
       in: header
+      description: Once the user is authenticated, the Get Token endpoint generates an authorization token by passing the respective consumer's API key and Client key. This authorization token is valid for 30 minutes.
+      required: true
+ 
       schema:
         type: string
         $ref: ../../components/headers/xAuthorization.yaml
