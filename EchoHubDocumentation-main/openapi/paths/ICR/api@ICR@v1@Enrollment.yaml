@@ -80,4 +80,47 @@ post:
                     SubscribeKey: Subscribe Key
                     RoutingNumber: Routing Number
         
-    
+  x-code-samples: 
+    -  lang: "c#"
+       source: |
+          using System;
+          using System.Net.Http;
+          using System.Threading.Tasks;
+          using System.Text;
+          using Newtonsoft.Json.Linq;
+          
+          public class Program
+          {
+            private readonly IHttpClientFactory _httpClientFactory;
+            public static async Task Main(string[] args)
+            {
+              var client = _httpClientFactory.CreateClient();              
+              client.DefaultRequestHeaders.Add("x-Authorization", "string");              
+              JObject json = JObject.Parse(@"{
+                APIFormIdentifierID: 0,
+                EmployerTIN: 0,
+                EmployeeIDSSN: 'string',
+                EmployeeFirstName: 'string',
+                EmployeeLastName: 'string',
+                CarrierCode: 'string',
+                Plan: 'string',
+                CoverageStartDate: 'string',
+                Premium: 0,
+                EmployeeState: 'st',
+                EmployeePayPremium: 0,
+                EmployeeEmail: 'string',
+                EmployeePhoneNumber: 0,
+                EmployeeHireDate: 'string',
+                Location: 'string',
+                ICHRAAllotted: 0,
+                ReimbursementTier: 'string',
+                Lives: 0,
+                DateOfBirth: 'string'
+              }");
+              var postData = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
+              var request = await client.PostAsync("https://sandbox.echohealthincapi.com/api/PPM/v1/Portal", postData);
+              var response = await request.Content.ReadAsStringAsync();
+          
+              Console.WriteLine(response);
+            }
+          }

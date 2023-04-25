@@ -85,34 +85,31 @@ post:
                   
                   
 
-x-code-samples: 
-  - lang: "c#"
-    source: |
-      using System;
-      using System.Net.Http;
-      using System.Threading.Tasks;
-      using System.Text;
-      using Newtonsoft.Json.Linq;
-      
-      public class Program
-      {
-        private readonly IHttpClientFactory _httpClientFactory;
-        public static async Task Main(string[] args)
-        {
-          var client = _httpClientFactory.CreateClient();
-          client.DefaultRequestHeaders.Add("x-RequestUrl", "string");
-          client.DefaultRequestHeaders.Add("x-RequestFromAPP", "string");
-          client.DefaultRequestHeaders.Add("x-Authorization", "string");
-          client.DefaultRequestHeaders.Add("x-AccessId", "string");
-          JObject json = JObject.Parse(@"{
-              APIFormIdentifierID: 9,
-              EmployerTIN: 0,
-              EmployeeIDSSN: 'string
-            }");
-          var postData = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
-          var request = await client.PostAsync("https://eshb198-pymenthub.echohealthinc.com/api/PPM/v1/Portal", postData);
-          var response = await request.Content.ReadAsStringAsync();
-      
-          Console.WriteLine(response);
-        }
-      }
+  x-code-samples: 
+    -  lang: "c#"
+       source: |
+          using System;
+          using System.Net.Http;
+          using System.Threading.Tasks;
+          using System.Text;
+          using Newtonsoft.Json.Linq;
+          
+          public class Program
+          {
+            private readonly IHttpClientFactory _httpClientFactory;
+            public static async Task Main(string[] args)
+            {
+              var client = _httpClientFactory.CreateClient();              
+              client.DefaultRequestHeaders.Add("x-Authorization", "string");              
+              JObject json = JObject.Parse(@"{
+                APIFormIdentifierID: 0,
+                EmployerTIN: 0,
+                EmployeeIDSSN: 0
+              }");
+              var postData = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
+              var request = await client.PostAsync("https://sandbox.echohealthincapi.com/api/PPM/v1/Portal", postData);
+              var response = await request.Content.ReadAsStringAsync();
+          
+              Console.WriteLine(response);
+            }
+          }
