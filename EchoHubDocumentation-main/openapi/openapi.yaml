@@ -26,8 +26,7 @@ servers:
   - url: https://sandbox.echohealthincapi.com
   - url: https://api.echohealthincapi.com
 
-security: 
-  -  {}
+
 
 
 paths:
