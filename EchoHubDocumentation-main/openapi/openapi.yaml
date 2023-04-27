@@ -2,7 +2,7 @@
 
 openapi: 3.1.0
 info:
-  title: ECHOHUb API
+  title: ECHO Hub API
   description: >-
     API Endpoints for the PPM clients.
 
