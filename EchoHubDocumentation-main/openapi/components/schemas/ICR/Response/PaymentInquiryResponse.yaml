@@ -15,9 +15,6 @@ properties:
       TransLog for Payment Response Code 001:
         type: object
         properties:
-          TransactionID:
-            type: integer
-            description: Transaction ID
           EmployeeStatus:
             type: string
             description: Employee Status
@@ -77,53 +74,15 @@ properties:
       TransError for Payment Response Code 900:
         type: object
         properties:
-          TransactionID:
-            type: string
-            description: ECHOHub Transaction ID
-          EmployeeStatus:
-            type: integer
-            description: 1-Eligible, 2-Enrolled, 3-Inactive, 4-Funding pending
-          PaymentType:
-            type: string
-            description: Payment Type
-          CCSubscribe:
-            type: string
-            description: CC Subscribe       
-          CCSubscribeID:
-            type: string
-            description: CC Subscribe ID
-          CCSubscribeKey:       
-            type: string
-            description: CC Subscribe Key
-          CC1Subscribe:
-            type: string
-            description: CC1 Subscribe       
-          CC1SubscribeID:
-            type: string
-            description: CC1 Subscribe ID
-          CC1SubscribeKey:       
-            type: string
-            description: CC1 Subscribe Key
-          ExpDate:       
-            type: string
-            description: Exp Date
-          ZipCode:       
-            type: string
-            description: Zip Code
-          Subscribe:
-            type: string
-            description: Subscribe       
-          SubscribeID:
-            type: string
-            description: Subscribe ID
-          SubscribeKey:       
-            type: string
-            description: Subscribe Key
-          RoutingNumber:       
-            type: integer
-            description: Routing Number
-          
-            
+             ResponseCode:
+        type: string
+        description: Response Code 900
+      ResponseCodeDesc:
+        type: string
+        description: Transaction Failed
+      ResponseTransactionID:
+        type: string
+        description: Transaction Number
   #This is the Response for Response Code 900:
     #type: object
     #properties:
