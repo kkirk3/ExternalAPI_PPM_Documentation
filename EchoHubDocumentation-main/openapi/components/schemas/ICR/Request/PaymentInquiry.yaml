@@ -1,7 +1,7 @@
 required:
   - APIFormIdentifierID
   - EmployerTIN
-  - EmployeeIDSSN
+  - EmployeeUniqueID
 type: object
 properties:
 
@@ -12,16 +12,16 @@ properties:
     
 
   EmployerTIN: 
-    type: number
+    type: string
     description: 
-      This is a 9-digit unique identifier that is assigned to a business entity for easy identification by the revenue department.
+       This is the 9-digit unique identifier of Employer issued by the IRS. Must exist in Premium Payment Manager. Numbers only.
     maxLength: 9
-    minLength: 1
+    minLength: 9
   
-  EmployeeIDSSN: 
-    type: integer
+  EmployeeUniqueID: 
+    type: string
     description: 
-      This is the employee's SSN (Social Security Number) or the employee ID provided by the employer.
-    maxLength: 50
+      This is the employee's Social Security Number or the unique employee ID provided by the employer.
+    maxLength: 20
     minLength: 1
             
