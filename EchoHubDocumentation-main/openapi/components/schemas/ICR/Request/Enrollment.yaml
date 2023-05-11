@@ -1,7 +1,7 @@
 required:
     - APIFormIdentifierID
     - EmployerTIN
-    - EmployeeIDSSN
+    - EmployeeUniqueID
     - EmployeeFirstName
     - EmployeeLastName
     - CarrierCode
@@ -22,103 +22,103 @@ properties:
     
 
   EmployerTIN: 
-    type: number
-    description: 
-      This is a 9-digit unique identifier that is assigned to a business entity for easy identification by the revenue department.
-    maxLength: 9
-    minLength: 1
-  
-  EmployeeIDSSN: 
     type: string
     description: 
-      This is the employee's SSN (Social Security Number) or the employee ID provided by the employer.
-    maxLength: 50
+      This is the 9-digit unique identifier of Employer issued by the IRS. Must exist in Premium Payment Manager. Numbers only.
+    maxLength: 9
+    minLength: 9
+  
+  EmployeeUniqueID: 
+    type: string
+    description: 
+      This is the employee's Social Security Number or the unique employee ID provided by the employer.
+    maxLength: 20
     minLength: 1
       
   EmployeeFirstName: 
     type: string
     description: 
       This is the first name of the employee.
-    maxLength: 200
+    maxLength: 30
     minLength: 1
     
   EmployeeLastName: 
     type: string
     description: 
       This is the last name of the employee.
-    maxLength: 200
+    maxLength: 30
     minLength: 1
   
   CarrierCode: 
     type: string
     description: 
-      This is the unique ID assigned to the carrier or the insurance company.
-    maxLength: 10
+      This is the unique ID assigned to the carrier that will be provided by ECHO. 
+    maxLength: 5
     minLength: 1
   
   Plan: 
     type: string
     description: 
       This is the insurance plan chosen by the employee.
-    maxLength: 50
+    maxLength: 30
     minLength: 1
     
   CoverageStartDate: 
-    type: string
+    type: date
     description: 
-      This is the insurance coverage start date or the plan's effective date. It must be the 1st of a month.
-    maxLength: 8
+      This is the insurance coverage start date or the plan's effective date not greater than 60 days after current date. Format: CSD is always the 1st of a month.(ie, 2023-04-01)
+    maxLength: 10
 
 
   Premium: 
-    type: number
+    type: money
     description: 
-      This is the premium amount paid for an insurance plan.
+      This is the premium amount paid for an insurance plan. No greater than $6000
     maxLength: 8
     minLength: 1
     
   EmployeeState: 
     type: string
     description: 
-      This is the state code of the employee.
+      This must be valid state code.
     maxLength: 2
-    minLength: 1
+    minLength: 2
 
   EmployeePayPremium: 
     type: integer
     description: 
-      It is a boolean. This field indicates whether employees are paying their own premiums.
+      It is a boolean. This field indicates whether employees are paying their own premiums. Default to 0 until further notice.
     maxLength: 1
 
   EmployeeEmail:
     type: string
     description: 
-      This is the email address of the employee.
-    maxLength: 350
+      This is the email address of the employee. REQUIRED if EmployeePayPremium = 1 
+    maxLength: 50
     
   EmployeePhoneNumber: 
-    type: number
+    type: string
     description: 
-      This is the phone number of the employee.
-    maxLength: 50
+      This is the phone number of the employee. Numbers only.
+    maxLength: 10
     minLength: 1 
 
   EmployeeHireDate: 
-    type: string
+    type: date
     description: 
-      This is the hire date of the employee.
-    maxLength: 8
+      This is the hire date of the employee. (ie, 2023-01-15)
+    maxLength: 10
 
 
   Location: 
     type: string
     description: 
       This is the employer location on the employer ID.
-    maxLength: 200
+    maxLength: 30
     minLength: 1 
 
   ICHRAAllotted: 
-    type: number
+    type: money
     description: 
       This is the amount that the employer contributes towards the premium.
     maxLength: 8
@@ -127,8 +127,12 @@ properties:
   ReimbursementTier: 
     type: string
     description: 
-      This is the tier type on the employer ID.
-    maxLength: 100
+      This is the tier type specific to the enrollment. Needs to be valid tier type currently mapped to the employer. 
+	'Employee Only'
+	'Employee & Spouse'
+	'Employee & Children'
+	'Family'
+    maxLength: 60
     minLength: 1 
   
   Lives: 
@@ -139,7 +143,7 @@ properties:
 
 
   DateOfBirth: 
-    type: string
+    type: date
     description: 
-      This is the date of birth of the employee.
-    maxLength: 8
+      This is the date of birth of the employee. (ie, 1987-04-18)
+    maxLength: 10
